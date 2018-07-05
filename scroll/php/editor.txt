@@ -4,22 +4,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div id = "scrolldirdiv" style = "display:none">
-<?php
-$scrolls = scandir(getcwd()."/scrolls");
-foreach($scrolls as $value){
-    if($value != "." && $value != ".."){
-        echo $value."\n";
-    }
-}
-?>
-</div>
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
-    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "makenewscroll.php">makenewscroll.php</a>
-    <a href = "metacreator.php">metacreator.php</a>
     <a href = "texlist.php">texlist.php</a>
     <a href = "figurelist.php">figurelist.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
@@ -31,40 +19,27 @@ foreach($scrolls as $value){
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
-
+    <div class = "html file">html/scroll.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/scrolleditor.txt</div>
-    <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/scrollcreator.txt</div>
     <div class = "php file">php/makenewscroll.txt</div>
-    <div class = "php file">php/creator.txt</div>
-    <div class = "php file">php/metacreator.txt</div>
-    <div class = "php file">php/dnagenerator.txt</div>
+
     <div class = "php file">php/texlist.txt</div>
     <div class = "php file">php/figurelist.txt</div>
 
     <div class = "php file">php/jupyter.txt</div>
 
-    <div class = "json file">json/dna.txt</div>
 
 </div>
 
 <script>
-rawscrollnames = document.getElementById("scrolldirdiv").innerHTML;
-scrollnames = rawscrollnames.split("\n");
 
-var filescrolldata = document.getElementById("filescroll").innerHTML;
-for(var index = 0;index < scrollnames.length;index++){
-    if(scrollnames[index].length > 1){
-        filescrolldata += "\n<div class = \"scrolls file\">scrolls/" + scrollnames[index] + "</div>\n";
-    }
-}
 
-document.getElementById("filescroll").innerHTML = filescrolldata;
 
 currentFile = "php/scrolleditor.txt";
 var httpc = new XMLHttpRequest();
