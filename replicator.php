@@ -7,12 +7,24 @@
 
     //Seven Sources
     mkdir("page");
+        mkdir("page/pages");
     mkdir("feed");
-    mkdir("scroll");
+        mkdir("feed/feed");
+    mkdir("scroll");    
+        mkdir("scroll/latex");
+        mkdir("scroll/jupyter");
+        mkdir("scroll/scrolls");
+        mkdir("scrolls/figures");
     mkdir("deck");
+        mkdir("deck/decks");
     mkdir("symbol");
+        mkdir("symbol/tables");
+        mkdir("symbol/svg");
     mkdir("curve");
+        mkdir("curve/svg");
     mkdir("map");
+        mkdir("map/maps");
+        mkdir("map/svg");
 
     foreach($dna as $dirs){
         mkdir($dirs->path);

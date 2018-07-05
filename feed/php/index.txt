@@ -30,6 +30,19 @@ EVERYTHING IS RECURSIVE
 -->
 </head>
 <body>
+<div id = "pathdiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+
+?></div>
+<div id = "localdatadiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."/html/wall.txt");
+    }
+?></div>
 <div style = "display:none" id = "datadiv">
 <?php
 if(isset($_GET['url'])){
@@ -48,7 +61,24 @@ else{
     echo "</style>\n";
 ?>
 <script>
-document.getElementById("feedscroll").innerHTML = document.getElementById("datadiv").innerHTML;
+
+
+
+pathset = false;
+
+if(document.getElementById("pathdiv").innerHTML.length > 1){
+    pathset = true;
+    localdata = document.getElementById("localdatadiv").innerHTML;
+    path = document.getElementById("pathdiv").innerHTML;
+    document.getElementById("feedscroll").innerHTML = localdata;
+    document.getElementById("editorlink").href = "walleditor.php?path=" + path;
+    document.getElementById("editorlink").innerHTML = "walleditor.php?path=" + path;
+    document.getElementById("postlink").href = "post.php?path=" + path;
+    document.getElementById("postlink").innerHTML = "post.php?path=" + path;
+}
+else{
+    document.getElementById("feedscroll").innerHTML = document.getElementById("datadiv").innerHTML;
+}
 </script>
 </body>
 </html>

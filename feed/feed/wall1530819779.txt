@@ -1,0 +1,10 @@
+<a href = "../">../</a>
+
+<h2>Wall Replicator</h2>
+<p>
+    Copy the code at <a href = "http://geometron.000webhostapp.com/replicators/wall/php/replicator.txt">http://geometron.000webhostapp.com/replicators/wall/php/replicator.txt</a> into a local replicator.php, navigate browser there, click on link.
+</p>
+<p>
+    The wall is a public bulletin board. world readable, and writeable, no logins, no passwords, delete or save at will.  
+</p>
+

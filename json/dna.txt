@@ -53,21 +53,16 @@
 	{
 		"path":"feed/php",
 		"files":[
-			"creator.txt",
-			"dnagenerator.txt",
 			"editor.txt",
 			"fileloader.txt",
 			"filesaver.txt",
 			"index.txt",
 			"list.txt",
 			"loadwall.txt",
-			"metacreator.txt",
 			"post.txt",
 			"posttowall.txt",
-			"replicator.txt",
 			"savewall.txt",
 			"text2php.txt",
-			"unicode.txt",
 			"walleditor.txt",
 			"wallhistory.txt"
 		]

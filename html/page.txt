@@ -1,9 +1,9 @@
+<div style = "font-family:Helvetica;">
 <a href = "../">../</a>
-<h2>Root: The Seven Sources</h2>
+<h1 style = "font-size:3em;">Root: The Seven Sources</h1>
 <p>
-    <img src = "svg/septagram.svg"/>
 </p>
-<ul>
+<ul style = "width:6em;list-style-type: none;font-size:2em;background-color:none;position:absolute;z-index:0;">
     <li><a href = "page/">page/</a></li>
     <li><a href = "feed/">feed/</a></li>
     <li><a href = "scroll/">scroll/</a></li>
@@ -11,5 +11,6 @@
     <li><a href = "deck/">deck/</a></li>
     <li><a href = "curve/">curve/</a></li>
     <li><a href = "map/">map/</a></li>
-
 </ul>
+    <img style = "width:50%;" src = "svg/septagram.svg"/>
+</div>

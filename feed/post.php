@@ -30,6 +30,19 @@ EVERYTHING IS RECURSIVE
 -->
 </head>
 <body>
+<div id = "pathdiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+
+?></div>
+<div id = "localdatadiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."/html/wall.txt");
+    }
+?></div>
 <?php
     echo file_get_contents("html/postpage.txt");
     echo "<style>\n";

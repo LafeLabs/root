@@ -26,9 +26,6 @@ EGO DEATH:
     <a href = "index.php">index.php</a>
     <a href = "feed/">feed/</a>
     <a href = "text2php.php">text2php.php</a>
-    <a href = "dnagenerator.php">dnagenerator.php</a>
-    <a href = "metacreator.php">metacreator.php</a>
-    <a href = "unicode.php">unicode.php</a>
     <a href = "list.php">list.php</a>
     <a href = "walleditor.php">walleditor.php</a>
     <a href = "wallhistory.php">wallhistory.php</a>
@@ -50,7 +47,6 @@ EGO DEATH:
     <div class = "php file">php/post.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/walleditor.txt</div>
-    <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/savefeed.txt</div>
@@ -60,12 +56,8 @@ EGO DEATH:
     <div class = "php file">php/posttowall.txt</div>
 
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/dnagenerator.txt</div>
-    <div class = "php file">php/creator.txt</div>
-    <div class = "php file">php/metacreator.txt</div>
-    <div class = "php file">php/list.txt</div>
+    <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/wallhistory.txt</div>
-    <div class = "json file">json/dna.txt</div>
 </div>
 
 <script>

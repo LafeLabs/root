@@ -19,10 +19,17 @@ document.getElementById("publishbutton").onclick = function(){
  
 */
     $data = $_POST["data"]; //get data 
-    $filename = "html/wall.txt";
+
+    if(isset($_POST['path'])){
+        $path = $_POST['path'];
+        $filename = $path."/html/wall.txt";
+    }
+    else{
+        $filename = "html/wall.txt";
+    }
     
-    $oldfeed = file_get_contents("html/wall.txt"); //get old feed
-    $file = fopen("html/wall.txt","w");// open the file
+    $oldfeed = file_get_contents($filename); //get old feed
+    $file = fopen("$filename","w");// open the file
     fwrite($file,$data.$oldfeed); //write to file with new data at top
     fclose($file);  //close file
 ?>
