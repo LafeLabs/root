@@ -1,9 +1,18 @@
 <?php
 
-    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/page/json/dna.txt";
+    $url = "https://raw.githubusercontent.com/LafeLabs/root/master/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
+
+//Seven Sources
+    mkdir("page");
+    mkdir("feed");
+    mkdir("scroll");
+    mkdir("deck");
+    mkdir("symbol");
+    mkdir("curve");
+    mkdir("map");
 
     foreach ($dna as $value) {
         $filetype =  explode('/',$value)[0];
@@ -24,6 +33,6 @@
             fclose($file);  //close file                
         }
     }
-    mkdir("pages");
+
 ?>
 <a href = "pageeditor.php" style = "font-size:5em;">pageeditor.php</a>

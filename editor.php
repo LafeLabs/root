@@ -26,7 +26,6 @@ EGO DEATH:
     <a href = "pageeditor.php">pageeditor.php</a>
     <a href = "index.php">index.php</a>
     <a href = "unicode.php">unicode.php</a>
-    <a href = "replicator.php">replicator.php</a>
     <a href = "savepage.php">savepage.php</a>
     <a href = "dnagenerator.php">dnagenerator.php</a>
     <a href = "metacreator.php">metacreator.php</a>

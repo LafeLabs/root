@@ -9,6 +9,13 @@ EVERYTHING IS PHYSICAL
 EVERYTHING IS FRACTAL
 EVERYTHING IS RECURSIVE
 
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK TO THE INSECTS
+LOOK TO THE FUNGI
+LANGUAGE IS HOW THE MIND PARSES REALITY
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
@@ -35,7 +42,7 @@ if(isset($_GET['url'])){
     echo file_get_contents($_GET['url']);
 }?>
 </div>
-    <a id = "creatorlink" href = "metacreator.php">metacreator.php</a>
+    <a id = "creatorlink" href = "editor.php">editor.php</a>
     <a id = "pageeditorlink" href = "pageeditor.php">pageeditor.php</a>
 <div id = "page">
 <?php
