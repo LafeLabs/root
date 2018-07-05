@@ -5,7 +5,7 @@
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
 
-//Seven Sources
+    //Seven Sources
     mkdir("page");
     mkdir("feed");
     mkdir("scroll");
@@ -14,25 +14,21 @@
     mkdir("curve");
     mkdir("map");
 
-    foreach ($dna as $value) {
-        $filetype =  explode('/',$value)[0];
-        if(!file_exists($filetype)){
-            mkdir($filetype);
-        }
-        $filename = $value;
-        $data = file_get_contents($baseurl.$value);
-        $file = fopen($filename,"w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
-
-        if($filetype == "php" && $filename != "php/replicator.txt"){
-            $phpfilename = explode(".",$filename)[0].".php";
-            $phpfilename = explode("/",$phpfilename)[1];
-            $file = fopen($phpfilename,"w");// create new file with this name
+    foreach($dna as $dirs){
+        mkdir($dirs->path);
+        $files = $dirs->files;
+        foreach($files as $filename){
+            $data = file_get_contents($baseurl.$dirs->path."/".$filename);
+            $file = fopen($dirs->path."/".$filename,"w");// create new file with this name
             fwrite($file,$data); //write data to file
-            fclose($file);  //close file                
-        }
+            fclose($file);  //close file
+            if(substr($dirs->path,-3) == "php" && $filename != "php/replicator.txt"){
+                $file = fopen(substr($dirs->path,0,-3).explode(".",$filename)[0].".php","w");// create new file with this name
+                fwrite($file,$data); //write data to file
+                fclose($file);  //close file                
+            }
+        }    
     }
-
 ?>
+
 <a href = "pageeditor.php" style = "font-size:5em;">pageeditor.php</a>
