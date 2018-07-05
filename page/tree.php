@@ -35,7 +35,7 @@ EVERYTHING IS RECURSIVE
 
 <?php
 function listfiles($localpath){
-    $fullpath = getcwd()."/..".$localpath;
+    $fullpath = getcwd().$localpath;
     $files = scandir($fullpath);
     foreach($files as $filename){
         if($filename != "pages" && $filename != "php" && $filename != "html" && $filename != "." && $filename != ".." && is_dir($fullpath."/".$filename)){
@@ -97,6 +97,7 @@ echo "</ul>\n";
 
     document.getElementById("newbutton").onclick = function(){
         name = document.getElementById("nameinput").value;
+        path = document.getElementById("pathinput").value;
         if(name.length>1){
             console.log("path=" + path + ",name=" + name);
             var httpc = new XMLHttpRequest();

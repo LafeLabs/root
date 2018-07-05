@@ -53,7 +53,7 @@ EGO DEATH:
 <table id = "linktable">
     <tr>
         <td>
-            <a href = "index.php">index.php</a>
+            <a href = "index.php" id = "indexlink">index.php</a>
         </td>
         <td>
             <a href = "editor.php">editor.php</a>
@@ -102,6 +102,8 @@ if(document.getElementById("pathdiv").innerHTML.length > 1){
     editor.setValue(localdata);
     document.getElementById("scroll").innerHTML = localdata;
     currentFile = path + "/html/page.txt";
+    document.getElementById("indexlink").href = "index.php?path=" + path;
+    document.getElementById("indexlink").innerHTML = "index.php?path=" + path;
 }
 else{
     currentFile = "html/page.txt";
