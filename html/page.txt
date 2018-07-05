@@ -1,0 +1,15 @@
+<a href = "../">../</a>
+<h2>Root: The Seven Sources</h2>
+<p>
+    <img src = "svg/septagram.svg"/>
+</p>
+<ul>
+    <li><a href = "page/">page/</a></li>
+    <li><a href = "feed/">feed/</a></li>
+    <li><a href = "paper/">paper/</a></li>
+    <li><a href = "symbol/">symbol/</a></li>
+    <li><a href = "deck/">deck/</a></li>
+    <li><a href = "curve/">curve/</a></li>
+    <li><a href = "map/">map/</a></li>
+
+</ul>

@@ -1,0 +1,35 @@
+<div id = "editmodebutton" class = "button">EDIT</div>
+<div id="maineditor" contenteditable="true" spellcheck="false" class = "no-mathjax"></div>
+
+<a  id = "editorlink" href = "editor.php">editor.php</a>
+<a  id = "uplink" href = "../">../</a>
+<a  id = "deckslink" href = "decks/">decks/</a>
+
+<table id = "buttontable">
+    <tr>
+        <td class = "button">SAVE DECK</td>
+    </tr>    
+    <tr>
+        <td class = "button">NEW BOX</td>
+    </tr>
+    <tr>
+        <td class = "button">NEW PAGE</td>
+    </tr>
+
+</table>
+
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<table id = "controlTable">
+    <tr id = "addressline" style = "display:none">
+        <td>INDEX:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+</table>
+
+<input id = "glyphspellinput"/>
+
+<div id = "backbutton" class = "button">&#x2BC7</div>
+<div id = "fwdbutton" class = "button">&#x2BC8</div>

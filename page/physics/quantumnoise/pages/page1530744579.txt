@@ -1,0 +1,3 @@
+<h2>Quantum Noise</h2>
+<p>This is the latest paragraph about Quantum Noise.</p>
+<p>Now we add another paragraph, nuke it from orbit, then re-load.</p>

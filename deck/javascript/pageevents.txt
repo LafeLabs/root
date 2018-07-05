@@ -1,0 +1,298 @@
+
+buttons[0].onclick = function(){
+        
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data=" + encodeURIComponent(document.getElementById("shadowdatadiv").innerHTML));//send text to saver.php
+    
+}
+
+buttons[1].onclick = function(){
+    newbox();
+    redraw();
+}
+buttons[2].onclick = function(){
+    newpage();
+}
+
+function newpage(){
+
+    pageTemplate = "\n";
+    pageTemplate += "   <div class = \"pagejson\">{\n";
+    pageTemplate += "    \"x0rel\": 0,\n";
+    pageTemplate += "    \"y0rel\": 0,\n";
+    pageTemplate += "    \"unitrel\": 1\n";
+    pageTemplate += "}</div>";
+        
+    var newdiv  = document.createElement("DIV");
+    newdiv.innerHTML = pageTemplate;
+    newdiv.className = "page";
+    document.getElementById("datadiv").appendChild(newdiv);
+
+    var newdiv2  = document.createElement("DIV");
+    newdiv2.innerHTML = pageTemplate;
+    newdiv2.className = "page";
+    document.getElementById("shadowdatadiv").appendChild(newdiv2);
+    pages = document.getElementById("datadiv").getElementsByClassName("page");
+    shadowpages = document.getElementById("shadowdatadiv").getElementsByClassName("page");
+    boxIndex = 0;
+    pageIndex = pages.length - 1;
+
+    newbox();
+    boxes = pages[pageIndex].getElementsByClassName("box");
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+
+
+    cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+    currentGlyph = cleanGlyph + "0207,";
+    editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+
+    pagejson = JSON.parse(pages[pageIndex].getElementsByClassName("pagejson")[0].innerHTML);
+    unit = pagejson.unitrel*innerHeight/8;
+    x0 =  0.5*innerWidth + pagejson.x0rel*unit;
+    y0 = 0.5*innerHeight + pagejson.y0rel*unit;
+    
+        for(var index = 0;index < pages.length;index++){
+        if(index != pageIndex){
+            pages[index].style.display = "none";
+        }
+        else{
+            pages[index].style.display = "block";
+        }
+    }
+
+    redraw();
+}
+
+function newbox(){
+
+    boxTemplate = "<div class=\"glyphdata\"></div>\n";
+    boxTemplate +=  "    <div class=\"content\">\n";
+    boxTemplate +=  "    </div>\n";
+    var newdiv = document.createElement("DIV");
+    newdiv.innerHTML = boxTemplate;
+    newdiv.className = "box";
+    pages[pageIndex].appendChild(newdiv);
+    boxes = pages[pageIndex].getElementsByClassName("box");
+
+    var newdiv2 = document.createElement("DIV");
+    newdiv2.innerHTML = boxTemplate;
+    newdiv2.className = "box";
+    shadowpages[pageIndex].appendChild(newdiv2);
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+
+}
+
+
+
+function pageback(){
+    pageIndex--;
+    if(pageIndex < 0){
+        pageIndex = pages.length - 1;
+    }
+    for(var index = 0;index < pages.length;index++){
+        if(index != pageIndex){
+            pages[index].style.display = "none";
+        }
+        else{
+            pages[index].style.display = "block";
+        }
+    }
+    boxes = pages[pageIndex].getElementsByClassName("box");
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+    cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+    currentGlyph = cleanGlyph + "0207,";
+    editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+    if(editMode){
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "block";
+       }
+    }
+    else{
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "none";
+       }
+    }
+    pagejson = JSON.parse(pages[pageIndex].getElementsByClassName("pagejson")[0].innerHTML);
+    unit = pagejson.unitrel*innerHeight/8;
+    x0 =  0.5*innerWidth + pagejson.x0rel*unit;
+    y0 = 0.5*innerHeight + pagejson.y0rel*unit;
+
+}
+function pagefwd(){
+    pageIndex++;
+    if(pageIndex > pages.length - 1){
+        pageIndex = 0;
+    }
+    for(var index = 0;index < pages.length;index++){
+        if(index != pageIndex){
+            pages[index].style.display = "none";
+        }
+        else{
+            pages[index].style.display = "block";
+        }
+    }
+    boxes = pages[pageIndex].getElementsByClassName("box");
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+    cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+    currentGlyph = cleanGlyph + "0207,";
+    editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+    if(editMode){
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "block";
+       }
+    }
+    else{
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "none";
+       }
+    }
+    pagejson = JSON.parse(pages[pageIndex].getElementsByClassName("pagejson")[0].innerHTML);
+    unit = pagejson.unitrel*innerHeight/8;
+    x0 =  0.5*innerWidth + pagejson.x0rel*unit;
+    y0 = 0.5*innerHeight + pagejson.y0rel*unit;
+
+        
+}
+
+document.getElementById("backbutton").onclick = function(){
+    pageback();
+    redraw();
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    pagefwd();
+    redraw();
+}
+
+
+document.getElementById("editmodebutton").onclick = function(){
+    if(editMode){
+       document.getElementById("glyphspellinput").style.display = "none"; 
+       document.getElementById("controlTable").style.display = "none"; 
+       document.getElementById("editorlink").style.display = "none"; 
+       document.getElementById("uplink").style.display = "none"; 
+       document.getElementById("deckslink").style.display = "none"; 
+       document.getElementById("maineditor").style.display = "none"; 
+       document.getElementById("buttontable").style.display = "none"; 
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "none";
+       }
+    }
+    else{
+       document.getElementById("glyphspellinput").style.display = "block"; 
+       document.getElementById("controlTable").style.display = "block"; 
+       document.getElementById("editorlink").style.display = "block"; 
+       document.getElementById("uplink").style.display = "block"; 
+       document.getElementById("deckslink").style.display = "block"; 
+       document.getElementById("maineditor").style.display = "block"; 
+       document.getElementById("buttontable").style.display = "block"; 
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "solid";
+       }
+    }
+
+    editMode = !editMode;
+    redraw();
+}
+
+document.getElementById("glyphspellinput").onchange = function(){
+    cleanGlyph = this.value;
+    currentGlyph = cleanGlyph + "0207,";
+    redraw();
+}
+
+
+controls[1].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+        }
+
+
+        if(charCode == 046){
+            boxIndex--;
+            if(boxIndex < 0){
+                boxIndex = boxes.length-1;
+            }
+            cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+            editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+
+            currentGlyph = cleanGlyph + "0207,";
+            redraw();
+        }
+        if(charCode == 050){
+            boxIndex++;
+            if(boxIndex > boxes.length-1){
+                boxIndex = 0;
+            }
+            editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+            cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+            currentGlyph = cleanGlyph + "0207,";
+            redraw();
+        }
+        
+        if(charCode == 040){
+            pagefwd();
+            redraw();
+        }
+        
+        
+    }
+    
+
+controls[1].onkeypress = function(a){//action
+    charCode = a.keyCode || a.which;
+    console.log(a.which);
+    if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046  && charCode != 050){
+            
+        if(parseInt(currentTable[charCode],8) >= 0200 && parseInt(currentTable[charCode],8) < 0600){
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+                if(glyphSplit[index] == "0207"){
+                    currentGlyph += currentTable[charCode] + ",0207,";
+                }
+            }
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+            }
+            redraw();
+        } 
+        if(parseInt(currentTable[charCode],8) < 040){
+            doTheThing(parseInt(currentTable[charCode],8));
+            redraw();
+        }
+        this.value = "";
+    }
+}
+    
+    
+document.getElementById("maineditor").onkeyup = function(){
+    data = editor.getSession().getValue();
+    shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML = data;
+    boxes[boxIndex].getElementsByClassName("content")[0].innerHTML = data;
+    redraw();
+}
+    
+
+
+   

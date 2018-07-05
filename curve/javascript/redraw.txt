@@ -1,0 +1,43 @@
+
+currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" + plotparams.plotheight.toString() + "\" viewbox = \"0 0 " + plotparams.plotwidth.toString() + " " + plotparams.plotheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+
+
+currentSVG += "\n<!--\n<topfunctions>\n" + document.getElementById("topfunctions").innerText + "\n</topfunctions>\n-->\n";
+
+currentSVG += "\n<!--\n<imgurl>\n" + document.getElementById("imgurlinput").value + "\n</imgurl>\n-->\n";
+
+currentSVG += "\n<!--\n<currentjson>\n" + JSON.stringify(currentjson,null, "    ") + "\n</currentjson>\n-->\n";
+
+currentSVG += "\n<!--\n<equation>\n" + document.getElementById("eqtext").value + "\n</equation>\n-->\n";
+
+
+document.getElementById("mainCanvas").width = plotparams.plotwidth;
+document.getElementById("mainCanvas").height = plotparams.plotheight;
+document.getElementById("mainCanvas").style.left = (0.5*innerWidth - 0.5*plotparams.plotwidth).toString() + "px";
+
+document.getElementById("mainImage").style.width = plotparams.plotwidth.toString() + "px";
+document.getElementById("mainImage").style.left = (0.5*innerWidth - 0.5*plotparams.plotwidth).toString() + "px";
+
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.clearRect(0, 0, plotparams.plotwidth,plotparams.plotheight);
+ctx.lineWidth = 2;
+
+
+plotfunction();
+
+currentSVG += "</svg>";
+document.getElementById("textIO").value = currentSVG;
+
+currentjson = {};
+currentjson.constants = constants;
+currentjson.imgurl = document.getElementById("imgurlinput").value;
+currentjson.plotparams = plotparams;
+currentjson.funcparams = funcparams;
+
+currentFile = "json/currentjson.txt"
+data = encodeURIComponent(JSON.stringify(currentjson,null, "    "));
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php

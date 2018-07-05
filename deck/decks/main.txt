@@ -1,0 +1,44 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0331,0331,0331,0337,0337,0337,</div>
+        <div class="content"><p style="text-align:justify;padding:2em 2em 2em 2em;">
+Copy link at <a href="http://geometron.000webhostapp.com/replicators/deck/php/replicator.txt">http://geometron.000webhostapp.com/replicators/deck/php/replicator.txt</a> into replicator.php on your server, navigate browser there, let the code copy, and click on link.
+
+</p></div>
+    </div>
+</div>
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0337,0337,</div>
+    <div class="content"><img src="http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530496339.svg"></div>
+</div><div class="box"><div class="glyphdata">0331,0336,0330,0333,0333,0337,</div>
+    <div class="content">$$
+Z_C = \frac{1}{i\omega C}
+$$</div>
+</div><div class="box"><div class="glyphdata">0332,0334,0336,0331,0337,</div>
+    <div class="content">$$
+Z_{\textrm{total}}
+= R + Z_C
+$$</div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0337,0337,</div>
+    <div class="content"><img src="https://i.imgur.com/mA8WI4C.png"></div>
+</div><div class="box"><div class="glyphdata">0333,0333,</div>
+    <div class="content">
+    foo</div>
+</div><div class="box"><div class="glyphdata">0330,0330,0332,0332,</div>
+    <div class="content">
+    </div>
+</div></div>

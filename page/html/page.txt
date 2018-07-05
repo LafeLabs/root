@@ -1,0 +1,6 @@
+<a href = "../">../</a>
+<h2>Page</h2>
+
+<p>
+    <a href = "index.php?path=physics/quantumnoise/">physics/quantumnoise/</a>
+</p>
