@@ -14,7 +14,6 @@
     mkdir("curve");
     mkdir("map");
 
-
     foreach ($dna as $value) {
         $filetype =  explode('/',$value)[0];
         if(!file_exists($filetype)){

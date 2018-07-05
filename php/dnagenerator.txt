@@ -2,21 +2,22 @@
 
 function getfiles($localpath){
     $files = scandir(getcwd()."/".$localpath);
-    $outstring .= "\t\"".$localpath."\":[\n";
+    $outstring .= "\t{\n\t\t\"path\":\"".$localpath."\",\n\t\t\"files\":[\n";
+    
     foreach($files as $value){
         if($value != "." && $value != ".."){
             if(substr($value,-4) == ".txt"){
-                $outstring .= "\t\t\"".$value."\",\n";
+                $outstring .= "\t\t\t\"".$value."\",\n";
             }
         }
     }
     $outstring = substr($outstring,0,-2);
-    $outstring .= "\n\t]";
+    $outstring .= "\n\t\t]\n\t}";
     return $outstring;
 }
 
 
-$finalstring = "{\n";
+$finalstring = "[\n";
 
 $finalstring .= getfiles("php");
 $finalstring .= ",\n";
@@ -77,7 +78,7 @@ $finalstring .= getfiles("map/bytecode");
 $finalstring .= ",\n";
 $finalstring .= getfiles("map/json");
 
-$finalstring .= "\n}";
+$finalstring .= "\n]";
 
 echo $finalstring;
 
