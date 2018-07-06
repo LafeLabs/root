@@ -21,6 +21,11 @@ EGO DEATH:
 <title>Wall Editor</title>
 </head>
 <body>
+<div id = "pathdiv" style = "display:none"><?php
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+?></div>
 <table id = "linktable">
     <tr><td><a id = "indexlink" href = "index.php">
         BACK TO WALL
@@ -34,6 +39,10 @@ EGO DEATH:
     <tr><td><a id = "feedslink" href = "wallhistory.php">
         WALL HISTORY
     </a></tr></td>
+    <tr><td><a href = "tree.php">
+        DIRECTORY TREE
+    </a></tr></td>
+
 </table>
 
 <div class = "button" id = "savefeedbutton">SAVE CURRENT WALL</div>
@@ -43,7 +52,19 @@ EGO DEATH:
 </div>
 
 <script>
-currentFile = "html/wall.txt";
+path = document.getElementById("pathdiv").innerHTML;
+if(path.length>1){
+    currentFile = path + "/html/wall.txt";
+
+    document.getElementById("indexlink").href = "index.php?path=" + path;
+    document.getElementById("postlink").href = "post.php?path=" + path;
+    document.getElementById("feedslink").href = "wallhistory.php?path=" + path;
+    
+    
+}
+else{
+    currentFile = "html/wall.txt";
+}
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -72,9 +93,18 @@ document.getElementById("savefeedbutton").onclick = function(){
     };
     
     filedata = document.getElementById("maineditor").value;
+    
+
     httpc.open("POST", "savewall.php", true);
+    
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send();
+    
+    if(path.length>1){
+        httpc.send("path="+path);
+    }
+    else{
+        httpc.send();
+    }
 
 }
 document.getElementById("loadfeedbutton").onclick = function(){
@@ -87,9 +117,14 @@ document.getElementById("loadfeedbutton").onclick = function(){
         }
     };
 
-    httpc.open("GET", "loadwall.php", true);
+    httpc.open("POST", "loadwall.php", true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send();
+    if(path.length>1){
+        httpc.send("path="+path);
+    }
+    else{
+        httpc.send();
+    }
 
 }
 

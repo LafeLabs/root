@@ -14,13 +14,29 @@ EVERYTHING IS RECURSIVE
 <META NAME="robots" CONTENT="noindex,nofollow">
 </head>    
 <body>
+<div id = "pathdiv" style = "display:none"></div>
 <p>
     <a href = "walleditor.php">walleditor</a>
 </p>
+
+
 <?php
+    $fullpath = "";
+    if(isset($_GET['path'])){
+        $path = $_GET['path'];
+        $fullpath = getcwd()."/".$path."feed";
+        $subpath = $path."feed";
+        $files = array_reverse(scandir(getcwd()."/".$path."feed"));
+    }
+    else{
+        $files = array_reverse(scandir(getcwd()."/feed"));
+        $path = "";
+        $fullpath = getcwd()."/feed";
+        $subpath = "feed";
 
-$files = array_reverse(scandir(getcwd()."/feed"));
+    }
 
+    echo $fullpath."<br/>";
 foreach($files as $value){
     if($value != "." && $value != ".." && substr($value,0,4) == "wall"){
   //      echo $value."<br/>".substr(substr($value,4),0,-4)."<br/>";
@@ -30,11 +46,11 @@ foreach($files as $value){
         echo "date and time:";
         echo gmdate("Y-m-d H:i:s", $timestamp)."\n";     
         echo ",\nfilesize=";
-        echo filesize(getcwd()."/feed/".$value);
+        echo filesize($fullpath."/".$value);
         echo "bytes";
         echo "<br/>\n";
-        echo "<a href = \"feed/".$value."\">feed/".$value."</a><br/>\n";
-        echo "<a href = \"index.php?url=feed/".$value."\">index.php?url=feed/".$value."</a>\n";
+        echo "<a href = \"".$subpath."/".$value."\">".$subpath."/".$value."</a><br/>\n";
+        echo "<a href = \"index.php?url=".$subpath."/".$value."\">index.php?url=".$subpath."/".$value."</a>\n";
         echo "</p>\n";
     }
 }

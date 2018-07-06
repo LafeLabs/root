@@ -1,4 +1,0 @@
-<a id = "postlink" href = "post.php">POST TO WALL</a>
-<h2 id = "titleh">Wall</h2>
-<a id = "editorlink" href = "walleditor.php">EDIT WALL</a>
-<div id = "feedscroll"></div>

@@ -1,0 +1,6 @@
+<a href = "../">../</a>
+
+<h2>Wall Replicator</h2>
+<p>
+    The wall is a public bulletin board. world readable, and writeable, no logins, no passwords, delete or save at will.  
+</p>

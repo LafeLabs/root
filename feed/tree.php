@@ -38,7 +38,7 @@ function listfiles($localpath){
     $fullpath = getcwd().$localpath;
     $files = scandir($fullpath);
     foreach($files as $filename){
-        if($filename != "pages" && $filename != "php" && $filename != "html" && $filename != "." && $filename != ".." && is_dir($fullpath."/".$filename)){
+        if($filename != "feed" && $filename != "php" && $filename != "html" && $filename != "." && $filename != ".." && is_dir($fullpath."/".$filename)){
             
            $fileandpath = substr($localpath,1)."/".$filename;
            if($fileandpath[0] == "/"){

@@ -26,7 +26,7 @@ EGO DEATH:
     <a href = "index.php">index.php</a>
     <a href = "feed/">feed/</a>
     <a href = "text2php.php">text2php.php</a>
-    <a href = "list.php">list.php</a>
+    <a href = "tree.php">tree.php</a>
     <a href = "walleditor.php">walleditor.php</a>
     <a href = "wallhistory.php">wallhistory.php</a>
 </div>
@@ -35,13 +35,6 @@ EGO DEATH:
 <div id = "filescroll">
 
     <div class = "html file">html/wall.txt</div>
-    <div class = "html file">html/page.txt</div>
-    <div class = "html file">html/postpage.txt</div>
-
-    <div class = "css file">css/pagestyle.txt</div>
-    <div class = "css file">css/poststyle.txt</div>
-
-    <div class = "javascript file">javascript/postactions.txt</div>
 
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/post.txt</div>
@@ -49,12 +42,10 @@ EGO DEATH:
     <div class = "php file">php/walleditor.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
-    <div class = "php file">php/savefeed.txt</div>
-    <div class = "php file">php/loadfeed.txt</div>
     <div class = "php file">php/savewall.txt</div>
     <div class = "php file">php/loadwall.txt</div>
     <div class = "php file">php/posttowall.txt</div>
-
+    <div class = "php file">php/newdir.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/wallhistory.txt</div>

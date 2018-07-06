@@ -53,16 +53,54 @@ else{
 }
 ?>
 </div>
-<?php
-    echo file_get_contents("html/page.txt");
-    echo "<style>\n";
-    $data = file_get_contents("css/pagestyle.txt");
-    echo $data;
-    echo "</style>\n";
-?>
+<a id = "postlink" href = "post.php">POST TO WALL</a>
+<h2 id = "titleh">Wall</h2>
+<a id = "editorlink" href = "walleditor.php">EDIT WALL</a>
+<div id = "feedscroll"></div>
+<style>
+    body{
+    font-size:1.5em;
+    font-family:helvetica;
+}
+#titleh{
+    position:absolute;
+    z-index:-1;
+    left:1em;
+    top:0.1em;
+    right:1em;
+    text-align:center;
+}
+#feedscroll{
+    position:absolute;
+    top:3em;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow:scroll;
+    padding:1em 1em 1em 1em;
+}
+#feedscroll img{
+    display:block;
+    margin:auto;
+}
+#postlink{
+    position:absolute;
+    top:1em;
+    left:1em;
+}
+#editorlink{
+    position:absolute;
+    right:1em;
+    top:1em;
+}
+img{
+    width:50%;
+    display:block;
+    margin:auto;
+}
+</style>
+
 <script>
-
-
 
 pathset = false;
 
