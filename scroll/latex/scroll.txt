@@ -1,0 +1,54 @@
+
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\begin{document}
+
+<a href = "../">../</a>
+
+
+\section{
+Quantum Geometron}
+
+
+
+foo
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530503037.svg"/>
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530506061.svg"/>
+
+
+<img src= "http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530503938.svg"/>    
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530503326.svg"/>
+
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530495303.svg"/>
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530495215.svg"/>
+
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530495029.svg"/>
+
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530495109.svg"/>
+
+<a href = "http://geometron.000webhostapp.com/replicators/symbol/?url=svg/svg1530496339.svg">
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530496339.svg"/></a>
+
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530506765.svg"/>
+
+
+\includegraphics[width=\linewidth]{../http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530536477.svg"/>
+
+
+
+
+
+
+
+
+    
+
+
+\end{document}

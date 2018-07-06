@@ -64,7 +64,7 @@ echo "</ul>\n";
 <p><a href = "index.php">index.php</a></p>
 <p><a href = "editor.php">editor.php</a></p>
 <script>
-    lindex = 1;
+    lindex = 0;
     lis = document.getElementsByTagName("LI");
 
     redraw();    

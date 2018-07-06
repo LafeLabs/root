@@ -7,10 +7,9 @@
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
-    <a href = "makenewscroll.php">makenewscroll.php</a>
-    <a href = "texlist.php">texlist.php</a>
     <a href = "figurelist.php">figurelist.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
+    <a href = "texeditor.php">texeditor.php</a>
     <a href = "jupyter.php">jupyter.php</a>
     <a href = "tree.php">tree.php</a>
 
@@ -25,12 +24,10 @@
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/scrolleditor.txt</div>
+    <div class = "php file">php/texeditor.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/scrollcreator.txt</div>
-    <div class = "php file">php/makenewscroll.txt</div>
-    <div class = "php file">php/texlist.txt</div>
     <div class = "php file">php/figurelist.txt</div>
     <div class = "php file">php/jupyter.txt</div>
     <div class = "php file">php/newdir.txt</div>

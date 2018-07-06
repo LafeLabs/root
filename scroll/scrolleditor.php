@@ -27,10 +27,13 @@
 
 <div id = "linkscroll">
     <a href = "index.php" id = "indexlink">index.php</a>
+    <a href = "tree.php">tree.php</a>
     <a href = "editor.php">editor.php</a>
-    <a href = "metacreator.php">metacreator.php</a>
-    <a href = "makenewscroll.php">makenewscroll.php</a>
 
+    <a href = "jupyter.php">jupyter.php</a>
+    <a href = "figurelist.php" id = "figurelink">figurelist.php</a>
+
+    <a href = "texeditor.php" id = "texlink">texeditor.php</a>
     <div class = "button">FIGURE</div>
     <div class = "button">HTML2TEX</div>
 </div>
@@ -39,25 +42,20 @@
 <textarea id = "texbox"></textarea>
 <script>
 
-
 path = document.getElementById("pathdiv").innerHTML;
 
 if(path.length>1){
-
     currentFile = path + "html/scroll.txt";
+    texFile = path + "latex/scroll.tex";
+    document.getElementById("indexlink").href = "index.php?path=" + path;
+    document.getElementById("texlink").href = "texeditor.php?path=" + path;
+    document.getElementById("figurelink").href = "figurelist.php?path=" + path;
 
-//    document.getElementById("indexlink").href = "index.php?path=" + path;
-  //  document.getElementById("postlink").href = "post.php?path=" + path;
-    //document.getElementById("feedslink").href = "wallhistory.php?path=" + path;
-    
-    
 }
 else{
     currentFile = "html/scroll.txt";
+    texFile = "latex/scroll.tex";
 }
-
-currentFile = "html/scroll.txt";
-
 
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
@@ -110,7 +108,7 @@ buttons[1].onclick = function(){
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data="+data+"&filename="+"latex/scroll.tex");//send text to filesaver.php
+    httpc.send("data="+data+"&filename="+texFile);//send text to filesaver.php
     
 }
 
@@ -160,7 +158,7 @@ body{
     position:absolute;
     overflow:scroll;
     top:0%;
-    bottom:60%;
+    bottom:50%;
     right:0%;
     left:77%;
     border:solid;

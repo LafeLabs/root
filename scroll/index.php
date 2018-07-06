@@ -15,18 +15,34 @@
 </script>
     </head>
     <body>
-        <a id = "editorlink" href = "editor.php">editor.php</a>
+<div id = "pathdiv" style = "display:none"><?php
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+?></div>
+</div>
+        <a id = "editorlink" href = "tree.php">tree.php</a>
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
         <?php
+
             if(isset($_GET['url'])){
                 echo file_get_contents($_GET['url']);
             }
-            else{
-                echo file_get_contents("scrolls/main.txt");
+            if(isset($_GET['path'])){
+                echo file_get_contents($_GET['path']."html/scroll.txt");
+            }
+            if(!isset($_GET['path']) && !isset($_GET['url'])){
+                echo file_get_contents("html/scroll.txt");
             }
         ?>
         </div>
+        <script>
+            path = document.getElementById("pathdiv").innerHTML;
+            if(path.length > 1){
+                document.getElementById("scrolleditorlink").href = "scrolleditor.php?path="+path;
+            }
+        </script>
         <style>
             * {
             box-sizing: border-box;
