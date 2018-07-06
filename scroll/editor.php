@@ -12,6 +12,8 @@
     <a href = "figurelist.php">figurelist.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
     <a href = "jupyter.php">jupyter.php</a>
+    <a href = "tree.php">tree.php</a>
+
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
     <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
 
@@ -28,11 +30,11 @@
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/scrollcreator.txt</div>
     <div class = "php file">php/makenewscroll.txt</div>
-
     <div class = "php file">php/texlist.txt</div>
     <div class = "php file">php/figurelist.txt</div>
-
     <div class = "php file">php/jupyter.txt</div>
+    <div class = "php file">php/newdir.txt</div>
+    <div class = "php file">php/tree.txt</div>
 
 
 </div>
@@ -224,5 +226,5 @@ body{
 
 </style>
 
-<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="000webhost logo" rel="nofollow" target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_campaign=ss-footer_logo&amp;utm_medium=000_logo&amp;utm_content=website"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png" alt="000webhost logo"></a></div></body>
+</body>
 </html>
