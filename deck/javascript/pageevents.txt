@@ -1,6 +1,8 @@
 
 buttons[0].onclick = function(){
-        
+
+
+//localize the feed location!        
     var httpc = new XMLHttpRequest();
     var url = "feedsaver.php";        
     httpc.open("POST", url, true);

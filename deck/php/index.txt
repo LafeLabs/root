@@ -80,10 +80,10 @@ echo file_get_contents("json/stylejson.txt");
 
 ?></div>
 <div id = "datadiv"><?php
-    echo file_get_contents("decks/main.txt");
+    echo file_get_contents("html/deck.txt");
 ?></div>    
 <div id = "shadowdatadiv"  style = "display:none" class = "no-mathjax"><?php
-    echo file_get_contents("decks/main.txt");
+    echo file_get_contents("html/deck.txt");
 ?></div>    
 <div id = "extdatadiv" style = "display:none"><?php
 if(isset($_GET['url'])){
@@ -97,9 +97,44 @@ if(isset($_GET['url'])){
 }   
 ?></div>
 <div id = "mainpage">
-<?php
-    echo file_get_contents("html/page.txt");
-?>
+
+<div id = "editmodebutton" class = "button">EDIT</div>
+<div id="maineditor" contenteditable="true" spellcheck="false" class = "no-mathjax"></div>
+
+<a  id = "editorlink" href = "editor.php">editor.php</a>
+<a  id = "uplink" href = "../">../</a>
+<a  id = "deckslink" href = "decks/">decks/</a>
+
+<table id = "buttontable">
+    <tr>
+        <td class = "button">SAVE DECK</td>
+    </tr>    
+    <tr>
+        <td class = "button">NEW BOX</td>
+    </tr>
+    <tr>
+        <td class = "button">NEW PAGE</td>
+    </tr>
+
+</table>
+
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<table id = "controlTable">
+    <tr id = "addressline" style = "display:none">
+        <td>INDEX:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+</table>
+
+<input id = "glyphspellinput"/>
+
+<div id = "backbutton" class = "button">&#x2BC7</div>
+<div id = "fwdbutton" class = "button">&#x2BC8</div>
+
+
 </div>
 <script>
 </script>
@@ -124,10 +159,157 @@ function redraw(){
     echo file_get_contents("javascript/pageevents.txt");
 ?>
 </script>
-<?php
-    echo "<style>\n";
-    echo file_get_contents("css/style.txt");
-    echo "</style>\n";
-?>
+<style>
+#buttontable{
+    position:absolute;
+    left:10em;
+    top:0px;
+    z-index:2;
+}
+#datadiv{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+}
+#shadowdatadiv{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+}
+#maineditor{
+    position:absolute;
+    right:0px;
+    top:5em;
+    width:16em;
+    height:30em;
+    z-index:2;
+    font-size:16px;
+}
+#mainpage{
+    position:absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+}
+.page{
+    position:absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+}
+.box{
+    position:absolute;    
+    border:solid;
+    font-family:Helvetica;
+    text-align:center;
+    font-size:20px;
+    z-index:2;
+}
+.box img{
+    width:95%;
+    display:block;
+    text-align:center;
+}
+body{
+    overflow:hidden;
+}
+.glyphdata{
+    display:none;
+}
+.pagejson{
+    display:none;
+}
+ #editorlink{
+     position:absolute;
+     left:70%;
+     top:0px;
+     z-index:2;
+ }
+  #uplink{
+     position:absolute;
+     left:70%;
+     top:2em;
+     z-index:2;
+ }
+#deckslink{
+     position:absolute;
+     left:70%;
+     top:1em;
+     z-index:2;
+}
+
+#mainCanvas{
+    position:absolute;
+    z-index:0;
+    left:0px;
+    top:0px;
+}
+#controlTable{
+    left:15px;
+    top:15px;
+    font-family:courier;
+    font-size:18;
+    position:absolute;
+    z-index:2;
+}
+#controlTable input{
+    width:3em;
+    font-family:courier;
+}
+.button{
+    padding:0.5em 0.5em 0.5em 0.5em;
+    font-family:courier;
+    cursor:pointer;
+    border-radius:0.5em;
+    z-index:2;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+
+#glyphspellinput{
+    position:absolute;
+    bottom:5px;
+    left:10px;
+    width:98%;
+        z-index:2;
+
+    font-family:courier;
+    font-size:16px;
+}
+
+#editmodebutton{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:2;
+}
+#backbutton{
+    position:absolute;
+    bottom:10%;
+    left:0px;
+    z-index:3;
+    font-size:3em;
+    border-radius:1.5em;
+}
+#fwdbutton{
+    position:absolute;
+    bottom:10%;
+    right:0px;
+    z-index:3;
+    font-size:3em;
+    border-radius:1.5em;
+}    
+    
+</style>
 </body>
 </html>

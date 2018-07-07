@@ -25,6 +25,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id = "linkscroll">
 
     <a href = "text2php.php">text2php.php</a>
+    <a href = "tree.php">tree.php</a>
     <a href = "index.php">index.php</a>
 
 </div>
@@ -32,9 +33,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
 <div id = "filescroll">
-    <div class = "html file">html/page.txt</div>
 
-    <div class = "css file">css/style.txt</div>
+    <div class = "html file">html/deck.txt</div>
 
     <div class = "bytecode file">bytecode/shapetable.txt</div>
     <div class = "bytecode file">bytecode/font.txt</div>
@@ -51,14 +51,15 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
 
-    <div class = "json file">json/stylejson.txt</div>
+    <div class = "php file">php/tree.txt</div>
+    <div class = "php file">php/newdir.txt</div>
 
-    <div class = "decks file">decks/main.txt</div>
+    <div class = "json file">json/stylejson.txt</div>
 
 </div>
 
 <script>
-currentFile = "html/page.txt";
+currentFile = "html/deck.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

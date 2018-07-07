@@ -57,12 +57,13 @@
 			"fileloader.txt",
 			"filesaver.txt",
 			"index.txt",
-			"list.txt",
 			"loadwall.txt",
+			"newdir.txt",
 			"post.txt",
 			"posttowall.txt",
 			"savewall.txt",
 			"text2php.txt",
+			"tree.txt",
 			"walleditor.txt",
 			"wallhistory.txt"
 		]
@@ -70,62 +71,51 @@
 	{
 		"path":"feed/html",
 		"files":[
-			"page.txt",
-			"postpage.txt",
 			"wall.txt"
 		]
 	},
 	{
 		"path":"feed/css",
-		"files":[
-			"pagestyle.txt",
-			"poststyle.txt"
+		"files":
 		]
 	},
 	{
 		"path":"feed/javascript",
-		"files":[
-			"postactions.txt"
+		"files":
 		]
 	},
 	{
 		"path":"scroll/php",
 		"files":[
-			"creator.txt",
-			"dnagenerator.txt",
 			"editor.txt",
 			"figurelist.txt",
 			"fileloader.txt",
 			"filesaver.txt",
 			"index.txt",
 			"jupyter.txt",
-			"makenewscroll.txt",
-			"metacreator.txt",
-			"replicator.txt",
-			"scrollcreator.txt",
+			"newdir.txt",
 			"scrolleditor.txt",
-			"texlist.txt",
-			"text2php.txt"
+			"texeditor.txt",
+			"text2php.txt",
+			"tree.txt"
 		]
 	},
 	{
 		"path":"symbol/php",
 		"files":[
-			"creator.txt",
-			"dnagenerator.txt",
 			"editor.txt",
 			"feedsaver.txt",
 			"fileloader.txt",
 			"filesaver.txt",
 			"glypheditor.txt",
 			"index.txt",
+			"keyboardeditor.txt",
 			"loadtable.txt",
-			"metacreator.txt",
-			"replicator.txt",
+			"newdir.txt",
 			"savetable.txt",
 			"shapetableeditor.txt",
-			"slideviewer.txt",
-			"text2php.txt"
+			"text2php.txt",
+			"tree.txt"
 		]
 	},
 	{
@@ -168,23 +158,18 @@
 		"path":"symbol/json",
 		"files":[
 			"currentjson.txt",
-			"dna.txt"
+			"stylejson.txt"
 		]
 	},
 	{
 		"path":"deck/php",
 		"files":[
-			"creator.txt",
-			"dnagenerator.txt",
 			"editor.txt",
 			"feedsaver.txt",
 			"fileloader.txt",
 			"filesaver.txt",
-			"glypheditor.txt",
 			"index.txt",
 			"loadtable.txt",
-			"metacreator.txt",
-			"replicator.txt",
 			"savetable.txt",
 			"shapetableeditor.txt",
 			"text2php.txt"
@@ -206,26 +191,18 @@
 	{
 		"path":"deck/javascript",
 		"files":[
-			"actions03xx.txt",
-			"actions06xx.txt",
-			"actions0xx.txt",
 			"init.txt",
-			"jslibrary.txt",
 			"pageactions.txt",
 			"pageevents.txt",
-			"redraw.txt",
-			"topfunctions.txt"
+			"redraw.txt"
 		]
 	},
 	{
 		"path":"deck/bytecode",
 		"files":[
-			"baseshapes.txt",
 			"font.txt",
 			"keyboard.txt",
-			"shapetable.txt",
-			"symbols010xx.txt",
-			"symbols013xx.txt"
+			"shapetable.txt"
 		]
 	},
 	{

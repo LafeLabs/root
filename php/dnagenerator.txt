@@ -1,6 +1,7 @@
 <?php
 
 function getfiles($localpath){
+    $outstring = "";
     $files = scandir(getcwd()."/".$localpath);
     $outstring .= "\t{\n\t\t\"path\":\"".$localpath."\",\n\t\t\"files\":[\n";
     

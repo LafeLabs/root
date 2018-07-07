@@ -42,6 +42,7 @@ if(isset($_GET['url'])){
     echo file_get_contents($_GET['url']);
 }?>
 </div>
+    
     <a id = "creatorlink" href = "editor.php">editor.php</a>
     <a id = "pageeditorlink" href = "pageeditor.php">pageeditor.php</a>
 <div id = "page">
