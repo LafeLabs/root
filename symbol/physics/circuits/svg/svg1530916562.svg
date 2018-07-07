@@ -1,0 +1,47 @@
+<svg width="200" height="400" viewbox = "0 0 200 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -3,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 200,
+    "svgheight": 400,
+    "unit": 110.00000000000003,
+    "x0": 684,
+    "y0": 548.4045946091137,
+    "x0rel": 0,
+    "y0rel": 149.4045946091137,
+    "glyph": "0321,0220,0221,0222,",
+    "table": []
+}
+</json>
+-->
+    <line x1="100" y1="349" x2="100" y2="346" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="346" x2="100" y2="339" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="339" x2="88" y2="332" style="stroke:black;stroke-width:5" />
+    <line x1="88" y1="332" x2="100" y2="325" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="325" x2="112" y2="318" style="stroke:black;stroke-width:5" />
+    <line x1="112" y1="318" x2="100" y2="312" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="312" x2="88" y2="305" style="stroke:black;stroke-width:5" />
+    <line x1="88" y1="305" x2="100" y2="298" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="298" x2="112" y2="291" style="stroke:black;stroke-width:5" />
+    <line x1="112" y1="291" x2="100" y2="284" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="284" x2="88" y2="277" style="stroke:black;stroke-width:5" />
+    <line x1="88" y1="277" x2="100" y2="270" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="270" x2="112" y2="263" style="stroke:black;stroke-width:5" />
+    <line x1="112" y1="263" x2="100" y2="257" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="257" x2="100" y2="243" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="243" x2="100" y2="239" style="stroke:black;stroke-width:5" />
+	<path d = "M100 239  M100,239 C100,221 137,212 137,230  M137,230 C137,249 100,230 100,212 " stroke = "black" stroke-width = "5" fill = "none" />	<path d = "M100 212  M100,212 C100,194 137,184 137,203  M137,203 C137,221 100,203 100,184 " stroke = "black" stroke-width = "5" fill = "none" />	<path d = "M100 184  M100,184 C100,166 137,157 137,175  M137,175 C137,194 100,175 100,157 " stroke = "black" stroke-width = "5" fill = "none" />	<path d = "M100 157  M100,157 C100,139 137,129 137,148  M137,148 C137,166 100,148 100,129 " stroke = "black" stroke-width = "5" fill = "none" />    <line x1="100" y1="129" x2="100" y2="102" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="102" x2="100" y2="88" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="88" x2="73" y2="88" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="88" x2="128" y2="88" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="61" x2="128" y2="61" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="61" x2="73" y2="61" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="61" x2="100" y2="47" style="stroke:black;stroke-width:5" />
+    <line x1="100" y1="47" x2="100" y2="19" style="stroke:black;stroke-width:5" />
+</svg>

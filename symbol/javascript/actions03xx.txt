@@ -5,11 +5,13 @@
         side = unit;
         thetaStep = Math.PI/2;
         scaleFactor = 2;
-        ctx.lineWidth = 2;
-        ctx.strokeStyle= resetColor;//"#00ff00";
-        ctx.fillStyle=resetColor;
-        currentStroke = resetColor;
-        currentFill = resetColor;
+
+        ctx.strokeStyle= styleJSON.color0;
+        ctx.lineWidth = styleJSON.line0;    	
+        ctx.fillStyle = styleJSON.fill0;
+        currentStroke = styleJSON.color0;
+        currentFill = styleJSON.fill0;
+
         currentWord = "";
         currentHTML = "";
         currentStyle = "";
@@ -54,60 +56,60 @@
         scaleFactor = 1.1524;
     }
     if(localCommand == 0320){
-        ctx.strokeStyle="black";
-        ctx.lineWidth = 2;    	
-        ctx.fillStyle = "black";
-        currentStroke = "black";
-        currentFill = "black";
+        ctx.strokeStyle= styleJSON.color0;
+        ctx.lineWidth = styleJSON.line0;    	
+        ctx.fillStyle = styleJSON.fill0;
+        currentStroke = styleJSON.color0;
+        currentFill = styleJSON.fill0;
     }
     if(localCommand == 0321){
-        ctx.strokeStyle = "white";
-        ctx.lineWidth = 2;    	
-        ctx.fillStyle = "white";
-        currentStroke = "white";
-        currentFill = "white";
+        ctx.strokeStyle= styleJSON.color1;
+        ctx.lineWidth = styleJSON.line1;    	
+        ctx.fillStyle = styleJSON.fill1;
+        currentStroke = styleJSON.color1;
+        currentFill = styleJSON.fill1;
     }
     if(localCommand == 0322){
-        ctx.strokeStyle="red";
-        ctx.lineWidth = 2;
-        ctx.fillStyle = "red";    
-        currentStroke = "red";
-        currentFill = "red";
+        ctx.strokeStyle= styleJSON.color2;
+        ctx.lineWidth = styleJSON.line2;    	
+        ctx.fillStyle = styleJSON.fill2;
+        currentStroke = styleJSON.color2;
+        currentFill = styleJSON.fill2;
     }
     if(localCommand == 0323){
-        ctx.strokeStyle="black";
-        ctx.lineWidth = 4;
-        ctx.fillStyle = "black";    
-        currentStroke = "black";
-        currentFill = "black";
+        ctx.strokeStyle= styleJSON.color3;
+        ctx.lineWidth = styleJSON.line3;    	
+        ctx.fillStyle = styleJSON.fill3;
+        currentStroke = styleJSON.color3;
+        currentFill = styleJSON.fill3;
     }
     if(localCommand == 0324){
-        ctx.strokeStyle="yellow";
-        ctx.lineWidth = 2;
-        ctx.fillStyle = "yellow";    
-        currentStroke = "yellow";
-        currentFill = "yellow";
+        ctx.strokeStyle= styleJSON.color4;
+        ctx.lineWidth = styleJSON.line4;    	
+        ctx.fillStyle = styleJSON.fill4;
+        currentStroke = styleJSON.color4;
+        currentFill = styleJSON.fill4;
     }
     if(localCommand == 0325){
-        ctx.strokeStyle="green";
-        ctx.lineWidth = 2;
-        ctx.fillStyle = "green";    
-        currentStroke = "green";
-        currentFill = "green";
+        ctx.strokeStyle= styleJSON.color5;
+        ctx.lineWidth = styleJSON.line5;    	
+        ctx.fillStyle = styleJSON.fill5;
+        currentStroke = styleJSON.color5;
+        currentFill = styleJSON.fill0;
     }
     if(localCommand == 0326){
-        ctx.strokeStyle="blue";
-        ctx.lineWidth = 2;
-        ctx.fillStyle = "blue";    
-        currentStroke = "blue";
-        currentFill = "blue";
+        ctx.strokeStyle= styleJSON.color6;
+        ctx.lineWidth = styleJSON.line6;    	
+        ctx.fillStyle = styleJSON.fill6;
+        currentStroke = styleJSON.color6;
+        currentFill = styleJSON.fill6;
     }
     if(localCommand == 0327){
-        ctx.strokeStyle="purple";
-        ctx.lineWidth = 2;
-        ctx.fillStyle = "purple";    
-        currentStroke = "purple";
-        currentFill = "purple";
+        ctx.strokeStyle= styleJSON.color7;
+        ctx.lineWidth = styleJSON.line7;    	
+        ctx.fillStyle = styleJSON.fill7;
+        currentStroke = styleJSON.color7;
+        currentFill = styleJSON.fill7;
     }
     if(localCommand == 0330){
         x += side*Math.cos(theta);   
@@ -317,7 +319,7 @@
     }
     if(localCommand == 0364){
         ctx.closePath();
-        currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + (ctx.lineWidth).toString() + "\" fill = \"" + "none" + "\" "+"/>";
+        currentSVG += "Z\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + (ctx.lineWidth).toString() + "\" fill = \"" + "none" + "\" "+"/>";
     }
     if(localCommand == 0365){//<page0365>
     ctx.font=side.toString(8) + "px " + myFont;

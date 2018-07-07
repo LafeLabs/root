@@ -2,6 +2,25 @@ doTheThing(06);//import embedded hypercube in this .html doc
 doTheThing(07);//initialize Geometron global variables
 
 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
+
+path = document.getElementById("pathdiv").innerHTML;
+backlink = document.getElementById("backurldata").innerHTML;
+
+if(backlink.length>1){
+    document.getElementById("backlink").href = backlink;
+    document.getElementById("backlink").innerHTML = backlink;
+}
+else{
+    document.getElementById("backlink").href = "tree.php";
+    document.getElementById("backlink").innerHTML = "tree.php";
+}
+
+if(path.length > 1){
+    document.getElementById("shapetablelink").href = "shapetableeditor.php?path=" + path;
+    document.getElementById("svglink").href = path + "svg/";
+}
+
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
 
 exturl = false;
@@ -42,7 +61,6 @@ document.getElementById("mainCanvas").height = innerHeight;
 
 controls = document.getElementById("controlTable").getElementsByTagName("input");   
 
-
 cleanGlyph = "";
 //currentGlyph = ",0207,";
 glyphEditMode = true;
@@ -53,14 +71,4 @@ zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("butt
 
 controls[1].select();
 
-for(var index = 0220;index < 0250;index++){
-    if(currentTable[index].length > 3){
-        currentJSON.table.push("0" + index.toString(8) + ":" + currentTable[index]);
-    }
-}
-for(var index = 01220;index < 01250;index++){
-    if(currentTable[index].length > 3){
-        currentJSON.table.push("0" + index.toString(8) + ":" + currentTable[index]);
-    }
-}
 

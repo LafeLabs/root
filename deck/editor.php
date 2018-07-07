@@ -25,8 +25,6 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id = "linkscroll">
 
     <a href = "text2php.php">text2php.php</a>
-    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
-    <a href = "metacreator.php">metacreator.php</a>
     <a href = "index.php">index.php</a>
 
 </div>
@@ -38,35 +36,23 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 
     <div class = "css file">css/style.txt</div>
 
-    <div class = "bytecode file">bytecode/baseshapes.txt</div>
     <div class = "bytecode file">bytecode/shapetable.txt</div>
     <div class = "bytecode file">bytecode/font.txt</div>
     <div class = "bytecode file">bytecode/keyboard.txt</div>
-    <div class = "bytecode file">bytecode/symbols013xx.txt</div>
-    <div class = "bytecode file">bytecode/symbols010xx.txt</div>
-
-    <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/actions0xx.txt</div>
-    <div class = "javascript file">javascript/actions03xx.txt</div>
-    <div class = "javascript file">javascript/actions06xx.txt</div>
-    <div class = "javascript file">javascript/jslibrary.txt</div>
+    
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
     <div class = "javascript file">javascript/pageevents.txt</div>
 
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/index.txt</div>
-    <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/dnagenerator.txt</div>
-    <div class = "php file">php/creator.txt</div>
-    <div class = "php file">php/metacreator.txt</div>
 
-    <div class = "json file">json/dna.txt</div>
-    
+    <div class = "json file">json/stylejson.txt</div>
+
     <div class = "decks file">decks/main.txt</div>
 
 </div>
@@ -265,5 +251,5 @@ body{
 
 </style>
 
-<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="000webhost logo" rel="nofollow" target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_campaign=ss-footer_logo&amp;utm_medium=000_logo&amp;utm_content=website"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png" alt="000webhost logo"></a></div></body>
+</body>
 </html>

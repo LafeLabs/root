@@ -5,7 +5,7 @@
     "unitrel": 1
 }</div>
     <div class="box">
-        <div class="glyphdata">0331,0331,0331,0337,0337,0337,</div>
+        <div class="glyphdata">0331,0337,0337,0337,</div>
         <div class="content"><p style="text-align:justify;padding:2em 2em 2em 2em;">
 Copy link at <a href="http://geometron.000webhostapp.com/replicators/deck/php/replicator.txt">http://geometron.000webhostapp.com/replicators/deck/php/replicator.txt</a> into replicator.php on your server, navigate browser there, let the code copy, and click on link.
 
@@ -31,7 +31,7 @@ $$</div>
 </div></div><div class="page">
    <div class="pagejson">{
     "x0rel": 0,
-    "y0rel": 0,
+    "y0rel": -0.5012531328320802,
     "unitrel": 1
 }</div><div class="box"><div class="glyphdata">0337,0337,</div>
     <div class="content"><img src="https://i.imgur.com/mA8WI4C.png"></div>

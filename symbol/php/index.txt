@@ -5,8 +5,7 @@
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 -->
-<script id = "bytecodeScript">
-/*
+<script id = "bytecodeScript">/*
 <?php
 echo file_get_contents("bytecode/baseshapes.txt")."\n";
 echo file_get_contents("bytecode/shapetable.txt")."\n";
@@ -14,9 +13,25 @@ echo file_get_contents("bytecode/font.txt")."\n";
 echo file_get_contents("bytecode/keyboard.txt")."\n";
 echo file_get_contents("bytecode/symbols013xx.txt")."\n";
 echo file_get_contents("bytecode/symbols010xx.txt")."\n";
+
+if(isset($_GET['path'])){
+    if(file_exists($_GET['path']."/bytecode/shapetable.txt")){
+        echo file_get_contents($_GET['path']."/bytecode/shapetable.txt");
+    }
+    if(file_exists($_GET['path']."/bytecode/font.txt")){
+        echo file_get_contents($_GET['path']."/bytecode/font.txt");
+    }
+}
+
+if(isset($_GET['font'])){
+    echo file_get_contents($_GET['font'])."\n";
+}
+if(isset($_GET['shapetable'])){
+    echo file_get_contents($_GET['shapetable'])."\n";
+}
+
 ?>
-*/
-</script>
+*/</script>
 <script id = "topfunctions">
 <?php
 echo file_get_contents("javascript/topfunctions.txt");
@@ -46,6 +61,19 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "backurldata" style = "display:none"><?php
+
+    if(isset($_GET['backlink'])){
+        echo $_GET['backlink'];
+    }
+    
+
+?></div>
+<div id = "stylejsondiv" style = "display:none"><?php
+
+echo file_get_contents("json/stylejson.txt");
+    
+?></div>
 <div id = "pathdiv" style= "display:none"><?php
 
     if(isset($_GET['path'])){

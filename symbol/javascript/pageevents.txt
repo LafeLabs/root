@@ -54,7 +54,13 @@ document.getElementById("savesvg").onclick = function(){
     var url = "feedsaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
+    
+    if(path.length > 1){
+         httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value) + "&path=" + path);//send text to feedsaver.php
+    }
+    else{
+        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
+    }
     x0 = tempx0;
     y0 = tempy0;
     redraw();
@@ -284,6 +290,7 @@ zoompanbuttons[5].onclick = function(){
 imagedata[0].onchange = function(){
     document.getElementById("mainImage").src = this.value;
     currentJSON.imgurl = this.value;
+    redraw();
 }
     
 imagedata[1].onchange = function(){

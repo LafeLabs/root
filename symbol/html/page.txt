@@ -1,5 +1,6 @@
 <div id = "editmodebutton" class = "button">EDIT</div>
 <a  id = "svglink" href = "svg/">Graphics Feed</a>
+<a id = "backlink" href = ""></a>
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <a  id = "shapetablelink" href = "shapetableeditor.php">shapetableeditor.php</a>
@@ -58,7 +59,7 @@
 
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
-<tr><td class = "button" id = "savespelling">SPELLGLYPH</td></tr>
+<tr><td class = "button" id = "savespelling">SPELL MODE</td></tr>
 <tr><td class = "button" id = "exportjson">EXPORT JSON</td></tr>
 <tr><td class = "button" id = "importjson">IMPORT JSON</td></tr>
 

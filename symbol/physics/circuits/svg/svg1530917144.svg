@@ -1,0 +1,31 @@
+<svg width="300" height="600" viewbox = "0 0 300 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://i.imgur.com/w4UxsFN.jpg",
+    "imgw": 2,
+    "imgleft": -3,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 300,
+    "svgheight": 600,
+    "unit": 194.87171000000015,
+    "x0": 677.4964410000002,
+    "y0": 699.9031570303162,
+    "x0rel": -6.503558999999768,
+    "y0rel": 300.90315703031615,
+    "glyph": "0321,0220,0221,0222,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M143 601 L143 595 L143 583 L122 570 L143 558 L165 546 L143 534 L122 522 L143 510 L165 497 L143 485 L122 473 L143 461 L165 449 L143 436 L143 412 L143 406 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M143 406  M143,406 C143,374 208,357 208,390  M208,390 C208,422 143,390 143,357 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M143 357  M143,357 C143,325 208,309 208,341  M208,341 C208,374 143,341 143,309 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M143 309  M143,309 C143,276 208,260 208,292  M208,292 C208,325 143,292 143,260 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M143 260  M143,260 C143,227 208,211 208,244  M208,244 C208,276 143,244 143,211 " stroke = "black" stroke-width = "10" fill = "none" />    <line x1="143" y1="211" x2="143" y2="162" style="stroke:black;stroke-width:10" />
+    <line x1="143" y1="162" x2="143" y2="138" style="stroke:black;stroke-width:10" />
+    <line x1="143" y1="138" x2="95" y2="138" style="stroke:black;stroke-width:10" />
+    <line x1="143" y1="138" x2="192" y2="138" style="stroke:black;stroke-width:10" />
+    <line x1="143" y1="89" x2="192" y2="89" style="stroke:black;stroke-width:10" />
+    <line x1="143" y1="89" x2="95" y2="89" style="stroke:black;stroke-width:10" />
+    <line x1="143" y1="89" x2="143" y2="65" style="stroke:black;stroke-width:10" />
+    <line x1="143" y1="65" x2="143" y2="16" style="stroke:black;stroke-width:10" />
+</svg>

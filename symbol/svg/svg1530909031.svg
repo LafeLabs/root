@@ -1,0 +1,72 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://i.imgur.com/w4UxsFN.jpg",
+    "imgw": 2,
+    "imgleft": -3,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 110.00000000000003,
+    "x0": 784,
+    "y0": 498.4045946091137,
+    "x0rel": 100,
+    "y0rel": 99.4045946091137,
+    "glyph": "0220,0220,0220,0334,0201,0221,0221,",
+    "table": []
+}
+</json>
+-->
+    <line x1="400" y1="399" x2="400" y2="396" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="396" x2="400" y2="389" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="389" x2="388" y2="382" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="382" x2="400" y2="375" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="375" x2="412" y2="368" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="368" x2="400" y2="362" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="362" x2="388" y2="355" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="355" x2="400" y2="348" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="348" x2="412" y2="341" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="341" x2="400" y2="334" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="334" x2="388" y2="327" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="327" x2="400" y2="320" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="320" x2="412" y2="313" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="313" x2="400" y2="307" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="307" x2="400" y2="293" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="293" x2="400" y2="289" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="289" x2="400" y2="286" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="286" x2="400" y2="279" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="279" x2="388" y2="272" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="272" x2="400" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="265" x2="412" y2="258" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="258" x2="400" y2="252" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="252" x2="388" y2="245" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="245" x2="400" y2="238" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="238" x2="412" y2="231" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="231" x2="400" y2="224" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="224" x2="388" y2="217" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="217" x2="400" y2="210" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="210" x2="412" y2="203" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="203" x2="400" y2="197" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="197" x2="400" y2="183" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="183" x2="400" y2="179" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="179" x2="400" y2="176" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="176" x2="400" y2="169" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="169" x2="388" y2="162" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="162" x2="400" y2="155" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="155" x2="412" y2="148" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="148" x2="400" y2="142" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="142" x2="388" y2="135" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="135" x2="400" y2="128" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="128" x2="412" y2="121" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="121" x2="400" y2="114" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="114" x2="388" y2="107" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="107" x2="400" y2="100" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="100" x2="412" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="412" y1="93" x2="400" y2="87" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="87" x2="400" y2="73" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="73" x2="400" y2="69" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="69" x2="290" y2="69" style="stroke:black;stroke-width:2" />
+<path    d = "M290,69 C272,69 263,33 281,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M281,33 C299,33 281,69 263,69" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M263,69 C244,69 235,33 253,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M253,33 C272,33 253,69 235,69" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M235,69 C217,69 208,33 226,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M226,33 C244,33 226,69 208,69" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M208,69 C189,69 180,33 198,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M198,33 C217,33 198,69 180,69" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M180,69 C162,69 152,33 171,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M171,33 C189,33 171,69 152,69" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M152,69 C134,69 125,33 143,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M143,33 C162,33 143,69 125,69" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M125,69 C107,69 98,33 116,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M116,33 C134,33 116,69 97,69" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M97,69 C79,69 70,33 88,33" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M88,33 C107,33 88,69 70,69" fill = "none" stroke-width = "2" stroke = "black" /></svg>

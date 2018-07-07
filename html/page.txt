@@ -1,6 +1,6 @@
 <div style = "font-family:Helvetica;">
 <a href = "../">../</a>
-<h1 style = "font-size:3em;">Root: The Seven Sources</h1>
+<h1 style = "font-size:2.5m;">Root: The Seven Sources</h1>
 <p>
 </p>
 <ul style = "width:6em;list-style-type: none;font-size:2em;background-color:none;position:absolute;z-index:0;">

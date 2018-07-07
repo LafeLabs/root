@@ -14,6 +14,16 @@ echo file_get_contents("bytecode/font.txt")."\n";
 echo file_get_contents("bytecode/keyboard.txt")."\n";
 echo file_get_contents("bytecode/symbols013xx.txt")."\n";
 echo file_get_contents("bytecode/symbols010xx.txt")."\n";
+
+if(isset($_GET['path'])){
+    if(file_exists($_GET['path']."/bytecode/shapetable.txt")){
+        echo file_get_contents($_GET['path']."/bytecode/shapetable.txt")."\n";
+    }
+    if(file_exists($_GET['path']."/bytecode/font.txt")){
+        echo file_get_contents($_GET['path']."/bytecode/font.txt")."\n";
+    }
+}
+
 ?>
 */
 </script>
@@ -46,6 +56,18 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "pathdiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+
+?></div>
+<div id = "stylejsondiv"  style = "display:none"><?php
+
+echo file_get_contents("json/stylejson.txt");
+    
+?></div>
 <div id = "datadiv" style = "display:none">
 <?php
     echo file_get_contents("json/currentjson.txt");
@@ -118,8 +140,14 @@ function init(){
     doTheThing(06);//import embedded hypercube in this .html doc
     doTheThing(07);//initialize Geometron global variables
 
+path = document.getElementById("pathdiv").innerHTML;
+if(path.length > 1){
+    document.getElementById("factorylink").href = "index.php?path=" + path;
+}
+
 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
+styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
 
 imagedata[0].value = currentJSON.imgurl;
 imagedata[1].value = currentJSON.imgw;
@@ -180,18 +208,41 @@ function redraw(){
     document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
     document.getElementById("glyphspellinput").value = cleanGlyph;
     
-    currentFile = "bytecode/shapetable.txt";
+
+
+if(currentAddress >= 0220 && currentAddress < 0277){
+    if(path.length > 1){
+        currentFile = path + "bytecode/shapetable.txt";
+    }
+    else{
+        currentFile = "bytecode/shapetable.txt";
+    }
     data = "";
-    for(var index = 0220;index < 0250;index++){
+    for(var index = 0220;index < 0277;index++){
         if(currentTable[index].length > 2){
             data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
         }
     }
-    for(var index = 01220;index < 01250;index++){
+    for(var index = 01220;index < 01277;index++){
         if(currentTable[index].length > 2){
             data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
         }
     }
+}
+if(currentAddress >= 01040 && currentAddress < 01177){
+    if(path.length > 1){
+        currentFile = path + "bytecode/font.txt";
+    }
+    else{
+        currentFile = "bytecode/font.txt";
+    }
+    data = "";
+    for(var index = 01040;index < 01177;index++){
+        if(currentTable[index].length > 2){
+            data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+        }
+    }
+}
     
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
@@ -199,21 +250,6 @@ function redraw(){
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
 
-
-    if(currentAddress >= 01040 && currentAddress < 01177){
-        data = "";
-        for(var index = 01040;index < 01177;index++){
-            if(currentTable[index].length > 2){
-                data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
-            }
-        }
-        currentFile = "bytecode/font.txt";
-        var httpc2 = new XMLHttpRequest();
-        var url = "filesaver.php";        
-        httpc2.open("POST", url, true);
-        httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-        httpc2.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
-    }
 
 }
 </script>

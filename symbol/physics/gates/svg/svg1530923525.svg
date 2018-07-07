@@ -1,0 +1,41 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 133.10000000000005,
+    "x0": 456,
+    "y0": 313.6795594770276,
+    "x0rel": 0,
+    "y0rel": 47.679559477027624,
+    "glyph": "0336,0336,0336,0333,0337,0337,0337,0330,0332,0321,0230,0336,0236,0337,0332,0332,0336,0333,0242,0331,0331,0243,0333,0333,0333,0236,",
+    "table": []
+}
+</json>
+-->
+    <line x1="84" y1="115" x2="217" y2="115" style="stroke:black;stroke-width:5" />
+    <line x1="84" y1="248" x2="217" y2="248" style="stroke:black;stroke-width:5" />
+    <circle cx="150" cy = "248" r = "16.637500000000006" stroke = "black" stroke-width = "5" fill = "none" />
+    <line x1="150" y1="248" x2="150" y2="264" style="stroke:black;stroke-width:5" />
+    <line x1="150" y1="248" x2="150" y2="115" style="stroke:black;stroke-width:5" />
+    <circle cx="150" cy = "115" r = "16.637500000000006" stroke = "black" stroke-width = "5" fill = "black" />
+    <line x1="217" y1="115" x2="283" y2="115" style="stroke:black;stroke-width:5" />
+	<path d = "M283 148 L283 81 L350 81 L383 81 L383 115 L383 148 L350 148 L316 148 L283 148 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M289.0715489794885 122.43472142833302           A50.839676097389024 50.839676097389024 0 0 1 377.12845102051136 122.43472142833299" fill = "none" stroke = "black" stroke-width = "5" />
+    <line x1="333" y1="148" x2="366" y2="90" style="stroke:black;stroke-width:5" />
+    <line x1="366" y1="90" x2="359" y2="94" style="stroke:black;stroke-width:5" />
+    <line x1="366" y1="90" x2="366" y2="99" style="stroke:black;stroke-width:5" />
+	<path d = "M366 99 L366 90 L359 94 Z" stroke = "black" stroke-width = "5" fill = "none" />    <text x="21" y = "106" fill = "black" font-size = "33.27500000000001px" font-family = "arial">1</text>
+	<path d = "M21 115 L21 81 L21 65 L17 65 L17 81 L17 98 L17 115 L21 115 Z" stroke = "black" stroke-width = "5" fill = "black" />	<path d = "M54 115 L62 102 L69 90 L62 77 L54 65 L51 65 L65 90 L51 115 L54 115 Z" stroke = "black" stroke-width = "5" fill = "black" />    <text x="21" y = "239" fill = "black" font-size = "33.27500000000001px" font-family = "arial">0</text>
+	<path d = "M21 248 L21 214 L21 198 L17 198 L17 214 L17 231 L17 248 L21 248 Z" stroke = "black" stroke-width = "5" fill = "black" />	<path d = "M54 248 L62 235 L69 223 L62 210 L54 198 L51 198 L65 223 L51 248 L54 248 Z" stroke = "black" stroke-width = "5" fill = "black" />    <line x1="217" y1="248" x2="283" y2="248" style="stroke:black;stroke-width:5" />
+	<path d = "M283 281 L283 214 L350 214 L383 214 L383 248 L383 281 L350 281 L316 281 L283 281 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M289.0715489794903 255.53472142833448           A50.839676097389024 50.839676097389024 0 0 1 377.128451020513 255.5347214283336" fill = "none" stroke = "black" stroke-width = "5" />
+    <line x1="333" y1="281" x2="366" y2="223" style="stroke:black;stroke-width:5" />
+    <line x1="366" y1="223" x2="359" y2="227" style="stroke:black;stroke-width:5" />
+    <line x1="366" y1="223" x2="366" y2="232" style="stroke:black;stroke-width:5" />
+	<path d = "M366 232 L366 223 L359 227 Z" stroke = "black" stroke-width = "5" fill = "none" /></svg>
