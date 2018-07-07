@@ -1,0 +1,31 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -3,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 82.64462809917356,
+    "x0": 676.2418561171551,
+    "y0": 429.88302674557343,
+    "x0rel": -7.758143882844934,
+    "y0rel": 30.88302674557343,
+    "glyph": "0220,0221,0222,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M292 331 L292 328 L292 323 L283 318 L292 313 L301 308 L292 302 L283 297 L292 292 L301 287 L292 282 L283 277 L292 271 L301 266 L292 261 L292 251 L292 248 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M292 248  M292,248 C292,234 320,228 320,241  M320,241 C320,255 292,241 292,228  M292,228 C292,214 320,207 320,221  M320,221 C320,234 292,221 292,207  M292,207 C292,193 320,186 320,200  M320,200 C320,214 292,200 292,186  M292,186 C292,172 320,166 320,179  M320,179 C320,193 292,179 292,166 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="292" y1="166" x2="292" y2="145" style="stroke:black;stroke-width:2" />
+    <line x1="292" y1="145" x2="292" y2="135" style="stroke:black;stroke-width:2" />
+    <line x1="292" y1="135" x2="272" y2="135" style="stroke:black;stroke-width:2" />
+    <line x1="292" y1="135" x2="313" y2="135" style="stroke:black;stroke-width:2" />
+    <line x1="292" y1="114" x2="313" y2="114" style="stroke:black;stroke-width:2" />
+    <line x1="292" y1="114" x2="272" y2="114" style="stroke:black;stroke-width:2" />
+    <line x1="292" y1="114" x2="292" y2="104" style="stroke:black;stroke-width:2" />
+    <line x1="292" y1="104" x2="292" y2="83" style="stroke:black;stroke-width:2" />
+</svg>

@@ -27,14 +27,14 @@
     <line x1="103" y1="141" x2="103" y2="103" style="stroke:black;stroke-width:2" />
     <circle cx="103" cy = "103" r = "4.695717505634861" stroke = "black" stroke-width = "2" fill = "black" />
     <line x1="122" y1="103" x2="131" y2="103" style="stroke:black;stroke-width:2" />
-	<path d = "M150 113 L150 94 L131 94 L131 113 L150 113 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="136" y = "108" fill = "black" font-size = "9.391435011269722px" font-family = "arial">H</text>
+	<path d = "M150 113 L150 94 L131 94 L131 113 L150 113 " stroke = "black" stroke-width = "2" fill = "none" />    <text x="136" y = "108" fill = "black" font-size = "9.391435011269722px" font-family = "arial">H</text>
     <line x1="150" y1="103" x2="159" y2="103" style="stroke:black;stroke-width:2" />
     <line x1="159" y1="103" x2="169" y2="103" style="stroke:black;stroke-width:2" />
-	<path d = "M188 113 L188 94 L169 94 L169 113 L188 113 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="173" y = "108" fill = "black" font-size = "9.391435011269722px" font-family = "arial">X</text>
+	<path d = "M188 113 L188 94 L169 94 L169 113 L188 113 " stroke = "black" stroke-width = "2" fill = "none" />    <text x="173" y = "108" fill = "black" font-size = "9.391435011269722px" font-family = "arial">X</text>
     <line x1="188" y1="103" x2="197" y2="103" style="stroke:black;stroke-width:2" />
     <line x1="197" y1="103" x2="235" y2="103" style="stroke:black;stroke-width:2" />
-	<path d = "M235 122 L235 85 L272 85 L291 85 L291 103 L291 122 L272 122 L253 122 L235 122 Z" stroke = "black" stroke-width = "2" fill = "none" />  <path d="M237.84430735350833 107.86931493091868           A28.697671769354262 28.697671769354262 0 0 1 287.55013291696497 107.86931493091869" fill = "none" stroke = "black" stroke-width = "2" />
+	<path d = "M235 122 L235 85 L272 85 L291 85 L291 103 L291 122 L272 122 L253 122 L235 122 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M237.84430735350833 107.86931493091868           A28.697671769354262 28.697671769354262 0 0 1 287.55013291696497 107.86931493091869" fill = "none" stroke = "black" stroke-width = "2" />
     <line x1="263" y1="122" x2="281" y2="90" style="stroke:black;stroke-width:2" />
     <line x1="281" y1="90" x2="277" y2="92" style="stroke:black;stroke-width:2" />
     <line x1="281" y1="90" x2="281" y2="94" style="stroke:black;stroke-width:2" />
-	<path d = "M281 94 L281 90 L277 92 Z" stroke = "black" stroke-width = "2" fill = "none" /></svg>
+	<path d = "M281 94 L281 90 L277 92 " stroke = "black" stroke-width = "2" fill = "none" /></svg>

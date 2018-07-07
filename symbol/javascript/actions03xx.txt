@@ -319,7 +319,7 @@
     }
     if(localCommand == 0364){
         ctx.closePath();
-        currentSVG += "Z\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + (ctx.lineWidth).toString() + "\" fill = \"" + "none" + "\" "+"/>";
+        currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + (ctx.lineWidth).toString() + "\" fill = \"" + "none" + "\" "+"/>";
     }
     if(localCommand == 0365){//<page0365>
     ctx.font=side.toString(8) + "px " + myFont;
