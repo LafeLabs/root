@@ -22,12 +22,14 @@ EGO DEATH:
 <script id = "bytecodeScript">
 /*
 <?php
-echo file_get_contents("bytecode/baseshapes.txt")."\n";
+echo file_get_contents("../symbol/bytecode/baseshapes.txt")."\n";
 echo file_get_contents("bytecode/shapetable.txt")."\n";
 echo file_get_contents("bytecode/font.txt")."\n";
 //echo file_get_contents("bytecode/keyboard.txt")."\n";
-echo file_get_contents("bytecode/symbols013xx.txt")."\n";
-echo file_get_contents("bytecode/symbols010xx.txt")."\n";
+echo file_get_contents("../symbol/bytecode/symbols013xx.txt")."\n";
+echo file_get_contents("../symbol/bytecode/symbols010xx.txt")."\n";
+
+
 ?>
 */
 </script>
@@ -51,15 +53,27 @@ function doTheThing(localCommand){
             drawGlyph(currentTable[localCommand]);    	    
     } 
     <?php
-    echo file_get_contents("javascript/actions03xx.txt");
+    echo file_get_contents("../symbol/javascript/actions03xx.txt");
     echo "\n";
-    echo file_get_contents("javascript/actions0xx.txt");
+    echo file_get_contents("../symbol/javascript/actions0xx.txt");
     echo "\n";
     ?>    
 }
 </script>
 </head>
 <body>
+<div id = "pathdiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+
+?></div>
+<div id = "stylejsondiv" style = "display:none"><?php
+
+echo file_get_contents("../symbol/json/stylejson.txt");
+    
+?></div>
 <div id = "datadiv" style = "display:none">
 <?php
     echo file_get_contents("json/currentjson.txt");
@@ -115,6 +129,9 @@ function init(){
 
     doTheThing(06);//import embedded hypercube in this .html doc
     doTheThing(07);//initialize Geometron global variables
+
+    styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
+    path = document.getElementById("pathdiv").innerHTML;
 
     document.getElementById("mainCanvas").width = innerWidth;
     document.getElementById("mainCanvas").height = innerHeight;
@@ -440,5 +457,5 @@ img{
 }
 
 </style>
-<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="000webhost logo" rel="nofollow" target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_campaign=ss-footer_logo&amp;utm_medium=000_logo&amp;utm_content=website"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png" alt="000webhost logo"></a></div></body>
-</html> 
+</body>
+</html>

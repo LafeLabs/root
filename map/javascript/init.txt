@@ -1,6 +1,10 @@
 doTheThing(06);//import embedded hypercube in this .html doc
 doTheThing(07);//initialize Geometron global variables
 
+styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
+path = document.getElementById("pathdiv").innerHTML;
+
+
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 

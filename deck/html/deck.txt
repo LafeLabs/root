@@ -16,3 +16,11 @@
     <div class="content"><img src="../symbol/physics/gates/svg/svg1530987628.svg"></div>
 </div></div>
 
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><a href="../symbol/index.php?path=physics/gates/&amp;backlink=../deck/index.php?page=1"><img src="../symbol/physics/gates/currentsvg.svg"></a></div>
+</div></div>

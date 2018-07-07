@@ -2,21 +2,21 @@
     <div class="pagejson">{
     "x0rel": 0,
     "y0rel": 0,
-    "unitrel": 1
+    "unitrel": 0.909090909090909
 }</div>
     <div class="box">
-        <div class="glyphdata">0330,0330,0337,0337,</div>
+        <div class="glyphdata">0330,0330,0337,</div>
         <div class="content"><h2>Foo/Bar:</h2>
 <p>
     foo bar!
 </p>
 <a href="index.php">index.php</a></div>
     </div>
-<div class="box"><div class="glyphdata">0332,0331,0332,0330,0330,0332,0332,0337,</div>
+<div class="box"><div class="glyphdata">0330,0333,0333,0333,</div>
     <div class="content">$$
 a^2 + b^2 = c^2
 $$</div>
-</div><div class="box"><div class="glyphdata">0333,0333,0331,0332,0332,0332,0333,0331,0337,0337,0337,</div>
+</div><div class="box"><div class="glyphdata">0330,0332,0332,0332,0332,0337,0337,</div>
     <div class="content"><img style="border:solid;" src="..//symbol/physics/gates/svg/svg1530923426.svg"></div>
 </div></div>
 <div class="page">
