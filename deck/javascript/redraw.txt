@@ -44,7 +44,15 @@ for(var index = 0;index < boxes.length;index++){
 
 MathJax.Hub.Typeset();//tell Mathjax to update the math
 
-currentFile = "html/deck.txt"
+if(path.length>1){
+    currentFile = path + "html/deck.txt";
+}
+else{
+    currentFile = "html/deck.txt";
+}
+
+
+
 data = encodeURIComponent(document.getElementById("shadowdatadiv").innerHTML);
 var httpc = new XMLHttpRequest();
 var url = "filesaver.php";        

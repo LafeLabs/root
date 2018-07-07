@@ -7,8 +7,13 @@ buttons[0].onclick = function(){
     var url = "feedsaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    httpc.send("data=" + encodeURIComponent(document.getElementById("shadowdatadiv").innerHTML));//send text to saver.php
-    
+
+    if(path.length>1){
+        httpc.send("data=" + encodeURIComponent(document.getElementById("shadowdatadiv").innerHTML) + "&path=" + path);//send text to saver.php
+    }
+    else{
+        httpc.send("data=" + encodeURIComponent(document.getElementById("shadowdatadiv").innerHTML));//send text to saver.php
+    }
 }
 
 buttons[1].onclick = function(){

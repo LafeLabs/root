@@ -38,7 +38,6 @@
         $feedpath = "decks/";
     }
 
-
     $data = $_POST["data"]; //get data 
     $filename = "deck".time().".txt";
     $file = fopen($feedpath.$filename,"w");// create new file with this name

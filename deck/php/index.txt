@@ -80,10 +80,24 @@ echo file_get_contents("json/stylejson.txt");
 
 ?></div>
 <div id = "datadiv"><?php
-    echo file_get_contents("html/deck.txt");
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."/html/deck.txt");
+    }
+    else{
+        echo file_get_contents("html/deck.txt");
+    }
+
 ?></div>    
 <div id = "shadowdatadiv"  style = "display:none" class = "no-mathjax"><?php
-    echo file_get_contents("html/deck.txt");
+    
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."/html/deck.txt");
+    }
+    else{
+        echo file_get_contents("html/deck.txt");
+    }
+
 ?></div>    
 <div id = "extdatadiv" style = "display:none"><?php
 if(isset($_GET['url'])){

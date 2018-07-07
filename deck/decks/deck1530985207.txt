@@ -1,0 +1,45 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0337,0337,</div>
+        <div class="content"><h2>Title</h2>
+<p>
+    paragraph
+</p>
+<a href="index.php?path=foo/bar/">index.php?path=foo/bar/</a></div>
+    </div>
+</div>
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0337,0337,</div>
+    <div class="content"><img src="http://geometron.000webhostapp.com/replicators/symbol/svg/svg1530496339.svg"></div>
+</div><div class="box"><div class="glyphdata">0331,0336,0330,0333,0333,0337,</div>
+    <div class="content">$$
+Z_C = \frac{1}{i\omega C}
+$$</div>
+</div><div class="box"><div class="glyphdata">0332,0334,0336,0331,0337,</div>
+    <div class="content">$$
+Z_{\textrm{total}}
+= R + Z_C
+$$</div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": -0.5012531328320802,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0337,0337,</div>
+    <div class="content"><img src="https://i.imgur.com/mA8WI4C.png"></div>
+</div><div class="box"><div class="glyphdata">0333,0333,</div>
+    <div class="content">
+    foo</div>
+</div><div class="box"><div class="glyphdata">0330,0330,0332,0332,</div>
+    <div class="content">
+    </div>
+</div></div>
