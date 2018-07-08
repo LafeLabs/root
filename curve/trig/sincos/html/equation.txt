@@ -1,10 +1,10 @@
 
-<h2>Equation Scroll</h2>
+<h2>Sin/Cos</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-(X,Y) = (e^{-t/\tau}\cos{\frac{2\pi t}{T}},e^{-t/\tau}\sin{\frac{2\pi t}{T}})
+Y = \cos{\phi + \frac{2\pi X}{T}}
 
 $$
 </p>

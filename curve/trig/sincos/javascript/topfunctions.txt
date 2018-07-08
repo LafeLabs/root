@@ -1,43 +1,11 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function YofX(){
+//foobar foobar
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.a*X*X*X + funcparams.b*X*X + funcparams.c*X + funcparams.d;
+    Y = Math.sin(funcparams.phi + (Math.PI*2*X/funcparams.T));
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
-
+//foo
 function YofX2(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = funcparams.b*X*X + funcparams.c*X + funcparams.d;
@@ -55,7 +23,7 @@ function XYofT(){
 
 function plotfunction(){
 
-
+/*
     currentStroke = "blue";
     currentLineWidth = 4;
     ctx.strokeStyle = currentStroke;
@@ -78,7 +46,7 @@ function plotfunction(){
     currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
 
 
-    /*plot one function:
+    /*plot one function:*/
     currentStroke = "blue";
     currentLineWidth = 4;
     ctx.strokeStyle = currentStroke;

@@ -142,10 +142,14 @@ if(isset($_GET['url'])){
     $outcode = explode("<equation>",$topcode)[1];
     echo $outcode;
 }
-else{
-    $data = file_get_contents("html/equation.txt");
-    echo $data;
+
+if(isset($_GET['path'])){
+    echo file_get_contents($_GET['path']."html/equation.txt");
 }
+if(!isset($_GET['path']) && !isset($_GET['url'])){
+    echo file_get_contents("html/equation.txt");
+}
+
 
 ?></div>
 <div id = "equation">
@@ -158,10 +162,13 @@ if(isset($_GET['url'])){
     $outcode = explode("<equation>",$topcode)[1];
     echo $outcode;
 }
-else{
-    $data = file_get_contents("html/equation.txt");
-    echo $data;
+if(isset($_GET['path'])){
+    echo file_get_contents($_GET['path']."html/equation.txt");
 }
+if(!isset($_GET['path']) && !isset($_GET['url'])){
+    echo file_get_contents("html/equation.txt");
+}
+
 ?>
 </div>
     <div class = "button" id = "publish">PUBLISH</div>

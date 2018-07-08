@@ -1,39 +1,5 @@
 
 
-
-
-foo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = funcparams.a*X*X*X + funcparams.b*X*X + funcparams.c*X + funcparams.d;
@@ -104,7 +70,6 @@ function plotfunction(){
     
 
 }
-
 
 
 

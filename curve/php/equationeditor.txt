@@ -12,10 +12,13 @@ if(isset($_GET['url'])){
     $outcode = explode("<topfunctions>",$topcode)[1];
     echo $outcode;
 }
-else{
-    $data = file_get_contents("javascript/topfunctions.txt");
-    echo $data;
+if(isset($_GET['path'])){
+    echo file_get_contents($_GET['path']."javascript/topfunctions.txt");
 }
+if(!isset($_GET['url']) && !isset($_GET['path'])){
+    echo file_get_contents("javascript/topfunctions.txt");
+}
+
 ?>
 
 </script>
@@ -88,7 +91,17 @@ else{
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
 <canvas id = "mainCanvas"></canvas>
-<div id = "mathscroll"></div>
+<div id = "mathscroll"><?php
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."html/equation.txt");
+    }
+    else{
+        echo file_get_contents("html/equation.txt");
+    }
+
+?></div>
+
 
 <div id = "filescroll">
 
@@ -108,7 +121,7 @@ function init(){
     if(path.length > 1){
         document.getElementById("indexlink").href = "index.php?path=" + path;
     }
-    
+
     backlink = document.getElementById("backurldata").innerHTML;
     currentjson = JSON.parse(document.getElementById("jsondatadiv").innerHTML);
 
@@ -119,9 +132,7 @@ function init(){
         plotdata  = JSON.parse(document.getElementById("plotdatadiv").innerHTML);
     }
 
-    
 }
-
 
 redraw();
 function redraw(){
@@ -146,12 +157,8 @@ function redraw(){
 
 }
 
-if(path.length>1){
-    currentFile = path + "javascript/topfunctions.txt";
-}
-else{
-    currentFile = "javascript/topfunctions.txt";
-}
+    
+currentFile = "javascript/topfunctions.txt";
 
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
@@ -160,31 +167,24 @@ httpc.onreadystatechange = function() {
         editor.setValue(filedata);
     }
 };
-httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
-httpc.send();
 
 if(path.length>1){
-    currentFile2 = path + "html/equation.txt";
+    httpc.open("GET", "fileloader.php?filename=" + path + currentFile, true);
 }
 else{
-    currentFile2 = "html/equation.txt";
+    httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
 }
 
-var httpc2 = new XMLHttpRequest();
-httpc2.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        filedata2 = this.responseText;
-        document.getElementById("mathscroll").innerHTML = filedata2;
-        MathJax.Hub.Typeset();//tell Mathjax to update the math
-    }
-};
-httpc2.open("GET", "fileloader.php?filename=" + currentFile2, true);
-httpc2.send();
+httpc.send();
+
 
 files = document.getElementById("filescroll").getElementsByClassName("file");
 for(var index = 0;index < files.length;index++){
     files[index].onclick = function(){
+
         currentFile = this.innerHTML;
+        
+        
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {
@@ -196,7 +196,13 @@ for(var index = 0;index < files.length;index++){
               
             }
         };
-        httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+
+        if(path.length>1){
+            httpc.open("GET", "fileloader.php?filename=" + path + currentFile, true);
+        }
+        else{
+            httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+        }
         httpc.send();
         if(this.classList[0] == "css"){
             editor.getSession().setMode("ace/mode/css");
@@ -237,6 +243,7 @@ for(var index = 0;index < files.length;index++){
         document.getElementById("namediv").innerHTML = currentFile;
     }
 }
+
 document.getElementById("namediv").innerHTML = currentFile;
 document.getElementById("namediv").style.color = "#ff0000";
 document.getElementById("namediv").style.borderColor = "#ff0000";
@@ -254,7 +261,14 @@ document.getElementById("maineditor").onkeyup = function(){
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+    if(path.length > 1){
+        httpc.send("data="+data+"&filename=" + path +  currentFile);//send text to filesaver.php
+    }
+    else{
+        httpc.send("data="+data+"&filename=" + currentFile);//send text to filesaver.php
+    }
+
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
     
@@ -332,7 +346,7 @@ body{
 #filescroll{
     position:absolute;
     overflow:scroll;
-    top:60%;
+    top:80%;
     bottom:0%;
     right:0%;
     left:75%;
@@ -343,6 +357,8 @@ body{
     font-family:courier;
     font-size:18px;
 }
+
+
 #indexlink{
     position:absolute;
     top:0.5em;
