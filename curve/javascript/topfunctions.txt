@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = funcparams.a*X*X*X + funcparams.b*X*X + funcparams.c*X + funcparams.d;
@@ -9,7 +16,7 @@ function YofX2(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = funcparams.b*X*X + funcparams.c*X + funcparams.d;
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
-}
+ }
 
 function XYofT(){
     T = plotparams.g*t;
@@ -70,7 +77,7 @@ function plotfunction(){
 }
 
 
-   
-   
-  
-   
+
+
+
+

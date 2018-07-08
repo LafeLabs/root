@@ -16,7 +16,14 @@ document.getElementById("savesvg").onclick = function(){
         var url = "feedsaver.php";        
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
+    
+        if(path.length > 1){
+             httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value) + "&path=" + path);//send text to feedsaver.php
+        }
+        else{
+            httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
+        }
+    
         x0 = tempx0;
         y0 = tempy0;
         redraw();
@@ -28,9 +35,43 @@ document.getElementById("savesvg").onclick = function(){
         var url = "mapsaver.php";        
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.send("data=" + encodeURIComponent(JSON.stringify(currentJSON,null,"    ")));//send text to mapsaver.php
-}
+        if(path.length > 1){
+            httpc.send("data=" + encodeURIComponent(JSON.stringify(currentJSON,null,"    ")) + "&path=" + path);//send text to mapsaver.php
+        }
+        else{
+            httpc.send("data=" + encodeURIComponent(JSON.stringify(currentJSON,null,"    ")));//send text to mapsaver.php
+        }
+ }
  
+  document.getElementById("loadmap").onclick = function(){
+        var httpc = new XMLHttpRequest();
+        var url = "maploader.php";        
+
+        httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                currentJSON = JSON.parse(this.responseText);
+                unit = currentJSON.unitpixels;
+                document.getElementById("mainImage").src = currentJSON.imgurl;
+                imagedata[0].value = currentJSON.imgurl;
+                imagedata[1].value = currentJSON.imgw;
+                imagedata[2].value = currentJSON.imgtop;
+                imagedata[3].value = currentJSON.imgleft;
+                currentGlyph = currentJSON.currentGlyph + ",0207,";
+                redraw();
+            }
+        };
+        httpc.open("GET", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        if(path.length > 1){
+            httpc.send("&path=" + path);//send text to mapsaver.php
+        }
+        else{
+            httpc.send();//send text to mapsaver.php
+        }
+ }
+ 
+
  document.getElementById("findme").onclick = function(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);

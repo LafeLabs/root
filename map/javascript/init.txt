@@ -4,6 +4,9 @@ doTheThing(07);//initialize Geometron global variables
 styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
 path = document.getElementById("pathdiv").innerHTML;
 
+if(path.length > 1){
+    document.getElementById("indexlink").href = "index.php?path=" + path;
+}
 
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
@@ -61,6 +64,7 @@ for(var index = 0;index < currentJSON.images.length;index++){
 imgs = document.getElementsByClassName("imgs");
 currentGlyph = currentJSON.currentGlyph + ",0207,";
 herelatlon = currentJSON.latlon0;
+
 glyphEditMode = true;
 shapeTableEditMode = false;
 mainImageOn = true;

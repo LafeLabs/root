@@ -1,3 +1,5 @@
+
+<h2>Equation Scroll</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">

@@ -12,18 +12,18 @@ table input{
 }
 #editorlink{
     position:absolute;
-    top:0.2em;
-    right:15em;
+    top:22em;
+    right:1em;
 }
 #uplink{
     position:absolute;
-    top:1.2em;
-    right:15em;
+    top:23em;
+    right:1em;
 }
 #svgindexlink{
     position:absolute;
-    top:2.2em;
-    right:15em;
+    top:24em;
+    right:1em;
 }
  #textIO{
     position:absolute;
@@ -36,9 +36,9 @@ table input{
 
 #equation{
     position:absolute;
-    left:40%;
+    left:30%;
     top:60%;
-    right:20%;
+    right:30%;
     bottom:1em;
     border:solid;
     padding:0.5em 0.5em 0.5em 0.5em;

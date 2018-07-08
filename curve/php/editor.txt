@@ -8,8 +8,7 @@
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
-    <a href = "metacreator.php" >metacreator.php</a>
-    <a href = "dnagenerator.php" >dnagenerator.php</a>
+    <a href = "svgfeed.php">svgfeed.php</a>
     <a href = "equationeditor.php">equationeditor.php</a>
 
 </div>
@@ -21,28 +20,25 @@
     <div class = "css file">css/style.txt</div>
 
     <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/jslibrary.txt</div>
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
     <div class = "javascript file">javascript/pageevents.txt</div>
 
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/feedsaver.txt</div>
-    <div class = "php file">php/creator.txt</div>
-    <div class = "php file">php/metacreator.txt</div>
     <div class = "php file">php/equationeditor.txt</div>
-
-
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/dnagenerator.txt</div>
+
+    <div class = "php file">php/svgfeed.txt</div>
+
+    <div class = "php file">php/tree.txt</div>
+    <div class = "php file">php/newdir.txt</div>
 
     <div class = "json file">json/plotdata.txt</div>
     <div class = "json file">json/currentjson.txt</div>
-    <div class = "json file">json/dna.txt</div>
 
 </div>
 

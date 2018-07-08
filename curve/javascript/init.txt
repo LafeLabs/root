@@ -1,3 +1,7 @@
+    path = document.getElementById("pathdiv").innerHTML;
+    backlink = document.getElementById("backurldata").innerHTML;
+
+
 currentjson = JSON.parse(document.getElementById("jsondatadiv").innerHTML);
 constants = currentjson.constants;
 plotparams = currentjson.plotparams;
@@ -43,8 +47,6 @@ for(var param in funcparams){
     document.getElementById("funcparamstable").appendChild(newtr);
 }
 
-
-document.getElementById("eqtext").value = document.getElementById("shadowequation").innerHTML;
 
 //save equation in html/equation.txt
 currentFile = "html/equation.txt"

@@ -33,6 +33,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "latlon.php">latlon.php</a>
+    <a href = "mapeditor.php">mapeditor.php</a>
     <a href = "tree.php">tree.php</a>
 
 </div>
@@ -58,6 +59,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/mapsaver.txt</div>
+    <div class = "php file">php/maploader.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/linkeditor.txt</div>
     <div class = "php file">php/imageeditor.txt</div>
@@ -66,8 +68,10 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/latlon.txt</div>
     <div class = "php file">php/savemap.txt</div>
     <div class = "php file">php/loadrecentmap.txt</div>
+    <div class = "php file">php/loadmap.txt</div>
     <div class = "php file">php/newdir.txt</div>
     <div class = "php file">php/tree.txt</div>
+    <div class = "php file">php/mapeditor.txt</div>
 
     <div class = "json file">json/currentjson.txt</div>
     <div class = "json file">json/world.txt</div>

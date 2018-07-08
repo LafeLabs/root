@@ -1,4 +1,5 @@
 <?php
+
     $data = file_get_contents("json/currentjson.txt"); 
 
     $filename = "map".time().".txt";

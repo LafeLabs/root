@@ -129,6 +129,10 @@ function latlon2xy(latlonin) {
                 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
 
                 path = document.getElementById("pathdiv").innerHTML;
+                if(path.length > 1){
+                    document.getElementById("indexLink").href = "index.php?path=" + path;
+                }
+
                 document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
                 linkIndex = 0;
                 inputs = document.getElementsByTagName("input");

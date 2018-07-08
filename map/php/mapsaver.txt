@@ -10,14 +10,25 @@ document.getElementById("savemap").onclick = function(){
 }
 
 */
+
+    if(isset($_POST['path'])){
+        $path = $_POST['path'];
+        $indexpath = $path."maps/index.html";
+        $feedpath = $path."maps/";   
+    }
+    else{
+        $indexpath = "maps/index.html";
+        $feedpath = "maps/";
+    }
+
     $data = $_POST["data"]; //get data 
     $filename = "map".time().".txt";
-    $file = fopen("maps/".$filename,"w");// create new file with this name
+    $file = fopen($feedpath.$filename,"w");// create new file with this name
     fwrite($file,$data); //write data to file
     fclose($file);  //close file
 
-    $oldfeed = file_get_contents("maps/index.html"); 
-    $file = fopen("maps/index.html","w");// create new file with this name
+    $oldfeed = file_get_contents($indexpath); 
+    $file = fopen($indexpath,"w");// create new file with this name
     fwrite($file,"<p><a href = \"".$filename."\">".$filename."</a></p>\n".$oldfeed); //write data to file
     fclose($file);  //close file
 

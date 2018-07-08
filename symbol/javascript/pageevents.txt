@@ -40,7 +40,7 @@ document.getElementById("savesvg").onclick = function(){
     svgwidth = currentJSON.svgwidth;
     svgheight = currentJSON.svgheight;
     tempx0 = x0;
-    tempy0 = y0;        
+    tempy0 = y0;
     x0 -= 0.5*(innerWidth - svgwidth);
     y0 -= 0.5*(innerHeight - svgheight);
     ctx = document.getElementById("invisibleCanvas").getContext("2d");
@@ -65,7 +65,8 @@ document.getElementById("savesvg").onclick = function(){
     x0 = tempx0;
     y0 = tempy0;
     redraw();
- }
+ 
+}
  
 saveSVG(); 
 function saveSVG(){

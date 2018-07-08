@@ -8,7 +8,7 @@ currentSVG += "\n<!--\n<imgurl>\n" + document.getElementById("imgurlinput").valu
 
 currentSVG += "\n<!--\n<currentjson>\n" + JSON.stringify(currentjson,null, "    ") + "\n</currentjson>\n-->\n";
 
-currentSVG += "\n<!--\n<equation>\n" + document.getElementById("eqtext").value + "\n</equation>\n-->\n";
+currentSVG += "\n<!--\n<equation>\n" + document.getElementById("shadowequation").innerHTML + "\n</equation>\n-->\n";
 
 
 document.getElementById("mainCanvas").width = plotparams.plotwidth;
@@ -22,10 +22,10 @@ ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0, 0, plotparams.plotwidth,plotparams.plotheight);
 ctx.lineWidth = 2;
 
-
 plotfunction();
 
 currentSVG += "</svg>";
+
 document.getElementById("textIO").value = currentSVG;
 
 currentjson = {};
@@ -34,10 +34,25 @@ currentjson.imgurl = document.getElementById("imgurlinput").value;
 currentjson.plotparams = plotparams;
 currentjson.funcparams = funcparams;
 
-currentFile = "json/currentjson.txt"
+
+if(path.length>1){
+    currentFile = path + "json/currentjson.txt";
+}
+else{
+    currentFile = "json/currentjson.txt";
+}
+
+
 data = encodeURIComponent(JSON.stringify(currentjson,null, "    "));
 var httpc = new XMLHttpRequest();
 var url = "filesaver.php";        
 httpc.open("POST", url, true);
 httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
 httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+data2 = encodeURIComponent(currentSVG);
+var httpc2 = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc2.open("POST", url, true);
+httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc2.send("data="+data2+"&filename="+"currentsvg.svg");//send text to filesaver.php

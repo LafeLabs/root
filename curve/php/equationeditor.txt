@@ -2,25 +2,145 @@
 <html>
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+<script id = "topfunctions">
+
+<?php
+if(isset($_GET['url'])){
+    $urlfilename = $_GET['url'];
+    $svgcode = file_get_contents($_GET['url']);
+    $topcode = explode("</topfunctions>",$svgcode)[0];
+    $outcode = explode("<topfunctions>",$topcode)[1];
+    echo $outcode;
+}
+else{
+    $data = file_get_contents("javascript/topfunctions.txt");
+    echo $data;
+}
+?>
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
+
 <title>PHP Editor replicator</title>
 </head>
 <body>
-<div id = "linkscroll">
-    <a href = "editor.php">editor.php</a>
-    <a href = "index.php">index.php</a>
+<div id = "backurldata" style = "display:none"><?php
 
-</div>
+    if(isset($_GET['backlink'])){
+        echo $_GET['backlink'];
+    }
+    
+
+?></div>
+<div id = "pathdiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+
+?></div>
+<div id = "plotdatadiv" style = "display:none;"><?php
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."json/plotdata.txt");
+    }
+    else{
+        echo file_get_contents("json/plotdata.txt");
+    }
+
+?></div>
+    
+<div id = "jsondatadiv" style = "display:none;"><?php
+
+    if(isset($_GET['url'])){
+        $urlfilename = $_GET['url'];
+        $svgcode = file_get_contents($_GET['url']);
+        $topcode = explode("</currentjson>",$svgcode)[0];
+        $outcode = explode("<currentjson>",$topcode)[1];
+        echo $outcode;
+    }
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."json/currentjson.txt");
+    }
+    if(!isset($_GET['path']) && !isset($_GET['url'])){
+        echo file_get_contents("json/currentjson.txt");
+    }
+
+
+?></div>
+    
+    
+    <a href = "editor.php" id = "editorlink">editor.php</a>
+    <a href = "index.php" id = "indexlink">index.php</a>
+
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
+
+<canvas id = "mainCanvas"></canvas>
+<div id = "mathscroll"></div>
+
 <div id = "filescroll">
 
     <div class = "html file">html/equation.txt</div>
     <div class = "javascript file">javascript/topfunctions.txt</div>
     <div class = "json file">json/currentjson.txt</div>
+    <div class = "json file">json/plotdata.txt</div>
 
 </div>
 
 <script>
+
+init();
+function init(){
+    
+    path = document.getElementById("pathdiv").innerHTML;
+    backlink = document.getElementById("backurldata").innerHTML;
+    currentjson = JSON.parse(document.getElementById("jsondatadiv").innerHTML);
+
+    constants = currentjson.constants;
+    plotparams = currentjson.plotparams;
+    funcparams = currentjson.funcparams;
+    if(document.getElementById("plotdatadiv").innerHTML.length > 4){
+        plotdata  = JSON.parse(document.getElementById("plotdatadiv").innerHTML);
+    }
+
+    
+}
+
+
+redraw();
+function redraw(){
+
+    currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" + plotparams.plotheight.toString() + "\" viewbox = \"0 0 " + plotparams.plotwidth.toString() + " " + plotparams.plotheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+
+    document.getElementById("mainCanvas").width = plotparams.plotwidth;
+    document.getElementById("mainCanvas").height = plotparams.plotheight;
+
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0, 0, plotparams.plotwidth,plotparams.plotheight);
+    ctx.lineWidth = 2;
+
+    plotfunction();
+    
+    currentSVG += "</svg>";
+
+    currentjson = {};
+    currentjson.constants = constants;
+    currentjson.plotparams = plotparams;
+    currentjson.funcparams = funcparams;
+
+}
+
 currentFile = "javascript/topfunctions.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
@@ -31,6 +151,19 @@ httpc.onreadystatechange = function() {
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
 httpc.send();
+
+currentFile2 = "html/equation.txt";
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata2 = this.responseText;
+        document.getElementById("mathscroll").innerHTML = filedata2;
+        MathJax.Hub.Typeset();//tell Mathjax to update the math
+    }
+};
+httpc2.open("GET", "fileloader.php?filename=" + currentFile2, true);
+httpc2.send();
+
 files = document.getElementById("filescroll").getElementsByClassName("file");
 for(var index = 0;index < files.length;index++){
     files[index].onclick = function(){
@@ -88,8 +221,8 @@ for(var index = 0;index < files.length;index++){
     }
 }
 document.getElementById("namediv").innerHTML = currentFile;
-document.getElementById("namediv").style.color = "#800080";
-document.getElementById("namediv").style.borderColor = "#800080";
+document.getElementById("namediv").style.color = "#ff0000";
+document.getElementById("namediv").style.borderColor = "#ff0000";
 
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
@@ -98,6 +231,7 @@ editor.getSession().setUseWrapMode(true);
 editor.$blockScrolling = Infinity;
 
 document.getElementById("maineditor").onkeyup = function(){
+
     data = encodeURIComponent(editor.getSession().getValue());
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
@@ -106,6 +240,20 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
+    
+    if(currentFile == "html/equation.txt"){
+        document.getElementById("mathscroll").innerHTML = editor.getSession().getValue();
+        MathJax.Hub.Typeset();//tell Mathjax to update the math
+    }
+    if(currentFile == "json/currentjson.txt"){
+        currentjson = JSON.parse(editor.getSession().getValue());
+        constants = currentjson.constants;
+        plotparams = currentjson.plotparams;
+        funcparams = currentjson.funcparams;
+        redraw();
+    }
+
+    
 }
 
 </script>
@@ -125,6 +273,7 @@ a{
     display:block;
     margin-bottom:0.5em;
     margin-left:0.5em;
+    font-size:24px;
 }
 body{
     background-color:#404040;
@@ -177,30 +326,40 @@ body{
     font-family:courier;
     font-size:18px;
 }
-#linkscroll{
+#indexlink{
     position:absolute;
-    overflow:scroll;
-    top:5em;
-    bottom:50%;
-    right:0px;
-    left:75%;
-    border:solid;
-    border-radius:5px;
-    border-width:3px;
-    background-color:#101010;
-    font-family:courier;
-    font-size:18px;
-    
+    top:0.5em;
+    right:10em;
+}
+#editorlink{
+    position:absolute;
+    top:1.8em;
+    right:10em;
 }
 #maineditor{
     position:absolute;
     left:0%;
-    top:5em;
+    top:50%;
     bottom:1em;
-    right:30%;
+    right:65%;
 }
-
-
+#mainCanvas{
+    position:absolute;
+    left:35%;
+    top:8%;
+    background-color:white;
+    z-index:-2;
+}
+#mathscroll{
+    padding:1em 1em 1em 1em;
+    position:absolute;
+    left:38%;
+    right:27%;
+    top:60%;
+    background-color:white;
+    bottom:1em;
+    overflow:scroll;
+}
 
 </style>
 

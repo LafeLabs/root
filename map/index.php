@@ -96,17 +96,9 @@ if(isset($_GET['url'])){
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>
-<div id = "linkScroll">
-    <a href = "editor.php">editor.php</a>
-    <a href = "savemap.php">savemap.php</a>
-    <a href = "loadrecentmap.php">loadrecentmap.php</a>
-    <a href = "linkeditor.php">linkeditor.php</a>
-    <a href = "imageeditor.php">imageeditor.php</a>
-    <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
-    <a href = "glypheditor.php">glypheditor.php</a>
-    <a href = "../symbol/shapetableeditor.php?path=../map/&amp;backlink=../map/index.php">shapetableeditor.php</a>
-    <a href = "latlon.php">latlon.php</a>
-</div>
+
+<a href = "mapeditor.php" id = "editlink">mapeditor.php</a>
+
 <table id = "zoompan">
     <tr>
         <td class = "button">up</td>
@@ -137,6 +129,10 @@ function init(){
 
     styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
     path = document.getElementById("pathdiv").innerHTML;
+
+    if(path.length>1){
+        document.getElementById("editlink").href = "mapeditor.php?path=" + path;
+    }
 
     document.getElementById("mainCanvas").width = innerWidth;
     document.getElementById("mainCanvas").height = innerHeight;
@@ -347,26 +343,11 @@ document.getElementById("actionInput").onkeydown = function(e) {
 
 </script>
 <style>
-#linkScroll{
-    position:absolute;
-    right:0px;
-    top:0px;
-    width:10em;
-    overflow:scroll;
-    height:90%;
-    background-color:black;
-    z-index:3;
-    font-size:22px;
-    font-family:courier;
-}
 
-#linkScroll a{
-    display:block;
-    color:white;
-    margin-top:1em;
-    margin-left:1em;
+a{
+    font-family:Helvetica;
+    font-size:1em;
 }
-
 #actionInput{
     position:absolute;
     font-size:20px;
@@ -461,6 +442,11 @@ img{
     z-index:-2;
 }
 
+#editlink{
+    position:absolute;
+    right:1em;
+    top:1em;
+}
 </style>
 </body>
 </html>
