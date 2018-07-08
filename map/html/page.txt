@@ -3,8 +3,7 @@
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <a  id = "indexlink" href = "index.php">index.php</a>
-
-<a  id = "glyphlink" href = "shapetableeditor.php">shapetableeditor.php</a>
+<a  id = "glyphlink" href = "../symbol/shapetableeditor.php?path=../map/">shapetableeditor.php</a>
 
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>

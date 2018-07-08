@@ -7,11 +7,13 @@ if(strlen($path) == 0){
     mkdir($name);
     mkdir($name."/"."json");
     mkdir($name."/"."maps");
+    mkdir($name."/"."svg");
 }
 else{
     mkdir($path."/".$name);
     mkdir($path."/".$name."/"."json");
     mkdir($path."/".$name."/"."maps");
+    mkdir($path."/".$name."/"."svg");
 }
 
 

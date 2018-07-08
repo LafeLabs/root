@@ -56,6 +56,14 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "backurldata" style = "display:none"><?php
+
+    if(isset($_GET['backlink'])){
+        echo $_GET['backlink'];
+    }
+    
+
+?></div>
 <div id = "pathdiv" style= "display:none"><?php
 
     if(isset($_GET['path'])){
@@ -76,6 +84,7 @@ echo file_get_contents("json/stylejson.txt");
 <div id = "page">
     <a  id = "editorlink" href = "editor.php">editor.php</a>
     <a  id = "factorylink" href = "index.php">index.php</a>
+    <a id = "backlink" href = ""></a>
 
     <canvas id="invisibleCanvas" style="display:none"></canvas>
     <canvas id="mainCanvas"></canvas>
@@ -144,6 +153,18 @@ path = document.getElementById("pathdiv").innerHTML;
 if(path.length > 1){
     document.getElementById("factorylink").href = "index.php?path=" + path;
 }
+
+backlink = document.getElementById("backurldata").innerHTML;
+
+if(backlink.length>1){
+    document.getElementById("backlink").href = backlink;
+    document.getElementById("backlink").innerHTML = backlink;
+}
+else{
+    document.getElementById("backlink").href = "tree.php";
+    document.getElementById("backlink").innerHTML = "tree.php";
+}
+
 
 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");

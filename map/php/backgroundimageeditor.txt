@@ -33,7 +33,7 @@ function doTheThing(localCommand){
     } 
     
     <?php
-    echo file_get_contents("javascript/actions03xx.txt");
+    echo file_get_contents("../symbol/javascript/actions03xx.txt");
     echo "\n";
     ?>    
     if(localCommand == 06){ //<page06>
@@ -111,9 +111,29 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "stylejsondiv" style = "display:none"><?php
+
+    echo file_get_contents("../symbol/json/stylejson.txt");
+    
+?></div>
+<div id = "pathdiv" style= "display:none"><?php
+
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+
+?></div>
 <div id = "datadiv" style = "display:none">
 <?php
-    echo file_get_contents("json/currentjson.txt");
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."json/currentjson.txt");
+    }
+    else{
+        echo file_get_contents("json/currentjson.txt");
+    }
+
+
 ?>
 </div>    
 <div id = "page">
@@ -207,6 +227,14 @@ function doTheThing(localCommand){
 doTheThing(06);//import embedded hypercube in this .html doc
 doTheThing(07);//initialize Geometron global variables
 
+path = document.getElementById("pathdiv").innerHTML;
+styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
+
+
+if(path.length > 1){
+    document.getElementById("indexlink").href = "index.php?path=" + path;
+}
+
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 
@@ -263,7 +291,14 @@ function redraw(){
     document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
     
     
+if(path.length>1){
+    currentFile = path + "json/currentjson.txt";
+}
+else{
     currentFile = "json/currentjson.txt";
+}
+
+
     data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
@@ -275,7 +310,14 @@ function redraw(){
 }
 
 function saveJSON(){
+
+if(path.length>1){
+    currentFile = path + "json/currentjson.txt";
+}
+else{
     currentFile = "json/currentjson.txt";
+}
+
     data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        

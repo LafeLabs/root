@@ -63,7 +63,6 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/imageeditor.txt</div>
     <div class = "php file">php/backgroundimageeditor.txt</div>
     <div class = "php file">php/glypheditor.txt</div>
-    <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/latlon.txt</div>
     <div class = "php file">php/savemap.txt</div>
     <div class = "php file">php/loadrecentmap.txt</div>

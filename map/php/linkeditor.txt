@@ -35,11 +35,25 @@ function latlon2xy(latlonin) {
 </script>
 </head>
     <body>
-        <div id = "datadiv" style = "display:none">
-            <?php
+        
+        <div id = "pathdiv" style= "display:none"><?php
+
+            if(isset($_GET['path'])){
+                echo $_GET['path'];
+            }
+
+        ?></div>
+
+        <div id = "datadiv" style = "display:none"><?php
+
+            if(isset($_GET['path'])){
+                echo file_get_contents($_GET['path']."json/currentjson.txt");
+            }
+            else{
                 echo file_get_contents("json/currentjson.txt");
-            ?>
-        </div>
+            }
+
+        ?></div>
     <div id = "page">
         
         <a id = "editorLink" href = "editor.php">editor.php</a>
@@ -111,7 +125,10 @@ function latlon2xy(latlonin) {
             redraw();
 
             function init(){
+
                 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+
+                path = document.getElementById("pathdiv").innerHTML;
                 document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
                 linkIndex = 0;
                 inputs = document.getElementsByTagName("input");
@@ -163,11 +180,17 @@ function latlon2xy(latlonin) {
             function redraw2(){
                     document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
                     data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+                    if(path.length>1){
+                        currentFile = path + "json/currentjson.txt";
+                    }
+                    else{
+                        currentFile = "json/currentjson.txt";
+                    }
                     var httpc = new XMLHttpRequest();
                     var url = "filesaver.php";        
                     httpc.open("POST", url, true);
                     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-                    httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+                    httpc.send("data="+data+"&filename=" + currentFile);//send text to filesaver.php
                     redraw();
             }
             
@@ -221,11 +244,19 @@ function latlon2xy(latlonin) {
                 currentJSON.links.push(zeep);
                 document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
                 data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+
+                if(path.length>1){
+                    currentFile = path + "json/currentjson.txt";
+                }
+                else{
+                    currentFile = "json/currentjson.txt";
+                }
+
                 var httpc = new XMLHttpRequest();
                 var url = "filesaver.php";        
                 httpc.open("POST", url, true);
                 httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-                httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+                httpc.send("data="+data+"&filename=" + currentFile);//send text to filesaver.php
                 redraw();
             }
             buttons[3].onclick = function(){ //delete
@@ -241,11 +272,19 @@ function latlon2xy(latlonin) {
                 
                 document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
                 data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+                if(path.length>1){
+                    currentFile = path + "json/currentjson.txt";
+                }
+                else{
+                    currentFile = "json/currentjson.txt";
+                }
+
+
                 var httpc = new XMLHttpRequest();
                 var url = "filesaver.php";        
                 httpc.open("POST", url, true);
                 httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-                httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+                httpc.send("data="+data+"&filename=" + currentFile);//send text to filesaver.php
                 redraw();
 
             }
@@ -401,11 +440,19 @@ function latlon2xy(latlonin) {
 document.getElementById("textIO").onkeyup = function(){
     currentJSON.links = JSON.parse(document.getElementById("textIO").value);
     data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+
+    if(path.length>1){
+        currentFile = path + "json/currentjson.txt";
+    }
+    else{
+        currentFile = "json/currentjson.txt";
+    }
+
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+    httpc.send("data="+data+"&filename=" + currentFile);//send text to filesaver.php
     redraw();
 }
 

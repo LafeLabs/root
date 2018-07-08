@@ -36,9 +36,16 @@ function latlon2xy(latlonin) {
     </head>
     <body>
         <div id = "datadiv" style = "display:none">
-            <?php
-                echo file_get_contents("json/currentjson.txt");
-            ?>
+<?php
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."json/currentjson.txt");
+    }
+    else{
+        echo file_get_contents("json/currentjson.txt");
+    }
+
+?>
         </div>
     <div id = "page">
         

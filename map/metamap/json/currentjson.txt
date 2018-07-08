@@ -1,0 +1,71 @@
+{
+    "imgurl": "https://i.imgur.com/kGoAPS0.jpg",
+    "imgw": 116.62685383755367,
+    "imgleft": -57.66388408629513,
+    "imgtop": -58.89096471628835,
+    "unitpixels": 5,
+    "unitfeet": 10000,
+    "imgangle": 0,
+    "latlon0": "0,0",
+    "marker0": "center",
+    "glyph0": "0341,0340,",
+    "latlon1": "1.0,0.0",
+    "marker1": "one up",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0337,0337,0337,0337,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "linkeditor.php",
+            "text": "linkeditor.php",
+            "fontfeet": 30000,
+            "latlon": "-0.49000,-1.27000",
+            "rotation": 60
+        },
+        {
+            "url": "index.php",
+            "text": "index.php",
+            "fontfeet": 30000,
+            "latlon": "1.10000,-0.25000",
+            "rotation": 0
+        },
+        {
+            "url": "../",
+            "text": "link to ../",
+            "fontfeet": 30000,
+            "latlon": "0.07000,-0.19000",
+            "rotation": 0
+        },
+        {
+            "url": "backgroundimageeditor.php",
+            "text": "backgroundimageeditor.php",
+            "fontfeet": 30000,
+            "latlon": "-0.97000,-0.63000",
+            "rotation": 0
+        }
+    ],
+    "images": [
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.93750,-77.02490",
+            "unitfeet": 2962.962962962963,
+            "rotation": 320
+        },
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.91750,-76.99490",
+            "unitfeet": 4444.444444444444,
+            "rotation": 0
+        }
+    ],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "undefined0207,"
+}

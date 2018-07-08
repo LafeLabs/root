@@ -128,6 +128,7 @@ function redraw(){
 ?>
 }
 </script>
+
 <script id = "pageevents">
 <?php
     echo file_get_contents("javascript/pageevents.txt");

@@ -38,13 +38,13 @@ function listfiles($localpath){
     $fullpath = getcwd().$localpath;
     $files = scandir($fullpath);
     foreach($files as $filename){
-        if($filename != "json" && $filename != "javascript" && $filename != "maps" && $filename != "bytecode" && $filename != "php" && $filename != "html" && $filename != "." && $filename != ".." && is_dir($fullpath."/".$filename)){
+        if($filename != "svg" && $filename != "css" && $filename != "json" && $filename != "javascript" && $filename != "maps" && $filename != "bytecode" && $filename != "php" && $filename != "html" && $filename != "." && $filename != ".." && is_dir($fullpath."/".$filename)){
             
            $fileandpath = substr($localpath,1)."/".$filename;
            if($fileandpath[0] == "/"){
                $fileandpath = substr($fileandpath,1);
            } 
-           echo  "\n<li><a href = \"index.php?path=".$fileandpath."/\">".$fileandpath."/</a></li>\n";
+           echo  "\n<li><a href = \"backgroundimageeditor.php?path=".$fileandpath."/\">".$fileandpath."/</a></li>\n";
                $nextpath = $localpath."/".$filename;                
             echo "<ul>";
            listfiles($nextpath);

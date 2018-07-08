@@ -45,7 +45,7 @@ body{
  #factorylink{
      position:absolute;
      left:60%;
-     top:10px;
+     top:1.2em;
      z-index:2;
  }
  #shapetablelink{

@@ -76,7 +76,14 @@ echo file_get_contents("../symbol/json/stylejson.txt");
 ?></div>
 <div id = "datadiv" style = "display:none">
 <?php
-    echo file_get_contents("json/currentjson.txt");
+
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."json/currentjson.txt");
+    }
+    else{
+        echo file_get_contents("json/currentjson.txt");
+    }
+    
 ?>
 </div>    
 <div id = "extdatadiv" style = "display:none"><?php
@@ -91,15 +98,13 @@ if(isset($_GET['url'])){
 <textarea id="textIO"></textarea>
 <div id = "linkScroll">
     <a href = "editor.php">editor.php</a>
-    <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "savemap.php">savemap.php</a>
     <a href = "loadrecentmap.php">loadrecentmap.php</a>
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
     <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
     <a href = "glypheditor.php">glypheditor.php</a>
-    <a href = "shapetableeditor.php">shapetableeditor.php</a>
-    <a href = "metacreator.php">metacreator.php</a>
+    <a href = "../symbol/shapetableeditor.php?path=../map/&amp;backlink=../map/index.php">shapetableeditor.php</a>
     <a href = "latlon.php">latlon.php</a>
 </div>
 <table id = "zoompan">

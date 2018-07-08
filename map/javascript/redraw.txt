@@ -78,7 +78,14 @@ for(var index = 0;index < glyphArray.length;index++){
 }
 
 
-currentFile = "json/currentjson.txt";
+if(path.length>1){
+    currentFile = path + "json/currentjson.txt";
+}
+else{
+    currentFile = "json/currentjson.txt";
+}
+
+
 data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
 var httpc = new XMLHttpRequest();
 var url = "filesaver.php";        
