@@ -42,6 +42,24 @@ else{
     currentFile = "json/currentjson.txt";
 }
 
+document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+
+
+if(paramDigitIndex == 0){
+    document.getElementById("delta").innerHTML = "10x"; 
+}
+if(paramDigitIndex == 1){
+    document.getElementById("delta").innerHTML = "10%"; 
+}
+if(paramDigitIndex == 2){
+    document.getElementById("delta").innerHTML = "1%"; 
+}
+if(paramDigitIndex == 3){
+    document.getElementById("delta").innerHTML = "0.1%"; 
+}
+
+
 
 data = encodeURIComponent(JSON.stringify(currentjson,null, "    "));
 var httpc = new XMLHttpRequest();

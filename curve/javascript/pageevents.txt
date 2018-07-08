@@ -17,7 +17,6 @@ document.getElementById("imgurlinput").onchange = function(){
 
 
 document.getElementById("actioninput").onkeypress = function(a){
-    console.log(a.key);
     if(a.key == "a" || a.key == "ArrowUp"){
         paraminputs[paramIndex].style.borderWidth = "1px";
         paraminputs[paramIndex].style.borderColor = "black";
@@ -39,6 +38,9 @@ document.getElementById("actioninput").onkeypress = function(a){
         if(paramDigitIndex == 3){
             paraminputs[paramIndex].style.borderColor = "purple";
         }
+        document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+        document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+
     }
     if(a.key == "s" || a.key == "ArrowDown"){
         paraminputs[paramIndex].style.borderWidth = "1px";
@@ -61,6 +63,9 @@ document.getElementById("actioninput").onkeypress = function(a){
         if(paramDigitIndex == 3){
             paraminputs[paramIndex].style.borderColor = "purple";
         }
+        document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+        document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+
     }
     if(a.key == "d" || a.key == "ArrowLeft"){
         paramDigitIndex--;
@@ -80,6 +85,19 @@ document.getElementById("actioninput").onkeypress = function(a){
         if(paramDigitIndex == 3){
             paraminputs[paramIndex].style.borderColor = "purple";
         }
+        if(paramDigitIndex == 0){
+            document.getElementById("delta").innerHTML = "10x"; 
+        }
+        if(paramDigitIndex == 1){
+            document.getElementById("delta").innerHTML = "10%"; 
+       }
+       if(paramDigitIndex == 2){
+            document.getElementById("delta").innerHTML = "1%"; 
+        }
+        if(paramDigitIndex == 3){
+            document.getElementById("delta").innerHTML = "0.1%"; 
+        }
+
     }
     if(a.key == "f"  || a.key == "ArrowRight"){
         paramDigitIndex++;
@@ -97,6 +115,18 @@ document.getElementById("actioninput").onkeypress = function(a){
         }
         if(paramDigitIndex == 3){
             paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        if(paramDigitIndex == 0){
+            document.getElementById("delta").innerHTML = "10x"; 
+        }
+        if(paramDigitIndex == 1){
+            document.getElementById("delta").innerHTML = "10%"; 
+        }
+        if(paramDigitIndex == 2){
+            document.getElementById("delta").innerHTML = "1%"; 
+        }
+        if(paramDigitIndex == 3){
+            document.getElementById("delta").innerHTML = "0.1%"; 
         }
     }
 
@@ -170,6 +200,7 @@ document.getElementById("actioninput").onkeypress = function(a){
         redraw();
     }
     
-    document.getElementById("actioninput").value = "";
+    this.value = "";
+
 }
 

@@ -2,9 +2,6 @@
 
 
 
-foo
-
-
 
 
 
@@ -104,8 +101,6 @@ function plotfunction(){
     
 
 }
-
-
 
 
 

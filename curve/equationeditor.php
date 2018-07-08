@@ -82,6 +82,7 @@ else{
     
     <a href = "editor.php" id = "editorlink">editor.php</a>
     <a href = "index.php" id = "indexlink">index.php</a>
+    <a href = "tree.php" id = "treelink">tree.php</a>
 
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
@@ -104,6 +105,10 @@ init();
 function init(){
     
     path = document.getElementById("pathdiv").innerHTML;
+    if(path.length > 1){
+        document.getElementById("indexlink").href = "index.php?path=" + path;
+    }
+    
     backlink = document.getElementById("backurldata").innerHTML;
     currentjson = JSON.parse(document.getElementById("jsondatadiv").innerHTML);
 
@@ -336,6 +341,12 @@ body{
     top:1.8em;
     right:10em;
 }
+#treelink{
+    position:absolute;
+    top:6em;
+    right:10em;
+}
+
 #maineditor{
     position:absolute;
     left:0%;

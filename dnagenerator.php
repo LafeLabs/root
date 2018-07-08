@@ -36,10 +36,6 @@ $finalstring .= getfiles("feed/php");
 $finalstring .= ",\n";
 $finalstring .= getfiles("feed/html");
 $finalstring .= ",\n";
-$finalstring .= getfiles("feed/css");
-$finalstring .= ",\n";
-$finalstring .= getfiles("feed/javascript");
-$finalstring .= ",\n";
 
 $finalstring .= getfiles("scroll/php");
 $finalstring .= ",\n";
@@ -61,12 +57,22 @@ $finalstring .= getfiles("deck/php");
 $finalstring .= ",\n";
 $finalstring .= getfiles("deck/html");
 $finalstring .= ",\n";
-$finalstring .= getfiles("deck/css");
-$finalstring .= ",\n";
 $finalstring .= getfiles("deck/javascript");
 $finalstring .= ",\n";
 $finalstring .= getfiles("deck/bytecode");
 $finalstring .= ",\n";
+
+$finalstring .= getfiles("curve/javascript");
+$finalstring .= ",\n";
+$finalstring .= getfiles("curve/html");
+$finalstring .= ",\n";
+$finalstring .= getfiles("curve/css");
+$finalstring .= ",\n";
+$finalstring .= getfiles("curve/json");
+$finalstring .= ",\n";
+$finalstring .= getfiles("curve/php");
+$finalstring .= ",\n";
+
 $finalstring .= getfiles("map/php");
 $finalstring .= ",\n";
 $finalstring .= getfiles("map/html");

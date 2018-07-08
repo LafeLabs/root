@@ -1,6 +1,14 @@
     path = document.getElementById("pathdiv").innerHTML;
     backlink = document.getElementById("backurldata").innerHTML;
 
+if(path.length > 1){
+    document.getElementById("editorlink").href = "equationeditor.php?path=" + path;
+}
+
+if(backlink.length > 1){
+    document.getElementById("backlink").href = backlink;
+    document.getElementById("backlink").innerHTML = backlink;
+}
 
 currentjson = JSON.parse(document.getElementById("jsondatadiv").innerHTML);
 constants = currentjson.constants;

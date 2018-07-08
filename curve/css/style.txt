@@ -1,3 +1,7 @@
+#valuedisplaytable{
+    left:16em;
+    top:1em;
+}
 #plotparamstable{
     left:0px;
     top:4em;
@@ -15,9 +19,19 @@ table input{
     top:22em;
     right:1em;
 }
+#backlink{
+    position:absolute;
+    top:16em;
+    right:1em;
+}
 #uplink{
     position:absolute;
     top:23em;
+    right:1em;
+}
+#treelink{
+    position:absolute;
+    top:30em;
     right:1em;
 }
 #svgindexlink{

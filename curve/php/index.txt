@@ -98,6 +98,9 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 <a id = "editorlink" href = "equationeditor.php">equationeditor.php</a>
 <a id  = "uplink" href = "../">../</a>
+<a id  = "backlink" href = ""></a>
+
+<a id = "treelink" href = "tree.php">tree.php</a>
 
 <a id  = "svgindexlink" href = "svg/index.html">SVG Plots</a>
 
@@ -109,6 +112,14 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 <textarea id="textIO"></textarea> 
 
+<table id = "valuedisplaytable">
+    <tr>
+        <td id="varname"></td><td>=</td><td id = "varvalue"></td>    
+    </tr>
+    <tr>
+        <td>$\Delta$</td><td>=</td><td id = "delta"></td>    
+    </tr>
+</table>
 <table id = "plotparamstable">
 </table>
 <table id = "funcparamstable">

@@ -21,12 +21,14 @@
 	{
 		"path":"html",
 		"files":[
+			"deck.txt",
 			"page.txt"
 		]
 	},
 	{
 		"path":"json",
 		"files":[
+			"currentjson.txt",
 			"dna.txt"
 		]
 	},
@@ -72,16 +74,6 @@
 		"path":"feed/html",
 		"files":[
 			"wall.txt"
-		]
-	},
-	{
-		"path":"feed/css",
-		"files":
-		]
-	},
-	{
-		"path":"feed/javascript",
-		"files":
 		]
 	},
 	{
@@ -170,22 +162,17 @@
 			"filesaver.txt",
 			"index.txt",
 			"loadtable.txt",
+			"newdir.txt",
 			"savetable.txt",
 			"shapetableeditor.txt",
-			"text2php.txt"
+			"text2php.txt",
+			"tree.txt"
 		]
 	},
 	{
 		"path":"deck/html",
 		"files":[
-			"main.txt",
-			"page.txt"
-		]
-	},
-	{
-		"path":"deck/css",
-		"files":[
-			"style.txt"
+			"deck.txt"
 		]
 	},
 	{
@@ -206,11 +193,54 @@
 		]
 	},
 	{
+		"path":"curve/javascript",
+		"files":[
+			"init.txt",
+			"jslibrary.txt",
+			"pageactions.txt",
+			"pageevents.txt",
+			"redraw.txt",
+			"topfunctions.txt"
+		]
+	},
+	{
+		"path":"curve/html",
+		"files":[
+			"equation.txt"
+		]
+	},
+	{
+		"path":"curve/css",
+		"files":[
+			"style.txt"
+		]
+	},
+	{
+		"path":"curve/json",
+		"files":[
+			"currentjson.txt",
+			"plotdata.txt"
+		]
+	},
+	{
+		"path":"curve/php",
+		"files":[
+			"editor.txt",
+			"equationeditor.txt",
+			"feedsaver.txt",
+			"fileloader.txt",
+			"filesaver.txt",
+			"index.txt",
+			"newdir.txt",
+			"svgfeed.txt",
+			"text2php.txt",
+			"tree.txt"
+		]
+	},
+	{
 		"path":"map/php",
 		"files":[
 			"backgroundimageeditor.txt",
-			"creator.txt",
-			"dnagenerator.txt",
 			"editor.txt",
 			"feedsaver.txt",
 			"fileloader.txt",
@@ -221,13 +251,16 @@
 			"latlon.txt",
 			"linkeditor.txt",
 			"list.txt",
+			"loadmap.txt",
 			"loadrecentmap.txt",
+			"mapeditor.txt",
+			"maploader.txt",
 			"mapsaver.txt",
-			"metacreator.txt",
-			"replicator.txt",
+			"newdir.txt",
 			"savemap.txt",
 			"shapetableeditor.txt",
-			"text2php.txt"
+			"text2php.txt",
+			"tree.txt"
 		]
 	},
 	{
@@ -248,7 +281,6 @@
 			"actions03xx.txt",
 			"actions0xx.txt",
 			"init.txt",
-			"jslibrary.txt",
 			"pageactions.txt",
 			"pageevents.txt",
 			"redraw.txt",
@@ -271,7 +303,6 @@
 		"files":[
 			"city.txt",
 			"currentjson.txt",
-			"dna.txt",
 			"metro.txt",
 			"place.txt",
 			"street.txt",

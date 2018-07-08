@@ -10,6 +10,7 @@
     <a href = "index.php">index.php</a>
     <a href = "svgfeed.php">svgfeed.php</a>
     <a href = "equationeditor.php">equationeditor.php</a>
+    <a href = "tree.php">tree.php</a>
 
 </div>
 <div id = "namediv"></div>
