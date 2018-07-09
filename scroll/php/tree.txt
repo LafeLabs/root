@@ -64,10 +64,13 @@ echo "</ul>\n";
 <p><a href = "index.php">index.php</a></p>
 <p><a href = "editor.php">editor.php</a></p>
 <script>
+    
     lindex = 0;
     lis = document.getElementsByTagName("LI");
-
-    redraw();    
+    if(lis.length > 0){
+        redraw();
+    }
+    
     function redraw(){
             lis[lindex].style.backgroundColor = "pink";
             path =  lis[lindex].getElementsByTagName("A")[0].innerHTML;

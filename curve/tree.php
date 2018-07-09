@@ -64,10 +64,13 @@ echo "</ul>\n";
 <p><a href = "index.php">index.php</a></p>
 <p><a href = "editor.php">editor.php</a></p>
 <script>
+
     lindex = 0;
     lis = document.getElementsByTagName("LI");
+    if(lis.length > 0){
+        redraw();
+    }
 
-    redraw();    
     function redraw(){
         if(lis.length>0){
             lis[lindex].style.backgroundColor = "pink";
