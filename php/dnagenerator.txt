@@ -39,6 +39,8 @@ $finalstring .= ",\n";
 
 $finalstring .= getfiles("scroll/php");
 $finalstring .= ",\n";
+$finalstring .= getfiles("scroll/html");
+$finalstring .= ",\n";
 
 $finalstring .= getfiles("symbol/php");
 $finalstring .= ",\n";
@@ -60,6 +62,8 @@ $finalstring .= ",\n";
 $finalstring .= getfiles("deck/javascript");
 $finalstring .= ",\n";
 $finalstring .= getfiles("deck/bytecode");
+$finalstring .= ",\n";
+$finalstring .= getfiles("deck/json");
 $finalstring .= ",\n";
 
 $finalstring .= getfiles("curve/javascript");

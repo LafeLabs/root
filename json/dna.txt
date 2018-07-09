@@ -93,6 +93,12 @@
 		]
 	},
 	{
+		"path":"scroll/html",
+		"files":[
+			"scroll.txt"
+		]
+	},
+	{
 		"path":"symbol/php",
 		"files":[
 			"editor.txt",
@@ -190,6 +196,12 @@
 			"font.txt",
 			"keyboard.txt",
 			"shapetable.txt"
+		]
+	},
+	{
+		"path":"deck/json",
+		"files":[
+			"stylejson.txt"
 		]
 	},
 	{

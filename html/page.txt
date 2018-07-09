@@ -1,5 +1,4 @@
 <div style = "font-family:Helvetica;">
-<a href = "../">../</a>
 <h1 style = "font-size:2.5m;">Root: The Seven Sources</h1>
 <p>
 </p>
@@ -12,5 +11,4 @@
     <li><a href = "curve/">curve/</a></li>
     <li><a href = "map/">map/</a></li>
 </ul>
-    <img style = "width:50%;" src = "svg/septagram.svg"/>
 </div>
