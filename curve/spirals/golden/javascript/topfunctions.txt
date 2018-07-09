@@ -1,0 +1,57 @@
+
+function XYofT(){
+    T = plotparams.g*t;
+    tau = Math.abs(0.25*funcparams.T/Math.log(constants.phi));
+    X = Math.exp(-T/tau)*Math.cos(2*Math.PI*T/funcparams.T);
+    Y = Math.exp(-T/tau)*Math.sin(2*Math.PI*T/funcparams.T);
+    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
+    x = plotparams.x0 - plotparams.G*(X - funcparams.X0);    
+}
+
+
+function plotfunction(){
+
+
+    currentStroke = "blue";
+    currentLineWidth = 4;
+    ctx.strokeStyle = currentStroke;
+    ctx.lineWidth = currentLineWidth;
+    ctx.beginPath();	
+    x = 0;
+    y = 0;
+    t= 0;
+    XYofT();
+    currentSVG += "	<path d = \"M";
+    currentSVG += Math.round(x).toString() + " ";
+    currentSVG += Math.round(y).toString() + " ";
+    for(t = 1;t < plotparams.duration;t++){
+        ctx.moveTo(x,y);
+        XYofT();
+        ctx.lineTo(x,y);
+        currentSVG += "L" + x + " " + y + " ";
+    }
+    ctx.stroke();
+    currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

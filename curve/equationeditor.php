@@ -36,7 +36,7 @@ if(!isset($_GET['url']) && !isset($_GET['path'])){
 
 <title>PHP Editor replicator</title>
 </head>
-<body>
+<body  class="no-mathjax">
 <div id = "backurldata" style = "display:none"><?php
 
     if(isset($_GET['backlink'])){
@@ -91,7 +91,7 @@ if(!isset($_GET['url']) && !isset($_GET['path'])){
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
 <canvas id = "mainCanvas"></canvas>
-<div id = "mathscroll"><?php
+<div id = "mathscroll"  class = "mathjax"><?php
 
     if(isset($_GET['path'])){
         echo file_get_contents($_GET['path']."html/equation.txt");

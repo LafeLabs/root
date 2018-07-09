@@ -1,0 +1,20 @@
+{
+    "constants": {
+        "phi": 1.618
+    },
+    "imgurl": "../symbol/geometry/goldenspiral/svg/svg1531179864.svg",
+    "plotparams": {
+        "G": 1585.4813285073162,
+        "g": 0.017985878990921366,
+        "duration": 545.4545454545454,
+        "plotwidth": 400,
+        "plotheight": 400,
+        "x0": 271.82217062000007,
+        "y0": 72.56846931505859
+    },
+    "funcparams": {
+        "T": -1,
+        "X0": 0,
+        "Y0": 0
+    }
+}
