@@ -17,6 +17,13 @@
     "shapes": [],
     "links": [
         {
+            "url": "index.php?path=dc/metro/",
+            "text": "dc/metro/",
+            "fontfeet": 2000,
+            "latlon": "38.94000,-77.04120",
+            "rotation": 0
+        },
+        {
             "url": "../",
             "text": "link to ../",
             "fontfeet": 2000,

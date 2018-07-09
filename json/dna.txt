@@ -196,7 +196,6 @@
 		"path":"curve/javascript",
 		"files":[
 			"init.txt",
-			"jslibrary.txt",
 			"pageactions.txt",
 			"pageevents.txt",
 			"redraw.txt",

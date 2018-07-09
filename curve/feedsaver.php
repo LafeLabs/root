@@ -11,14 +11,26 @@
 
  }
 */
+
+
+    if(isset($_POST['path'])){
+        $path = $_POST['path'];
+        $indexpath = $path."svg/index.html";
+        $feedpath = $path."svg/";   
+    }
+    else{
+        $indexpath = "svg/index.html";
+        $feedpath = "svg/";
+    }
+
+
     $data = $_POST["data"]; //get data 
     $filename = "svg".time().".svg";
-    $file = fopen("svg/".$filename,"w");// create new file with this name
+    $file = fopen($feedpath.$filename,"w");// create new file with this name
     fwrite($file,$data); //write data to file
     fclose($file);  //close file
-    $oldfeed = file_get_contents("svg/index.html"); 
-    $file = fopen("svg/index.html","w");// create new file with this name
-    
-    fwrite($file,"<p><img src = \"".$filename."\"></p>\n".$oldfeed); //write data to file
+    $oldfeed = file_get_contents($indexpath); 
+    $file = fopen($indexpath,"w");// create new file with this name
+    fwrite($file,"<p><a href = \"".$filename."\"><img src = \"".$filename."\"></a></p>\n".$oldfeed); //write data to file
     fclose($file);  //close file
 ?>

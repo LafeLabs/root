@@ -18,7 +18,6 @@
     mkdir("deck");
         mkdir("deck/decks");
     mkdir("symbol");
-        mkdir("symbol/tables");
         mkdir("symbol/svg");
     mkdir("curve");
         mkdir("curve/svg");

@@ -6,7 +6,12 @@
     var url = "feedsaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data="+data);//send text to feedsaver.php
+    if(path.length>1){
+        httpc.send("data="+data +"&path=" + path);//send text to feedsaver.php
+    }
+    else{
+        httpc.send("data="+data);//send text to feedsaver.php
+    }
  }
  
  
