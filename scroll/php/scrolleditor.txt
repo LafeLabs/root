@@ -32,10 +32,14 @@
 
     <a href = "jupyter.php">jupyter.php</a>
     <a href = "figurelist.php" id = "figurelink">figurelist.php</a>
+    <a href = "scrolllist.php" id = "scrolllistlink">scrolllist.php</a>
 
     <a href = "texeditor.php" id = "texlink">texeditor.php</a>
     <div class = "button">FIGURE</div>
     <div class = "button">HTML2TEX</div>
+    <div class = "button">SAVE</div>
+    <div class = "button">LOAD</div>
+
 </div>
 
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
@@ -111,6 +115,26 @@ buttons[1].onclick = function(){
     httpc.send("data="+data+"&filename="+texFile);//send text to filesaver.php
     
 }
+
+buttons[2].onclick = function(){
+    //save scroll
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    if(path.length>1){
+        httpc.send("data=" + encodeURIComponent(editor.getSession().getValue()) + "&path=" + path);//send text to feedsaver.php
+    }
+    else{
+        httpc.send("data=" + encodeURIComponent(editor.getSession().getValue());//send text to feedsaver.php
+    }
+
+}
+buttons[3].onclick = function(){
+//load   
+}
+
 
 function html2tex(){
         var textin = editor.getSession().getValue();

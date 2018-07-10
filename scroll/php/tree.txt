@@ -61,8 +61,15 @@ listfiles("");
 echo "</ul>\n";
 
 ?>
+
 <p><a href = "index.php">index.php</a></p>
 <p><a href = "editor.php">editor.php</a></p>
+<p><a href = "figurelist.php">figurelist.php</a></p>
+<p><a href = "texeditor.php">texeditor.php</a></p>
+<p><a href = "scrolleditor.php">scrolleditor.php</a></p>
+<p><a href = "../">../</a></p>
+<p><a href = "jupyter.php">jupyter.php</a></p>
+
 <script>
     
     lindex = 0;

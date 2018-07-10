@@ -46,6 +46,11 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "stylejsondiv" style = "display:none"><?php
+
+echo file_get_contents("json/stylejson.txt");
+    
+?></div>
 <div id = "page">
     <p>
         <a href = "editor.php">editor.php</a>
@@ -74,6 +79,8 @@ init();
 function init(){
     doTheThing(06);//import embedded hypercube in this .html doc
     doTheThing(07);//initialize Geometron global variables
+
+    styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
 
     document.getElementById("mainCanvas").width = 140;
     document.getElementById("mainCanvas").height = 140;

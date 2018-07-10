@@ -115,9 +115,10 @@ if(isset($_GET['url'])){
 <div id = "editmodebutton" class = "button">EDIT</div>
 <div id="maineditor" contenteditable="true" spellcheck="false" class = "no-mathjax"></div>
 
-<a  id = "editorlink" href = "editor.php">editor.php</a>
+<a  id = "editorlink" href = "deckeditor.php">deckeditor.php</a>
 <a  id = "uplink" href = "../">../</a>
 <a  id = "deckslink" href = "decks/">decks/</a>
+<a id = "treelink" href = "tree.php">tree.php</a>
 
 <table id = "buttontable">
     <tr>
@@ -257,7 +258,12 @@ body{
      top:1em;
      z-index:2;
 }
-
+#treelink{
+    position:absolute;
+    left:50%;
+    top:1em;
+    z-index:2
+}
 #mainCanvas{
     position:absolute;
     z-index:0;

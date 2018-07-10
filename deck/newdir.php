@@ -15,7 +15,8 @@ else{
 }
 
 
-$decktemplate = file_get_contents("html/deck.txt");
+$decktemplate = file_get_contents("html/decktemplate.txt");
+
 if(strlen($path) == 0){
     $file = fopen($name."/"."html/deck.txt","w");// create new file with this name
 }
@@ -25,5 +26,5 @@ else{
 fwrite($file,$decktemplate); //write data to file
 fclose($file);  //close file
 
-    
+
 ?>

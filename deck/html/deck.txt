@@ -12,7 +12,7 @@
 </p>
 <a href="index.php?path=foo/bar/">index.php?path=foo/bar/</a>
 <p>
-    <a href="../symbol/index.php?path=physics/circuits/&amp;backlink=../deck/index.php"><img src="../symbol/physics/circuits/currentsvg.svg"></a>
+<a href="index.php?path=structure/">index.php?path=structure/</a>
 </p></div>
     </div>
 </div>

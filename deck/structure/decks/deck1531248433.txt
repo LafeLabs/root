@@ -1,0 +1,195 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0330,0337,0337,</div>
+        <div class="content"><h2>Seven Sources</h2>
+
+<pre style="text-align:left ;;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;">    
+<u>root</u>
+    \_ <a href="index.php?path=structure&amp;page=1">page</a>
+    \_ <a href="index.php?path=structure&amp;page=2">feed</a>
+    \_ <a href="index.php?path=structure&amp;page=3">scroll</a>
+    \_ <a href="index.php?path=structure&amp;page=4">symbol</a>
+    \_ <a href="index.php?path=structure&amp;page=5">deck</a>
+    \_ <a href="index.php?path=structure&amp;page=6">curve</a>
+    \_ <a href="index.php?path=structure&amp;page=7">map</a>
+</pre></div>
+    </div>
+</div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><h2>Page Structure</h2>
+<pre style="text-align:left;color:white;background-color:blue;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;">    
+     
+<u>page</u>
+    \_ index.php
+    \_ pageeditor.php
+    \_ tree.php
+    \_[tree]
+            \_ html/page.txt
+            \_ pages/
+                    \_ index.html       
+                    \_ page[unix date].txt
+                    \_ page[unix date].txt
+                       ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,0332,0332,0333,0333,0333,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><h4>Feed Structure</h4>
+<pre style="text-align:left;color:white;background-color:blue;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;"><u>feed</u>
+    \_ index.php
+    \_ post.php
+    \_ walleditor.php
+    \_ wallhistory.php
+    \_ tree.php
+    \_ [tree]
+            \_ html/wall.txt
+            \_ feed/
+                    \_ index.html
+                    \_ wall[unix date].txt
+                    \_ wall[unix date].txt
+                       ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h4>Scroll Structure</h4>
+<pre style="text-align:left;color:white;background-color:blue;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;"><u>scroll</u>
+    \_ index.php
+    \_ scrolleditor.php
+    \_ jupyter.php
+    \_ figurelist.php
+    \_ texeditor.php
+    \_ tree.php
+    \_ [tree]
+             \_html/ 
+                    \_scroll.txt
+             \_ latex/
+                      \_ scroll.tex
+                      \_ scroll.pdf
+             \_ figures
+                       \_ [manually uploaded files, png,jpg,svg,gif]
+             \_ jupyter/
+                       \_ notebook.ipynb
+             \_ scrolls/
+                        \_ index.html
+                        \_ scroll[unix date].txt
+                        \_ scroll[unix date].txt
+                             ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,0336,0330,0337,0336,0330,0337,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><h4>Symbol Structure</h4>
+<pre style="text-align:left;color:white;background-color:blue;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;"><u>symbol</u>
+    \_ index.php
+    \_ svgfeed.php
+    \_ keyboardeditor.php
+    \_ shapetableeditor.php
+    \_ tree.php
+    \_ [tree]
+            \_ currentsvg.svg
+            \_ json/
+                    \_ currentjson.txt
+                    \_ stylejson.txt
+            \_ bytecode/shapetable.txt
+            \_ svg/
+                   \_ index.html
+                      svg[unix date].txt
+                      svg[unix date].txt
+                      ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><h4>Deck Structure</h4>
+<pre style="text-align:left;color:white;background-color:blue;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;"><u>deck</u>
+    \_[tree]
+            \_ html/
+                   \_ deck.txt
+                   \_ decktemplate.txt
+    
+            \_ decks/
+                     \_ deck[unix date].txt
+                     \_ deck[unix date].txt
+                           ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><h4>Curve Structure</h4>
+<pre style="text-align:left;color:white;background-color:blue;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;"><u>curve</u>
+    \_[tree]
+            \_ currentsvg.svg
+            \_ json/
+                    \_ currentjson.txt
+            \_ html/
+                    \_ equation.txt
+            \_ javascript/
+                          \_ topfunctions.txt                
+            \_ svg/
+                   \_ index.html
+                   \_ svg[unix date].txt
+                   \_ svg[unix date].txt
+                           ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><h4>Map Structure</h4>
+<pre style="text-align:left;color:white;background-color:blue"><u>map</u>
+    \_[tree]
+            \_ json/
+                    \_ currentjson.txt
+            \_ maps/
+                   \_ index.html 
+                   \_ map[unix date].txt
+                   \_ map[unix date].txt
+                           ...
+            \_ svg/
+                   \_ index.html
+                   \_ svg[unix date].txt
+                   \_ svg[unix date].txt
+                           ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div>

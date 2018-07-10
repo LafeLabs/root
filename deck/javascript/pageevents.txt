@@ -184,6 +184,7 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("deckslink").style.display = "none"; 
        document.getElementById("maineditor").style.display = "none"; 
        document.getElementById("buttontable").style.display = "none"; 
+       document.getElementById("treelink").style.display = "none"; 
        for(var index = 0;index < boxes.length;index++){
            boxes[index].style.border = "none";
        }
@@ -196,6 +197,7 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("deckslink").style.display = "block"; 
        document.getElementById("maineditor").style.display = "block"; 
        document.getElementById("buttontable").style.display = "block"; 
+       document.getElementById("treelink").style.display = "block"; 
        for(var index = 0;index < boxes.length;index++){
            boxes[index].style.border = "solid";
        }

@@ -32,10 +32,14 @@
 
     <a href = "jupyter.php">jupyter.php</a>
     <a href = "figurelist.php" id = "figurelink">figurelist.php</a>
+    <a href = "scrolllist.php" id = "scrolllistlink">scrolllist.php</a>
 
     <a href = "texeditor.php" id = "texlink">texeditor.php</a>
     <div class = "button">FIGURE</div>
     <div class = "button">HTML2TEX</div>
+    <div class = "button">SAVE</div>
+    <div class = "button">LOAD</div>
+
 </div>
 
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>

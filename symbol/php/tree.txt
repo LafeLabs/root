@@ -61,8 +61,13 @@ listfiles("");
 echo "</ul>\n";
 
 ?>
+
+<p><a href = "../">../</a></p>
 <p><a href = "index.php">index.php</a></p>
 <p><a href = "editor.php">editor.php</a></p>
+<p><a href = "shapetableeditor.php">shapetableeditor.php</a></p>
+<p><a href = "keybaordeditor.php">keybaordeditor.php</a></p>
+
 <script>
     lindex = 0;
     lis = document.getElementsByTagName("LI");

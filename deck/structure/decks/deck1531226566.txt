@@ -1,0 +1,56 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0330,0337,0337,</div>
+        <div class="content"><h2>Seven Sources</h2>
+
+<pre style="text-align:left">    
+<u>root</u>
+    \_ <a href="index.php?path=structure&amp;page=1">page</a>
+    \_ <a href="index.php?path=structure&amp;page=2">feed</a>
+    \_ scroll
+    \_ symbol
+    \_ deck
+    \_ curve
+    \_ map
+</pre></div>
+    </div>
+</div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0332,0332,0337,0337,</div>
+    <div class="content"><h4>Data Structures</h4>
+<pre style="text-align:left"><u>page</u>
+    \_[tree]
+            \_ html/page.txt
+            \_ pages/
+                    \_ page[unix date].txt
+                       page[unix date].txt
+                       ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,0332,0332,0333,0333,0333,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
+    <div class="content"><h4>Feed Structure</h4>
+<pre style="text-align:left"><u>feed</u>
+    \_[tree]
+            \_ html/wall.txt
+            \_ feed/
+                    \_ wall[unix date].txt
+                       wall[unix date].txt
+                       ...
+</pre></div>
+</div><div class="box"><div class="glyphdata">0330,0330,</div>
+    <div class="content"><a href="index.php?path=structure&amp;page=0">root/</a></div>
+</div></div>

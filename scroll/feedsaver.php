@@ -30,12 +30,12 @@
 
     if(isset($_POST['path'])){
         $path = $_POST['path'];
-        $indexpath = $path."decks/index.html";
-        $feedpath = $path."decks/";   
+        $indexpath = $path."scrolls/index.html";
+        $feedpath = $path."scrolls/";   
     }
     else{
-        $indexpath = "decks/index.html";
-        $feedpath = "decks/";
+        $indexpath = "scrolls/index.html";
+        $feedpath = "scrolls/";
     }
 
     $data = $_POST["data"]; //get data 
@@ -45,6 +45,6 @@
     fclose($file);  //close file
     $oldfeed = file_get_contents($indexpath); 
     $file = fopen($indexpath,"w");// create new file with this name
-    fwrite($file,"<p><a href = \"".$filename."\">".$filename."</a></p>\n".$oldfeed); //write data to file
+    fwrite($file,"<p><a href = \"".$feedpath.$filename."\">".$feedpath.$filename."</a></p>\n".$oldfeed); //write data to file
     fclose($file);  //close file
 ?>

@@ -25,13 +25,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id = "linkscroll">
 
     <a href = "text2php.php">text2php.php</a>
-    <a href = "savetable.php">savetable.php</a>
-    <a href = "loadtable.php">loadtable.php</a>
     <a href = "index.php">index.php</a>
-
-    <a href = "styleeditor.php">styleeditor.php</a>
     <a href = "tree.php">tree.php</a>
-
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "keyboardeditor.php">keyboardeditor.php</a>
 </div>
@@ -66,8 +61,6 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/keyboardeditor.txt</div>
-    <div class = "php file">php/savetable.txt</div>
-    <div class = "php file">php/loadtable.txt</div>
 
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/newdir.txt</div>

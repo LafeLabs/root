@@ -1,0 +1,24 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0331,0337,0337,0211,0211,</div>
+        <div class="content"><ul style="text-align:left">
+    <li>Math of infinite servers, disposability of servers and terminals</li>
+    <li>Things are data structures, mining is obsolete</li>
+    <li>"Computers" are art replicators, path of replication, replication completeness vs. turing completeness</li>
+    <li>Topology and Geometry vs. number for organizing human activity(post numerical economics)</li>
+    <li>Cybersecurity is a wrong concept; examples of unprotected windows, people in functioning society</li>
+    <li>What is known vs. unknown, structure of information more important than information quantity in infocalypse world</li>
+    <li>If organization is primary rather than new information, we can choose starting from scratch, based on how we want to live, drawing on mythology and desire</li>
+    <li>
+        
+    </li>
+</ul></div>
+    </div>
+<div class="box"><div class="glyphdata">0330,0330,</div>
+    <div class="content"><h2>Philosophy</h2></div>
+</div></div>

@@ -6,7 +6,9 @@ styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
 path = document.getElementById("pathdiv").innerHTML;
 
 if(path.length>1){
-    document.getElementById("deckslink").href = path + "decks/index.html"
+    document.getElementById("deckslink").href = path + "decks/index.html";
+    
+    document.getElementById("editorlink").href = "deckeditor.php?path=" + path;
 }
 
 document.getElementById("mainCanvas").width = innerWidth;

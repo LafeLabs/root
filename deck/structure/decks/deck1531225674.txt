@@ -1,0 +1,30 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0330,0337,0337,</div>
+        <div class="content"><pre style="text-align:left"><u>page</u>
+    \_ html/page.txt
+    \_ pages/
+            \_ page[unix date].txt
+               page[unix date].txt
+               ...
+</pre></div>
+    </div>
+</div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata"></div>
+    <div class="content"><pre style="text-align:left"><u>page</u>
+    \_ html/page.txt
+    \_ pages/
+            \_ page[unix date].txt
+               page[unix date].txt
+               ...
+</pre></div>
+</div></div>

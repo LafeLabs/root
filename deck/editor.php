@@ -26,6 +26,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 
     <a href = "text2php.php">text2php.php</a>
     <a href = "tree.php">tree.php</a>
+    <a href = "deckeditor.php">deckeditor.php</a>
     <a href = "index.php">index.php</a>
 
 </div>
@@ -35,6 +36,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id = "filescroll">
 
     <div class = "html file">html/deck.txt</div>
+    <div class = "html file">html/decktemplate.txt</div>
 
     <div class = "bytecode file">bytecode/shapetable.txt</div>
     <div class = "bytecode file">bytecode/font.txt</div>
@@ -45,6 +47,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "javascript file">javascript/pageevents.txt</div>
 
     <div class = "php file">php/editor.txt</div>
+    <div class = "php file">php/deckeditor.txt</div>
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
