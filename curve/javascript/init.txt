@@ -1,3 +1,4 @@
+
     path = document.getElementById("pathdiv").innerHTML;
     backlink = document.getElementById("backurldata").innerHTML;
 

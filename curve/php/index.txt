@@ -43,7 +43,7 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 ?>
 
 </script>
-
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script>
 	MathJax.Hub.Config({
