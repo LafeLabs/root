@@ -108,6 +108,8 @@ buttons[0].onclick = function(){
         editor.getSession().insert(cursorPosition,figtext);
 }
 buttons[1].onclick = function(){
+
+
     html2tex();    
     //save this file to latex subdirectory
     

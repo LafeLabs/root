@@ -153,6 +153,10 @@
 }</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
     <div class="content"><h4>Curve Structure</h4>
 <pre style="text-align:left;color:white;background-color:blue;padding:1em 1em 1em 1em;border-radius:1em;border:solid;border-color:black;"><u>curve</u>
+    \_ index.php
+    \_ equationeditor.php
+    \_ svgfeed.php
+    \_ tree.php
     \_[tree]
             \_ currentsvg.svg
             \_ json/
@@ -177,6 +181,14 @@
 }</div><div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
     <div class="content"><h4>Map Structure</h4>
 <pre style="text-align:left;color:white;background-color:blue"><u>map</u>
+    \_ index.php
+    \_ backgroundimageeditor.php
+    \_ imageeditor.php
+    \_ linkeditor.php
+    \_ glypheditor.php
+    \_ ../symbol/shapetableeditor.php?path=../map/ [...]
+    \_ latlon.php
+    \_ tree.php
     \_[tree]
             \_ json/
                     \_ currentjson.txt
