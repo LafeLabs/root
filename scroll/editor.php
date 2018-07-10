@@ -11,6 +11,8 @@
     <a href = "scrolleditor.php">scrolleditor.php</a>
     <a href = "texeditor.php">texeditor.php</a>
     <a href = "jupyter.php">jupyter.php</a>
+    <a href = "scrolllist.php">scrolllist.php</a>
+
     <a href = "tree.php">tree.php</a>
 
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>

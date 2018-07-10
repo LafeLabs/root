@@ -27,18 +27,18 @@
 
 <div id = "linkscroll">
     <a href = "index.php" id = "indexlink">index.php</a>
+    <a href = "figurelist.php" id = "figurelink">figurelist.php</a>
+    <a href = "scrolls/index.html" id = "scrollslink">scrolls/index.html</a>
+    <a href = "texeditor.php" id = "texlink">texeditor.php</a>
+    <a href = "jupyter.php" id = "jupyterlink">jupyter.php</a>
+
     <a href = "tree.php">tree.php</a>
     <a href = "editor.php">editor.php</a>
 
-    <a href = "jupyter.php">jupyter.php</a>
-    <a href = "figurelist.php" id = "figurelink">figurelist.php</a>
-    <a href = "scrolllist.php" id = "scrolllistlink">scrolllist.php</a>
 
-    <a href = "texeditor.php" id = "texlink">texeditor.php</a>
     <div class = "button">FIGURE</div>
     <div class = "button">HTML2TEX</div>
     <div class = "button">SAVE</div>
-    <div class = "button">LOAD</div>
 
 </div>
 
@@ -51,9 +51,13 @@ path = document.getElementById("pathdiv").innerHTML;
 if(path.length>1){
     currentFile = path + "html/scroll.txt";
     texFile = path + "latex/scroll.tex";
+
     document.getElementById("indexlink").href = "index.php?path=" + path;
     document.getElementById("texlink").href = "texeditor.php?path=" + path;
     document.getElementById("figurelink").href = "figurelist.php?path=" + path;
+    document.getElementById("scrollslink").href = path + "scrolls/index.html";
+    
+    document.getElementById("jupyterlink").href = "jupyter.php?path=" + path;;
 
 }
 else{
@@ -125,14 +129,12 @@ buttons[2].onclick = function(){
 
     if(path.length>1){
         httpc.send("data=" + encodeURIComponent(editor.getSession().getValue()) + "&path=" + path);//send text to feedsaver.php
+
     }
     else{
-        httpc.send("data=" + encodeURIComponent(editor.getSession().getValue());//send text to feedsaver.php
+        httpc.send("data=" + encodeURIComponent(editor.getSession().getValue()));//send text to feedsaver.php
     }
 
-}
-buttons[3].onclick = function(){
-//load   
 }
 
 

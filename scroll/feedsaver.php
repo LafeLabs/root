@@ -39,12 +39,12 @@
     }
 
     $data = $_POST["data"]; //get data 
-    $filename = "deck".time().".txt";
+    $filename = "scroll".time().".txt";
     $file = fopen($feedpath.$filename,"w");// create new file with this name
     fwrite($file,$data); //write data to file
     fclose($file);  //close file
     $oldfeed = file_get_contents($indexpath); 
     $file = fopen($indexpath,"w");// create new file with this name
-    fwrite($file,"<p><a href = \"".$feedpath.$filename."\">".$feedpath.$filename."</a></p>\n".$oldfeed); //write data to file
+    fwrite($file,"<p><a href = \"".$filename."\">".$filename."</a></p>\n".$oldfeed); //write data to file
     fclose($file);  //close file
 ?>
