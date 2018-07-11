@@ -3,3 +3,5 @@
 <p>Now we add another paragraph, nuke it from orbit, then re-load.</p>
 <p>that worked, testing again.</p> 
 <p>derp dery depr</p>
+
+<a href="../symbol/index.php?backlink=../page/index.php?path=physics/quantumnoise"><img src="../symbol/currentsvg.svg"></a>

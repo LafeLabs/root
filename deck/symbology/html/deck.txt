@@ -1,0 +1,21 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0331,0337,0337,0337,</div>
+        <div class="content"><h1>Symbology</h1>
+
+<ul style="text-align:left">
+    <li>Triangle of Watershed</li>
+    <li>Septagram of the Seven Roots</li>
+    <li>Symbols of each of the Seven with corresponding symbols of alchemal metals</li>
+    <li>Pentagram of the 5 Elements of Power</li>
+    <li>Graphs of the structure of all seven roots</li>
+    <li>Marker symbology to connect map to physical space @(x,y) #mapname</li>
+    <li>shape tables and fonts, action table</li>
+</ul></div>
+    </div>
+</div>

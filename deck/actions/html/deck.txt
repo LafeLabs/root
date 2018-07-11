@@ -1,0 +1,56 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0331,0337,0337,0337,</div>
+        <div class="content"><h1>Actions(Ritual)</h1>
+
+<h4>Code replication</h4>
+<ul style="text-align:left">
+    <li>
+        Replicate 7 Roots onto new web server
+    </li>
+    <li>
+        Make a new page and edit it and share it, show someone else how to replicate
+    </li>
+    <li>Make a new feed, edit it, post to feed, share feed with someone, teach them to post to feed</li>
+    <li>
+        Make a new scroll, edit it, share, publish to pdf
+    </li>
+    <li>
+        Create a symbol using geometron, publish to svg feed, share the link
+    </li>
+    <li>Create a new geometron symbol node , build a new shape table, publish a svg and share it, teach other to use shape table to make more svg's</li>
+    <li>
+        Make a new deck, use it to make a meme generator
+    </li>
+    <li>Find a circular or rectangular thing, put a golden spiral in it, screen shot it and share it, same with a catenary</li>
+    <li>Add a link to a existing map</li>
+    <li>add an image to an existing map</li>
+    <li>create a new map, with background image, two markers</li>
+    <li>Create map glyph, publish svg, print, color, photograph and set as map image</li>
+</ul></div>
+    </div>
+</div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Physical Constructions</h1>
+
+<ul style="text-align:left">
+    <li>
+        Septagram on cardboard, chalk or cardstock, create all 42 directed links in a full set of 7 new nodes
+    </li>
+    <li>Create a new feed, add a link to it to a map, post url on physical marker in location on map</li>
+    <li>Create self replicating cardboard and sharpie set with link to instructions on replication and geometric symbol to replicate</li>
+    <li>Make a shape set out of hard plastic, cardboard or tape and paper</li>
+    <li>Make a html element physical token which represents the replication of a html element creation event by another human</li>
+    <li></li>
+</ul></div>
+</div></div>

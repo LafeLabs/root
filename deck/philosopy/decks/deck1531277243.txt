@@ -1,0 +1,85 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0331,0337,0337,0211,0211,</div>
+        <div class="content"></div>
+    </div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Philosophy</h1>
+
+<ul style="text-align:left">
+    <li>Math of infinite servers, disposability of servers and terminals</li>
+    <li>Things are data structures, mining is obsolete</li>
+    <li>"Computers" are art replicators, path of replication, replication completeness vs. turing completeness</li>
+    <li>Topology and Geometry vs. number for organizing human activity(post numerical economics)</li>
+    <li>Cybersecurity is a wrong concept; examples of unprotected windows, people in functioning society</li>
+    <li>What is known vs. unknown, structure of information more important than information quantity in infocalypse world</li>
+    <li>If organization is primary rather than new information, we can choose starting from scratch, based on how we want to live, drawing on mythology and desire</li>
+    <li>Our choice: Alchemy, Watershed, Trash Camp, Feed</li>
+</ul></div>
+</div></div>
+
+
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Disposable Servers</h1>
+
+<ul style="text-align:left">
+
+<li>
+    10 billion people
+</li> 
+    
+<li>
+    100 billion web servers, &gt; 10 gigabytes each
+</li>
+<li>
+    A page like this one takes up &lt; 1 megabyte
+</li>
+
+<li>
+    <em>Several Quadrillion</em> pages like this one, not counting "cloud" storage, just using off the shelf web devices(phones, desktops, laptops, routers, IoT devices, free web servers, existing unused space on commercial servers)
+    </li><li><em> Hundreds of thousands</em> of pages like this one per human for all humans on the planet, assuming an extra 3 billiion people compared to 2018</li>
+</ul>
+</div>
+</div><div class="box"><div class="glyphdata">0331,0331,0332,0332,0332,0337,0337,0210,0210,0210,</div>
+    <div class="content"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Day_6_Warehouse_%2825890985098%29_%28cropped%29.jpg"></div>
+</div><div class="box"><div class="glyphdata">0330,0331,0331,0331,0331,0333,0333,0331,0337,0337,0337,</div>
+    <div class="content"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/2006megacities.svg"></div>
+</div></div>
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div><div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Post Numeric Value</h1>
+
+<p style="text-align:justify;">
+    In a world of plenty, where the trash feed is the main source of materials, most "things" do not get their value from amounts of metal or oil but from how things are arranged.  Thus most value is in essense <em>data structures</em>.  This alters what it means for something to have value.  If value comes from metal, it can be added up with numbers. But if value comes from how things are arranged, geometry and topology offer much more useful tools for understanding how to exchange value.
+
+</p>
+</div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Machine Replication</h1>
+<h3><em>where to machines come from?</em></h3>
+
+<p>Before a single atom is moved someone <em>decides</em> to build the machine!</p>
+<p>
+    That decision is usually made based on graphical communication on a computer, usually a PowerPoint slide.  If the new technology is a computer with a screen that runs PowerPoint, it can then be used to make another presentation for another generation of tech, completing the cycle of replication.  
+</p></div>
+</div></div>
