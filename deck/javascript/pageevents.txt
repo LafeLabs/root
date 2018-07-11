@@ -31,7 +31,7 @@ function newpage(){
     pageTemplate += "    \"x0rel\": 0,\n";
     pageTemplate += "    \"y0rel\": 0,\n";
     pageTemplate += "    \"unitrel\": 1\n";
-    pageTemplate += "}</div>";
+    pageTemplate += "}</div>\n";
         
     var newdiv  = document.createElement("DIV");
     newdiv.innerHTML = pageTemplate;

@@ -13,6 +13,10 @@
 <a href="index.php?path=foo/bar/">index.php?path=foo/bar/</a>
 <p>
 <a href="index.php?path=structure/">index.php?path=structure/</a>
+</p>
+
+<p>
+<a href="index.php?path=structure/">index.php?path=philosophy/</a>
 </p></div>
     </div>
 </div>
