@@ -1,0 +1,51 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 146.41000000000008,
+    "x0": 684,
+    "y0": 351.4475154247304,
+    "x0rel": 0,
+    "y0rel": -47.5524845752696,
+    "glyph": "0331,0331,0336,0336,0330,0337,0337,0211,0211,0224,",
+    "table": []
+}
+</json>
+-->
+    <line x1="346" y1="459" x2="154" y2="459" style="stroke:black;stroke-width:2" />
+    <line x1="154" y1="459" x2="35" y2="309" style="stroke:black;stroke-width:2" />
+    <line x1="35" y1="309" x2="77" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="77" y1="122" x2="250" y2="39" style="stroke:black;stroke-width:2" />
+    <line x1="250" y1="39" x2="423" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="423" y1="122" x2="465" y2="309" style="stroke:black;stroke-width:2" />
+    <line x1="465" y1="309" x2="346" y2="459" style="stroke:black;stroke-width:2" />
+    <line x1="154" y1="462" x2="428" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="428" y1="119" x2="32" y2="309" style="stroke:black;stroke-width:2" />
+    <line x1="32" y1="309" x2="471" y2="309" style="stroke:black;stroke-width:2" />
+    <line x1="471" y1="309" x2="76" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="76" y1="119" x2="349" y2="462" style="stroke:black;stroke-width:2" />
+    <line x1="349" y1="462" x2="252" y2="34" style="stroke:black;stroke-width:2" />
+    <line x1="252" y1="34" x2="154" y2="462" style="stroke:black;stroke-width:2" />
+    <line x1="345" y1="453" x2="420" y2="126" style="stroke:black;stroke-width:2" />
+    <line x1="420" y1="126" x2="85" y2="126" style="stroke:black;stroke-width:2" />
+    <line x1="85" y1="126" x2="159" y2="453" style="stroke:black;stroke-width:2" />
+    <line x1="159" y1="453" x2="461" y2="307" style="stroke:black;stroke-width:2" />
+    <line x1="461" y1="307" x2="252" y2="45" style="stroke:black;stroke-width:2" />
+    <line x1="252" y1="45" x2="43" y2="307" style="stroke:black;stroke-width:2" />
+    <line x1="43" y1="307" x2="345" y2="453" style="stroke:black;stroke-width:2" />
+    <circle cx="153" cy = "459" r = "23.956647268304522" stroke = "black" stroke-width = "2" fill = "black" />
+    <circle cx="34" cy = "309" r = "23.956647268304522" stroke = "red" stroke-width = "2" fill = "red" />
+    <circle cx="77" cy = "122" r = "23.956647268304522" stroke = "orange" stroke-width = "2" fill = "orange" />
+    <circle cx="249" cy = "39" r = "23.956647268304522" stroke = "yellow" stroke-width = "2" fill = "yellow" />
+    <circle cx="422" cy = "122" r = "23.956647268304522" stroke = "green" stroke-width = "2" fill = "black" />
+    <circle cx="465" cy = "309" r = "23.956647268304522" stroke = "blue" stroke-width = "2" fill = "blue" />
+    <circle cx="345" cy = "459" r = "23.956647268304522" stroke = "purple" stroke-width = "2" fill = "purple" />
+</svg>

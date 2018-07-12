@@ -1,0 +1,16 @@
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 200,
+    "svgheight": 200,
+    "unit": 90.90909090909092,
+    "x0": 684,
+    "y0": 369.4736483627736,
+    "x0rel": 0,
+    "y0rel": -29.526351637226412,
+    "glyph": "",
+    "table": []
+}

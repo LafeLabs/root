@@ -40,7 +40,7 @@ if(isset($_GET['url'])){
     echo file_get_contents($_GET['url']);
 }
 else{
-    echo file_get_contents("jupyter/main.ipynb");
+    echo file_get_contents("jupyter/notebook.ipynb");
 }
 
 ?></div>

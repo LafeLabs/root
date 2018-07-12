@@ -53,27 +53,17 @@
 </div><div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
     <div class="content"><h1>Scroll</h1></div>
 </div><div class="box"><div class="glyphdata">0333,0333,0337,0337,</div>
-    <div class="content"><img src="../symbol/symbology/svg/svg1531369453.svg"></div>
-</div><div class="box"><div class="glyphdata">0331,0331,0336,0336,0331,0337,0337,0333,0333,0337,</div>
+    <div class="content"><img src="../symbol/symbology/svg/svg1531368996.svg"></div>
+</div><div class="box"><div class="glyphdata">0331,0331,0333,0333,0337,</div>
     <div class="content"><pre>scrolleditor.php:</pre>
 <em>edit scroll</em></div>
 </div><div class="box"><div class="glyphdata">0333,0333,0333,0333,</div>
-    <div class="content"><pre>texeditor.php:</pre>
-<em>edit $\LaTeX$</em></div>
+    <div class="content">
+    </div>
 </div><div class="box"><div class="glyphdata"></div>
-    <div class="content"><pre>jupyter.php:</pre>
-<em>extract jupyter data</em></div>
+    <div class="content">
+    </div>
 </div><div class="box"><div class="glyphdata">0330,0333,0330,0333,</div>
     <div class="content"><pre>index.php:</pre>
 <em>read scroll</em></div>
-</div></div><div class="page">
-   <div class="pagejson">{
-    "x0rel": 0,
-    "y0rel": 0,
-    "unitrel": 1
-}</div>
-<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
-    <div class="content"><h1>Page</h1></div>
-</div><div class="box"><div class="glyphdata">0332,0332,0332,0337,0337,</div>
-    <div class="content"><img src="../symbol/symbology/svg/svg1531368521.svg"></div>
 </div></div>
