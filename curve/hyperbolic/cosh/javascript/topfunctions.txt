@@ -5,7 +5,7 @@
 
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.a*X*X + funcparams.b*X + funcparams.c;
+    Y = Math.cosh(X);
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 

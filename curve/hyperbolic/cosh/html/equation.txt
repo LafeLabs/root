@@ -1,12 +1,11 @@
 
 
-<h2>Parabola</h2>
+<h2>Hyperbolic Cosine</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-Y = aX^2 + bX
- + c$$
+Y = \cosh{X}$$
 </p>
 <p></p>
 
