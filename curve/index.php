@@ -26,14 +26,27 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 <?php
 
-    if(isset($_GET['url'])){
+    if(isset($_GET['url']) && !isset($_GET['path'])){
         $urlfilename = $_GET['url'];
         $svgcode = file_get_contents($_GET['url']);
         $topcode = explode("</topfunctions>",$svgcode)[0];
         $outcode = explode("<topfunctions>",$topcode)[1];
         echo $outcode;
+        $file = fopen("javascript/topfunctions.txt","w");// create new file with this name
+        fwrite($file,$outcode); //write data to file
+        fclose($file);  //close file
     }
-    if(isset($_GET['path'])){
+    if(isset($_GET['url']) && isset($_GET['path'])){
+        $urlfilename = $_GET['url'];
+        $svgcode = file_get_contents($_GET['url']);
+        $topcode = explode("</topfunctions>",$svgcode)[0];
+        $outcode = explode("<topfunctions>",$topcode)[1];
+        echo $outcode;
+        $file = fopen($_GET['path']."javascript/topfunctions.txt","w");// create new file with this name
+        fwrite($file,$outcode); //write data to file
+        fclose($file);  //close file
+    }
+    if(isset($_GET['path']) && !isset($_GET['url'])){
         echo file_get_contents($_GET['path']."javascript/topfunctions.txt");
     }
     if(!isset($_GET['path']) && !isset($_GET['url'])){
@@ -85,12 +98,13 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
         $outcode = explode("<currentjson>",$topcode)[1];
         echo $outcode;
     }
-    if(isset($_GET['path'])){
+    if(isset($_GET['path']) && !isset($_GET['url'])){
         echo file_get_contents($_GET['path']."json/currentjson.txt");
     }
     if(!isset($_GET['path']) && !isset($_GET['url'])){
         echo file_get_contents("json/currentjson.txt");
     }
+
 
 ?></div>
 
@@ -135,15 +149,30 @@ if(isset($_GET['url'])){
 ?></div>
 <div id = "shadowequation" style = "display:none" class = "no-mathjax"><?php
 
-if(isset($_GET['url'])){
+if(isset($_GET['url']) && !isset($_GET['path'])){
     $urlfilename = $_GET['url'];
     $svgcode = file_get_contents($_GET['url']);
     $topcode = explode("</equation>",$svgcode)[0];
     $outcode = explode("<equation>",$topcode)[1];
     echo $outcode;
+    $file = fopen("html/equation.txt","w");// create new file with this name
+    fwrite($file,$outcode); //write data to file
+    fclose($file);  //close file
+}
+if(isset($_GET['url']) && isset($_GET['path'])){
+    $urlfilename = $_GET['url'];
+    $svgcode = file_get_contents($_GET['url']);
+    $topcode = explode("</equation>",$svgcode)[0];
+    $outcode = explode("<equation>",$topcode)[1];
+    echo $outcode;
+    
+    $file = fopen($_GET['path']."html/equation.txt","w");// create new file with this name
+    fwrite($file,$outcode); //write data to file
+    fclose($file);  //close file
 }
 
-if(isset($_GET['path'])){
+
+if(isset($_GET['path']) && !isset($_GET['url'])){
     echo file_get_contents($_GET['path']."html/equation.txt");
 }
 if(!isset($_GET['path']) && !isset($_GET['url'])){

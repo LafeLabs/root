@@ -1,10 +1,10 @@
 
-<h2>Log Spiral</h2>
+<h2>Ellipse</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-(X,Y) = (e^{-t/\tau}\cos{\frac{2\pi t}{T}},e^{-t/\tau}\sin{\frac{2\pi t}{T}})
+(X,Y) = (a\cos{\frac{2\pi t}{T}},b\sin{\frac{2\pi t}{T}})
 $$
 </p>
 <p></p>

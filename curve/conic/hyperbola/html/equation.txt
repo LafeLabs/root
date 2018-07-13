@@ -1,10 +1,10 @@
 
-<h2>Log Spiral</h2>
+<h2>Hyperbola</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-(X,Y) = (e^{-t/\tau}\cos{\frac{2\pi t}{T}},e^{-t/\tau}\sin{\frac{2\pi t}{T}})
+(X,Y) = (\pm a\cosh{\frac{2\pi t}{T}},b\sinh{\frac{2\pi t}{T}})
 $$
 </p>
 <p></p>

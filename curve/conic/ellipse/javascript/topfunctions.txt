@@ -15,8 +15,14 @@ function YofX2(){
 
 function XYofT(){
     T = plotparams.g*t;
-    X = Math.exp(-T/funcparams.tau)*Math.cos(2*Math.PI*T/funcparams.T);
-    Y = Math.exp(-T/funcparams.tau)*Math.sin(2*Math.PI*T/funcparams.T);
+    X = funcparams.a*Math.cos(2*Math.PI*T/funcparams.T);
+    Y = funcparams.b*Math.sin(2*Math.PI*T/funcparams.T);
+
+    Xrot = Math.cos(Math.PI*funcparams.theta/180)*X - Math.sin(funcparams.theta*Math.PI/180)*Y;
+    Yrot = Math.sin(funcparams.theta*Math.PI/180)*X + Math.cos(funcparams.theta*Math.PI/180)*Y;
+    X = Xrot;
+    Y = Yrot;
+
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
     x = plotparams.x0 - plotparams.G*(X - funcparams.X0);    
 }
