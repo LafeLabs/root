@@ -1,0 +1,64 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531453368/chesapeake2_dnrpsl.png",
+    "imgw": 97.31698181061823,
+    "imgleft": -59.36150769888885,
+    "imgtop": -120.57531395614058,
+    "unitpixels": 3,
+    "unitfeet": 10000,
+    "imgangle": 4,
+    "latlon0": "38,-76",
+    "marker0": "marker0",
+    "glyph0": "0341,0340,",
+    "latlon1": "40,-76",
+    "marker1": "marker1",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "",
+    "shapes": [],
+    "links": [
+        {
+            "url": "index.php?path=water/potomac/",
+            "text": "Potomac/Anacostia",
+            "fontfeet": 40000,
+            "latlon": "38.94000,-77.5",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=water/eastcoast/",
+            "text": "eastcoast/",
+            "fontfeet": 100000,
+            "latlon": "38.91000,-76",
+            "rotation": -80
+        },
+        {
+            "url": "index.php?path=water/atlantic/",
+            "text": "atlantic",
+            "fontfeet": 100000,
+            "latlon": "38.94000,-74",
+            "rotation": 0
+        }
+    ],
+    "images": [
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.81050,-77.05190",
+            "unitfeet": 4444.444444444444,
+            "rotation": 350
+        },
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.91750,-76.99490",
+            "unitfeet": 4444.444444444444,
+            "rotation": 0
+        }
+    ],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "undefined0207,"
+}

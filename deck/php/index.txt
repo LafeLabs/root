@@ -329,7 +329,9 @@ body{
     font-size:3em;
     border-radius:1.5em;
 }    
-    
+ul{
+    text-align:left;
+}
 </style>
 </body>
 </html>

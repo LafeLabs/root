@@ -1,0 +1,57 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531451022/eastcoastmap_n7moft.png",
+    "imgw": 81.23738022586075,
+    "imgleft": -63.10399372285582,
+    "imgtop": -66.0184650645344,
+    "unitpixels": 7,
+    "unitfeet": 100000,
+    "imgangle": 6,
+    "latlon0": "35,-75",
+    "marker0": "Washington Monument",
+    "glyph0": "0341,0340,",
+    "latlon1": "45,-75",
+    "marker1": "North Boundary Stone",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "",
+    "shapes": [],
+    "links": [
+        {
+            "url": "index.php?path=water/atlantic/",
+            "text": "atlantic/",
+            "fontfeet": 500000,
+            "latlon": "38.94000,-70",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=water/chesapeake/",
+            "text": "chesapeake/",
+            "fontfeet": 100000,
+            "latlon": "38.91000,-77.04120",
+            "rotation": 0
+        }
+    ],
+    "images": [
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.81050,-77.05190",
+            "unitfeet": 4444.444444444444,
+            "rotation": 350
+        },
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.91750,-76.99490",
+            "unitfeet": 4444.444444444444,
+            "rotation": 0
+        }
+    ],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "undefined0207,"
+}

@@ -1,0 +1,44 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531451004/world_jsfnps.jpg",
+    "imgw": 14.85110883963719,
+    "imgleft": -7.496908450574092,
+    "imgtop": -5.952795537821853,
+    "unitpixels": 50,
+    "unitfeet": 10000000,
+    "imgangle": 0,
+    "latlon0": "0,0",
+    "marker0": "center",
+    "glyph0": "0341,0340,",
+    "latlon1": "90,0",
+    "marker1": "north pole",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0337,0337,0337,0337,0337,0337,0333,0350,0334,0310,0337,0304,0200,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "atlantic/",
+            "text": "atlantic/",
+            "fontfeet": 5000000,
+            "latlon": "30.00000,-55.02000",
+            "rotation": 0
+        }
+    ],
+    "images": [
+        {
+            "url": "http://res.cloudinary.com/geometron/image/upload/v1531451017/atlantic_qvzfl9.png",
+            "latlon": "55,-70",
+            "unitfeet": 30000000,
+            "rotation": 0
+        }
+    ],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "undefined0207,"
+}

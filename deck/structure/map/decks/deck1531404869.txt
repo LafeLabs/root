@@ -1,0 +1,166 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0331,0337,0337,0337,</div>
+        <div class="content"><h1>Map Structure</h1>
+
+
+<ul style="text-align:left">
+    <li>
+        water stack, all hand-drawn
+    </li>
+    <li>metro, geometron glyphs for lines, links for stations to photos of official station maps, metro line maps</li>
+    <li>places such as "penn ave" or "king street" or "Washington Circle" which are not explicitly a metro stop and can be drawn</li>
+    <li>Feeds at a place with a merker and keepers</li>
+    <li>custom pages for businesses, pages for places:parks, libraries, monuments, museums</li>
+</ul>
+</div>
+    </div>
+</div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Map Actions</h1>
+<ul>
+   <li>photograph a map outside a metro stop, upload and align and document</li> 
+   <li>Trace a map from water or street, mark it up, photograph and upload and align</li>
+   <li>Add a link</li>
+   <li>Add an image</li>
+   <li>Create and maintain a whole feed instance: feed directory on a server, symbol, physical marker, coordinate </li>
+   <li>Create and maintain a whole page instance for a fixed existing thing such as a shop, like feed but fixed, with local webmaster talking physically to owner of shop</li>
+   <li>get trained as a trainer, to teach others to use the System</li>
+   <li>Make a symbolic node, with curves</li>
+   <li>Make a symbolic node with geometron</li>
+</ul>
+
+</div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Map elements:</h1>
+<ul>
+    <li>
+        photos of places, uploaded to imgur
+    </li>
+    <li>
+        links to other maps
+    </li>
+    <li>links to local feed markers, which is the main active content </li>
+    <li>map backgrounds</li>
+    <li>links to sites on main web</li>
+    <li>Links to curve generators with golden spiral, catenary, parabola, hyperbola, ellipse, with backlink</li>
+    <li>links to golden spiral, rectangle, pentagram with backlink</li>
+    
+</ul></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Feeds</h1>
+<ul>
+    <li>Markers: Cardboard signs with coordinates, symbol, url</li>
+    <li>A feed in the feed-tree of metamapdc</li>
+    <li>Keepers who maintain the makers delete spam  add useful content, and train new users</li>
+    <li>Traditions based on some seed images: e.g. selfie with cardboard sign in front of a thing</li>
+    <li>Coordinates of feed to within 55 feet, or 1/10th of a washington monument in @(x,y) format (about 20 paces is a 1/10 wm)</li>
+    <li>social media hashtags with heirarchy e.g. <br> #metamapdc #pennave #navymemorial @(6.4,2.9)</li>
+    
+</ul></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Value Flows</h1>
+<p>
+    Mission: to reverse the inequities created by social media by directly benefiting the people most hurt by it directly: those living on the Street and small businesses, local interests with no ties to centralized corporations
+</p>
+
+
+<ul>
+    <li>Making custom maps for passerby for money, but they draw them, political cartoons on Penn Ave and around DC from templates</li>
+    <li>
+        "sell" cardboard markers for money to passerby as donations
+        <ul>
+            <li>metro supermap</li>
+            <li>sacred geometry and mystical symbols of DC</li>
+        </ul>
+    </li>
+    <li>maintaining business links for food and beverages barter</li>
+    <li>work to add all restaurants and shops to the Map, eventually replacing google maps and yelp as a totally CROWD SOURCED and NON COMMERCIAL system</li>
+    <li>by allowing those in need to tell and present their personal stories tied to physical locations and human communities, enable value flows based on real connections which help them in whatever ways they need</li>
+</ul>
+
+</div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0337,0337,0337,</div>
+    <div class="content"><h1>metamapdc.org</h1>
+<pre style="text-align:left">map
+    \_ watershed
+       \_ Atlantic
+       \_ East Coast
+       \_ Chesapeake
+       \_ Potomac
+       \_ Potomac/anacostia
+    \_ top level places
+                        \_ pennave
+                        \_ dupontcircle
+                        \_ washingtoncircle
+                        \_ capitolmall
+                        \_ king street
+                        \_ Crystal city
+                        \_ pentagon city
+                        \_ union station
+    \_ metro
+            \_ each station
+    \_ feeds
+    \_ pages
+    \_ symbols
+    \_ curves
+    \_ libraries
+    \_ monuments
+    \_ parks
+    \_ restaurants
+    \_ shops
+</pre></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Principles</h1>
+<ul>
+    <li>All communication by consent: no ads that are not links in the standard format, vendors do not "buy" ads, they donate money to help those who maintain the map, who make links to useful things because they are useful.  Interested vendors are always encouraged to learn to add links and pages on their own</li>
+    <li>No IP.  The underlying structure and code of this map is public domain and to attempt to patent or copyright it is a crime.</li>
+    <li>No property, no equity, no debt, no corporate structure, no  executives, no employees, no investors, no mass media marketing, no journos, no centralized servers, no databases, no native code, no app store presence, no google connnection(meta tag prevents google spiders)
+    </li><li>Always leave a  place better than we found it</li>
+    <li>Who is not against us is for us</li>
+    <li>Always help  if you can</li>
+    <li>To teach is to teach the teaching: when you show someone how to do a thing show them how to teach the next person that thing so that it spreads</li>
+    <li>We do not "sell" things, even if we use that format with cardboard markers, rather we accept donations given freely and also give useful artifacts and information freely</li>
+    <li>We assume that scarcity is obsolete at the global level and that ending it at the local level is a task primarily of <em>information organizaion</em>, which is why this project's core is a set of <em>strucures</em> of information</li>
+</ul></div>
+</div></div>

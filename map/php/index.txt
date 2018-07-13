@@ -365,6 +365,7 @@ a{
     overflow:hidden;
 }
 #zoompan{
+    display:none;
     position:absolute;
     left:2em;
     top:0.1em;
@@ -393,6 +394,8 @@ a{
 
 
  #textIO{
+         display:none;
+
     position:absolute;
     width:100px;
     height:100px;
@@ -429,6 +432,7 @@ table{
 
 
 #buttonTable{
+        display:none;
     position:absolute;
     left:15px;
     top:40%;
