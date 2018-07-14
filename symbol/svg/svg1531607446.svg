@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100.00000000000001,
+    "x0": 734,
+    "y0": 347.5670793520086,
+    "x0rel": 50,
+    "y0rel": -51.43292064799141,
+    "glyph": "0334,0210,0324,0227,0335,0335,0322,0334,0334,0330,0334,0227,0330,0334,0326,0227,0330,0334,0327,0227,0330,0334,0323,0227,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M250 149 L163 149 L206 14 L250 149 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M250 149 L163 149 L206 14 L250 149 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M163 149 L136 232 L21 149 L163 149 Z" stroke = "red" stroke-width = "2" fill = "red" />	<path d = "M163 149 L136 232 L21 149 L163 149 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M136 232 L206 283 L92 366 L136 232 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M136 232 L206 283 L92 366 L136 232 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M206 283 L277 232 L321 366 L206 283 Z" stroke = "purple" stroke-width = "2" fill = "purple" />	<path d = "M206 283 L277 232 L321 366 L206 283 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M277 232 L250 149 L391 149 L277 232 Z" stroke = "orange" stroke-width = "2" fill = "orange" />	<path d = "M277 232 L250 149 L391 149 L277 232 " stroke = "black" stroke-width = "4" fill = "none" /></svg>

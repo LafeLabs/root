@@ -1,0 +1,26 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100.00000000000001,
+    "x0": 684,
+    "y0": 397.5670793520086,
+    "x0rel": 0,
+    "y0rel": -1.4329206479914092,
+    "glyph": "0331,0337,0210,0210,0237,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M200 299 L200 308 L47 308 L47 289 L200 289 L200 299 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <circle cx="47" cy = "299" r = "9.549150281252631" stroke = "blue" stroke-width = "2" fill = "blue" />
+	<path d = "M47 299 L39 294 L115 161 L132 171 L55 303 L47 299 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M124 166 L115 161 L192 29 L208 39 L132 171 L124 166 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <circle cx="200" cy = "34" r = "9.549150281252631" stroke = "blue" stroke-width = "2" fill = "blue" />
+	<path d = "M200 34 L208 29 L285 161 L268 171 L192 39 L200 34 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M276 166 L285 161 L361 294 L345 303 L268 171 L276 166 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <circle cx="353" cy = "299" r = "9.549150281252631" stroke = "blue" stroke-width = "2" fill = "blue" />
+	<path d = "M353 299 L353 308 L200 308 L200 289 L353 289 L353 299 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M162 260 L157 260 L157 184 L167 184 L167 260 L162 260 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M200 260 L195 260 L195 184 L205 184 L205 260 L200 260 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M238 260 L233 260 L233 184 L243 184 L243 260 L238 260 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M9 350 L44 315 L94 315 L59 350 L9 350 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M59 350 L94 315 L144 315 L109 350 L59 350 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M109 350 L144 315 L194 315 L159 350 L109 350 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M159 350 L194 315 L244 315 L209 350 L159 350 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M209 350 L244 315 L294 315 L259 350 L209 350 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M259 350 L294 315 L344 315 L309 350 L259 350 Z" stroke = "black" stroke-width = "2" fill = "black" /></svg>

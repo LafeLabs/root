@@ -1,0 +1,38 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100.00000000000001,
+    "x0": 684,
+    "y0": 397.5670793520086,
+    "x0rel": 0,
+    "y0rel": -1.4329206479914092,
+    "glyph": "0336,0330,0337,0337,0211,0211,0211,0236,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="350" cy = "149" r = "18.72095245285803" stroke = "brown" stroke-width = "2" fill = "brown" />
+    <line x1="350" y1="149" x2="50" y2="149" style="stroke:black;stroke-width:2" />
+    <circle cx="50" cy = "149" r = "18.72095245285803" stroke = "red" stroke-width = "2" fill = "red" />
+    <line x1="50" y1="149" x2="293" y2="325" style="stroke:black;stroke-width:2" />
+    <circle cx="293" cy = "325" r = "18.72095245285803" stroke = "blue" stroke-width = "2" fill = "blue" />
+    <line x1="293" y1="325" x2="200" y2="40" style="stroke:black;stroke-width:2" />
+    <circle cx="200" cy = "40" r = "18.72095245285803" stroke = "purple" stroke-width = "2" fill = "purple" />
+    <line x1="200" y1="40" x2="107" y2="325" style="stroke:black;stroke-width:2" />
+    <circle cx="107" cy = "325" r = "18.72095245285803" stroke = "yellow" stroke-width = "2" fill = "yellow" />
+    <line x1="107" y1="325" x2="350" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="350" y1="149" x2="200" y2="40" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="40" x2="50" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="50" y1="149" x2="107" y2="325" style="stroke:black;stroke-width:2" />
+    <line x1="107" y1="325" x2="293" y2="325" style="stroke:black;stroke-width:2" />
+    <line x1="293" y1="325" x2="350" y2="149" style="stroke:black;stroke-width:2" />
+</svg>

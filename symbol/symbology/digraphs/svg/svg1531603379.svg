@@ -1,0 +1,25 @@
+<svg width="600" height="200" viewbox = "0 0 600 200"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 200,
+    "unit": 146.41000000000008,
+    "x0": 684,
+    "y0": 351.4475154247304,
+    "x0rel": 0,
+    "y0rel": -47.5524845752696,
+    "glyph": "0211,0211,0211,0336,0332,0336,0331,0332,0337,0226,0230,0333,0333,0333,0226,0335,0335,0230,0335,0335,0231,0332,0332,0332,0335,0335,0231,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="136" cy = "107" r = "54.81869297245891" stroke = "black" stroke-width = "2" fill = "none" />
+<path    d = "M183,80 C278,25 322,25 417,80" fill = "none" stroke-width = "2" stroke = "black" />	<path d = "M417 80 L410 68 L403 80 L417 80 Z" stroke = "black" stroke-width = "2" fill = "black" />    <circle cx="464" cy = "107" r = "54.81869297245891" stroke = "black" stroke-width = "2" fill = "none" />
+<path    d = "M417,135 C322,189 278,189 183,135" fill = "none" stroke-width = "2" stroke = "black" />	<path d = "M183 135 L190 147 L197 135 L183 135 Z" stroke = "black" stroke-width = "2" fill = "black" /><path    d = "M512,80 C607,25 607,189 512,135" fill = "none" stroke-width = "2" stroke = "black" />	<path d = "M512 135 L526 135 L519 147 L512 135 Z" stroke = "black" stroke-width = "2" fill = "black" /><path    d = "M88,135 C-7,189 -7,25 88,80" fill = "none" stroke-width = "2" stroke = "black" />	<path d = "M88 80 L74 80 L81 68 L88 80 Z" stroke = "black" stroke-width = "2" fill = "black" /></svg>

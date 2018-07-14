@@ -1,0 +1,44 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100.00000000000001,
+    "x0": 684,
+    "y0": 397.5670793520086,
+    "x0rel": 0,
+    "y0rel": -1.4329206479914092,
+    "glyph": "0337,0210,0210,0232,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="200" cy = "46" r = "19.098300562505262" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="200" y1="46" x2="68" y2="122" style="stroke:black;stroke-width:2" />
+    <circle cx="68" cy = "122" r = "19.098300562505262" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="68" y1="122" x2="68" y2="275" style="stroke:black;stroke-width:2" />
+    <circle cx="68" cy = "275" r = "19.098300562505262" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="68" y1="275" x2="200" y2="351" style="stroke:black;stroke-width:2" />
+    <circle cx="200" cy = "351" r = "19.098300562505262" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="200" y1="351" x2="332" y2="275" style="stroke:black;stroke-width:2" />
+    <circle cx="332" cy = "275" r = "19.098300562505262" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="332" y1="275" x2="332" y2="122" style="stroke:black;stroke-width:2" />
+    <circle cx="332" cy = "122" r = "19.098300562505262" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="332" y1="122" x2="200" y2="46" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="46" x2="200" y2="351" style="stroke:black;stroke-width:2" />
+    <line x1="332" y1="122" x2="68" y2="275" style="stroke:black;stroke-width:2" />
+    <line x1="332" y1="275" x2="68" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="332" y1="275" x2="200" y2="46" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="46" x2="68" y2="275" style="stroke:black;stroke-width:2" />
+    <line x1="68" y1="275" x2="332" y2="275" style="stroke:black;stroke-width:2" />
+    <line x1="332" y1="122" x2="68" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="68" y1="122" x2="200" y2="351" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="351" x2="332" y2="122" style="stroke:black;stroke-width:2" />
+</svg>

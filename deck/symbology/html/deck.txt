@@ -77,4 +77,40 @@
     <div class="content"><h1>Page</h1></div>
 </div><div class="box"><div class="glyphdata">0332,0332,0332,0337,0337,</div>
     <div class="content"><img src="../symbol/symbology/svg/svg1531368521.svg"></div>
+</div><div class="box"><div class="glyphdata">0337,</div>
+    <div class="content"><p>Static web pages, mostly lists of links to other web elements, and learning tools for people to study and master control of the Five Elements</p></div>
+</div><div class="box"><div class="glyphdata">0333,0333,0333,0337,</div>
+    <div class="content"><p>
+    Physical manifestation is painted stone
+</p></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Feed</h1></div>
+</div><div class="box"><div class="glyphdata">0332,0332,0332,0336,0224,0333,0333,0333,0333,0224,0333,0333,0333,0333,0224,0333,0333,0333,0333,0224,</div>
+    <div class="content"></div>
+</div><div class="box"><div class="glyphdata">0331,0336,0331,0337,0337,</div>
+    <div class="content"><p>
+    A feed is a sequence of html elements, posted using a post.php program
+</p></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0337,0337,0337,</div>
+    <div class="content"><img src="../symbol/svg/svg1531608284.svg"></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0337,0337,0337,</div>
+    <div class="content"><img src="https://i.imgur.com/viA6nnL.jpg"></div>
 </div></div>

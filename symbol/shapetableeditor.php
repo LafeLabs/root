@@ -250,6 +250,26 @@ if(currentAddress >= 0220 && currentAddress < 0277){
         }
     }
 }
+if(currentAddress >= 01220 && currentAddress < 01277){
+    if(path.length > 1){
+        currentFile = path + "bytecode/shapetable.txt";
+    }
+    else{
+        currentFile = "bytecode/shapetable.txt";
+    }
+    data = "";
+    for(var index = 0220;index < 0277;index++){
+        if(currentTable[index].length > 2){
+            data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+        }
+    }
+    for(var index = 01220;index < 01277;index++){
+        if(currentTable[index].length > 2){
+            data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+        }
+    }
+}
+
 if(currentAddress >= 01040 && currentAddress < 01177){
     if(path.length > 1){
         currentFile = path + "bytecode/font.txt";

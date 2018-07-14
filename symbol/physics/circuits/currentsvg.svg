@@ -15,17 +15,17 @@
     "y0": 429.88302674557343,
     "x0rel": -7.758143882844934,
     "y0rel": 30.88302674557343,
-    "glyph": "0337,0331,0321,0220,0221,0222,",
+    "glyph": "0337,0331,0321,0360,0220,0221,0222,0360,",
     "table": []
 }
 </json>
 -->
-	<path d = "M192 496 L192 491 L192 481 L174 470 L192 460 L210 450 L192 439 L174 429 L192 419 L210 408 L192 398 L174 388 L192 377 L210 367 L192 357 L192 336 L192 331 " stroke = "black" stroke-width = "5" fill = "none" />	<path d = "M192 331  M192,331 C192,303 247,290 247,317  M247,317 C247,345 192,317 192,290  M192,290 C192,262 247,248 247,276  M247,276 C247,303 192,276 192,248  M192,248 C192,221 247,207 247,234  M247,234 C247,262 192,234 192,207  M192,207 C192,179 247,166 247,193  M247,193 C247,221 192,193 192,166 " stroke = "black" stroke-width = "5" fill = "none" />    <line x1="192" y1="166" x2="192" y2="124" style="stroke:black;stroke-width:5" />
-    <line x1="192" y1="124" x2="192" y2="104" style="stroke:black;stroke-width:5" />
-    <line x1="192" y1="104" x2="151" y2="104" style="stroke:black;stroke-width:5" />
-    <line x1="192" y1="104" x2="234" y2="104" style="stroke:black;stroke-width:5" />
-    <line x1="192" y1="62" x2="234" y2="62" style="stroke:black;stroke-width:5" />
-    <line x1="192" y1="62" x2="151" y2="62" style="stroke:black;stroke-width:5" />
-    <line x1="192" y1="62" x2="192" y2="42" style="stroke:black;stroke-width:5" />
-    <line x1="192" y1="42" x2="192" y2="0" style="stroke:black;stroke-width:5" />
-</svg>
+ M192,496 C192,331 	<path d = "M192 496 L192 491 L192 481 L174 470 L192 460 L210 450 L192 439 L174 429 L192 419 L210 408 L192 398 L174 388 L192 377 L210 367 L192 357 L192 336 L192 331 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M192 331  M192,331 C192,303 247,290 247,317  M247,317 C247,345 192,317 192,290  M192,290 C192,262 247,248 247,276  M247,276 C247,303 192,276 192,248  M192,248 C192,221 247,207 247,234  M247,234 C247,262 192,234 192,207  M192,207 C192,179 247,166 247,193  M247,193 C247,221 192,193 192,166 " stroke = "black" stroke-width = "10" fill = "none" />    <line x1="192" y1="166" x2="192" y2="124" style="stroke:black;stroke-width:10" />
+    <line x1="192" y1="124" x2="192" y2="104" style="stroke:black;stroke-width:10" />
+    <line x1="192" y1="104" x2="151" y2="104" style="stroke:black;stroke-width:10" />
+    <line x1="192" y1="104" x2="234" y2="104" style="stroke:black;stroke-width:10" />
+    <line x1="192" y1="62" x2="234" y2="62" style="stroke:black;stroke-width:10" />
+    <line x1="192" y1="62" x2="151" y2="62" style="stroke:black;stroke-width:10" />
+    <line x1="192" y1="62" x2="192" y2="42" style="stroke:black;stroke-width:10" />
+    <line x1="192" y1="42" x2="192" y2="0" style="stroke:black;stroke-width:10" />
+ M192,0 C192,-165 </svg>

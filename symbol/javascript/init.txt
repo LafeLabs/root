@@ -19,6 +19,7 @@ else{
 if(path.length > 1){
     document.getElementById("shapetablelink").href = "shapetableeditor.php?path=" + path;
     document.getElementById("svglink").href = path + "svg/";
+    document.getElementById("stylelink").href = "stylejsoneditor.php?path=" + path;
 }
 
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
