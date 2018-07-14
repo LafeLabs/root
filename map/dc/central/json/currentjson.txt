@@ -17,10 +17,10 @@
     "shapes": [],
     "links": [
         {
-            "url": "index.php?path=dc/capitol/",
-            "text": "capitol/",
+            "url": "index.php?path=dc/whitehouse/",
+            "text": "whitehouse/",
             "fontfeet": 500,
-            "latlon": "38.89500,-77.01020",
+            "latlon": "38.89800,-77.04020",
             "rotation": 0
         },
         {
@@ -42,6 +42,13 @@
             "text": "Washington DC",
             "fontfeet": 500,
             "latlon": "38.91000,-77.04420",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/capitol/",
+            "text": "capitol/",
+            "fontfeet": 500,
+            "latlon": "38.89500,-77.01020",
             "rotation": 0
         }
     ],

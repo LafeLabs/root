@@ -1,0 +1,107 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531592357/whitehousesketchnorth_kkmpsp.png",
+    "imgw": 2.888455078689007,
+    "imgleft": -1.282804468664616,
+    "imgtop": -2.11365839249596,
+    "unitpixels": 300,
+    "unitfeet": 555,
+    "imgangle": 90,
+    "latlon0": "38.899039, -77.036566",
+    "marker0": "bottom of ellipse in park",
+    "glyph0": "0341,0340,",
+    "latlon1": "38.900003, -77.036571",
+    "marker1": "top of ellipse in park",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0300,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "https://en.wikipedia.org/wiki/White_House_Peace_Vigil",
+            "text": "Peace Vigil",
+            "fontfeet": 10,
+            "latlon": "38.89890,-77.03680",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "dc/central/",
+            "fontfeet": 50,
+            "latlon": "38.89740,-77.03500",
+            "rotation": 0
+        },
+        {
+            "url": "https://www.whitehouse.gov/about-the-white-house/",
+            "text": "www.whitehouse.gov",
+            "fontfeet": 20,
+            "latlon": "38.89790,-77.03700",
+            "rotation": 0
+        },
+        {
+            "url": "https://en.wikipedia.org/wiki/Lafayette_Square,_Washington,_D.C.",
+            "text": "Lafayette Square",
+            "fontfeet": 20,
+            "latlon": "38.89920,-77.03700",
+            "rotation": 0
+        },
+        {
+            "url": "https://en.wikipedia.org/wiki/Gilbert_du_Motier,_Marquis_de_Lafayette",
+            "text": "Lafayette",
+            "fontfeet": 10,
+            "latlon": "38.8991,-77.0355",
+            "rotation": 0
+        },
+        {
+            "url": "https://en.wikipedia.org/wiki/Jean-Baptiste_Donatien_de_Vimeur,_comte_de_Rochambeau",
+            "text": "Rochambeau",
+            "fontfeet": 10,
+            "latlon": "38.89910,-77.03770",
+            "rotation": 0
+        },
+        {
+            "url": "https://www.whitehouse.gov/about-the-white-house/eisenhower-executive-office-building/",
+            "text": "Eisenhower Executive Office Building",
+            "fontfeet": 20,
+            "latlon": "38.89800,-77.03910",
+            "rotation": -90
+        },
+        {
+            "url": "https://americanart.si.edu/visit/renwick",
+            "text": "Renwick Gallery",
+            "fontfeet": 20,
+            "latlon": "38.89920,-77.03900",
+            "rotation": 0
+        },
+        {
+            "url": "https://en.wikipedia.org/wiki/Treasury_Building_(Washington,_D.C.)",
+            "text": "Treasury",
+            "fontfeet": 20,
+            "latlon": "38.89830,-77.03490",
+            "rotation": 0
+        },
+        {
+            "url": "https://en.wikipedia.org/wiki/Tadeusz_Ko%C5%9Bciuszko",
+            "text": "Tadeusz Kościuszko",
+            "fontfeet": 10,
+            "latlon": "38.90000,-77.03560",
+            "rotation": 0
+        },
+        {
+            "url": "https://en.wikipedia.org/wiki/Friedrich_Wilhelm_von_Steuben",
+            "text": "Friedrich Wilhelm von Steuben",
+            "fontfeet": 10,
+            "latlon": "38.90000,-77.03780",
+            "rotation": 0
+        }
+    ],
+    "images": [],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": ""
+}
