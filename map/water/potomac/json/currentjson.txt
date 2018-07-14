@@ -17,10 +17,10 @@
     "shapes": [],
     "links": [
         {
-            "url": "index.php?path=water/chesapeake/",
-            "text": "chesapeake/",
-            "fontfeet": 2000,
-            "latlon": "38.8,-77.05",
+            "url": "index.php?path=dc/central/",
+            "text": "dc/central/",
+            "fontfeet": 1000,
+            "latlon": "38.89200,-77.04900",
             "rotation": 0
         },
         {
@@ -29,22 +29,16 @@
             "fontfeet": 2000,
             "latlon": "38.91000,-77.04120",
             "rotation": 0
-        }
-    ],
-    "images": [
-        {
-            "url": "https://i.imgur.com/DAdeSyk.jpg",
-            "latlon": "38.81050,-77.05190",
-            "unitfeet": 4444.444444444444,
-            "rotation": 350
         },
         {
-            "url": "https://i.imgur.com/DAdeSyk.jpg",
-            "latlon": "38.91750,-76.99490",
-            "unitfeet": 4444.444444444444,
+            "url": "index.php?path=water/chesapeake/",
+            "text": "chesapeake/",
+            "fontfeet": 2000,
+            "latlon": "38.8,-77.05",
             "rotation": 0
         }
     ],
+    "images": [],
     "avatar": {
         "glyph": "0322,0340,0341,0342,",
         "unitfeet": 100

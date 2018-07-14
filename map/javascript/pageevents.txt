@@ -91,6 +91,7 @@ document.getElementById("savesvg").onclick = function(){
 document.getElementById("importmap").onclick = function(){
     if(document.getElementById("textIO").value.length > 1){
         currentJSON = JSON.parse(document.getElementById("textIO").value);
+        document.getElementById("mainImage").src = currentJSON.imgurl;
         redraw();
     }
 }

@@ -1,0 +1,132 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0331,0337,0337,0337,0360,</div>
+        <div class="content"><h1>Totems</h1>
+<ul style="text-align:left">
+    <li>
+        Cardboard and markers sign
+    </li>
+    <li>Chalk geometry on sidewalk</li>
+    <li>painted stones</li>
+    <li>sand poured in a line</li>
+    <li>hard plastic shapes</li>
+    <li>tape-laminated paper shapes</li>
+    <li>artBox</li>
+    <li>
+        fully decorated keyboard with symbols
+    </li>
+    <li>printed shape table tablet</li>
+    <li>ASCII tablet(8X12)</li>
+    <li>skeletron octohedron</li>
+    <li>4-5 foot icosahedral skeletron trash pod</li>
+</ul></div>
+    </div>
+</div>
+
+
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0337,0337,0337,</div>
+    <div class="content"><h1>Seven Totem Feeds</h1></div>
+</div><div class="box"><div class="glyphdata">0337,0337,0336,0336,0336,0336,0336,0331,0337,0337,0337,0337,0337,</div>
+    <div class="content"><img src="../symbol/symbology/seven/currentsvg.svg"></div>
+</div><div class="box"><div class="glyphdata">0330,0332,0332,0336,0336,0336,0336,0333,0333,0333,0333,0337,0337,0337,</div>
+    <div class="content">laminated maps</div>
+</div><div class="box"><div class="glyphdata">0332,0332,0336,0331,0332,0336,0336,0336,0333,0333,0333,0333,0333,0337,0337,0337,</div>
+    <div class="content">chalk geometry</div>
+</div><div class="box"><div class="glyphdata">0331,0331,0332,0336,0336,0336,0336,0333,0333,0333,0337,0337,0337,</div>
+    <div class="content">tarot-like cards</div>
+</div><div class="box"><div class="glyphdata">0331,0333,0336,0331,0331,0336,0336,0336,0332,0332,0332,0332,0332,0332,0337,0337,0337,</div>
+    <div class="content">physical shapes from plastic</div>
+</div><div class="box"><div class="glyphdata">0333,0336,0333,0333,0331,0336,0336,0336,0332,0337,0337,0337,</div>
+    <div class="content">hand bound book </div>
+</div>  
+    <div class="box">
+        <div class="glyphdata">0333,0330,0333,0336,0332,</div>
+        <div class="content">cardboard signs</div>
+    </div>
+    <div class="box">
+        <div class="glyphdata">0330,0330,0336,0331,0336,0336,0330,0330,0332,0336,0333,0337,0337,0337,</div>
+        <div class="content">painted stones</div>
+    </div>
+<div class="box"><div class="glyphdata">0330,0330,0336,0330,0333,0333,0337,</div>
+    <div class="content"><img src="https://i.imgur.com/wEzuCDq.jpg"></div>
+</div><div class="box"><div class="glyphdata">0330,0333,0333,0333,</div>
+    <div class="content"><img src="https://i.imgur.com/C2OFLHE.jpg"></div>
+</div><div class="box"><div class="glyphdata">0331,0331,0333,0333,</div>
+    <div class="content"><img src="https://i.imgur.com/1A96bUv.jpg"></div>
+</div><div class="box"><div class="glyphdata">0331,0332,0331,0332,</div>
+    <div class="content"><img src="https://i.imgur.com/GdU1EJd.jpg"></div>
+</div><div class="box"><div class="glyphdata">0333,0333,0333,0336,0331,0337,</div>
+    <div class="content"><img src="https://i.imgur.com/fErmzVs.jpg"></div>
+</div><div class="box"><div class="glyphdata">0332,0332,0332,</div>
+    <div class="content"><img src="https://i.imgur.com/7joMODW.jpg"></div>
+</div><div class="box"><div class="glyphdata">0330,0332,0330,0332,</div>
+    <div class="content"><img src="https://i.imgur.com/g0nVLdt.jpg"></div>
+</div></div>
+
+
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Painted Stones</h1>
+</div>
+</div><div class="box"><div class="glyphdata">0332,0332,0332,0332,0337,0337,</div>
+    <div class="content"><img src="https://i.imgur.com/wEzuCDq.jpg"></div>
+</div><div class="box"><div class="glyphdata">0332,0330,0333,</div>
+    <div class="content"><h2>Feedstock:</h2>
+<p style="text-align:left">
+Rocks, preferably clean quartz    
+</p>
+</div>
+</div><div class="box"><div class="glyphdata">0331,</div>
+    <div class="content"><h2>Tools:</h2>
+<p style="text-align:left">
+blue, yellow, and black Paint pens, possibly cleaning supplies    
+</p>
+</div>
+</div><div class="box"><div class="glyphdata">0330,0333,0333,0331,0336,0330,0337,0333,0337,</div>
+    <div class="content"><h2>Applications:</h2>
+<p style="text-align:left">
+Ceremonial, surveying, transmission of value, place holding in processes on cardboard maps
+</p>
+</div>
+</div></div>
+
+<div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Cardboard Signs</h1>
+</div>
+</div><div class="box"><div class="glyphdata">0332,0332,0332,0332,0337,0337,</div>
+    <div class="content"><img src="https://i.imgur.com/C2OFLHE.jpg"></div>
+</div><div class="box"><div class="glyphdata">0332,0330,0333,</div>
+    <div class="content"><h2>Feedstock:</h2>
+<p style="text-align:left">
+Cardboard trash, boxes 
+</p>
+</div>
+</div><div class="box"><div class="glyphdata">0331,</div>
+    <div class="content"><h2>Tools:</h2>
+<p style="text-align:left">
+Shapes, sharpies, paint pens, box cutter    
+</p>
+</div>
+</div></div>

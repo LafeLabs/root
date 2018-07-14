@@ -18,9 +18,9 @@
     "links": [
         {
             "url": "index.php?path=water/potomac/",
-            "text": "Potomac/Anacostia",
+            "text": "dc",
             "fontfeet": 40000,
-            "latlon": "38.94000,-77.5",
+            "latlon": "38.99000,-77.16000",
             "rotation": 0
         },
         {

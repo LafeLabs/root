@@ -33,10 +33,10 @@
     ],
     "images": [
         {
-            "url": "https://i.imgur.com/DAdeSyk.jpg",
-            "latlon": "38.81050,-77.05190",
-            "unitfeet": 4444.444444444444,
-            "rotation": 350
+            "url": "http://res.cloudinary.com/geometron/image/upload/v1531451022/eastcoastmap_n7moft.png",
+            "latlon": "65,-85.05190",
+            "unitfeet": 12000000,
+            "rotation": 5
         },
         {
             "url": "https://i.imgur.com/DAdeSyk.jpg",

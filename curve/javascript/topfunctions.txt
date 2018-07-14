@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = Math.sinh(X);

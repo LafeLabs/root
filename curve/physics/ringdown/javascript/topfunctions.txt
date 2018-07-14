@@ -2,28 +2,14 @@
 
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.a*X*X*X + funcparams.b*X*X + funcparams.c*X + funcparams.d;
+    Y = Math.exp(-X/funcparams.tau)*Math.cos(funcparams.phi + 2*Math.PI*X/funcparams.T);
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
-
-function YofX2(){
-    X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.b*X*X + funcparams.c*X + funcparams.d;
-    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
- }
-
-function XYofT(){
-    T = plotparams.g*t;
-    X = Math.exp(-T/funcparams.tau)*Math.cos(2*Math.PI*T/funcparams.T);
-    Y = Math.exp(-T/funcparams.tau)*Math.sin(2*Math.PI*T/funcparams.T);
-    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
-    x = plotparams.x0 - plotparams.G*(X - funcparams.X0);    
-}
 
 
 function plotfunction(){
-
+/*
 
     currentStroke = "blue";
     currentLineWidth = 4;
@@ -47,7 +33,7 @@ function plotfunction(){
     currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
 
 
-    /*plot one function:
+    /*plot one function:*/
     currentStroke = "blue";
     currentLineWidth = 4;
     ctx.strokeStyle = currentStroke;
@@ -70,6 +56,8 @@ function plotfunction(){
     
 
 }
+
+
 
 
 

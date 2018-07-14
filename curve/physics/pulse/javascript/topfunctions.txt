@@ -1,8 +1,9 @@
 
-
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.a*X*X*X + funcparams.b*X*X + funcparams.c*X + funcparams.d;
+    F1 = 0.5*(1 + Math.tanh(X/funcparams.risetime));
+    F2 = 0.5*(1 + Math.tanh((funcparams.duration - X)/funcparams.risetime));
+    Y = F1*F2*Math.cos(funcparams.phi + 2*Math.PI*X/funcparams.T)
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
@@ -23,7 +24,7 @@ function XYofT(){
 
 
 function plotfunction(){
-
+/*
 
     currentStroke = "blue";
     currentLineWidth = 4;
@@ -47,7 +48,7 @@ function plotfunction(){
     currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
 
 
-    /*plot one function:
+    /*plot one function:*/
     currentStroke = "blue";
     currentLineWidth = 4;
     ctx.strokeStyle = currentStroke;
@@ -70,6 +71,14 @@ function plotfunction(){
     
 
 }
+
+
+
+
+
+
+
+
 
 
 

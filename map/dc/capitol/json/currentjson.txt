@@ -1,0 +1,44 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531534631/unionstationcapitol_leuijd.png",
+    "imgw": 8.39297922201223,
+    "imgleft": -3.6447680395218303,
+    "imgtop": -6.17054521992963,
+    "unitpixels": 100,
+    "unitfeet": 555,
+    "imgangle": 0,
+    "latlon0": " 38.893629, -77.009064 ",
+    "marker0": "Senate Park Fountain",
+    "glyph0": "0341,0340,",
+    "latlon1": " 38.896415, -77.006579 ",
+    "marker1": "columbus memorial",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0333,0330,0333,0336,0330,0332,0336,0100,050,061,064,056,067,054,064,056,066,051,0336,0327,0330,0330,0332,0365,0330,0330,0332,0300,0336,0322,0336,0333,0331,0336,0100,050,061,063,056,064,054,062,056,067,051,0327,0330,0332,0332,0365,0300,0322,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "central/",
+            "fontfeet": 200,
+            "latlon": "38.89400,-77.01720",
+            "rotation": 0
+        }
+    ],
+    "images": [
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.89760,-77.00570",
+            "unitfeet": 173.41529915832618,
+            "rotation": 0
+        }
+    ],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "undefined0207,"
+}

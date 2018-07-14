@@ -1,11 +1,11 @@
 {
-    "imgurl": "https://res.cloudinary.com/geometron/image/upload/v1529180935/dcmap_xdlpsy.jpg",
-    "imgw": 147.00069201988492,
-    "imgleft": -65.1462766863341,
-    "imgtop": -100.8139394468731,
-    "unitpixels": 3,
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531451013/bigdcsketch_ktsx8v.png",
+    "imgw": 123.91323276088887,
+    "imgleft": -74.00179562838251,
+    "imgtop": -77.24720546595957,
+    "unitpixels": 4,
     "unitfeet": 555,
-    "imgangle": 0,
+    "imgangle": -1,
     "latlon0": "38.889464, -77.035246",
     "marker0": "Washington Monument",
     "glyph0": "0341,0340,",
@@ -13,14 +13,14 @@
     "marker1": "North Boundary Stone",
     "glyph1": "0341,0340,",
     "hashtag": "metamapdc",
-    "currentGlyph": "0337,0337,0337,0337,0337,0337,0333,0350,0334,0310,0337,0304,0200,",
+    "currentGlyph": "0300,",
     "shapes": [],
     "links": [
         {
-            "url": "index.php?path=dc/metro/",
-            "text": "dc/metro/",
-            "fontfeet": 2000,
-            "latlon": "38.94000,-77.04120",
+            "url": "index.php?path=dc/central/",
+            "text": "dc/central/",
+            "fontfeet": 1000,
+            "latlon": "38.89200,-77.04900",
             "rotation": 0
         },
         {
@@ -29,22 +29,16 @@
             "fontfeet": 2000,
             "latlon": "38.91000,-77.04120",
             "rotation": 0
-        }
-    ],
-    "images": [
-        {
-            "url": "https://i.imgur.com/DAdeSyk.jpg",
-            "latlon": "38.81050,-77.05190",
-            "unitfeet": 4444.444444444444,
-            "rotation": 350
         },
         {
-            "url": "https://i.imgur.com/DAdeSyk.jpg",
-            "latlon": "38.91750,-76.99490",
-            "unitfeet": 4444.444444444444,
+            "url": "index.php?path=water/chesapeake/",
+            "text": "chesapeake/",
+            "fontfeet": 2000,
+            "latlon": "38.8,-77.05",
             "rotation": 0
         }
     ],
+    "images": [],
     "avatar": {
         "glyph": "0322,0340,0341,0342,",
         "unitfeet": 100
@@ -53,5 +47,5 @@
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "undefined0207,"
+    "glyph": ""
 }

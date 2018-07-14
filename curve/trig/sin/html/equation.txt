@@ -1,10 +1,12 @@
 
-<h2>Log Spiral</h2>
+
+<h2>Sin</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-(X,Y) = (e^{-t/\tau}\cos{\frac{2\pi t}{T}},e^{-t/\tau}\sin{\frac{2\pi t}{T}})
+Y = \sin{\left(\phi + \frac{2\pi X}{T}\right)}
+
 $$
 </p>
 <p></p>
@@ -24,4 +26,5 @@ $$
 <p>
     X and Y, and $X_0$ and $Y_0$ in physical units of the System. x and y and x0 and y0 in pixels.  G is in pixels per Y unit and g is in X units per pixel. 
 </p>
+
 
