@@ -1,0 +1,27 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://i.imgur.com/kGoAPS0.jpg",
+    "imgw": 4,
+    "imgleft": -2,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100.00000000000001,
+    "x0": 684,
+    "y0": 397.5670793520086,
+    "x0rel": 0,
+    "y0rel": -1.4329206479914092,
+    "glyph": "0336,0332,0337,0340,0341,0333,0340,0341,",
+    "table": []
+}
+</json>
+-->
+<circle cx="150" cy = "199" r = "3" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="150" cy = "199" r = "100.00000000000001" stroke = "black" stroke-width = "6" fill = "none" />
+<circle cx="250" cy = "199" r = "3" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="250" cy = "199" r = "100.00000000000001" stroke = "black" stroke-width = "6" fill = "none" />
+</svg>

@@ -1,16 +1,16 @@
 {
-    "imgurl": "",
-    "imgw": 2,
-    "imgleft": -1,
-    "imgtop": -1,
+    "imgurl": "https://i.imgur.com/kGoAPS0.jpg",
+    "imgw": 4,
+    "imgleft": -2,
+    "imgtop": -2,
     "imgangle": 0,
-    "svgwidth": 500,
-    "svgheight": 500,
+    "svgwidth": 400,
+    "svgheight": 400,
     "unit": 100.00000000000001,
     "x0": 684,
     "y0": 397.5670793520086,
     "x0rel": 0,
     "y0rel": -1.4329206479914092,
-    "glyph": "",
+    "glyph": "0211,0330,",
     "table": []
 }
