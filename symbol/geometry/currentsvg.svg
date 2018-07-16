@@ -15,9 +15,10 @@
     "y0": 351.4475154247304,
     "x0rel": 0,
     "y0rel": -47.5524845752696,
-    "glyph": "",
+    "glyph": "0336,0341,0337,",
     "table": []
 }
 </json>
 -->
+    <circle cx="300" cy = "252" r = "73.20500000000004" stroke = "black" stroke-width = "2" fill = "none" />
 </svg>

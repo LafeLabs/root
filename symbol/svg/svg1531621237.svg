@@ -1,0 +1,352 @@
+<svg width="410" height="250" viewbox = "0 0 410 250"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 410,
+    "svgheight": 250,
+    "unit": 100.00000000000001,
+    "x0": 565.5,
+    "y0": 357.5670793520086,
+    "x0rel": -50,
+    "y0rel": -1.4329206479914092,
+    "glyph": "0336,0336,0336,0336,0333,0333,0337,0337,0332,0332,0330,0332,0330,0330,0332,0332,0332,01332,01331,01337,01305,01311,01322,01335,01362,01337,01203,01334,01334,01203,01334,01336,0336,0331,0337,0331,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,01350,01334,01203,01363,01334,01334,01334,01337,01321,01362,01203,01334,01334,01334,01334,0336,0331,0337,0332,0331,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,01203,01334,01334,01334,01336,01203,01364,01351,01351,01334,01201,01335,01336,01201,01334,0336,0331,0337,0331,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,01201,01336,01335,01201,01334,01201,01335,01336,01201,01334,01201,01335,01336,01201,01334,0336,0331,0337,0331,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,01201,01335,01336,01201,01335,01334,01350,01335,01330,01337,01330,01337,01330,01337,01330,0336,0331,0337,0331,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,0332,01337,01330,01335,01350,01335,0336,0330,0333,0336,0341,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M43 49 L43 24 L17 24 L17 49 L43 49 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M36 33 L36 39 L30 39 L30 42 L27 39 L24 36 L27 33 L30 30 L30 33 L36 33 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M68 49 L68 24 L43 24 L43 49 L68 49 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M52 30 L58 30 L58 36 L61 36 L58 39 L55 42 L52 39 L49 36 L52 36 L52 30 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M93 49 L93 24 L68 24 L68 49 L93 49 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="80" y1="36" x2="80" y2="30" style="stroke:black;stroke-width:2" />
+    <line x1="80" y1="36" x2="74" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="80" y1="36" x2="80" y2="42" style="stroke:black;stroke-width:2" />
+    <line x1="80" y1="36" x2="86" y2="36" style="stroke:black;stroke-width:2" />
+	<path d = "M118 49 L118 24 L93 24 L93 49 L118 49 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="105" y1="36" x2="105" y2="24" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="36" x2="117" y2="32" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="36" x2="112" y2="46" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="36" x2="98" y2="46" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="36" x2="93" y2="32" style="stroke:black;stroke-width:2" />
+    <circle cx="105" cy = "36" r = "12.500000000000007" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="109" cy = "31" r = "1.5625000000000009" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="111" cy = "38" r = "1.5625000000000009" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="105" cy = "42" r = "1.5625000000000009" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="99" cy = "38" r = "1.5625000000000009" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="101" cy = "31" r = "1.5625000000000009" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="118" y1="49" x2="143" y2="49" style="stroke:black;stroke-width:2" />
+    <line x1="118" y1="49" x2="130" y2="10" style="stroke:black;stroke-width:2" />
+    <line x1="143" y1="49" x2="130" y2="10" style="stroke:black;stroke-width:2" />
+	<path d = "M143 49 L143 24 L118 24 L118 49 L143 49 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="143" y1="49" x2="122" y2="34" style="stroke:black;stroke-width:2" />
+    <line x1="122" y1="34" x2="135" y2="25" style="stroke:black;stroke-width:2" />
+    <line x1="135" y1="25" x2="127" y2="19" style="stroke:black;stroke-width:2" />
+	<path d = "M168 49 L168 24 L143 24 L143 49 L168 49 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M161 42 L161 30 L149 30 L149 42 L161 42 Z" stroke = "red" stroke-width = "2" fill = "red" />	<path d = "M193 49 L193 24 L168 24 L168 49 L193 49 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M175.5805826175841 31.64766196959272           A6.250000000000003 6.250000000000003 0 0 1 184.41941738241596 31.64766196959271" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M175.58058261758413 40.48649673442457           A6.250000000000003 6.250000000000003 0 0 1 175.5805826175841 31.64766196959272" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M184.419417382416 40.486496734424534           A6.250000000000003 6.250000000000003 0 0 1 175.58058261758413 40.48649673442457" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="180" y1="36" x2="184" y2="32" style="stroke:black;stroke-width:2" />
+    <line x1="180" y1="27" x2="184" y2="31" style="stroke:black;stroke-width:2" />
+	<path d = "M217 49 L217 24 L192 24 L193 49 L218 49 " stroke = "black" stroke-width = "2" fill = "none" /><circle cx="199" cy = "42" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="199" y1="42" x2="199" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="199" y1="36" x2="199" y2="30" style="stroke:black;stroke-width:2" />
+    <line x1="199" y1="30" x2="205" y2="30" style="stroke:black;stroke-width:2" />
+    <line x1="205" y1="30" x2="211" y2="30" style="stroke:black;stroke-width:2" />
+    <line x1="211" y1="30" x2="207" y2="25" style="stroke:black;stroke-width:2" />
+    <line x1="211" y1="30" x2="207" y2="34" style="stroke:black;stroke-width:2" />
+	<path d = "M243 49 L242 24 L217 24 L218 49 L243 49 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="230" y1="36" x2="230" y2="30" style="stroke:black;stroke-width:2" />
+    <line x1="230" y1="36" x2="224" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="230" y1="36" x2="230" y2="42" style="stroke:black;stroke-width:2" />
+    <line x1="230" y1="36" x2="236" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="49" x2="247" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="249" y1="49" x2="253" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="255" y1="49" x2="259" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="261" y1="49" x2="266" y2="44" style="stroke:black;stroke-width:2" />
+	<path d = "M268 49 L267 24 L242 24 L243 49 L268 49 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="249" y1="36" x2="261" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="261" y1="36" x2="259" y2="38" style="stroke:black;stroke-width:2" />
+    <line x1="261" y1="36" x2="259" y2="34" style="stroke:black;stroke-width:2" />
+	<path d = "M293 49 L292 24 L267 24 L268 49 L293 49 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M275.58058261758373 31.64766196959104           A6.250000000000003 6.250000000000003 0 0 1 284.4194173824156 31.6476619695906" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M275.5805826175841 40.486496734422865           A6.250000000000003 6.250000000000003 0 0 1 275.58058261758373 31.64766196959104" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M284.419417382416 40.48649673442252           A6.250000000000003 6.250000000000003 0 0 1 275.5805826175841 40.486496734422865" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="280" y1="36" x2="284" y2="40" style="stroke:black;stroke-width:2" />
+    <line x1="280" y1="45" x2="284" y2="41" style="stroke:black;stroke-width:2" />
+	<path d = "M318 49 L317 24 L292 24 L293 49 L318 49 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M300.58058261758396 31.647661969590274           A6.250000000000003 6.250000000000003 0 0 1 309.41941738241576 31.647661969589965" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M300.5805826175842 40.4864967344221           A6.250000000000003 6.250000000000003 0 0 1 300.58058261758396 31.647661969590274" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M309.41941738241604 40.486496734421884           A6.250000000000003 6.250000000000003 0 0 1 300.5805826175842 40.4864967344221" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="305" y1="36" x2="309" y2="40" style="stroke:black;stroke-width:2" />
+    <line x1="305" y1="45" x2="309" y2="41" style="stroke:black;stroke-width:2" />
+    <line x1="318" y1="49" x2="322" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="324" y1="49" x2="328" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="330" y1="49" x2="334" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="336" y1="49" x2="341" y2="44" style="stroke:black;stroke-width:2" />
+	<path d = "M343 49 L342 24 L317 24 L318 49 L343 49 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="324" y1="36" x2="336" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="336" y1="36" x2="334" y2="38" style="stroke:black;stroke-width:2" />
+    <line x1="336" y1="36" x2="334" y2="34" style="stroke:black;stroke-width:2" />
+	<path d = "M368 49 L367 24 L342 24 L342 49 L367 49 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M350.5805826175842 31.647661969588675           A6.250000000000003 6.250000000000003 0 0 1 359.419417382416 31.647661969588746" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M350.58058261758407 40.4864967344205           A6.250000000000003 6.250000000000003 0 0 1 350.5805826175842 31.647661969588675" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M359.4194173824159 40.48649673442067           A6.250000000000003 6.250000000000003 0 0 1 350.58058261758407 40.4864967344205" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="355" y1="36" x2="359" y2="40" style="stroke:black;stroke-width:2" />
+    <line x1="355" y1="45" x2="359" y2="41" style="stroke:black;stroke-width:2" />
+	<path d = "M392 49 L393 24 L368 24 L367 49 L392 49 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="386" y1="36" x2="374" y2="36" style="stroke:black;stroke-width:2" />
+	<path d = "M42 86 L42 61 L17 61 L17 86 L42 86 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="30" y1="74" x2="39" y2="65" style="stroke:black;stroke-width:2" />
+    <line x1="30" y1="74" x2="39" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="30" y1="74" x2="33" y2="74" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="74" x2="39" y2="74" style="stroke:black;stroke-width:2" />
+	<path d = "M67 86 L67 61 L42 61 L42 86 L67 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M50.580582617582635 69.14766196957017           A6.250000000000003 6.250000000000003 0 0 1 59.41941738241446 69.147661969571" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M50.580582617581754 77.986496734402           A6.250000000000003 6.250000000000003 0 0 1 50.580582617582635 69.14766196957017" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M59.41941738241358 77.98649673440292           A6.250000000000003 6.250000000000003 0 0 1 50.580582617581754 77.986496734402" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="55" y1="74" x2="59" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="55" y1="83" x2="59" y2="79" style="stroke:black;stroke-width:2" />
+    <line x1="67" y1="86" x2="72" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="74" y1="86" x2="78" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="80" y1="86" x2="84" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="86" y1="86" x2="91" y2="82" style="stroke:black;stroke-width:2" />
+	<path d = "M92 86 L92 61 L67 61 L67 86 L92 86 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="74" y1="74" x2="86" y2="74" style="stroke:black;stroke-width:2" />
+    <line x1="86" y1="74" x2="84" y2="76" style="stroke:black;stroke-width:2" />
+    <line x1="86" y1="74" x2="84" y2="71" style="stroke:black;stroke-width:2" />
+	<path d = "M117 86 L117 61 L92 61 L92 86 L117 86 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="99" y1="67" x2="105" y2="67" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="67" x2="111" y2="67" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="67" x2="111" y2="74" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="74" x2="111" y2="80" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="80" x2="116" y2="75" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="80" x2="107" y2="75" style="stroke:black;stroke-width:2" />
+<circle cx="111" cy = "80" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="92" y1="86" x2="97" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="99" y1="86" x2="103" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="86" x2="109" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="86" x2="116" y2="82" style="stroke:black;stroke-width:2" />
+	<path d = "M142 86 L143 61 L118 61 L117 86 L142 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M125.58058261758318 69.14766196957777           A6.250000000000003 6.250000000000003 0 0 1 134.419417382415 69.14766196957918" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M125.58058261758171 77.9864967344096           A6.250000000000003 6.250000000000003 0 0 1 125.58058261758318 69.14766196957777" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M134.41941738241354 77.98649673441109           A6.250000000000003 6.250000000000003 0 0 1 125.58058261758171 77.9864967344096" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="130" y1="74" x2="134" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="130" y1="83" x2="134" y2="79" style="stroke:black;stroke-width:2" />
+	<path d = "M167 86 L168 61 L143 61 L142 86 L167 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M150.58058261758345 69.14766196958183           A6.250000000000003 6.250000000000003 0 0 1 159.41941738241528 69.14766196958361" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M150.5805826175816 77.98649673441365           A6.250000000000003 6.250000000000003 0 0 1 150.58058261758345 69.14766196958183" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M159.41941738241343 77.98649673441554           A6.250000000000003 6.250000000000003 0 0 1 150.5805826175816 77.98649673441365" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="155" y1="74" x2="159" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="155" y1="83" x2="159" y2="79" style="stroke:black;stroke-width:2" />
+	<path d = "M192 86 L193 61 L168 61 L167 86 L192 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M175.58058261758376 69.14766196958693           A6.250000000000003 6.250000000000003 0 0 1 184.4194173824156 69.14766196958911" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M175.58058261758154 77.98649673441876           A6.250000000000003 6.250000000000003 0 0 1 175.58058261758376 69.14766196958693" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M184.41941738241337 77.98649673442102           A6.250000000000003 6.250000000000003 0 0 1 175.58058261758154 77.98649673441876" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="180" y1="74" x2="184" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="180" y1="83" x2="184" y2="79" style="stroke:black;stroke-width:2" />
+	<path d = "M217 86 L218 61 L193 61 L192 86 L217 86 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="205" y1="74" x2="205" y2="67" style="stroke:black;stroke-width:2" />
+    <line x1="205" y1="74" x2="199" y2="74" style="stroke:black;stroke-width:2" />
+    <line x1="205" y1="74" x2="205" y2="80" style="stroke:black;stroke-width:2" />
+    <line x1="205" y1="74" x2="211" y2="74" style="stroke:black;stroke-width:2" />
+	<path d = "M242 86 L243 61 L218 61 L217 86 L242 86 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M236 80 L236 67 L224 67 L224 80 L236 80 Z" stroke = "black" stroke-width = "4" fill = "black" />	<path d = "M267 86 L268 61 L243 61 L242 86 L267 86 " stroke = "black" stroke-width = "2" fill = "none" /><circle cx="249" cy = "80" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="249" y1="80" x2="249" y2="74" style="stroke:black;stroke-width:2" />
+    <line x1="249" y1="74" x2="249" y2="67" style="stroke:black;stroke-width:2" />
+    <line x1="249" y1="67" x2="255" y2="67" style="stroke:black;stroke-width:2" />
+    <line x1="255" y1="67" x2="261" y2="67" style="stroke:black;stroke-width:2" />
+    <line x1="261" y1="67" x2="257" y2="63" style="stroke:black;stroke-width:2" />
+    <line x1="261" y1="67" x2="257" y2="72" style="stroke:black;stroke-width:2" />
+    <line x1="267" y1="86" x2="272" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="274" y1="86" x2="278" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="280" y1="86" x2="284" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="86" x2="291" y2="82" style="stroke:black;stroke-width:2" />
+	<path d = "M292 86 L293 61 L268 61 L267 86 L292 86 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="274" y1="74" x2="286" y2="74" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="74" x2="284" y2="76" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="74" x2="284" y2="71" style="stroke:black;stroke-width:2" />
+	<path d = "M317 86 L318 61 L293 61 L292 86 L317 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M300.5805826175847 69.14766196962756           A6.250000000000003 6.250000000000003 0 0 1 309.4194173824165 69.14766196963126" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M300.58058261758094 77.98649673445938           A6.250000000000003 6.250000000000003 0 0 1 300.5805826175847 69.14766196962756" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M309.41941738241275 77.98649673446317           A6.250000000000003 6.250000000000003 0 0 1 300.58058261758094 77.98649673445938" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="305" y1="74" x2="309" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="305" y1="83" x2="309" y2="79" style="stroke:black;stroke-width:2" />
+	<path d = "M342 86 L343 61 L318 61 L317 86 L342 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M325.5805826175849 69.1476619696381           A6.250000000000003 6.250000000000003 0 0 1 334.4194173824168 69.14766196964217" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M325.58058261758083 77.98649673446992           A6.250000000000003 6.250000000000003 0 0 1 325.5805826175849 69.1476619696381" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M334.41941738241263 77.98649673447409           A6.250000000000003 6.250000000000003 0 0 1 325.58058261758083 77.98649673446992" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="330" y1="74" x2="334" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="330" y1="83" x2="334" y2="79" style="stroke:black;stroke-width:2" />
+	<path d = "M367 86 L368 61 L343 61 L342 86 L367 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M350.58058261758515 69.14766196964972           A6.250000000000003 6.250000000000003 0 0 1 359.419417382417 69.14766196965417" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M350.58058261758066 77.98649673448153           A6.250000000000003 6.250000000000003 0 0 1 350.58058261758515 69.14766196964972" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M359.4194173824125 77.9864967344861           A6.250000000000003 6.250000000000003 0 0 1 350.58058261758066 77.98649673448153" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="355" y1="74" x2="359" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="355" y1="83" x2="359" y2="79" style="stroke:black;stroke-width:2" />
+	<path d = "M392 86 L393 61 L368 61 L367 86 L392 86 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M375.58058261758543 69.1476619696624           A6.250000000000003 6.250000000000003 0 0 1 384.41941738241724 69.14766196966724" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M375.58058261758055 77.98649673449422           A6.250000000000003 6.250000000000003 0 0 1 375.58058261758543 69.1476619696624" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M384.41941738241235 77.98649673449916           A6.250000000000003 6.250000000000003 0 0 1 375.58058261758055 77.98649673449422" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="380" y1="74" x2="384" y2="78" style="stroke:black;stroke-width:2" />
+    <line x1="380" y1="83" x2="384" y2="79" style="stroke:black;stroke-width:2" />
+    <line x1="17" y1="124" x2="22" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="24" y1="124" x2="28" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="30" y1="124" x2="34" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="124" x2="41" y2="119" style="stroke:black;stroke-width:2" />
+	<path d = "M42 124 L42 99 L17 99 L17 124 L42 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="24" y1="111" x2="36" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="111" x2="34" y2="113" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="111" x2="34" y2="109" style="stroke:black;stroke-width:2" />
+	<path d = "M67 124 L67 99 L42 99 L42 124 L67 124 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M50.58058261756437 106.64766196947465           A6.250000000000003 6.250000000000003 0 0 1 59.41941738239619 106.64766196947987" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M50.5805826175591 115.48649673430647           A6.250000000000003 6.250000000000003 0 0 1 50.58058261756437 106.64766196947465" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M59.419417382390925 115.48649673431179           A6.250000000000003 6.250000000000003 0 0 1 50.5805826175591 115.48649673430647" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="55" y1="111" x2="59" y2="115" style="stroke:black;stroke-width:2" />
+    <line x1="55" y1="120" x2="59" y2="116" style="stroke:black;stroke-width:2" />
+	<path d = "M92 124 L92 99 L67 99 L67 124 L92 124 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M75.58058261756479 106.64766196948939           A6.250000000000003 6.250000000000003 0 0 1 84.41941738239686 106.64766196949475" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M75.58058261755988 115.48649673432146           A6.250000000000003 6.250000000000003 0 0 1 75.58058261756479 106.64766196948939" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M84.41941738239196 115.48649673432591           A6.250000000000003 6.250000000000003 0 0 1 75.58058261755988 115.48649673432146" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="80" y1="111" x2="84" y2="115" style="stroke:black;stroke-width:2" />
+    <line x1="80" y1="120" x2="84" y2="116" style="stroke:black;stroke-width:2" />
+	<path d = "M117 124 L117 99 L92 99 L92 124 L117 124 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M100.58058261756301 106.64766196949992           A6.250000000000003 6.250000000000003 0 0 1 109.4194173823951 106.64766196950364" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M100.58058261755974 115.48649673433201           A6.250000000000003 6.250000000000003 0 0 1 100.58058261756301 106.64766196949992" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M109.41941738239183 115.48649673433482           A6.250000000000003 6.250000000000003 0 0 1 100.58058261755974 115.48649673433201" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="105" y1="111" x2="109" y2="115" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="120" x2="109" y2="116" style="stroke:black;stroke-width:2" />
+	<path d = "M142 124 L142 99 L117 99 L117 124 L142 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="136" y1="111" x2="124" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="142" y1="124" x2="147" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="149" y1="124" x2="153" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="155" y1="124" x2="159" y2="119" style="stroke:black;stroke-width:2" />
+    <line x1="161" y1="124" x2="166" y2="119" style="stroke:black;stroke-width:2" />
+	<path d = "M167 124 L167 99 L142 99 L142 124 L167 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="149" y1="111" x2="161" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="161" y1="111" x2="159" y2="113" style="stroke:black;stroke-width:2" />
+    <line x1="161" y1="111" x2="159" y2="109" style="stroke:black;stroke-width:2" />
+	<path d = "M192 124 L192 99 L167 99 L167 124 L192 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="174" y1="105" x2="180" y2="105" style="stroke:black;stroke-width:2" />
+    <line x1="180" y1="105" x2="186" y2="105" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="105" x2="186" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="111" x2="186" y2="117" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="117" x2="191" y2="113" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="117" x2="182" y2="113" style="stroke:black;stroke-width:2" />
+<circle cx="186" cy = "117" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+	<path d = "M217 124 L217 99 L192 99 L192 124 L217 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="205" y1="111" x2="207" y2="109" style="stroke:black;stroke-width:2" />
+    <line x1="209" y1="107" x2="212" y2="104" style="stroke:black;stroke-width:2" />
+    <line x1="214" y1="102" x2="216" y2="100" style="stroke:black;stroke-width:2" />
+    <line x1="205" y1="111" x2="217" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="205" y1="111" x2="214" y2="120" style="stroke:black;stroke-width:2" />
+	<path d = "M242 124 L242 99 L217 99 L217 124 L242 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="230" y1="111" x2="232" y2="109" style="stroke:black;stroke-width:2" />
+    <line x1="234" y1="107" x2="237" y2="104" style="stroke:black;stroke-width:2" />
+    <line x1="239" y1="102" x2="241" y2="100" style="stroke:black;stroke-width:2" />
+    <line x1="230" y1="111" x2="242" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="230" y1="111" x2="239" y2="120" style="stroke:black;stroke-width:2" />
+	<path d = "M267 124 L267 99 L242 99 L242 124 L267 124 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M250.5805826175625 106.64766196954848           A6.250000000000003 6.250000000000003 0 0 1 259.41941738239456 106.64766196955284" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M250.58058261755858 115.48649673438055           A6.250000000000003 6.250000000000003 0 0 1 250.5805826175625 106.64766196954848" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M259.4194173823907 115.486496734384           A6.250000000000003 6.250000000000003 0 0 1 250.58058261755858 115.48649673438055" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="255" y1="111" x2="259" y2="115" style="stroke:black;stroke-width:2" />
+    <line x1="255" y1="120" x2="259" y2="116" style="stroke:black;stroke-width:2" />
+	<path d = "M292 124 L292 99 L267 99 L267 124 L292 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="274" y1="111" x2="286" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="111" x2="284" y2="113" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="111" x2="284" y2="109" style="stroke:black;stroke-width:2" />
+	<path d = "M317 124 L317 99 L292 99 L292 124 L317 124 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M300.58058261756133 106.64766196956482           A6.250000000000003 6.250000000000003 0 0 1 309.4194173823934 106.64766196956856" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M300.58058261755804 115.4864967343969           A6.250000000000003 6.250000000000003 0 0 1 300.58058261756133 106.64766196956482" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M309.4194173823901 115.48649673439972           A6.250000000000003 6.250000000000003 0 0 1 300.58058261755804 115.4864967343969" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="305" y1="111" x2="309" y2="107" style="stroke:black;stroke-width:2" />
+    <line x1="305" y1="102" x2="309" y2="106" style="stroke:black;stroke-width:2" />
+	<path d = "M342 124 L342 99 L317 99 L317 124 L342 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="336" y1="111" x2="324" y2="111" style="stroke:black;stroke-width:2" />
+	<path d = "M367 124 L367 99 L342 99 L342 124 L367 124 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="349" y1="111" x2="361" y2="111" style="stroke:black;stroke-width:2" />
+    <line x1="361" y1="111" x2="359" y2="113" style="stroke:black;stroke-width:2" />
+    <line x1="361" y1="111" x2="359" y2="109" style="stroke:black;stroke-width:2" />
+	<path d = "M392 124 L392 99 L367 99 L367 124 L392 124 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M375.58058261756065 106.64766196959069           A6.250000000000003 6.250000000000003 0 0 1 384.41941738239274 106.64766196959481" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M375.580582617557 115.48649673442277           A6.250000000000003 6.250000000000003 0 0 1 375.58058261756065 106.64766196959069" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M384.4194173823891 115.48649673442597           A6.250000000000003 6.250000000000003 0 0 1 375.580582617557 115.48649673442277" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="380" y1="111" x2="384" y2="115" style="stroke:black;stroke-width:2" />
+    <line x1="380" y1="120" x2="384" y2="116" style="stroke:black;stroke-width:2" />
+	<path d = "M42 161 L42 136 L17 136 L17 161 L42 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="24" y1="149" x2="36" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="149" x2="34" y2="151" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="149" x2="34" y2="146" style="stroke:black;stroke-width:2" />
+	<path d = "M67 161 L67 136 L42 136 L42 161 L67 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="61" y1="149" x2="49" y2="149" style="stroke:black;stroke-width:2" />
+	<path d = "M92 161 L92 136 L67 136 L67 161 L92 161 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M75.58058261754975 144.14766196951553           A6.250000000000003 6.250000000000003 0 0 1 84.41941738238182 144.14766196951922" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M75.58058261754653 152.9864967343476           A6.250000000000003 6.250000000000003 0 0 1 75.58058261754975 144.14766196951553" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M84.4194173823786 152.9864967343504           A6.250000000000003 6.250000000000003 0 0 1 75.58058261754653 152.9864967343476" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="80" y1="149" x2="84" y2="144" style="stroke:black;stroke-width:2" />
+    <line x1="80" y1="139" x2="84" y2="144" style="stroke:black;stroke-width:2" />
+	<path d = "M117 161 L117 136 L92 136 L92 161 L117 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="99" y1="149" x2="111" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="149" x2="109" y2="151" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="149" x2="109" y2="146" style="stroke:black;stroke-width:2" />
+	<path d = "M142 161 L142 136 L117 136 L117 161 L142 161 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M125.58058261754904 144.14766196953252           A6.250000000000003 6.250000000000003 0 0 1 134.4194173823811 144.1476619695364" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M125.58058261754562 152.9864967343646           A6.250000000000003 6.250000000000003 0 0 1 125.58058261754904 144.14766196953252" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M134.4194173823777 152.98649673436756           A6.250000000000003 6.250000000000003 0 0 1 125.58058261754562 152.9864967343646" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="130" y1="149" x2="134" y2="153" style="stroke:black;stroke-width:2" />
+    <line x1="130" y1="158" x2="134" y2="154" style="stroke:black;stroke-width:2" />
+	<path d = "M167 161 L167 136 L142 136 L142 161 L167 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="149" y1="149" x2="161" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="161" y1="149" x2="159" y2="151" style="stroke:black;stroke-width:2" />
+    <line x1="161" y1="149" x2="159" y2="146" style="stroke:black;stroke-width:2" />
+	<path d = "M192 161 L192 136 L167 136 L167 161 L192 161 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M175.58058261754778 144.14766196954616           A6.250000000000003 6.250000000000003 0 0 1 184.41941738237986 144.1476619695494" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M175.580582617545 152.98649673437825           A6.250000000000003 6.250000000000003 0 0 1 175.58058261754778 144.14766196954616" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M184.41941738237708 152.98649673438058           A6.250000000000003 6.250000000000003 0 0 1 175.580582617545 152.98649673437825" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="180" y1="149" x2="184" y2="144" style="stroke:black;stroke-width:2" />
+    <line x1="180" y1="139" x2="184" y2="144" style="stroke:black;stroke-width:2" />
+	<path d = "M217 161 L217 136 L192 136 L192 161 L217 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="211" y1="149" x2="199" y2="149" style="stroke:black;stroke-width:2" />
+	<path d = "M242 161 L242 136 L217 136 L217 161 L242 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="224" y1="149" x2="236" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="236" y1="149" x2="234" y2="151" style="stroke:black;stroke-width:2" />
+    <line x1="236" y1="149" x2="234" y2="146" style="stroke:black;stroke-width:2" />
+	<path d = "M267 161 L267 136 L242 136 L242 161 L267 161 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M250.58058261754712 144.1476619695679           A6.250000000000003 6.250000000000003 0 0 1 259.4194173823792 144.14766196957154" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M250.58058261754394 152.9864967344           A6.250000000000003 6.250000000000003 0 0 1 250.58058261754712 144.1476619695679" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M259.419417382376 152.98649673440272           A6.250000000000003 6.250000000000003 0 0 1 250.58058261754394 152.9864967344" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="255" y1="149" x2="259" y2="153" style="stroke:black;stroke-width:2" />
+    <line x1="255" y1="158" x2="259" y2="154" style="stroke:black;stroke-width:2" />
+	<path d = "M292 161 L292 136 L267 136 L267 161 L292 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="274" y1="149" x2="286" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="149" x2="284" y2="151" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="149" x2="284" y2="146" style="stroke:black;stroke-width:2" />
+	<path d = "M317 161 L317 136 L292 136 L292 161 L317 161 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M300.5805826175459 144.14766196958018           A6.250000000000003 6.250000000000003 0 0 1 309.4194173823779 144.1476619695832" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M300.5805826175433 152.98649673441227           A6.250000000000003 6.250000000000003 0 0 1 300.5805826175459 144.14766196958018" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M309.41941738237534 152.98649673441437           A6.250000000000003 6.250000000000003 0 0 1 300.5805826175433 152.98649673441227" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="305" y1="149" x2="309" y2="144" style="stroke:black;stroke-width:2" />
+    <line x1="305" y1="139" x2="309" y2="144" style="stroke:black;stroke-width:2" />
+	<path d = "M342 161 L342 136 L317 136 L317 161 L342 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="336" y1="149" x2="324" y2="149" style="stroke:black;stroke-width:2" />
+	<path d = "M367 161 L367 136 L342 136 L342 161 L367 161 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="349" y1="149" x2="361" y2="149" style="stroke:black;stroke-width:2" />
+    <line x1="361" y1="149" x2="359" y2="151" style="stroke:black;stroke-width:2" />
+    <line x1="361" y1="149" x2="359" y2="146" style="stroke:black;stroke-width:2" />
+	<path d = "M392 161 L392 136 L367 136 L367 161 L392 161 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M375.58058261754513 144.1476619695999           A6.250000000000003 6.250000000000003 0 0 1 384.4194173823772 144.1476619696033" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M375.5805826175422 152.98649673443197           A6.250000000000003 6.250000000000003 0 0 1 375.58058261754513 144.1476619695999" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M384.41941738237426 152.98649673443444           A6.250000000000003 6.250000000000003 0 0 1 375.5805826175422 152.98649673443197" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="380" y1="149" x2="384" y2="153" style="stroke:black;stroke-width:2" />
+    <line x1="380" y1="158" x2="384" y2="154" style="stroke:black;stroke-width:2" />
+	<path d = "M42 199 L42 174 L17 174 L17 199 L42 199 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="24" y1="186" x2="36" y2="186" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="186" x2="34" y2="188" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="186" x2="34" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M67 199 L67 174 L42 174 L42 199 L67 199 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M50.58058261753715 181.64766196954218           A6.250000000000003 6.250000000000003 0 0 1 59.419417382369225 181.64766196954494" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M50.58058261753484 190.48649673437424           A6.250000000000003 6.250000000000003 0 0 1 50.58058261753715 181.64766196954218" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M59.419417382366916 190.4864967343761           A6.250000000000003 6.250000000000003 0 0 1 50.58058261753484 190.48649673437424" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="55" y1="186" x2="59" y2="182" style="stroke:black;stroke-width:2" />
+    <line x1="55" y1="177" x2="59" y2="181" style="stroke:black;stroke-width:2" />
+	<path d = "M92 199 L92 174 L67 174 L67 199 L92 199 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="86" y1="186" x2="74" y2="186" style="stroke:black;stroke-width:2" />
+	<path d = "M117 199 L117 174 L92 174 L92 199 L117 199 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="99" y1="186" x2="111" y2="186" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="186" x2="109" y2="188" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="186" x2="109" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M142 199 L142 174 L117 174 L117 199 L142 199 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M125.58058261753654 181.64766196955983           A6.250000000000003 6.250000000000003 0 0 1 134.4194173823686 181.647661969563" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M125.58058261753385 190.4864967343919           A6.250000000000003 6.250000000000003 0 0 1 125.58058261753654 181.64766196955983" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M134.4194173823659 190.48649673439414           A6.250000000000003 6.250000000000003 0 0 1 125.58058261753385 190.4864967343919" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="130" y1="186" x2="134" y2="182" style="stroke:black;stroke-width:2" />
+    <line x1="130" y1="177" x2="134" y2="181" style="stroke:black;stroke-width:2" />
+	<path d = "M167 199 L167 174 L142 174 L142 199 L167 199 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M150.5805826175353 181.64766196956631           A6.250000000000003 6.250000000000003 0 0 1 159.41941738236739 181.64766196956865" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M150.58058261753342 190.4864967343984           A6.250000000000003 6.250000000000003 0 0 1 150.5805826175353 181.64766196956631" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M159.4194173823655 190.48649673439982           A6.250000000000003 6.250000000000003 0 0 1 150.58058261753342 190.4864967343984" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="155" y1="186" x2="159" y2="190" style="stroke:black;stroke-width:2" />
+    <line x1="155" y1="195" x2="159" y2="191" style="stroke:black;stroke-width:2" />
+	<path d = "M192 199 L192 174 L167 174 L167 199 L192 199 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="180" y1="186" x2="189" y2="177" style="stroke:black;stroke-width:2" />
+    <line x1="180" y1="186" x2="189" y2="195" style="stroke:black;stroke-width:2" />
+    <line x1="180" y1="186" x2="183" y2="186" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="186" x2="189" y2="186" style="stroke:black;stroke-width:2" />
+	<path d = "M217 199 L217 174 L192 174 L192 199 L217 199 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M200.58058261753388 181.64766196957117           A6.250000000000003 6.250000000000003 0 0 1 209.41941738236594 181.64766196957257" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M200.58058261753294 190.48649673440323           A6.250000000000003 6.250000000000003 0 0 1 200.58058261753388 181.64766196957117" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M209.419417382365 190.48649673440372           A6.250000000000003 6.250000000000003 0 0 1 200.58058261753294 190.48649673440323" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="205" y1="186" x2="209" y2="182" style="stroke:black;stroke-width:2" />
+    <line x1="205" y1="177" x2="209" y2="181" style="stroke:black;stroke-width:2" />
+	<path d = "M242 199 L242 174 L217 174 L217 199 L242 199 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M233 192 L227 192 L227 186 L224 186 L227 183 L230 180 L233 183 L236 186 L233 186 L233 192 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M267 199 L267 174 L242 174 L242 199 L267 199 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="255" y1="186" x2="255" y2="180" style="stroke:black;stroke-width:2" />
+    <line x1="255" y1="186" x2="249" y2="186" style="stroke:black;stroke-width:2" />
+    <line x1="255" y1="186" x2="255" y2="192" style="stroke:black;stroke-width:2" />
+    <line x1="255" y1="186" x2="261" y2="186" style="stroke:black;stroke-width:2" />
+	<path d = "M292 199 L292 174 L267 174 L267 199 L292 199 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M283 192 L277 192 L277 186 L274 186 L277 183 L280 180 L283 183 L286 186 L283 186 L283 192 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M317 199 L317 174 L292 174 L292 199 L317 199 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="305" y1="186" x2="305" y2="180" style="stroke:black;stroke-width:2" />
+    <line x1="305" y1="186" x2="299" y2="186" style="stroke:black;stroke-width:2" />
+    <line x1="305" y1="186" x2="305" y2="192" style="stroke:black;stroke-width:2" />
+    <line x1="305" y1="186" x2="311" y2="186" style="stroke:black;stroke-width:2" />
+	<path d = "M342 199 L342 174 L317 174 L317 199 L342 199 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M333 192 L327 192 L327 186 L324 186 L327 183 L330 180 L333 183 L336 186 L333 186 L333 192 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M367 199 L367 174 L342 174 L342 199 L367 199 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="355" y1="186" x2="355" y2="180" style="stroke:black;stroke-width:2" />
+    <line x1="355" y1="186" x2="349" y2="186" style="stroke:black;stroke-width:2" />
+    <line x1="355" y1="186" x2="355" y2="192" style="stroke:black;stroke-width:2" />
+    <line x1="355" y1="186" x2="361" y2="186" style="stroke:black;stroke-width:2" />
+	<path d = "M392 199 L392 174 L367 174 L367 199 L392 199 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M383 192 L377 192 L377 186 L374 186 L377 183 L380 180 L383 183 L386 186 L383 186 L383 192 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M42 236 L42 211 L17 211 L17 236 L42 236 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="30" y1="224" x2="30" y2="217" style="stroke:black;stroke-width:2" />
+    <line x1="30" y1="224" x2="24" y2="224" style="stroke:black;stroke-width:2" />
+    <line x1="30" y1="224" x2="30" y2="230" style="stroke:black;stroke-width:2" />
+    <line x1="30" y1="224" x2="36" y2="224" style="stroke:black;stroke-width:2" />
+	<path d = "M67 236 L67 211 L42 211 L42 236 L67 236 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M58 230 L52 230 L52 224 L49 224 L52 220 L55 217 L58 220 L61 224 L58 224 L58 230 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M92 236 L92 211 L67 211 L67 236 L92 236 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M75.58058261750868 219.14766196942506           A6.250000000000005 6.250000000000005 0 0 1 84.41941738234026 219.14766196942716" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M75.58058261750602 227.98649673425663           A6.250000000000005 6.250000000000005 0 0 1 75.58058261750868 219.14766196942506" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M84.4194173823376 227.98649673425984           A6.250000000000005 6.250000000000005 0 0 1 75.58058261750602 227.98649673425663" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="80" y1="224" x2="84" y2="219" style="stroke:black;stroke-width:2" />
+    <line x1="80" y1="214" x2="84" y2="219" style="stroke:black;stroke-width:2" />
+	<path d = "M117 236 L117 211 L92 211 L92 236 L117 236 " stroke = "black" stroke-width = "2" fill = "none" />    <line x1="105" y1="224" x2="114" y2="215" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="224" x2="114" y2="232" style="stroke:black;stroke-width:2" />
+    <line x1="105" y1="224" x2="108" y2="224" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="224" x2="114" y2="224" style="stroke:black;stroke-width:2" />
+	<path d = "M142 236 L142 211 L117 211 L117 236 L142 236 " stroke = "black" stroke-width = "2" fill = "none" />  <path d="M125.58058261750728 219.14766196944424           A6.250000000000005 6.250000000000005 0 0 1 134.41941738233885 219.14766196944373" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M125.58058261750725 227.98649673427585           A6.250000000000005 6.250000000000005 0 0 1 125.58058261750728 219.14766196944424" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M134.41941738233882 227.98649673427641           A6.250000000000005 6.250000000000005 0 0 1 125.58058261750725 227.98649673427585" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="130" y1="224" x2="134" y2="219" style="stroke:black;stroke-width:2" />
+    <line x1="130" y1="214" x2="134" y2="219" style="stroke:black;stroke-width:2" />
+    <circle cx="155" cy = "224" r = "6.250000000000005" stroke = "black" stroke-width = "2" fill = "none" />
+</svg>

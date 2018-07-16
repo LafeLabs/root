@@ -1,0 +1,27 @@
+<svg width="400" height="250" viewbox = "0 0 400 250"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 250,
+    "unit": 100.00000000000001,
+    "x0": 634,
+    "y0": 397.5670793520086,
+    "x0rel": -50,
+    "y0rel": -1.4329206479914092,
+    "glyph": "0336,0331,0332,0332,0337,01341,01333,01341,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M150 174 L150 74 L50 74 L50 174 L150 174 " stroke = "black" stroke-width = "4" fill = "none" />    <circle cx="100" cy = "124" r = "50.00000000000001" stroke = "black" stroke-width = "4" fill = "none" />
+<circle cx="100" cy = "124" r = "3" stroke = "black" stroke-width = "4" fill = "black" />
+	<path d = "M250 174 L250 74 L150 74 L150 174 L250 174 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M175 136 L175 111 L200 111 L200 99 L212 111 L225 124 L212 136 L200 149 L200 136 L175 136 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M350 174 L350 74 L250 74 L250 174 L350 174 " stroke = "black" stroke-width = "4" fill = "none" />    <circle cx="300" cy = "124" r = "50.000000000000014" stroke = "black" stroke-width = "4" fill = "none" />
+<circle cx="300" cy = "124" r = "3" stroke = "black" stroke-width = "4" fill = "black" />
+</svg>

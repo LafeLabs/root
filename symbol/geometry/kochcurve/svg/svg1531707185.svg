@@ -1,0 +1,27 @@
+<svg width="200" height="300" viewbox = "0 0 200 300"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 200,
+    "svgheight": 300,
+    "unit": 177.15610000000012,
+    "x0": 706.8438999999998,
+    "y0": 485.03954366392384,
+    "x0rel": 22.84389999999985,
+    "y0rel": 86.03954366392384,
+    "glyph": "0314,0306,0336,0201,0334,0201,0335,0335,0201,0334,0201,0337,",
+    "table": []
+}
+</json>
+-->
+    <line x1="123" y1="236" x2="123" y2="177" style="stroke:black;stroke-width:3" />
+    <line x1="123" y1="177" x2="72" y2="147" style="stroke:black;stroke-width:3" />
+    <line x1="72" y1="147" x2="123" y2="118" style="stroke:black;stroke-width:3" />
+    <line x1="123" y1="118" x2="123" y2="59" style="stroke:black;stroke-width:3" />
+</svg>

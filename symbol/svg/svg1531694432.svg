@@ -1,0 +1,37 @@
+<svg width="550" height="100" viewbox = "0 0 550 100"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 550,
+    "svgheight": 100,
+    "unit": 161.0510000000001,
+    "x0": 684,
+    "y0": 396.69226696720335,
+    "x0rel": 0,
+    "y0rel": -2.307733032796648,
+    "glyph": "0336,0336,0332,0332,0332,0332,0332,0332,0332,0331,0336,0330,0333,0337,01341,01336,01333,01341,01336,01333,01341,01336,01333,01341,01336,01333,01341,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M54 68 L54 28 L13 28 L13 68 L54 68 " stroke = "black" stroke-width = "4" fill = "none" />    <circle cx="33" cy = "48" r = "20.131375000000013" stroke = "black" stroke-width = "4" fill = "none" />
+<circle cx="33" cy = "48" r = "3" stroke = "black" stroke-width = "4" fill = "black" />
+	<path d = "M94 68 L94 28 L54 28 L54 68 L94 68 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="84" y1="48" x2="64" y2="48" style="stroke:black;stroke-width:4" />
+	<path d = "M134 68 L134 28 L94 28 L94 68 L134 68 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M104 53 L104 43 L114 43 L114 38 L119 43 L124 48 L119 53 L114 58 L114 53 L104 53 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M174 68 L174 28 L134 28 L134 68 L174 68 " stroke = "black" stroke-width = "4" fill = "none" />    <circle cx="154" cy = "48" r = "20.131375000000016" stroke = "black" stroke-width = "4" fill = "none" />
+<circle cx="154" cy = "48" r = "3" stroke = "black" stroke-width = "4" fill = "black" />
+	<path d = "M215 68 L215 28 L174 28 L174 68 L215 68 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="205" y1="48" x2="184" y2="48" style="stroke:black;stroke-width:4" />
+	<path d = "M255 68 L255 28 L215 28 L215 68 L255 68 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M225 53 L225 43 L235 43 L235 38 L240 43 L245 48 L240 53 L235 58 L235 53 L225 53 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M295 68 L295 28 L255 28 L255 68 L295 68 " stroke = "black" stroke-width = "4" fill = "none" />    <circle cx="275" cy = "48" r = "20.13137500000002" stroke = "black" stroke-width = "4" fill = "none" />
+<circle cx="275" cy = "48" r = "3" stroke = "black" stroke-width = "4" fill = "black" />
+	<path d = "M335 68 L335 28 L295 28 L295 68 L335 68 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="325" y1="48" x2="305" y2="48" style="stroke:black;stroke-width:4" />
+	<path d = "M376 68 L376 28 L335 28 L335 68 L376 68 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M345 53 L345 43 L356 43 L356 38 L361 43 L366 48 L361 53 L356 58 L356 53 L345 53 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M416 68 L416 28 L376 28 L376 68 L416 68 " stroke = "black" stroke-width = "4" fill = "none" />    <circle cx="396" cy = "48" r = "20.131375000000023" stroke = "black" stroke-width = "4" fill = "none" />
+<circle cx="396" cy = "48" r = "3" stroke = "black" stroke-width = "4" fill = "black" />
+	<path d = "M456 68 L456 28 L416 28 L416 68 L456 68 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="446" y1="48" x2="426" y2="48" style="stroke:black;stroke-width:4" />
+	<path d = "M496 68 L496 28 L456 28 L456 68 L496 68 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M466 53 L466 43 L476 43 L476 38 L481 43 L486 48 L481 53 L476 58 L476 53 L466 53 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M537 68 L537 28 L496 28 L496 68 L537 68 " stroke = "black" stroke-width = "4" fill = "none" />    <circle cx="517" cy = "48" r = "20.131375000000027" stroke = "black" stroke-width = "4" fill = "none" />
+<circle cx="517" cy = "48" r = "3" stroke = "black" stroke-width = "4" fill = "black" />
+</svg>
