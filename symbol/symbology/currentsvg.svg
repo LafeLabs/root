@@ -15,15 +15,9 @@
     "y0": 369.4736483627736,
     "x0rel": 0,
     "y0rel": -29.526351637226412,
-    "glyph": "0331,0224,",
+    "glyph": "",
     "table": []
 }
 </json>
 -->
-    <circle cx="100" cy = "161" r = "11.363636363636365" stroke = "black" stroke-width = "2" fill = "black" />
-	<path d = "M100 161 L164 97 L100 33 L36 97 L100 161 " stroke = "black" stroke-width = "2" fill = "none" />    <circle cx="36" cy = "97" r = "11.363636363636365" stroke = "black" stroke-width = "2" fill = "black" />
-    <circle cx="100" cy = "33" r = "11.363636363636365" stroke = "black" stroke-width = "2" fill = "black" />
-    <circle cx="164" cy = "97" r = "11.363636363636365" stroke = "black" stroke-width = "2" fill = "black" />
-    <line x1="100" y1="161" x2="100" y2="33" style="stroke:black;stroke-width:2" />
-    <line x1="164" y1="97" x2="36" y2="97" style="stroke:black;stroke-width:2" />
 </svg>

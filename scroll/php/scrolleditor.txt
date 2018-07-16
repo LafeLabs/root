@@ -152,7 +152,14 @@ function html2tex(){
     textout = textout.replace(/<\/figure>/g,"\\end{figure}\n");
     textout = textout.replace(/<figcaption>/g,"\\caption{");
     textout = textout.replace(/<\/figcaption>/g,"\}");
-    textout = textout.replace(/<img src = "/g,"\n\\includegraphics[width=\\linewidth]{../");
+    if(path.length>1){
+        var replace = "<img src = \"" + path;
+        var re = new RegExp(replace,"g");
+        textout = textout.replace(re,"\n\\includegraphics[width=\\linewidth]{../");
+    }
+    else{
+        textout = textout.replace(/<img src = "/g,"\n\\includegraphics[width=\\linewidth]{../");
+    }
     textout = textout.replace(/"\/><!--img-->/g,"\}\n");
     textout = textout.replace(/<li>/g,"\\item\n");
     textout = textout.replace(/<\/li>/g,"");

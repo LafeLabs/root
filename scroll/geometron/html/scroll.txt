@@ -1,0 +1,17 @@
+<h2>Geometron Presents Geometron</h2>
+<figure>
+<img src = "geometron/figures/vesica.png"/><!--img-->
+<figcaption>Vesica Pisces.  The "hello, world" of geometric languages</figcaption>
+</figure>
+<figure>
+<img src = "geometron/figures/vesicacode.png"/><!--img-->
+<figcaption>Symbols which spell out the vesica pisces. Each symbol represents a geometric action, and they are: draw circle of radius "side", move right by "side", draw circle of radius "side".</figcaption>
+</figure>
+<figure>
+<img src = "geometron/figures/squarecircles.png"/><!--img-->
+<figcaption>If we can move and draw circles, we can draw more, on the default square lattice.</figcaption>
+</figure>
+<figure>
+<img src = "geometron/figures/squarecirclescode.png"/><!--img-->
+<figcaption>Code to construct the four circles</figcaption>
+</figure>
