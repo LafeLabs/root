@@ -159,6 +159,10 @@ controls[0].onchange = function(){
 controls[1].onkeydown = function(e) {
         charCode = e.keyCode || e.which;
         arrowkey = false;
+        console.log(e);
+        if(e.key == "ArrowUp"){
+            arrowkey = true;
+        }
         if(charCode == 010){
             doTheThing(010);
             redraw();
