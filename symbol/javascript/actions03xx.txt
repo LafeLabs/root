@@ -149,7 +149,7 @@
         currentSVG += Math.round(x).toString();
         currentSVG += "\" cy = \"";
         currentSVG += Math.round(y).toString();
-        currentSVG += "\" r = \"3\" stroke = \"" + currentStroke + "\" stroke-width = \"" + (ctx.lineWidth).toString() + "\" ";
+        currentSVG += "\" r = \"" + ctx.lineWidth.toString() + "\" stroke = \"" + currentStroke + "\" stroke-width = \"" + (ctx.lineWidth).toString() + "\" ";
         currentSVG += "fill = \"" + currentStroke + "\" />\n";		
     }
     if(localCommand == 0341){
