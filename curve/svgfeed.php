@@ -113,6 +113,23 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
     }
 </script>
 <style>
+
+#editorlink{
+    left:1em;
+    top:1em;
+    position:absolute;
+    z-index:3;
+
+}
+#indexlink{
+    left:1em;
+    top:3em;
+position:absolute;
+    z-index:3;
+
+    
+}
+
 #scroll{
     position:absolute;
     left:0px;
