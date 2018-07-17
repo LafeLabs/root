@@ -11,7 +11,9 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("shapetablelink").style.display = "none"; 
        document.getElementById("svglink").style.display = "none";
        document.getElementById("uplink").style.display = "none";
-
+       document.getElementById("phpfeedlink").style.display = "none";
+       document.getElementById("stylelink").style.display = "none";
+       document.getElementById("backlink").style.display = "none";
     }
     else{
        document.getElementById("glyphspellinput").style.display = "block"; 
@@ -24,6 +26,9 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("shapetablelink").style.display = "block"; 
        document.getElementById("svglink").style.display = "block"; 
        document.getElementById("uplink").style.display = "block"; 
+       document.getElementById("phpfeedlink").style.display = "block"; 
+       document.getElementById("stylelink").style.display = "block"; 
+       document.getElementById("backlink").style.display = "block"; 
     }
 
     editMode = !editMode;

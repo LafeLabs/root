@@ -1,0 +1,33 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://i.imgur.com/kGoAPS0.jpg",
+    "imgw": 4,
+    "imgleft": -2,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100.00000000000001,
+    "x0": 684,
+    "y0": 397.5670793520086,
+    "x0rel": 0,
+    "y0rel": -1.4329206479914092,
+    "glyph": "0336,0330,0330,0336,0330,0341,0333,0333,0333,0331,0333,0333,0331,0341,0331,0331,0331,0331,0331,0331,0336,0332,0341,0332,0332,0331,0332,0332,0331,0331,0332,0331,0332,0332,0332,0332,0336,0331,0332,0337,0337,0341,0330,0330,0332,0332,0332,0332,0332,0336,0330,0333,0336,0331,0332,0337,0337,0341,0330,0330,0330,0330,0330,0330,0330,0336,0331,0331,0333,0336,0332,0331,0337,0337,0341,0333,0333,0330,0333,0331,0331,0331,0331,0333,0331,0331,0331,0331,0336,0333,0333,0336,0332,0337,0337,0337,0201,0201,0201,0201,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="200" cy = "74" r = "25.000000000000004" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="325" cy = "124" r = "25.000000000000004" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="313" cy = "274" r = "12.500000000000002" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="194" cy = "330" r = "25.000000000000004" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="75" cy = "274" r = "25.000000000000004" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="81" cy = "130" r = "25.000000000000004" stroke = "black" stroke-width = "4" fill = "none" />
+    <line x1="200" y1="305" x2="200" y2="255" style="stroke:black;stroke-width:4" />
+    <line x1="200" y1="255" x2="200" y2="205" style="stroke:black;stroke-width:4" />
+    <line x1="200" y1="205" x2="200" y2="155" style="stroke:black;stroke-width:4" />
+    <line x1="200" y1="155" x2="200" y2="105" style="stroke:black;stroke-width:4" />
+</svg>

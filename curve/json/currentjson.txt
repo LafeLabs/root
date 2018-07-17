@@ -2,15 +2,15 @@
     "constants": {
         "phi": 1.618
     },
-    "imgurl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/2005_Penny_Rev_Unc_D.png",
+    "imgurl": "https://i.imgur.com/kGoAPS0.jpg",
     "plotparams": {
-        "G": 1004.4436372315087,
+        "G": 304.61276624219545,
         "g": 0.017985878990921366,
         "duration": 545.4545454545454,
         "plotwidth": 400,
         "plotheight": 400,
-        "x0": 215.343720244016,
-        "y0": 342.1082233470155
+        "x0": 200,
+        "y0": 202
     },
     "funcparams": {
         "tau": 0.9418499929055854,

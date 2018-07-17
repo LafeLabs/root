@@ -30,6 +30,12 @@ body{
      top:10px;
      z-index:2;
  }
+ #phpfeedlink{
+     position:absolute;
+     left:80%;
+     top:3em;
+     z-index:2;
+ }
  #editorlink{
      position:absolute;
      left:70%;

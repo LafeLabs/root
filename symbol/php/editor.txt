@@ -26,6 +26,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
     <a href = "tree.php">tree.php</a>
+    <a href = "svgfeed.php">svgfeed.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "keyboardeditor.php">keyboardeditor.php</a>
     <a href = "stylejsoneditor.php">stylejsoneditor.php</a>
@@ -62,6 +63,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/keyboardeditor.txt</div>
     <div class = "php file">php/stylejsoneditor.txt</div>
+
+    <div class = "php file">php/svgfeed.txt</div>
 
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/newdir.txt</div>

@@ -1,5 +1,7 @@
 <div id = "editmodebutton" class = "button">EDIT</div>
 <a  id = "svglink" href = "svg/">Graphics Feed</a>
+<a  id = "phpfeedlink" href = "svgfeed.php">php live feed</a>
+
 <a id = "backlink" href = ""></a>
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
