@@ -29,6 +29,11 @@ table input{
     top:23em;
     right:1em;
 }
+#svgfeedlink{
+    position:absolute;
+    top:10em;
+    right:1em;
+}
 #treelink{
     position:absolute;
     top:30em;

@@ -22,6 +22,19 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
+
+
 </head>
 <body>
 <div id = "pathdiv" style= "display:none"><?php
@@ -53,10 +66,17 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
     $svgs = array_reverse($svgs);
     foreach($svgs as $value){
         if($value != "." && $value != ".." && substr($value,-4) == ".svg"){
-            echo "\n<p><a href = \"index.php?url=";
+            $svgcode = file_get_contents($svgpath2.$value);
+
+            $topcode = explode("</currentjson>",$svgcode)[0];
+            $outcode = explode("<currentjson>",$topcode)[1];
+            $currentjson = json_decode($outcode);
+            $width = $currentjson->plotparams->plotwidth;
+
+            
+            echo "\n<p style = \"position:relative;margin:auto;border:solid;width:".$width."px\"><a href = \"index.php?url=";
             echo $svgpath2.$value;
             echo "\"><img src = \"";        
-
             $svgcode = file_get_contents($svgpath2.$value);
             $topcode = explode("</imgurl>",$svgcode)[0];
             $outcode = explode("<imgurl>",$topcode)[1];
@@ -67,7 +87,20 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
                 $imgurl = $svgpath2.$value;
             }
             echo $imgurl;
-            echo "\"></a></p>\n";
+            
+
+            echo "\" style = \"width:";
+            echo $currentjson->plotparams->plotwidth;
+            echo "px;position:relative;left:1px;top:1px;\"/>";
+            echo "<img style = \"position:absolute;left:0px;top:0px;z-index:0;\" src = \"".$svgpath2.$value."\"/>";
+            echo "\n</a></p>\n";
+            
+            echo "\n<div class = \"equation\">\n";
+            $topcode = explode("</equation>",$svgcode)[0];
+            $outcode = explode("<equation>",$topcode)[1];
+            echo $outcode;
+            echo "</div>";
+            
         }
     }
 ?>
@@ -80,7 +113,37 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
     }
 </script>
 <style>
+#scroll{
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    overflow:scroll;
+}
     
+    img{
+        box-sizing: border-box;
+        border:solid;
+    }
+    p{
+        border:solid;
+        box-sizing: border-box;
+    }
+    .equation{
+        border:none;
+        width:50%;
+        margin:auto;
+        display:block;
+        overflow:scroll;
+        height:4em;
+    }
+    .equation p{
+        border:none;
+    }
+    .equation:hover{
+        height:10em;
+    }
 </style>
 </body>
 </html>

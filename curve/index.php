@@ -118,6 +118,8 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 <a id  = "svgindexlink" href = "svg/index.html">SVG Plots</a>
 
+<a id = "svgfeedlink" href = "svgfeed.php">svgfeed.php</a>
+
 <canvas id="mainCanvas"></canvas>
 <img id = "mainImage"/>
 

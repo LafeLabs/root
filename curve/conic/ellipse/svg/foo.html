@@ -1,0 +1,58 @@
+ <!doctype html>
+<html>
+<head>
+<title>Function Plotter</title>
+<!-- 
+PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+-->
+
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
+</head>
+<body>
+
+        <p style = "position:relative;border:solid;width:330px;margin:auto;">
+            <a href = "index.php">
+                <img src = "https://i.imgur.com/eMRyIOx.jpg" style = "width:330px;position:relative;left:1px;top:1px;"/>
+                <img style = "position:absolute;left:0px;top:0px;z-index:0;" src = "svg1531792501.svg"/>
+            </a>    
+        </p>
+        <p style = "position:relative;width:330px;margin:auto;">
+            <a href = "index.php">
+                <img src = "https://i.imgur.com/Iug1fgk.jpg" style = "width:330px;position:relative;left:1px;top:1px;"/>
+                <img style = "position:absolute;left:0px;top:0px;z-index:0;" src = "svg1531792421.svg"/>
+            </a>
+        </p>
+    
+<script>
+    path = document.getElementById("pathdiv").innerHTML;
+    if(path.length>1){
+        document.getElementById("indexlink").href = "index.php?path=" + path;
+        document.getElementById("editorlink").href = "equationeditor.php?path=" + path;
+    }
+</script>
+<style>
+    img{
+        box-sizing: border-box;
+        border:solid;
+    }
+    p{
+        border:solid;
+        box-sizing: border-box;
+    }
+</style>
+</body>
+</html>
