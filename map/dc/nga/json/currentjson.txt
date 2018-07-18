@@ -1,0 +1,37 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/c_crop,h_1288,w_3440,y_912/v1531932281/ngasketch_iddrgl.png",
+    "imgw": 5.3684681193999,
+    "imgleft": -2.620275917456985,
+    "imgtop": -1.1039799007991704,
+    "unitpixels": 200,
+    "unitfeet": 555,
+    "imgangle": 0,
+    "latlon0": "38.891304, -77.019900",
+    "marker0": "rotunda center",
+    "glyph0": "0341,0340,",
+    "latlon1": "38.892325, -77.019521",
+    "marker1": "mellon fountain",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0300,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "central/",
+            "fontfeet": 100,
+            "latlon": "38.89030,-77.01990",
+            "rotation": 0
+        }
+    ],
+    "images": [],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": ""
+}

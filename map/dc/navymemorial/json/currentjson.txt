@@ -1,0 +1,37 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531932280/navymemsketch_nshqkc.png",
+    "imgw": 2.014558006911782,
+    "imgleft": -0.903550780608363,
+    "imgtop": -0.7679232823266695,
+    "unitpixels": 555,
+    "unitfeet": 555,
+    "imgangle": 0,
+    "latlon0": "38.894086, -77.022960",
+    "marker0": "center of circle",
+    "glyph0": "0341,0340,",
+    "latlon1": "38.894701, -77.022929",
+    "marker1": "north end of green rectangle",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0300,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "central/",
+            "fontfeet": 50,
+            "latlon": "38.89370,-77.02413",
+            "rotation": 0
+        }
+    ],
+    "images": [],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": ""
+}

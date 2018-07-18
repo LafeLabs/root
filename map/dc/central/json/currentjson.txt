@@ -17,10 +17,10 @@
     "shapes": [],
     "links": [
         {
-            "url": "index.php?path=dc/whitehouse/",
-            "text": "whitehouse/",
-            "fontfeet": 500,
-            "latlon": "38.89800,-77.04020",
+            "url": "index.php?path=dc/navymemorial/",
+            "text": "navymemorial/",
+            "fontfeet": 300,
+            "latlon": "38.89600,-77.02620",
             "rotation": 0
         },
         {
@@ -49,6 +49,20 @@
             "text": "capitol/",
             "fontfeet": 500,
             "latlon": "38.89500,-77.01020",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/whitehouse/",
+            "text": "whitehouse/",
+            "fontfeet": 500,
+            "latlon": "38.89800,-77.04020",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/nga/",
+            "text": "nga/",
+            "fontfeet": 500,
+            "latlon": "38.89400,-77.02320",
             "rotation": 0
         }
     ],
