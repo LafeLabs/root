@@ -365,3 +365,14 @@ imagedata[6].onchange = function(){
 if(exturl){
     document.getElementById("editmodebutton").click();
 }
+ 
+softkeyset = false;
+document.getElementById("softkeybutton").onclick = function(){
+    if(softkeyset){
+        document.getElementById("keytable").style.display = "none";
+    }
+    if(!softkeyset){
+        document.getElementById("keytable").style.display = "block";
+    }
+    softkeyset = !softkeyset;
+}

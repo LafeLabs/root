@@ -149,3 +149,24 @@ img{
     top:0px;
     z-index:2;
 }
+#softkeybutton{
+    position:absolute;
+    right:0px;
+    top:3em;
+    z-index:2;
+}
+#keytable{
+    bottom:0px;
+    right:0px;
+    margin:auto;
+    display:block;
+    border:solid;
+    display:none;
+}
+.softkey{
+    width:55px;
+    height:55px;
+    border-radius:5px;
+    border:solid;
+    padding:5px 5px 5px 5px;
+}

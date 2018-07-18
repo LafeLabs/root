@@ -1,4 +1,5 @@
 <div id = "editmodebutton" class = "button">EDIT</div>
+<div id = "softkeybutton" class = "button">SOFTKEYS</div>
 <a  id = "svglink" href = "svg/">Graphics Feed</a>
 <a  id = "phpfeedlink" href = "svgfeed.php">php live feed</a>
 
@@ -72,3 +73,6 @@
 <input id = "glyphspellinput"/>
 <img id = "mainImage"/>
 
+<table id = "keytable">
+    
+</table>
