@@ -15,6 +15,7 @@
 			"replicator.txt",
 			"savepage.txt",
 			"text2php.txt",
+			"tree.txt",
 			"unicode.txt"
 		]
 	},
@@ -80,6 +81,7 @@
 		"path":"scroll/php",
 		"files":[
 			"editor.txt",
+			"feedsaver.txt",
 			"figurelist.txt",
 			"fileloader.txt",
 			"filesaver.txt",
@@ -87,6 +89,7 @@
 			"jupyter.txt",
 			"newdir.txt",
 			"scrolleditor.txt",
+			"scrolllist.txt",
 			"texeditor.txt",
 			"text2php.txt",
 			"tree.txt"
@@ -112,6 +115,8 @@
 			"newdir.txt",
 			"savetable.txt",
 			"shapetableeditor.txt",
+			"stylejsoneditor.txt",
+			"svgfeed.txt",
 			"text2php.txt",
 			"tree.txt"
 		]
@@ -162,6 +167,7 @@
 	{
 		"path":"deck/php",
 		"files":[
+			"deckeditor.txt",
 			"editor.txt",
 			"feedsaver.txt",
 			"fileloader.txt",
@@ -178,7 +184,8 @@
 	{
 		"path":"deck/html",
 		"files":[
-			"deck.txt"
+			"deck.txt",
+			"decktemplate.txt"
 		]
 	},
 	{
