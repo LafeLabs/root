@@ -30,6 +30,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "keyboardeditor.php">keyboardeditor.php</a>
     <a href = "stylejsoneditor.php">stylejsoneditor.php</a>
+    <a href = "meme.php">meme.php</a>
+    
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
@@ -63,11 +65,10 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/keyboardeditor.txt</div>
     <div class = "php file">php/stylejsoneditor.txt</div>
-
     <div class = "php file">php/svgfeed.txt</div>
-
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/newdir.txt</div>
+    <div class = "php file">php/meme.txt</div>
 
 
     <div class = "json file">json/currentjson.txt</div>

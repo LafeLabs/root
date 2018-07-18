@@ -70,7 +70,6 @@ document.getElementById("savesvg").onclick = function(){
     x0 = tempx0;
     y0 = tempy0;
     redraw();
- 
 }
  
 saveSVG(); 
