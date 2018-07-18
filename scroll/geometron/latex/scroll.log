@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.11)  16 JUL 2018 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.11)  18 JUL 2018 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,19 +6,20 @@ entering extended mode
 (./scroll.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -50,7 +51,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count87
+\Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -58,30 +59,30 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (./scroll.aux)
 \openout1 = `scroll.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
+\scratchcounter=\count89
 \scratchdimen=\dimen105
 \scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
+\nofMPsegments=\count90
+\nofMParguments=\count91
 \everyMPshowfont=\toks15
-\MPscratchCnt=\count91
+\MPscratchCnt=\count92
 \MPscratchDim=\dimen106
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
 \everyMPtoPDFconversion=\toks16
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -135,33 +136,164 @@ e
 File: ../figures/vesica.png Graphic file (type png)
 
 <use ../figures/vesica.png>
-Package pdftex.def Info: ../figures/vesica.png used on input line 11.
+Package pdftex.def Info: ../figures/vesica.png used on input line 12.
 (pdftex.def)             Requested size: 360.0pt x 239.43993pt.
 
 <../figures/vesicacode.png, id=3, 249.55734pt x 104.26453pt>
 File: ../figures/vesicacode.png Graphic file (type png)
 
 <use ../figures/vesicacode.png>
-Package pdftex.def Info: ../figures/vesicacode.png used on input line 19.
+Package pdftex.def Info: ../figures/vesicacode.png used on input line 20.
 (pdftex.def)             Requested size: 360.0pt x 150.4224pt.
+
+<../figures/squarecircles.png, id=4, 254.45062pt x 249.93375pt>
+File: ../figures/squarecircles.png Graphic file (type png)
+
+<use ../figures/squarecircles.png>
+Package pdftex.def Info: ../figures/squarecircles.png used on input line 28.
+(pdftex.def)             Requested size: 360.0pt x 353.6232pt.
+
+<../figures/squarecirclescode.png, id=5, 292.09125pt x 74.15204pt>
+File: ../figures/squarecirclescode.png Graphic file (type png)
+
+<use ../figures/squarecirclescode.png>
+Package pdftex.def Info: ../figures/squarecirclescode.png used on input line 36
+.
+(pdftex.def)             Requested size: 360.0pt x 91.39992pt.
+
+<../figures/triangle1.png, id=6, 185.56828pt x 162.9839pt>
+File: ../figures/triangle1.png Graphic file (type png)
+
+<use ../figures/triangle1.png>
+Package pdftex.def Info: ../figures/triangle1.png used on input line 44.
+(pdftex.def)             Requested size: 360.0pt x 316.19333pt.
+
+<../figures/spelltriangle1.png, id=7, 249.93375pt x 39.89906pt>
+File: ../figures/spelltriangle1.png Graphic file (type png)
+
+<use ../figures/spelltriangle1.png>
+Package pdftex.def Info: ../figures/spelltriangle1.png used on input line 52.
+(pdftex.def)             Requested size: 360.0pt x 57.47588pt.
+
+<../figures/trianglefractal1.png, id=8, 154.32657pt x 171.64125pt>
+File: ../figures/trianglefractal1.png Graphic file (type png)
+
+<use ../figures/trianglefractal1.png>
+Package pdftex.def Info: ../figures/trianglefractal1.png used on input line 60.
+
+(pdftex.def)             Requested size: 360.0pt x 400.42363pt.
+
+<../figures/triangle1fractalspell.png, id=9, 197.23688pt x 36.135pt>
+File: ../figures/triangle1fractalspell.png Graphic file (type png)
+
+<use ../figures/triangle1fractalspell.png>
+Package pdftex.def Info: ../figures/triangle1fractalspell.png used on input lin
+e 68.
+(pdftex.def)             Requested size: 360.0pt x 65.95984pt.
+
+<../figures/spelltriangleshape.png, id=10, 574.39594pt x 76.03406pt>
+File: ../figures/spelltriangleshape.png Graphic file (type png)
+
+<use ../figures/spelltriangleshape.png>
+Package pdftex.def Info: ../figures/spelltriangleshape.png used on input line 7
+6.
+(pdftex.def)             Requested size: 360.0pt x 47.65457pt.
+
+<../figures/koch0.png, id=11, 102.00609pt x 165.24234pt>
+File: ../figures/koch0.png Graphic file (type png)
+
+<use ../figures/koch0.png>
+Package pdftex.def Info: ../figures/koch0.png used on input line 84.
+(pdftex.def)             Requested size: 360.0pt x 583.20546pt.
+
+
+LaTeX Warning: Float too large for page by 94.7344pt on input line 87.
+
+<../figures/koch1.png, id=12, 476.90672pt x 54.5789pt>
+File: ../figures/koch1.png Graphic file (type png)
+
+<use ../figures/koch1.png>
+Package pdftex.def Info: ../figures/koch1.png used on input line 92.
+(pdftex.def)             Requested size: 360.0pt x 41.20222pt.
+
+<../figures/koch2.png, id=13, 450.9347pt x 234.1247pt>
+File: ../figures/koch2.png Graphic file (type png)
+
+<use ../figures/koch2.png>
+Package pdftex.def Info: ../figures/koch2.png used on input line 100.
+(pdftex.def)             Requested size: 360.0pt x 186.92133pt.
+
+<../figures/koch3.png, id=14, 329.73187pt x 289.08pt>
+File: ../figures/koch3.png Graphic file (type png)
+
+<use ../figures/koch3.png>
+Package pdftex.def Info: ../figures/koch3.png used on input line 108.
+(pdftex.def)             Requested size: 360.0pt x 315.62468pt.
+
+<../figures/root2triangle1.png, id=15, 270.6361pt x 277.78781pt>
+File: ../figures/root2triangle1.png Graphic file (type png)
+
+<use ../figures/root2triangle1.png>
+Package pdftex.def Info: ../figures/root2triangle1.png used on input line 116.
+(pdftex.def)             Requested size: 360.0pt x 369.52518pt.
+
+<../figures/spelltriangle45.png, id=16, 449.42906pt x 194.97844pt>
+File: ../figures/spelltriangle45.png Graphic file (type png)
+
+<use ../figures/spelltriangle45.png>
+Package pdftex.def Info: ../figures/spelltriangle45.png used on input line 124.
+
+(pdftex.def)             Requested size: 360.0pt x 156.18823pt.
+
+<../figures/golden1.png, id=17, 182.93344pt x 251.06297pt>
+File: ../figures/golden1.png Graphic file (type png)
+
+<use ../figures/golden1.png>
+Package pdftex.def Info: ../figures/golden1.png used on input line 133.
+(pdftex.def)             Requested size: 360.0pt x 494.14491pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 135.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 135.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 135.
+
+<../figures/spellgolden1.png, id=18, 656.0761pt x 112.54547pt>
+File: ../figures/spellgolden1.png Graphic file (type png)
+
+<use ../figures/spellgolden1.png>
+Package pdftex.def Info: ../figures/spellgolden1.png used on input line 141.
+(pdftex.def)             Requested size: 360.0pt x 61.75594pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../figures/vesica.png>] [2 <../figures/vesicacode.png>] (./scroll.aux) ) 
+
+Non-PDF special ignored! <../figures/vesica.png>] [2 <../figures/vesicacode.png
+>] [3 <../figures/squarecircles.png> <../figures/squarecirclescode.png>]
+[4 <../figures/triangle1.png> <../figures/spelltriangle1.png>] [5 <../figures/t
+rianglefractal1.png> <../figures/triangle1fractalspell.png>] [6 <../figures/spe
+lltriangleshape.png>] [7 <../figures/koch0.png>] [8 <../figures/koch1.png> <../
+figures/koch2.png>] [9 <../figures/koch3.png>] [10 <../figures/root2triangle1.p
+ng>] [11 <../figures/spelltriangle45.png>] [12 <../figures/golden1.png>]
+[13 <../figures/spellgolden1.png>] (./scroll.aux) ) 
 Here is how much of TeX's memory you used:
- 1475 strings out of 494953
- 21160 string characters out of 6180977
- 73701 words of memory out of 5000000
- 4776 multiletter control sequences out of 15000+600000
- 4545 words of font info for 17 fonts, out of 8000000 for 9000
+ 1590 strings out of 494953
+ 23714 string characters out of 6180977
+ 79162 words of memory out of 5000000
+ 4869 multiletter control sequences out of 15000+600000
+ 7337 words of font info for 26 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,5n,23p,292b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on scroll.pdf (2 pages, 47316 bytes).
+ 37i,5n,23p,565b,220s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb>
+Output written on scroll.pdf (13 pages, 544497 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

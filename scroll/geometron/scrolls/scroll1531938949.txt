@@ -37,35 +37,17 @@
 </figure>
 <figure>
 <img src = "geometron/figures/koch0.png"/><!--img-->
-<figcaption>This symbol breaks a segment into three parts and makes a triangle out from the middle part. it is a fundamental element of the Koch Curve, which we shall now construct.</figcaption>
+<figcaption>Figure x. </figcaption>
 </figure>
 <figure>
 <img src = "geometron/figures/koch1.png"/><!--img-->
-<figcaption>Spelling of the above symbol, along with its symbol glyph.</figcaption>
+<figcaption>Figure x. </figcaption>
 </figure>
 <figure>
 <img src = "geometron/figures/koch2.png"/><!--img-->
-<figcaption>Spelling of the next iteration.  Each iteration is the same size as the previous one but the number of segments goes up exponentially, so we only need to do this a few times.</figcaption>
+<figcaption>Figure x. </figcaption>
 </figure>
 <figure>
 <img src = "geometron/figures/koch3.png"/><!--img-->
-<figcaption>And finally a Koch Curve, with enough levels of zoom that the non-fractal nature is lost in pixel size in the screen.  This highlights a very annoying aspect of Mandelbrot's book: the work there exists in a fantasy world where infinite scales exist in both large and small directions, unbounded by physical pixels, numerical registers, atoms etc.  Geomtron always ties as closely as possible to physical pixels on a screen, dispensing with such fantasies.</figcaption>
+<figcaption>Figure x. </figcaption>
 </figure>
-<figure>
-<img src = "geometron/figures/root2triangle1.png"/><!--img-->
-<figcaption>Fractal triangle illustrating square root of two scaling and bisection action which goes from 90 degrees to 45 degrees. </figcaption>
-</figure>
-<figure>
-<img src = "geometron/figures/spelltriangle45.png"/><!--img-->
-<figcaption>Spelling of 45 degree fractal.  This could be made shorter by using a 135 degree angle, but I chose simplicity over brevity and each 135 degree turn is expressed as three 45 degree turns.</figcaption>
-</figure>
-
-<figure>
-<img src = "geometron/figures/golden1.png"/><!--img-->
-<figcaption>The Golden Triangle, an isosceles triangle with 36 degrees ,72 and 72 degrees, with sides equal to the base times $\phi = \frac{\sqrt{5}+1}{2}$</figcaption>
-</figure>
-<figure>
-<img src = "geometron/figures/spellgolden1.png"/><!--img-->
-<figcaption>Spelling of Golden Triangle showing the symbol glyphs to denote Golden Ratio for scaling and five fold symmetry to get 72 degrees, then a bisect action which gets from 72 to 36 degrees.</figcaption>
-</figure>
-
