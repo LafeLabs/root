@@ -112,6 +112,7 @@
 			"index.txt",
 			"keyboardeditor.txt",
 			"loadtable.txt",
+			"meme.txt",
 			"newdir.txt",
 			"savetable.txt",
 			"shapetableeditor.txt",
