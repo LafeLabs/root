@@ -10,7 +10,7 @@
 <p>
     paragraph
 </p>
-<a href="index.php?path=foo/bar/">index.php?path=foo/bar/</a>
+<a href="index.php?path=geometry/&amp;page=0">index.php?path=geometry/</a>
 <p>
 <a href="index.php?path=structure/">index.php?path=structure/</a>
 </p>

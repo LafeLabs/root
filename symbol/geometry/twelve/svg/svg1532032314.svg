@@ -1,0 +1,36 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 121.00000000000004,
+    "x0": 664.8223140495868,
+    "y0": 401.0227400204384,
+    "x0rel": -19.177685950413206,
+    "y0rel": 2.022740020438391,
+    "glyph": "0336,0336,0336,0336,0336,0333,0333,0333,0333,0337,0337,0337,0337,0337,0211,0211,0211,0211,0306,0350,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0366,0335,0367,0335,0335,0335,0335,0335,0335,0335,0335,0335,0335,0335,0335,0336,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0337,0341,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M246,252 C246,45 350,72 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C350,72 426,148 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C426,148 453,252 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C453,252 426,356 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C426,356 350,432 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C350,432 246,459 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C246,459 142,432 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C142,432 66,356 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C66,356 39,252 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C39,252 66,148 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C66,148 142,72 246,252" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M246,252 C142,72 246,45 246,252" fill = "none" stroke-width = "2" stroke = "black" />    <circle cx="246" cy = "148" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="298" cy = "162" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="336" cy = "200" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="350" cy = "252" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="336" cy = "304" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="298" cy = "342" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="246" cy = "356" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="194" cy = "342" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="156" cy = "304" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="142" cy = "252" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="156" cy = "200" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="194" cy = "162" r = "103.66829223952652" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="246" cy = "252" r = "207.33658447905304" stroke = "black" stroke-width = "4" fill = "none" />
+</svg>

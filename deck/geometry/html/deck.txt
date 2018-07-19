@@ -1,0 +1,22 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0337,0333,</div>
+        <div class="content">
+<a href="../symbol/index.php?path=geometry/phi/&amp;backlink=../deck/index.php?path=geometry/"><h2>$\Phi$:</h2><img src="../symbol/geometry/phi/svg/svg1532028787.svg"></a></div>
+    </div>
+<div class="box"><div class="glyphdata">0337,0332,</div>
+    <div class="content">
+<a href="../symbol/index.php?path=geometry/goldenspiral/&amp;backlink=../deck/index.php?path=geometry/"><h2>Golden Spiral:</h2>
+    <img src="../symbol/geometry/goldenspiral/svg/svg1532029314.svg">
+    </a></div>
+</div><div class="box"><div class="glyphdata">0330,0337,</div>
+    <div class="content">
+<a href="../symbol/index.php?path=geometry/six/&amp;backlink=../deck/index.php?path=geometry/"><h2>6:</h2><img src="../symbol/geometry/six/svg/svg1532031395.svg"></a>
+    
+    </div>
+</div></div>

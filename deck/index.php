@@ -32,7 +32,7 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 echo file_get_contents("../symbol/bytecode/baseshapes.txt")."\n";
 echo file_get_contents("bytecode/shapetable.txt")."\n";
 echo file_get_contents("bytecode/font.txt")."\n";
-echo file_get_contents("bytecode/keyboard.txt")."\n";
+echo file_get_contents("../symbol/bytecode/keyboard.txt")."\n";
 echo file_get_contents("../symbol/bytecode/symbols013xx.txt")."\n";
 echo file_get_contents("../symbol/bytecode/symbols010xx.txt")."\n";
 ?>
