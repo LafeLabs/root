@@ -375,3 +375,61 @@ document.getElementById("softkeybutton").onclick = function(){
     }
     softkeyset = !softkeyset;
 }
+
+imgbuttons[0].onclick  = function(){
+    currentJSON.imgw -= 2/currentJSON.unit;
+    currentJSON.imgleft += 1/currentJSON.unit;
+    currentJSON.imgtop += 1/currentJSON.unit;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+
+imgbuttons[1].onclick  = function(){
+    currentJSON.imgw += 2/currentJSON.unit;
+    currentJSON.imgleft -= 1/currentJSON.unit;
+    currentJSON.imgtop -= 1/currentJSON.unit;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+
+imgbuttons[2].onclick  = function(){
+    currentJSON.imgangle -= 1;
+    imagedata[4].value = currentJSON.imgangle;
+    redraw();
+}
+
+imgbuttons[3].onclick  = function(){
+    currentJSON.imgangle += 1;
+    imagedata[4].value = currentJSON.imgangle;
+    redraw();
+}
+
+imgbuttons[4].onclick = function(){
+    currentJSON.imgtop -= 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[5].onclick = function(){
+    currentJSON.imgtop += 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[6].onclick = function(){
+    currentJSON.imgleft -= 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[7].onclick = function(){
+    currentJSON.imgleft += 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+

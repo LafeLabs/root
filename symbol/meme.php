@@ -45,6 +45,19 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
     echo $svgcode;
 ?></div>
 <div id = "page">
+<table id = "buttontable">
+    <tr>
+        <td class= "button">+ 1px</td>
+        <td class= "button">- 1px</td>
+        <td class= "button">-1 deg</td>
+        <td class= "button">+1 deg</td>
+        <td class= "button">up</td>
+        <td class= "button">down</td>
+        <td class= "button">left</td>
+        <td class= "button">right</td>
+
+    </tr>
+</table>
     <a href = "" id = "backlink"></a>
     <input id = "urlinput"/>
     <img id = "backimg"/>
@@ -70,48 +83,150 @@ document.getElementById("backimg").src = currentJSON.imgurl;
 document.getElementById("backimg").style.left = (0.5*innerWidth + currentJSON.unit*currentJSON.imgleft).toString() + "px";
 document.getElementById("backimg").style.top = (0.5*innerHeight + currentJSON.unit*currentJSON.imgtop).toString() + "px";
 document.getElementById("backimg").style.width = (currentJSON.unit*currentJSON.imgw).toString() + "px";
+document.getElementById("backimg").style.transform =  "rotate(" + (currentJSON.imgangle).toString() + "deg)";
 
 document.getElementById("urlinput").onchange = function(){
     currentJSON.imgurl = this.value;
     document.getElementById("backimg").src = currentJSON.imgurl;
 }
 
-mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-mc.get('rotate').set({ enable: true });
-mc.get('pinch').set({ enable: true });
 
+svgtop = document.getElementById("svgdatadiv").innerHTML.split("<json>")[0];
+svgbottom = document.getElementById("svgdatadiv").innerHTML.split("</json>")[1];
+
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+//mc.get('rotate').set({ enable: true });
+//mc.get('pinch').set({ enable: true });
 
 // listen to events...
-mc.on("panleft panright panup pandown tap press pinch", function(ev) {
-//    myElement.textContent = " deltaX = " + ev.deltaX+ ",  deltaY=" + ev.deltaY +", rotation = " + ev.angle;
-
-  //  currentJSON.imgtop += parseInt(ev.deltaY)/currentJSON.unit;
+mc.on("panleft panright panup pandown tap press", function(ev) {
 
     document.getElementById("backimg").style.left = (0.5*innerWidth + ev.deltaX + currentJSON.unit*currentJSON.imgleft).toString() + "px";
-
     document.getElementById("backimg").style.top = (0.5*innerHeight + ev.deltaY +  currentJSON.unit*currentJSON.imgtop).toString() + "px";
-
     document.getElementById("backimg").style.width = (currentJSON.unit*currentJSON.imgw*ev.scale).toString() + "px";
 
+    document.getElementById("backimg").style.transform =  "rotate(" + (currentJSON.imgangle + ev.rotation).toString() + "deg)";
+
+    x = currentJSON.imgleft + ev.deltaX/currentJSON.unit;
+    y = currentJSON.imgtop + ev.deltaY/currentJSON.unit;
+
     if(ev.isFinal && (ev.type == "panup" || ev.type == "pandown" || ev.type == "panleft" || ev.type == "panright") ){
-        currentJSON.imgleft += ev.deltaX/currentJSON.unit;
-        currentJSON.imgtop += ev.deltaY/currentJSON.unit;
-    }
-    if(ev.isFinal && ev.type == "pinch"){
-        currentJSON.imgw *= ev.scale;
+        currentJSON.imgleft = x;
+        currentJSON.imgtop = y;
     }
     
     
 });
 
+buttons = document.getElementById("buttontable").getElementsByTagName("TD");
+
+buttons[0].onclick = function(){
+        currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+
+    currentJSON.imgw += 2/currentJSON.unit;
+    currentJSON.imgleft -= 1/currentJSON.unit;
+    currentJSON.imgtop -= 1/currentJSON.unit;
+    redraw();
+}
+buttons[1].onclick = function(){
+        currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+
+    currentJSON.imgw -= 2/currentJSON.unit;
+    currentJSON.imgleft += 1/currentJSON.unit;
+    currentJSON.imgtop += 1/currentJSON.unit;
+    redraw();
+}
+
+buttons[2].onclick = function(){
+    currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+    currentJSON.imgangle -= 1;
+    redraw();
+}
+buttons[3].onclick = function(){
+    currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+    currentJSON.imgangle += 1;
+    redraw();
+}
+
+
+buttons[4].onclick = function(){
+    currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+
+    currentJSON.imgtop -= 1/currentJSON.unit;
+    redraw();
+}
+buttons[5].onclick = function(){
+    currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+
+    currentJSON.imgtop += 1/currentJSON.unit;
+    redraw();
+}
+buttons[6].onclick = function(){
+    currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+
+    currentJSON.imgleft -= 1/currentJSON.unit;
+    redraw();
+}
+buttons[7].onclick = function(){
+    currentJSON.imgleft = x;
+    currentJSON.imgtop = y;
+
+    currentJSON.imgleft += 1/currentJSON.unit;
+    redraw();
+}
+
+
+function redraw(){
+    document.getElementById("backimg").style.left = (0.5*innerWidth + currentJSON.unit*currentJSON.imgleft).toString() + "px";
+    document.getElementById("backimg").style.top = (0.5*innerHeight + currentJSON.unit*currentJSON.imgtop).toString() + "px";   
+    document.getElementById("backimg").style.width = (currentJSON.unit*currentJSON.imgw).toString() + "px";
+    document.getElementById("backimg").style.transform =  "rotate(" + (currentJSON.imgangle).toString() + "deg)";
+}
+
 </script>
 <style>
+#buttontable{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    z-index:3;
+}
+#buttontable tr{
+    width:100%;
+}
+#buttontable td{
+    width:10%;
+    height:3em;
+    font-size:1em;
+}
+.button{
+    border-radius:0.5em;
+    text-align:center;
+    font-family:courier;
+    cursor:pointer;
+    border:solid;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
 #page{
     position:absolute;
     left:0px;
     right:0px;
     top:0px;
     bottom:0px;
+    overflow:hidden;
 }
     #svgimg{
      position:absolute;   
@@ -124,6 +239,7 @@ mc.on("panleft panright panup pandown tap press pinch", function(ev) {
         top:1em;
         border:solid;
         font-family:courier;
+        z-index:3;
     }
     #backimg{
         position:absolute;

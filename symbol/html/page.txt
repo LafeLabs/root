@@ -61,6 +61,19 @@
     <tr>
         <td>SVG HEIGHT:</td><td><input/></td>
     </tr>
+    <tr>
+        <td class = "button">-</td><td class = "button">+</td>
+    </tr>
+    <tr>
+        <td class = "button">ccw</td><td class = "button">cw</td>
+    </tr>
+    <tr>
+        <td class = "button">up</td><td class = "button">down</td>
+    </tr>
+    <tr>
+        <td class = "button">left</td><td class = "button">right</td>
+    </tr>
+    
 </table>
 
 <table id = "buttonTable">

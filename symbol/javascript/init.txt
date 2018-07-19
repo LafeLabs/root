@@ -75,6 +75,8 @@ spellMode = false;
 
 zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");
 
+imgbuttons = document.getElementById("imageTable").getElementsByClassName("button");
+
 controls[1].select();
 
 softkeys = [
