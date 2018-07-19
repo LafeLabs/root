@@ -78,6 +78,7 @@ zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("butt
 controls[1].select();
 
 softkeys = [
+    "010,020,021,030,031,032,033,01101,",
     "0304,0305,0306,0350,0351,0352,0353,0340,",
     "0310,0311,0312,0313,0314,0316,0341,0201,",
     "0330,0331,0332,0333,0334,0335,0336,0337,",
@@ -104,27 +105,42 @@ for(var index = 0;index < softkeys.length;index++){
             y0 = 43;
             doTheThing(0300);
             newtd.id = "key" + keyarray[keyindex];
-            doTheThing(01000 + parseInt(keyarray[keyindex],8));
+            
+            if(parseInt(keyarray[keyindex],8) > 01000){
+                doTheThing(parseInt(keyarray[keyindex],8));
+            }
+            else{
+                doTheThing(01000 + parseInt(keyarray[keyindex],8));
+            }
+
             newtd.onclick = function(){
                 var localkey = this.id.substring(3);
-                var glyphSplit = currentGlyph.split(",");
-                currentGlyph = "";
-                for(var index = 0;index < glyphSplit.length;index++){
-                    if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
-                        currentGlyph += glyphSplit[index] + ",";
+                var localaction = parseInt(localkey,8);
+                if( (localaction >= 040 && localaction < 0400) ||  (localaction > 01000 && localaction < 02000)){
+                    var glyphSplit = currentGlyph.split(",");
+                    currentGlyph = "";
+                    for(var index = 0;index < glyphSplit.length;index++){
+                        if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                            currentGlyph += glyphSplit[index] + ",";
+                        }
+                        if(glyphSplit[index] == "0207"){
+                            currentGlyph += localkey + ",0207,";
+                        }
                     }
-                    if(glyphSplit[index] == "0207"){
-                        currentGlyph += localkey + ",0207,";
+                    var glyphSplit = currentGlyph.split(",");
+                    currentGlyph = "";
+                    for(var index = 0;index < glyphSplit.length;index++){
+                        if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                            currentGlyph += glyphSplit[index] + ",";
+                        }
                     }
+                    redraw();
                 }
-                var glyphSplit = currentGlyph.split(",");
-                currentGlyph = "";
-                for(var index = 0;index < glyphSplit.length;index++){
-                    if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
-                        currentGlyph += glyphSplit[index] + ",";
-                    }
+                if(localaction < 040){
+                    doTheThing(localaction);
+                    redraw();
                 }
-                redraw();
+                
             }
         }
     }

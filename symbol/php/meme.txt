@@ -83,14 +83,9 @@ mc.get('pinch').set({ enable: true });
 
 // listen to events...
 mc.on("panleft panright panup pandown tap press pinch", function(ev) {
-//    myElement.textContent = " deltaX = " + ev.deltaX+ ",  deltaY=" + ev.deltaY +", rotation = " + ev.angle;
-
-  //  currentJSON.imgtop += parseInt(ev.deltaY)/currentJSON.unit;
 
     document.getElementById("backimg").style.left = (0.5*innerWidth + ev.deltaX + currentJSON.unit*currentJSON.imgleft).toString() + "px";
-
     document.getElementById("backimg").style.top = (0.5*innerHeight + ev.deltaY +  currentJSON.unit*currentJSON.imgtop).toString() + "px";
-
     document.getElementById("backimg").style.width = (currentJSON.unit*currentJSON.imgw*ev.scale).toString() + "px";
 
     if(ev.isFinal && (ev.type == "panup" || ev.type == "pandown" || ev.type == "panleft" || ev.type == "panright") ){
