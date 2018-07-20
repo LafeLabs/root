@@ -1,0 +1,42 @@
+<svg width="550" height="100" viewbox = "0 0 550 100"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -3,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 550,
+    "svgheight": 100,
+    "unit": 235.79476910000022,
+    "x0": 581.3396100794496,
+    "y0": 487.11287954303754,
+    "x0rel": -102.66038992055041,
+    "y0rel": 88.11287954303754,
+    "glyph": "0336,0336,0330,0332,0332,0210,0336,0336,0336,0332,0332,0332,0332,0332,0332,0332,0333,0337,0337,0337,01304,01336,01366,01330,01333,01333,01336,01331,01337,01367,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M67 79 L67 28 L16 28 L16 79 L67 79 Z" stroke = "black" stroke-width = "2" fill = "none" />    <circle cx="42" cy = "53" r = "25.761523144477454" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="42" y1="53" x2="42" y2="28" style="stroke:black;stroke-width:2" />
+    <line x1="42" y1="53" x2="67" y2="53" style="stroke:black;stroke-width:2" />
+    <line x1="42" y1="53" x2="42" y2="79" style="stroke:black;stroke-width:2" />
+    <line x1="42" y1="53" x2="16" y2="53" style="stroke:black;stroke-width:2" />
+    <circle cx="32" cy = "44" r = "6.440380786119364" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="51" cy = "44" r = "6.440380786119364" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="51" cy = "63" r = "6.440380786119364" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="32" cy = "63" r = "6.440380786119364" stroke = "black" stroke-width = "2" fill = "none" />
+	<path d = "M119 79 L119 28 L67 28 L67 79 L119 79 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="106" y1="53" x2="80" y2="53" style="stroke:black;stroke-width:2" />
+	<path d = "M170 79 L170 28 L119 28 L119 79 L170 79 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="132" y1="66" x2="157" y2="66" style="stroke:black;stroke-width:2" />
+<circle cx="132" cy = "66" r = "2" stroke = "black" stroke-width = "2" fill = "black" />
+<path    d = "M132,66 C157,66 132,41 157,41" fill = "none" stroke-width = "2" stroke = "black" />	<path d = "M222 79 L222 28 L170 28 L170 79 L222 79 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M203 66 L190 66 L190 53 L183 53 L190 47 L196 41 L203 47 L209 53 L203 53 L203 66 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M273 79 L273 28 L222 28 L222 79 L273 79 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M235 60 L235 47 L248 47 L248 41 L254 47 L261 53 L254 60 L248 66 L248 60 L235 60 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M325 79 L325 28 L273 28 L273 79 L325 79 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M286 60 L286 47 L299 47 L299 41 L306 47 L312 53 L306 60 L299 66 L299 60 L286 60 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M376 79 L376 28 L325 28 L325 79 L376 79 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="364" y1="53" x2="338" y2="53" style="stroke:black;stroke-width:2" />
+	<path d = "M428 79 L428 28 L376 28 L376 79 L428 79 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M396 41 L409 41 L409 53 L415 53 L409 60 L402 66 L396 60 L389 53 L396 53 L396 41 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M480 79 L480 28 L428 28 L428 79 L480 79 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="454" y1="53" x2="454" y2="41" style="stroke:black;stroke-width:2" />
+    <line x1="454" y1="53" x2="441" y2="53" style="stroke:black;stroke-width:2" />
+    <line x1="454" y1="53" x2="454" y2="66" style="stroke:black;stroke-width:2" />
+    <line x1="454" y1="53" x2="467" y2="53" style="stroke:black;stroke-width:2" />
+	<path d = "M531 79 L531 28 L480 28 L480 79 L531 79 Z" stroke = "black" stroke-width = "2" fill = "none" /><path    d = "M492,66 C518,66 492,41 518,41" fill = "none" stroke-width = "2" stroke = "black" /><circle cx="518" cy = "41" r = "2" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="518" y1="41" x2="492" y2="41" style="stroke:black;stroke-width:2" />
+</svg>

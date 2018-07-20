@@ -1,0 +1,20 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0330,0332,0332,0332,0332,0337,</div>
+        <div class="content"><img src="../symbol/physics/circuits/svg/svg1532086980.svg"></div>
+    </div>
+<div class="box"><div class="glyphdata">0331,0332,0332,0332,0332,0337,</div>
+    <div class="content"><img src="http://localhost:8000/symbol/physics/circuits/svg/svg1532087081.svg">
+    </div>
+</div><div class="box"><div class="glyphdata">0332,0332,0330,0337,0210,0210,</div>
+    <div class="content"><img src="http://localhost:8000/symbol/physics/circuits/svg/svg1532087374.svg"></div>
+</div><div class="box"><div class="glyphdata">0331,0332,0332,0337,</div>
+    <div class="content"><img src="../symbol/physics/circuits/svg/svg1532087171.svg"></div>
+</div><div class="box"><div class="glyphdata">0337,</div>
+    <div class="content"><img src="../symbol/physics/circuits/svg/svg1532086335.svg"></div>
+</div></div>

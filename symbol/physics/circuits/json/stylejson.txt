@@ -4,7 +4,7 @@
     "line0":2,
     "color1":"black",
     "fill1":"black",
-    "line1":5,
+    "line1":3,
     "color2":"red",
     "fill2":"red",
     "line2":2,

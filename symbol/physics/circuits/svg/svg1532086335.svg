@@ -1,0 +1,27 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -3,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 235.79476910000022,
+    "x0": 581.3396100794496,
+    "y0": 487.11287954303754,
+    "x0rel": -102.66038992055041,
+    "y0rel": 88.11287954303754,
+    "glyph": "0321,0336,0342,0366,0330,0333,0333,0336,0331,0337,0367,0342,0335,0335,0342,0366,0331,0333,0333,0367,0342,0335,0335,0337,0320,0331,0336,0336,0200,0330,0200,0330,0200,0330,0200,0330,0331,0331,0331,0331,0332,0332,0333,0333,0333,0200,0330,0200,0330,0200,0330,0200,0333,0331,0331,0331,0200,0330,0200,0330,0200,0330,0200,0332,0333,0333,0331,0331,0331,0200,0330,0200,0330,0200,0330,0200,0333,0331,0331,0331,0200,0330,0200,0330,0200,0330,0200,0330,",
+    "table": []
+}
+</json>
+-->
+    <line x1="97" y1="288" x2="97" y2="170" style="stroke:black;stroke-width:5" />
+<path    d = "M97,288 C97,170 333,111 333,229" fill = "none" stroke-width = "2" stroke = "black" />    <line x1="333" y1="229" x2="333" y2="111" style="stroke:black;stroke-width:5" />
+    <line x1="333" y1="229" x2="333" y2="347" style="stroke:black;stroke-width:5" />
+<path    d = "M333,229 C333,347 97,229 97,111" fill = "none" stroke-width = "2" stroke = "black" />    <line x1="97" y1="111" x2="97" y2="229" style="stroke:black;stroke-width:5" />
+	<path d = "M97 347 L97 288 L38 288 L38 347 L97 347 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M97 288 L97 229 L38 229 L38 288 L97 288 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M97 229 L97 170 L38 170 L38 229 L97 229 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M97 170 L97 111 L38 111 L38 170 L97 170 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M156 347 L156 288 L97 288 L97 347 L156 347 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M156 288 L156 229 L97 229 L97 288 L156 288 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M156 229 L156 170 L97 170 L97 229 L156 229 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M156 170 L156 111 L97 111 L97 170 L156 170 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M215 347 L215 288 L156 288 L156 347 L215 347 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M215 288 L215 229 L156 229 L156 288 L215 288 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M215 229 L215 170 L156 170 L156 229 L215 229 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M215 170 L215 111 L156 111 L156 170 L215 170 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M274 347 L274 288 L215 288 L215 347 L274 347 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M274 288 L274 229 L215 229 L215 288 L274 288 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M274 229 L274 170 L215 170 L215 229 L274 229 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M274 170 L274 111 L215 111 L215 170 L274 170 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M333 347 L333 288 L274 288 L274 347 L333 347 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M333 288 L333 229 L274 229 L274 288 L333 288 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M333 229 L333 170 L274 170 L274 229 L333 229 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M333 170 L333 111 L274 111 L274 170 L333 170 Z" stroke = "black" stroke-width = "2" fill = "none" /></svg>

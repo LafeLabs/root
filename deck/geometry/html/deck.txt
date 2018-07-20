@@ -5,13 +5,13 @@
     "unitrel": 1
 }</div>
     <div class="box">
-        <div class="glyphdata">0337,0333,</div>
+        <div class="glyphdata">0337,0333,0336,0333,</div>
         <div class="content">
-<a href="../symbol/index.php?path=geometry/phi/&amp;backlink=../deck/index.php?path=geometry/"><h2>$\Phi$:</h2><img src="../symbol/geometry/phi/svg/svg1532028787.svg"></a></div>
+<a href="../symbol/index.php?path=geometry/phi/&amp;backlink=../deck/index.php?path=geometry/&amp;page=0"><h2>$\Phi$:</h2><img src="../symbol/geometry/phi/svg/svg1532028787.svg"></a></div>
     </div>
-<div class="box"><div class="glyphdata">0337,0332,</div>
+<div class="box"><div class="glyphdata">0337,0332,0336,0332,0337,</div>
     <div class="content">
-<a href="../symbol/index.php?path=geometry/goldenspiral/&amp;backlink=../deck/index.php?path=geometry/"><h2>Golden Spiral:</h2>
+<a href="../symbol/index.php?path=geometry/goldenspiral/&amp;backlink=../deck/index.php?path=geometry/"><h2>Golden "Spiral" from arcs and Golden Rectangle:</h2>
     <img src="../symbol/geometry/goldenspiral/svg/svg1532029314.svg">
     </a></div>
 </div><div class="box"><div class="glyphdata">0330,0337,</div>
@@ -19,4 +19,8 @@
 <a href="../symbol/index.php?path=geometry/six/&amp;backlink=../deck/index.php?path=geometry/"><h2>6:</h2><img src="../symbol/geometry/six/svg/svg1532031395.svg"></a>
     
     </div>
+</div><div class="box"><div class="glyphdata">0331,0331,0337,</div>
+    <div class="content"><a href="../curve/index.php?path=spirals/golden/&amp;backlink=../deck/index.php?path=geometry/&amp;page=0">
+<h2>Pure Golden Spiral</h2>
+    <img src="../curve/spirals/golden/svg/svg1532032772.svg"></a></div>
 </div></div>
