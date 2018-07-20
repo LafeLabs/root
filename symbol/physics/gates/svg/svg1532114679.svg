@@ -1,0 +1,45 @@
+<svg width="550" height="100" viewbox = "0 0 550 100"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 550,
+    "svgheight": 100,
+    "unit": 110.00000000000003,
+    "x0": 610.7950000000001,
+    "y0": 438.4045946091137,
+    "x0rel": -73.20499999999993,
+    "y0rel": 39.4045946091137,
+    "glyph": "0336,0332,0332,0332,0336,0332,0337,0336,0336,0330,0333,0333,0332,0337,0337,01332,01332,01330,01220,01223,01230,01236,01331,01236,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M78 76 L78 21 L23 21 L23 76 L78 76 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M64 41 L64 55 L51 55 L51 62 L44 55 L37 48 L44 41 L51 34 L51 41 L64 41 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M133 76 L133 21 L78 21 L78 76 L133 76 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M119 41 L119 55 L106 55 L106 62 L99 55 L92 48 L99 41 L106 34 L106 41 L119 41 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M188 76 L188 21 L133 21 L133 76 L188 76 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M167 62 L154 62 L154 48 L147 48 L154 41 L161 34 L167 41 L174 48 L167 48 L167 62 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M243 76 L243 21 L188 21 L188 76 L243 76 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="188" y1="48" x2="202" y2="48" style="stroke:black;stroke-width:2" />
+	<path d = "M229 62 L229 34 L202 34 L202 62 L229 62 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="209" y = "55" fill = "black" font-size = "13.75000000000001px" font-family = "arial">Z</text>
+    <line x1="229" y1="48" x2="243" y2="48" style="stroke:black;stroke-width:2" />
+	<path d = "M298 76 L298 21 L243 21 L243 76 L298 76 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="243" y1="48" x2="257" y2="48" style="stroke:black;stroke-width:2" />
+	<path d = "M284 62 L284 34 L257 34 L257 62 L284 62 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="264" y = "55" fill = "black" font-size = "13.75000000000001px" font-family = "arial">T</text>
+    <line x1="284" y1="48" x2="298" y2="48" style="stroke:black;stroke-width:2" />
+	<path d = "M353 76 L353 21 L298 21 L298 76 L353 76 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="312" y1="34" x2="339" y2="34" style="stroke:black;stroke-width:2" />
+    <line x1="312" y1="62" x2="339" y2="62" style="stroke:black;stroke-width:2" />
+    <circle cx="326" cy = "62" r = "3.4375000000000027" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="326" y1="62" x2="326" y2="65" style="stroke:black;stroke-width:2" />
+    <line x1="326" y1="62" x2="326" y2="34" style="stroke:black;stroke-width:2" />
+    <circle cx="326" cy = "34" r = "3.4375000000000027" stroke = "black" stroke-width = "2" fill = "black" />
+	<path d = "M408 76 L408 21 L353 21 L353 76 L408 76 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="353" y1="48" x2="371" y2="48" style="stroke:black;stroke-width:2" />
+	<path d = "M371 55 L371 41 L385 41 L392 41 L392 48 L392 55 L385 55 L378 55 L371 55 Z" stroke = "black" stroke-width = "2" fill = "none" />  <path d="M372.2596962717235 49.777561954425224           A10.504065309377902 10.504065309377902 0 0 1 390.4532710735877 49.777561954425266" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="381" y1="55" x2="388" y2="43" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="43" x2="387" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="388" y1="43" x2="388" y2="45" style="stroke:black;stroke-width:2" />
+	<path d = "M388 45 L388 43 L387 44 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M463 76 L463 21 L408 21 L408 76 L463 76 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M429 34 L442 34 L442 48 L449 48 L442 55 L436 62 L429 55 L422 48 L429 48 L429 34 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M518 76 L518 21 L463 21 L463 76 L518 76 Z" stroke = "black" stroke-width = "2" fill = "none" />    <line x1="463" y1="48" x2="481" y2="48" style="stroke:black;stroke-width:2" />
+	<path d = "M481 55 L481 41 L495 41 L502 41 L502 48 L502 55 L495 55 L488 55 L481 55 Z" stroke = "black" stroke-width = "2" fill = "none" />  <path d="M482.25969627172356 49.77756195442501           A10.504065309377904 10.504065309377904 0 0 1 500.45327107358776 49.777561954424954" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="491" y1="55" x2="498" y2="43" style="stroke:black;stroke-width:2" />
+    <line x1="498" y1="43" x2="497" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="498" y1="43" x2="498" y2="45" style="stroke:black;stroke-width:2" />
+	<path d = "M498 45 L498 43 L497 44 " stroke = "black" stroke-width = "2" fill = "none" /></svg>
