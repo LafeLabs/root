@@ -1,0 +1,23 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 100,
+    "x0": 666.565740045079,
+    "y0": 391.0395151082747,
+    "x0rel": -17.434259954921004,
+    "y0rel": -7.960484891725287,
+    "glyph": "0331,0331,0220,0221,0220,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M283,492 C283,392 383,492 383,392" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M383,492 C383,442 333,480 333,455" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M333,430 C333,405 283,442 283,392" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M383,392 C383,292 283,392 283,292" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M283,392 C283,342 333,380 333,355" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M333,330 C333,305 383,342 383,292" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M283,292 C283,192 383,292 383,192" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M383,292 C383,242 333,280 333,255" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M333,230 C333,205 283,242 283,192" fill = "none" stroke-width = "8" stroke = "black" /></svg>

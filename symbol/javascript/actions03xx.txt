@@ -367,6 +367,6 @@
         ctx.bezierCurveTo(cpx1,cpy1,cpx2,cpy2,x2,y2);
         ctx.stroke();
         currentSVG += cpx2.toString() + "," + cpy2.toString() + " ";
-        currentSVG += x2.toString() + "," + y2.toString() + "\" fill = \"none\" stroke-width = \"2\" stroke = \"" + currentStroke + "\" />";		
+        currentSVG += x2.toString() + "," + y2.toString() + "\" fill = \"none\" stroke-width = \"" + (ctx.lineWidth).toString() + "\" stroke = \"" + currentStroke + "\" />";		
     }
     

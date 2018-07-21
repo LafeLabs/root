@@ -1,0 +1,72 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0330,0332,0332,0332,0332,0332,0337,0337,</div>
+        <div class="content"><h6>Book of Shapes</h6>
+<ol style="text-align:left;font-size:10px;">
+
+<li>square, square fractal</li>
+<li>C1 triangle, trianglefractal</li>
+<li>C1 triangle sectioned symmetrically and constructed from Center</li>
+<li>square root of 2, 45 degree triangle, fractal of it</li>
+<li>hexagon and star of david</li>
+<li>pentagon and pentagram</li>
+<li>Golden triangle and gnomon and fractal</li>
+<li>golden rectangle and spiral</li>
+<li>30-60-90 triangle, square root of 3 fractal of it</li>
+<li>septagram, septagon</li>
+<li>octagon</li>
+</ol>
+</div>
+    </div>
+<div class="box"><div class="glyphdata">0330,0332,0332,0337,0337,</div>
+    <div class="content"><h6>Book of  the HyperCube </h6>
+<ol style="text-align:left;font-size:10px;">
+<li>symbol/action dichotomy, four dimensional cube</li>
+<li>base 8 numbers, Roctal code</li>
+<li>Tree Structure: Layers of Geometron</li>
+<li>Root Magick</li>
+<li>Keyboard</li>
+<li>Font and stack</li>
+<li>Shape Table and symbols</li>
+<li>AG Actions Tablet</li>
+<li>symmetries and scales</li>
+<li>layers and css</li>
+<li>movements</li>
+<li>basic draw actions</li>
+<li>paths</li>
+<li>Cubic Bezier paths</li>
+<li>04xx, 05xx, 06xx,07xx roles</li>
+</ol>
+</div>
+</div><div class="box"><div class="glyphdata">0330,0336,0333,0337,0337,0337,</div>
+    <div class="content"><h6>Book of Structure</h6>
+<ol style="text-align:left;font-size:10px">
+
+<li>Triangle of Watershed</li>
+<li>Pentagram of the Five Elements</li>
+<li>Septagram: Seven Roots, Seven Feeds, Seven Totems, Seven Metals, Seven Planets</li>
+<li>Server</li>
+<li>Terminal</li>
+<li>Feed</li>
+<li>HTML, Water, icosahedron, symbol, blue</li>
+<li>CSS, air, symbol, octahedron, yellow</li>
+<li>JavaScript, tetrahedron, fire, red, symbol</li>
+<li>Geometron/AG, brown, earth, cube, symbol</li>
+<li>PHP, Aether, dodecahedron, symbol, purple</li>
+<li>Page</li>
+<li>Feed</li>
+<li>Scroll</li>
+<li>Symbol</li>
+<li>deck</li>
+<li>Curve</li>
+<li>map</li>
+</ol></div>
+</div><div class="box"><div class="glyphdata">0330,0333,0333,0333,0333,0336,0333,0337,0337,0337,</div>
+    <div class="content">
+    </div>
+</div></div>

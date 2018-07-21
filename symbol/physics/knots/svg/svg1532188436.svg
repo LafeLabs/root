@@ -1,0 +1,33 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 100,
+    "x0": 666.565740045079,
+    "y0": 391.0395151082747,
+    "x0rel": -17.434259954921004,
+    "y0rel": -7.960484891725287,
+    "glyph": "0336,0336,0336,0330,0330,0330,0330,0330,0330,0330,0330,0330,0330,0330,0330,0333,0330,0333,0330,0333,0330,0333,0330,0333,0330,0330,0330,0331,0333,0337,0337,0337,0337,0331,0331,0332,0332,0336,0331,0333,0220,0333,0221,0333,0220,0333,0221,0333,0220,0331,0331,0331,0331,0331,0332,0332,0220,0333,0221,0333,0220,0333,0201,0331,0331,0331,0331,0332,0220,0333,0201,0332,0332,0332,0332,0332,0331,0330,0333,0332,0220,0333,0221,0331,0331,0331,0332,0201,0330,0201,0220,0333,0333,0331,0220,0333,0333,0333,0336,0332,0343,0332,0332,0332,0332,0343,0332,0332,0332,0332,0343,0331,0331,0331,0331,0331,0331,0331,0331,0331,0331,0335,0335,0343,0332,0332,0332,0332,0343,0332,0332,0332,0332,0343,0335,0335,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M58,567 C58,467 158,567 158,467" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M158,567 C158,517 108,555 108,530" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M108,505 C108,480 58,517 58,467" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M258,467 C258,367 158,467 158,367" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M158,467 C158,417 208,455 208,430" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M208,405 C208,380 258,417 258,367" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M258,367 C258,267 358,367 358,267" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M358,367 C358,317 308,355 308,330" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M308,305 C308,280 258,317 258,267" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M458,267 C458,167 358,267 358,167" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M358,267 C358,217 408,255 408,230" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M408,205 C408,180 458,217 458,167" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M458,167 C458,67 558,167 558,67" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M558,167 C558,117 508,155 508,130" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M508,105 C508,80 458,117 458,67" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M258,567 C258,467 358,567 358,467" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M358,567 C358,517 308,555 308,530" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M308,505 C308,480 258,517 258,467" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M458,467 C458,367 358,467 358,367" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M358,467 C358,417 408,455 408,430" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M408,405 C408,380 458,417 458,367" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M458,367 C458,267 558,367 558,267" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M558,367 C558,317 508,355 508,330" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M508,305 C508,280 458,317 458,267" fill = "none" stroke-width = "2" stroke = "black" />    <line x1="558" y1="267" x2="558" y2="167" style="stroke:black;stroke-width:8" />
+<path    d = "M458,567 C458,467 558,567 558,467" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M558,567 C558,517 508,555 508,530" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M508,505 C508,480 458,517 458,467" fill = "none" stroke-width = "2" stroke = "black" />    <line x1="558" y1="467" x2="558" y2="367" style="stroke:black;stroke-width:8" />
+<path    d = "M58,367 C58,267 158,367 158,267" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M158,367 C158,317 108,355 108,330" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M108,305 C108,280 58,317 58,267" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M258,267 C258,167 158,267 158,167" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M158,267 C158,217 208,255 208,230" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M208,205 C208,180 258,217 258,167" fill = "none" stroke-width = "2" stroke = "black" />    <line x1="58" y1="467" x2="58" y2="367" style="stroke:black;stroke-width:8" />
+    <line x1="58" y1="267" x2="58" y2="167" style="stroke:black;stroke-width:8" />
+<path    d = "M58,167 C58,67 158,167 158,67" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M158,167 C158,117 108,155 108,130" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M108,105 C108,80 58,117 58,67" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M258,167 C258,67 358,167 358,67" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M358,167 C358,117 308,155 308,130" fill = "none" stroke-width = "2" stroke = "black" /><path    d = "M308,105 C308,80 258,117 258,67" fill = "none" stroke-width = "2" stroke = "black" />  <path d="M457.5657400449695 67.03951510820218           A50 50 0 0 1 557.5657400449695 67.03951510814704" fill = "none" stroke = "black" stroke-width = "8" />
+  <path d="M257.5657400449695 67.03951510831138           A50 50 0 0 1 357.5657400449695 67.03951510825624" fill = "none" stroke = "black" stroke-width = "8" />
+  <path d="M57.565740044969516 67.03951510842057           A50 50 0 0 1 157.56574004496952 67.03951510836544" fill = "none" stroke = "black" stroke-width = "8" />
+  <path d="M157.5657400452452 567.0395151083654           A50 50 0 0 1 57.56574004524521 567.0395151084217" fill = "none" stroke = "black" stroke-width = "8" />
+  <path d="M357.5657400452452 567.039515108254           A50 50 0 0 1 257.5657400452452 567.0395151083103" fill = "none" stroke = "black" stroke-width = "8" />
+  <path d="M557.5657400452452 567.0395151081426           A50 50 0 0 1 457.5657400452452 567.0395151081989" fill = "none" stroke = "black" stroke-width = "8" />
+</svg>

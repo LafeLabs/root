@@ -1,0 +1,31 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 82.64462809917356,
+    "x0": 666.565740045079,
+    "y0": 391.0395151082747,
+    "x0rel": -17.434259954921004,
+    "y0rel": -7.960484891725287,
+    "glyph": "0336,0336,0336,0336,0333,0333,0333,0331,0333,0332,0331,0337,0337,0337,0337,0305,0350,0334,0362,0360,0335,0335,0361,0363,0362,0360,0335,0335,0361,0363,0362,0360,0335,0335,0361,0363,0362,0360,0335,0335,0361,0363,0362,0360,0335,0335,0361,0363,0335,0211,0211,0211,0306,0335,0337,0342,0335,0342,0335,0335,0342,0335,0342,0330,0335,0335,0335,0350,0335,0312,0337,0201,0334,0334,0334,0334,0201,0334,0336,0331,0334,0337,0201,0334,0334,0334,0334,0201,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M298 302  M298,302 C249,236 347,236 298,302 Z" stroke = "black" stroke-width = "4" fill = "black" />	<path d = "M298 302  M298,302 C347,236 377,328 298,302 Z" stroke = "black" stroke-width = "4" fill = "black" />	<path d = "M298 302  M298,302 C377,328 298,385 298,302 Z" stroke = "black" stroke-width = "4" fill = "black" />	<path d = "M298 302  M298,302 C298,385 219,328 298,302 Z" stroke = "black" stroke-width = "4" fill = "black" />	<path d = "M298 302  M298,302 C219,328 249,236 298,302 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="298" y1="302" x2="512" y2="179" style="stroke:black;stroke-width:4" />
+    <line x1="298" y1="302" x2="512" y2="426" style="stroke:black;stroke-width:4" />
+    <line x1="298" y1="302" x2="84" y2="426" style="stroke:black;stroke-width:4" />
+    <line x1="298" y1="302" x2="84" y2="179" style="stroke:black;stroke-width:4" />
+    <line x1="84" y1="179" x2="298" y2="550" style="stroke:black;stroke-width:4" />
+    <line x1="298" y1="550" x2="512" y2="179" style="stroke:black;stroke-width:4" />
+    <line x1="512" y1="426" x2="298" y2="55" style="stroke:black;stroke-width:4" />
+    <line x1="298" y1="55" x2="84" y2="426" style="stroke:black;stroke-width:4" />
+</svg>
