@@ -44,12 +44,6 @@ EGO DEATH:
     }
 
 ?></div>
-<div id = "localdatadiv" style= "display:none"><?php
-
-    if(isset($_GET['path'])){
-        echo file_get_contents($_GET['path']."/html/page.txt");
-    }
-?></div>
 <table id = "linktable">
     <tr>
         <td>
@@ -97,13 +91,23 @@ document.getElementById("maineditor").onkeyup = function(){
 
 if(document.getElementById("pathdiv").innerHTML.length > 1){
     pathset = true;
-    localdata = document.getElementById("localdatadiv").innerHTML;
     path = document.getElementById("pathdiv").innerHTML;
-    editor.setValue(localdata);
-    document.getElementById("scroll").innerHTML = localdata;
     currentFile = path + "/html/page.txt";
     document.getElementById("indexlink").href = "index.php?path=" + path;
     document.getElementById("indexlink").innerHTML = "index.php?path=" + path;
+    
+    currentFile = path + "html/page.txt";
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            filedata = this.responseText;
+            editor.setValue(filedata);
+            document.getElementById("scroll").innerHTML = filedata;
+        }
+    };
+    httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+    httpc.send();
+
 }
 else{
     currentFile = "html/page.txt";
