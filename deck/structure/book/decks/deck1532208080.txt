@@ -2,7 +2,7 @@
     <div class="pagejson">{
     "x0rel": 0,
     "y0rel": 0,
-    "unitrel": 0.909090909090909
+    "unitrel": 1
 }</div>
     <div class="box">
         <div class="glyphdata">0330,0332,0332,0332,0332,0332,0337,0337,</div>
@@ -96,34 +96,5 @@
 <li>Technological Complete Sets</li>
 <li>Modern Alchemy and the death of Science</li>
 <li>Goals: The Great Work</li>
-</ol></div>
-</div></div><div class="page">
-   <div class="pagejson">{
-    "x0rel": 0,
-    "y0rel": 0,
-    "unitrel": 1
-}</div>
-<div class="box"><div class="glyphdata">0336,0331,0337,0337,0337,0337,</div>
-    <div class="content"><h2>Book of Structure(Air)</h2>
-<ol style="text-align:left;font-size:26px">
-
-<li>Triangle of Watershed</li>
-<li>Pentagram of the Five Elements</li>
-<li>Septagram: Seven Roots, Seven Feeds, Seven Totems, Seven Metals, Seven Planets</li>
-<li>Server</li>
-<li>Terminal</li>
-<li>Feed</li>
-<li>HTML, Water, icosahedron, symbol, blue</li>
-<li>CSS, air, symbol, octahedron, yellow</li>
-<li>JavaScript, tetrahedron, fire, red, symbol</li>
-<li>Geometron/AG, brown, earth, cube, symbol</li>
-<li>PHP, Aether, dodecahedron, symbol, purple</li>
-<li>Page</li>
-<li>Feed</li>
-<li>Scroll</li>
-<li>Symbol</li>
-<li>deck</li>
-<li>Curve</li>
-<li>map</li>
 </ol></div>
 </div></div>

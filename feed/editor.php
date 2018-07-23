@@ -29,6 +29,7 @@ EGO DEATH:
     <a href = "tree.php">tree.php</a>
     <a href = "walleditor.php">walleditor.php</a>
     <a href = "wallhistory.php">wallhistory.php</a>
+    <a href = "remotefeed.php">remotefeed.php</a>
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
@@ -49,6 +50,7 @@ EGO DEATH:
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/wallhistory.txt</div>
+    <div class = "php file">php/remotefeed.php</div>
 </div>
 
 <script>
