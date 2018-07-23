@@ -1,0 +1,28 @@
+<img class = "imagestack" id  = "bottomimage" src = "https://i.imgur.com/kGoAPS0.jpg"/>
+<img class = "imagestack" id  = "topimage" src = "https://i.imgur.com/uKrbCTU.jpg"/>
+
+<script>
+    phi = Math.PI/2;//phase angle
+    alpha = Math.cos(phi)*Math.cos(phi);
+    beta = Math.sin(phi)*Math.sin(phi);
+    document.getElementById("topimage").style.opacity = alpha.toString();
+    document.getElementById("bottomimage").style.opacity = beta.toString();
+    
+    
+</script>
+<style>
+.imagestack{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:500px;
+    opacity:0.5;
+}
+#bottomimage{
+    
+}
+#topimage{
+    left:50px;
+}
+
+</style>

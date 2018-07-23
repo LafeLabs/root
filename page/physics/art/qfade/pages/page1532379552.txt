@@ -1,0 +1,38 @@
+<img class="imagestack" id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg" style="opacity: 0.415016;">
+<img class="imagestack" id="topimage" src="https://i.imgur.com/uKrbCTU.jpg" style="opacity: 0.584984;">
+
+<button id="zeep">foo</button>
+<script>
+    
+    document.getElementById("zeep").onclick = function(){
+        phi +=0.1;
+        redraw();
+    }    
+    phi = 0.7;//phase angle
+    redraw();
+    function redraw(){
+        alpha = Math.cos(phi)*Math.cos(phi);
+        beta = Math.sin(phi)*Math.sin(phi);
+        document.getElementById("topimage").style.opacity = alpha.toString();
+        document.getElementById("bottomimage").style.opacity = beta.toString();
+        console.log(phi);
+    }
+    
+</script>
+<style>
+.imagestack{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:500px;
+}
+#bottomimage{
+    
+}
+#topimage{
+}
+#foo{
+    position:absolute;
+    z-index:3;
+    font-size:2em;
+</style>

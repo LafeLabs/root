@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>index</title>
+<title>Index</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
@@ -9,9 +9,19 @@ EVERYTHING IS PHYSICAL
 EVERYTHING IS FRACTAL
 EVERYTHING IS RECURSIVE
 
+NO MONEY
+NO PROPERTY
+NO MINING
+
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
+<!--
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+
+-->
 <!-- links to MathJax JavaScript library, un-comment to use math-->
 <!--
 
@@ -26,8 +36,26 @@ EVERYTHING IS RECURSIVE
 		}
 	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
 </script>
-
 -->
+
+<script id = "topfunctions">
+
+<?php
+
+    if(isset($_GET['path'])){
+        if(file_exists($_GET['path']."javascript/topfunctions.txt")){
+            echo file_get_contents($_GET['path']."javascript/topfunctions.txt");    
+        }
+    }
+    if(!isset($_GET['path'])){
+        if(file_exists("javascript/topfunctions.txt")){
+            echo file_get_contents("javascript/topfunctions.txt");
+        }
+    }
+
+?>
+
+</script>
 </head>
 <body>
 <div id = "pathdiv" style= "display:none"><?php
@@ -36,12 +64,6 @@ EVERYTHING IS RECURSIVE
         echo $_GET['path'];
     }
 
-?></div>
-<div id = "localdatadiv" style= "display:none"><?php
-
-    if(isset($_GET['path'])){
-        echo file_get_contents($_GET['path']."/html/page.txt");
-    }
 ?></div>
 <div id = "extdatadiv" style = "display:none"><?php
 if(isset($_GET['url'])){
@@ -52,7 +74,12 @@ if(isset($_GET['url'])){
 <a id = "treelink" href = "tree.php">tree.php</a>
 <div id = "page">
 <?php
-echo file_get_contents("html/page.txt");
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."html/page.txt");
+    }
+    else{
+        echo file_get_contents("html/page.txt");
+    }
 ?>
 </div>
 <script>
@@ -65,12 +92,11 @@ pathset = false;
 
 if(document.getElementById("pathdiv").innerHTML.length > 1){
     pathset = true;
-    localdata = document.getElementById("localdatadiv").innerHTML;
     path = document.getElementById("pathdiv").innerHTML;
-    document.getElementById("page").innerHTML = localdata;
     document.getElementById("pageeditorlink").href = "pageeditor.php?path=" + path;
     document.getElementById("pageeditorlink").innerHTML = "pageeditor.php?path=" + path;
 }
+
 
 </script>
 <style>

@@ -6,11 +6,21 @@ $name = $_POST['name'];
 if(strlen($path) == 0){
     mkdir($name);
     mkdir($name."/"."html");
+    mkdir($name."/"."css");
+    mkdir($name."/"."javascript");
+    mkdir($name."/"."bytecode");
+    mkdir($name."/"."json");
     mkdir($name."/"."pages");
+
+    
 }
 else{
     mkdir($path."/".$name);
     mkdir($path."/".$name."/"."html");
+    mkdir($path."/".$name."/"."css");
+    mkdir($path."/".$name."/"."javascript");
+    mkdir($path."/".$name."/"."json");
+    mkdir($path."/".$name."/"."bytecode");
     mkdir($path."/".$name."/"."pages");
 }
     

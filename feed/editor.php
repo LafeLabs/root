@@ -51,6 +51,7 @@ EGO DEATH:
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/wallhistory.txt</div>
     <div class = "php file">php/remotefeed.php</div>
+    <div class = "json file">json/feed.txt</div>
 </div>
 
 <script>

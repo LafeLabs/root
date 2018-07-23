@@ -69,7 +69,7 @@ EGO DEATH:
         </td>
     </tr>
 </table>
-<div id="maineditor" contenteditable="true" spellcheck="true"></div>
+<div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "scroll" class = "mathjax">
 </div>
 <script>

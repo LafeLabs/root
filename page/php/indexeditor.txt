@@ -77,12 +77,12 @@ pathset = false;
 
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
-editor.getSession().setMode("ace/mode/html");
+editor.getSession().setMode("ace/mode/php");
 editor.getSession().setUseWrapMode(true);
 editor.$blockScrolling = Infinity;
 
 document.getElementById("maineditor").onkeyup = function(){
-    document.getElementById("scroll").innerHTML = editor.getSession().getValue();
+
     data = encodeURIComponent(editor.getSession().getValue());
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
@@ -101,18 +101,17 @@ if(document.getElementById("pathdiv").innerHTML.length > 1){
     path = document.getElementById("pathdiv").innerHTML;
     editor.setValue(localdata);
     document.getElementById("scroll").innerHTML = localdata;
-    currentFile = path + "/html/page.txt";
+    currentFile = path + "index.php";
     document.getElementById("indexlink").href = "index.php?path=" + path;
     document.getElementById("indexlink").innerHTML = "index.php?path=" + path;
 }
 else{
-    currentFile = "html/page.txt";
+    currentFile = "index.php";
     var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             filedata = this.responseText;
             editor.setValue(filedata);
-            document.getElementById("scroll").innerHTML = filedata;
         }
     };
     httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -165,21 +164,10 @@ body{
 #maineditor{
     position:absolute;
     top:2em;
-    bottom:50%;
+    bottom:2em;
     right:5px;
     left:5px;
     font-size:22px;
-}
-#scroll{
-    position:absolute;
-    bottom:5px;
-    top:52%;
-    right:5px;
-    left:5px;
-    background-color:white;
-    overflow:scroll;
-    padding:1em 1em 1em 1em;
-    
 }
 #scroll h1,h2,h3,h4,h5{
     width:100%;

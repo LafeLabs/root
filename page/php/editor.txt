@@ -15,7 +15,7 @@ EGO DEATH:
     LOOK TO THE FUNGI
     LANGUAGE IS HOW THE MIND PARSES REALITY
 -->
-<!--Stop Google:-->
+<!--Stop Google:--> 
 <META NAME="robots" CONTENT="noindex,nofollow">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 <title>PHP Editor replicator</title>
@@ -31,11 +31,10 @@ EGO DEATH:
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
-
     <div class = "html file">html/page.txt</div>
-    
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/pageeditor.txt</div>
+    <div class = "php file">php/indexeditor.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
@@ -43,6 +42,7 @@ EGO DEATH:
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/newdir.txt</div>
+
 </div>
 
 <script>
