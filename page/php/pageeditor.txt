@@ -128,6 +128,7 @@ document.getElementById("savebutton").onclick = function(){
     timestamp = Math.round((new Date().getTime())/1000);
     if(pathset){
         archiveFile = path + "/pages/page" + timestamp + ".txt";
+        indexFile = path + "index.html";
     }
     else{
         archiveFile = "pages/page" + timestamp + ".txt";
@@ -139,6 +140,16 @@ document.getElementById("savebutton").onclick = function(){
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data="+data+"&filename="+archiveFile);//send text to filesaver.php
+    if(pathset){
+        data = encodeURIComponent(editor.getSession().getValue());
+        data = "<!doctype html>\n<html>\n<body>\n" + data + "\n</body>\n</html>";
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+data+"&filename=" + indexFile);//send text to filesaver.php 
+    }
+    
 }
 document.getElementById("loadbutton").onclick = function(){
     

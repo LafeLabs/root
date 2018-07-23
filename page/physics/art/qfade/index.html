@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<body>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+
+<img class="imagestack" id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg"/>
+<img class="imagestack" id="topimage" src="https://i.imgur.com/uKrbCTU.jpg"/>
+
+<script>
+myElement = document.getElementById("topimage");
+mc = new Hammer(myElement);
+//mc.get('pinch').set({ enable: true });
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+mc.on("panleft panright panup pandown tap press", function(ev) {
+   // document.getElementById("topimage").style.left = ev.deltaX.toString() + "px";
+    //document.getElementById("topimage").style.top = ev.deltaY.toString() + "px";
+    phi = Math.PI*ev.deltaX/500;
+    redraw();
+});
+phi = Math.PI/4;//phase angle
+redraw();
+document.getElementById("topimage").onclick = function(){
+    phi += Math.PI/16;
+    redraw();
+}
+function redraw(){
+    alpha = Math.cos(phi)*Math.cos(phi);
+    beta = Math.sin(phi)*Math.sin(phi);
+    document.getElementById("topimage").style.opacity = alpha.toString();        
+    document.getElementById("bottomimage").style.opacity = beta.toString();
+}
+    
+</script>
+<style>
+.imagestack{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:500px;
+}
+#bottomimage{
+    
+}
+#topimage{
+}
+#foo{
+    position:absolute;
+    z-index:3;
+    font-size:2em;
+</style>
+</body>
+</html>
