@@ -1,0 +1,13 @@
+<a href = "../">../</a>
+<h2>Page</h2>
+
+<p>
+    <a href = "index.php?path=physics/quantumnoise/">physics/quantumnoise/</a>
+</p>
+<a href = "../"><span style = "font-size:10em;">&#X3020</span></a>
+
+<style>
+    #foo{
+        color:red;
+    }
+</style>

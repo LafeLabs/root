@@ -61,6 +61,9 @@ EGO DEATH:
         <td class = "button" id = "loadbutton">
             LOAD MOST RECENT PAGE
         </td>
+        <td>
+            <a href = "pages/">pages/</a>
+        </td>
     </tr>
 </table>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
@@ -150,9 +153,21 @@ document.getElementById("savebutton").onclick = function(){
         httpc.send("data="+data+"&filename=" + indexFile);//send text to filesaver.php 
     }
     
-}
-document.getElementById("loadbutton").onclick = function(){
+    var httpc = new XMLHttpRequest();
+    var url = "makepagesindex.php";        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    if(pathset){
+        httpc.send("page="+path);//send text to filesaver.php
+    }
+    else{
+        httpc.send();//send text to filesaver.php
+    }
     
+
+}
+
+document.getElementById("loadbutton").onclick = function(){
     var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -166,7 +181,12 @@ document.getElementById("loadbutton").onclick = function(){
             httpc2.send("data="+filedata+"&filename="+currentFile);//send text to filesaver.php
         }
     };
-    httpc.open("GET", "loadpage.php?path=" + path, true);
+    if(pathset){
+        httpc.open("GET", "loadpage.php?path=" + path, true);
+    }
+    else{
+        httpc.open("GET", "loadpage.php", true);
+    }
     httpc.send();
 
 }

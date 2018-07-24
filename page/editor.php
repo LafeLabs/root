@@ -34,13 +34,13 @@ EGO DEATH:
     <div class = "html file">html/page.txt</div>
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/pageeditor.txt</div>
-    <div class = "php file">php/indexeditor.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/loadpage.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/tree.txt</div>
+    <div class = "php file">php/makepagesindex.txt</div>
     <div class = "php file">php/newdir.txt</div>
 
 </div>

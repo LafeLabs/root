@@ -25,13 +25,14 @@ document.getElementById("loadbutton").onclick = function(){
 
 
 if(isset($_GET['path'])){
-        $path =  $_GET['path'];
+    $path =  $_GET['path'];
+    $files = scandir(getcwd()."/".$path."/pages");
 }
 else{
     $path = "";
+    $files = scandir(getcwd()."/pages");
 }
 
-$files = scandir(getcwd()."/".$path."/pages");
 $latesttime = 0;
 
 foreach($files as $value){
@@ -47,7 +48,13 @@ foreach($files as $value){
     }
 }
 
-$latestfilename = $path."/pages/page".$latesttime.".txt";
+if(isset($_GET['path'])){
+    $latestfilename = $path."/pages/page".$latesttime.".txt";
+}
+else{
+    $latestfilename = "pages/page".$latesttime.".txt";
+}
+
 echo file_get_contents($latestfilename);
 
 ?>

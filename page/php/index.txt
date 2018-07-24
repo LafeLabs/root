@@ -51,17 +51,15 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <a id = "treelink" href = "tree.php">tree.php</a>
 <div id = "page">
 <?php
-
     if(isset($_GET['url'])){
         echo file_get_contents($_GET['url']);
     }
-    if(isset($_GET['path'])){
+    if(isset($_GET['path']) && !$_GET['url']){
         echo file_get_contents($_GET['path']."html/page.txt");
     }
     if(!isset($_GET['url']) && !isset($_GET['path'])){
         echo file_get_contents("html/page.txt");
     }
-    
 ?>
 </div>
 <script>

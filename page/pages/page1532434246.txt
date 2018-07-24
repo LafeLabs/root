@@ -9,6 +9,5 @@
     <li>quantum art manifesto</li>
     <li>quantum noise metrology</li>
     <li>clean quantum fade apps for different numbers of qubits, add phase</li>
-    <li>figure out multitouch in hammer.js <a href = "https://codepen.io/tran2/pen/vELEvR">https://codepen.io/tran2/pen/vELEvR</a></li>
-    <li>build the trees! core trees from roots for my Magnum Opus document: quantum, noise, AG, trash robot, free oscillator, sacred geometry, nautical, metro, my maps, geometron hypercube, watershed network, trash magick, all the basic curves...need a tree copying workflow, protection from Evil workflow</li>
+    <li>figure out multitouch in hammer.js</li>
 </ul>
