@@ -1,0 +1,93 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+<img class="imagestack" id="image1" src="https://i.imgur.com/kGoAPS0.jpg"/>
+<img class="imagestack" id="image2" src="https://i.imgur.com/uKrbCTU.jpg"/>
+<img class="imagestack" id="image3" src="https://i.imgur.com/iCpHMWG.jpg"/>
+<img class="imagestack" id="image4" src="https://i.imgur.com/viA6nnL.jpg"/>
+
+<div id = "slider1"></div>
+<div id = "slider2"></div>
+<div id = "slider3"></div>
+
+<script>
+
+mc1 = new Hammer(document.getElementById("slider1"));
+mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc1.on("panleft panright panup pandown", function(ev) {
+    theta0 = Math.PI*(ev.deltaY)/300;
+    redraw();
+});
+
+mc2 = new Hammer(document.getElementById("slider2"));
+mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc2.on("panleft panright panup pandown", function(ev) {
+    theta1 = Math.PI*(ev.deltaY)/300;
+    redraw();
+});
+
+mc3 = new Hammer(document.getElementById("slider3"));
+mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc3.on("panleft panright panup pandown", function(ev) {
+    theta2 = Math.PI*(ev.deltaY)/300;
+    redraw();
+});
+
+theta0 = 0;
+theta1 = 0;
+theta2 = 0;
+a = 0;
+b = 0;
+c = 0;
+d = 0;
+
+redraw();
+
+function redraw(){
+    
+    a = Math.cos(theta0);
+    b = Math.cos(theta1)*Math.sin(theta0);
+    c = Math.cos(theta2)*Math.sin(theta1)*Math.sin(theta0);
+    d = Math.sin(theta2)*Math.sin(theta1)*Math.sin(theta1);
+
+    document.getElementById("image1").style.opacity = (Math.abs(a)).toString();        
+    document.getElementById("image2").style.opacity = (Math.abs(b)).toString();
+    document.getElementById("image3").style.opacity = (Math.abs(c)).toString();        
+    document.getElementById("image4").style.opacity = (Math.abs(d)).toString();
+    
+}
+    
+</script>
+<style>
+.imagestack{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:500px;
+}
+#slider1{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    height:500px;
+    width:100px;
+    background-color:green;
+}
+#slider2{
+    position:absolute;
+    right:120px;
+    bottom:10px;
+    height:500px;
+    width:100px;
+    background-color:red;
+}
+#slider3{
+    position:absolute;
+    right:230px;
+    bottom:10px;
+    height:500px;
+    width:100px;
+    background-color:blue;
+}
+
+
+</style>

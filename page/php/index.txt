@@ -13,15 +13,14 @@ NO MONEY
 NO PROPERTY
 NO MINING
 
+LOOK AT THE INSECTS
+LOOK AT THE FUNGI
+LANGUAGE IS HOW THE MIND PARSES REALITY
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
-<!--
-
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 
 
--->
 <!-- links to MathJax JavaScript library, un-comment to use math-->
 <!--
 
@@ -38,24 +37,6 @@ NO MINING
 </script>
 -->
 
-<script id = "topfunctions">
-
-<?php
-
-    if(isset($_GET['path'])){
-        if(file_exists($_GET['path']."javascript/topfunctions.txt")){
-            echo file_get_contents($_GET['path']."javascript/topfunctions.txt");    
-        }
-    }
-    if(!isset($_GET['path'])){
-        if(file_exists("javascript/topfunctions.txt")){
-            echo file_get_contents("javascript/topfunctions.txt");
-        }
-    }
-
-?>
-
-</script>
 </head>
 <body>
 <div id = "pathdiv" style= "display:none"><?php
@@ -65,29 +46,26 @@ NO MINING
     }
 
 ?></div>
-<div id = "extdatadiv" style = "display:none"><?php
-if(isset($_GET['url'])){
-    echo file_get_contents($_GET['url']);
-}?>
-</div>
-    <a id = "pageeditorlink" href = "pageeditor.php">pageeditor.php</a>
+
+<a id = "pageeditorlink" href = "pageeditor.php">pageeditor.php</a>
 <a id = "treelink" href = "tree.php">tree.php</a>
 <div id = "page">
 <?php
+
+    if(isset($_GET['url'])){
+        echo file_get_contents($_GET['url']);
+    }
     if(isset($_GET['path'])){
         echo file_get_contents($_GET['path']."html/page.txt");
     }
-    else{
+    if(!isset($_GET['url']) && !isset($_GET['path'])){
         echo file_get_contents("html/page.txt");
     }
+    
 ?>
 </div>
 <script>
-    
-if(document.getElementById("extdatadiv").innerHTML.length > 10){
-        document.getElementById("page").innerHTML = document.getElementById("extdatadiv").innerHTML;
-}
-    
+
 pathset = false;
 
 if(document.getElementById("pathdiv").innerHTML.length > 1){
@@ -96,7 +74,6 @@ if(document.getElementById("pathdiv").innerHTML.length > 1){
     document.getElementById("pageeditorlink").href = "pageeditor.php?path=" + path;
     document.getElementById("pageeditorlink").innerHTML = "pageeditor.php?path=" + path;
 }
-
 
 </script>
 <style>
