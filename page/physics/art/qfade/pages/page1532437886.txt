@@ -1,7 +1,5 @@
-<!doctype html>
-<html>
-<body>
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
 
 <img class="imagestack" id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg"/>
 <img class="imagestack" id="topimage" src="https://i.imgur.com/uKrbCTU.jpg"/>
@@ -49,5 +47,3 @@ function redraw(){
     z-index:3;
     font-size:2em;
 </style>
-</body>
-</html>

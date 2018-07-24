@@ -2,7 +2,7 @@
 
 if(isset($_GET['path'])){
     $path =  $_GET['path'];
-    $files = scandir(getcwd()."/".$path."/pages");
+    $files = scandir(getcwd()."/".$path."pages");
 }
 else{
     $path = "";

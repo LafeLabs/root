@@ -62,7 +62,7 @@ EGO DEATH:
             LOAD MOST RECENT PAGE
         </td>
         <td>
-            <a href = "pages/">pages/</a>
+            <a href = "pages/" id = "pageslink">pages/</a>
         </td>
     </tr>
 </table>
@@ -99,6 +99,7 @@ if(document.getElementById("pathdiv").innerHTML.length > 1){
     document.getElementById("indexlink").href = "index.php?path=" + path;
     document.getElementById("indexlink").innerHTML = "index.php?path=" + path;
     
+    document.getElementById("pageslink").href = path + "pages";
     currentFile = path + "html/page.txt";
     var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
@@ -154,17 +155,15 @@ document.getElementById("savebutton").onclick = function(){
     }
     
     var httpc = new XMLHttpRequest();
-    var url = "makepagesindex.php";        
-    httpc.open("GET", url, true);
-    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     if(pathset){
-        httpc.send("page="+path);//send text to filesaver.php
+        var url = "makepagesindex.php?path=" + path;        
     }
     else{
-        httpc.send();//send text to filesaver.php
+        var url = "makepagesindex.php";        
     }
-    
-
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
 }
 
 document.getElementById("loadbutton").onclick = function(){
