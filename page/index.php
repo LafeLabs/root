@@ -93,11 +93,6 @@ h1,h2,h3,h4,h5{
     padding:1em 1em 1em 1em;
     font-size:24px;
 }
-#page img{
-    width:50%;
-    display:block;
-    margin:auto;
-}
 #pageeditorlink{
     position:absolute;
     top:0.5em;

@@ -219,11 +219,6 @@ body{
     width:100%;
     text-align:center;
 }
-#scroll img{
-    width:50%;
-    display:block;
-    margin:auto;
-}
 #linktable{
     position:absolute;
     top:0px;

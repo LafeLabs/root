@@ -2,52 +2,89 @@
 <html>
 <body>
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<table id = "controltable">
+    <tr>
+        <td class = "button" id = "publishbutton">PUBLISH</td>
+        <td>Bottom Image: <input id  = "bottominput"/></td>
+        <td>Top Image: <input id = "topinput"/></td>
+    </tr>
+</table>
 
 <img class="imagestack" id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg"/>
 <img class="imagestack" id="topimage" src="https://i.imgur.com/uKrbCTU.jpg"/>
 
 <script>
+path = document.getElementById("pathdiv").innerHTML;
 myElement = document.getElementById("topimage");
 mc = new Hammer(myElement);
-//mc.get('pinch').set({ enable: true });
+deltax = 0;
 mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-
 mc.on("panleft panright panup pandown tap press", function(ev) {
-   // document.getElementById("topimage").style.left = ev.deltaX.toString() + "px";
-    //document.getElementById("topimage").style.top = ev.deltaY.toString() + "px";
-    phi = Math.PI*ev.deltaX/500;
+    phi = Math.PI*(deltax + ev.deltaX)/500;
     redraw();
 });
-phi = Math.PI/4;//phase angle
+phi = 0;//phase angle
 redraw();
-document.getElementById("topimage").onclick = function(){
-    phi += Math.PI/16;
-    redraw();
-}
+
 function redraw(){
     alpha = Math.cos(phi)*Math.cos(phi);
     beta = Math.sin(phi)*Math.sin(phi);
     document.getElementById("topimage").style.opacity = alpha.toString();        
     document.getElementById("bottomimage").style.opacity = beta.toString();
 }
+
+document.getElementById("bottominput").onchange = function(){
+    document.getElementById("bottomimage").src = this.value;
+}
+document.getElementById("topinput").onchange = function(){
+    document.getElementById("topimage").src = this.value;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+
+    deltax = Math.asin(Math.sqrt(beta))*500/Math.PI;
+    currentJSON = {};
+    currentJSON.bottomimage = document.getElementById("bottomimage").src;
+    currentJSON.topimage = document.getElementById("topimage").src;
+    currentJSON.phi = phi;
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
     
+}
+
 </script>
 <style>
-.imagestack{
+#controltable{
     position:absolute;
     left:0px;
     top:0px;
-    width:500px;
-}
-#bottomimage{
-    
-}
-#topimage{
-}
-#foo{
-    position:absolute;
     z-index:3;
-    font-size:2em;
+}
+
+.imagestack{
+    position:absolute;
+    top:3em;
+    width:500px;
+    left:300px;
+}
+
+.button{
+    cursor:pointer;
+    border:solid;
+    border-radius:0.1em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+
 </style>
 </body>
 </html>
