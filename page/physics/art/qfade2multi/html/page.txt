@@ -1,0 +1,66 @@
+<div id = "container">
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+<img class="imagestack" id="image1" src="https://i.imgur.com/kGoAPS0.jpg"/>
+<img class="imagestack" id="image2" src="https://i.imgur.com/uKrbCTU.jpg"/>
+<img class="imagestack" id="image3" src="https://i.imgur.com/iCpHMWG.jpg"/>
+<img class="imagestack" id="image4" src="https://i.imgur.com/viA6nnL.jpg"/>
+</div>
+<script>
+
+mc = new Hammer(document.getElementById("container"))
+mc.get('rotate').set({ enable: true });
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown rotate", function(ev) {
+    theta0 = Math.PI*(ev.deltaX)/300;
+    theta1 = Math.PI*(ev.deltaY)/300;
+    theta2 = ev.rotation;
+    console.log(ev.rotation);
+    redraw();
+});
+
+
+
+theta0 = 0;
+theta1 = 0;
+theta2 = 0;
+a = 0;
+b = 0;
+c = 0;
+d = 0;
+
+redraw();
+
+function redraw(){
+    
+    a = Math.cos(theta0);
+    b = Math.cos(theta1)*Math.sin(theta0);
+    c = Math.cos(theta2)*Math.sin(theta1)*Math.sin(theta0);
+    d = Math.sin(theta2)*Math.sin(theta1)*Math.sin(theta1);
+
+    document.getElementById("image1").style.opacity = (Math.abs(a)).toString();        
+    document.getElementById("image2").style.opacity = (Math.abs(b)).toString();
+    document.getElementById("image3").style.opacity = (Math.abs(c)).toString();        
+    document.getElementById("image4").style.opacity = (Math.abs(d)).toString();
+    
+}
+    
+</script>
+<style>
+.imagestack{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:500px;
+}
+
+#container{
+    position:absolute;
+    left:0px;
+    top:3em;
+    bottom:0px;
+    right:0px;
+    overflow:hidden;
+}
+
+</style>

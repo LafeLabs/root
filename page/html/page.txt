@@ -1,7 +1,8 @@
+<p><a href = "../">../</a></p>
 <h4>to do</h4>
 <ul>
     <li><del>make it so page saves an index.html with dates and links so that you can click to go back in time, link to this index.html somewhere</del></li>
-    <li>test index.php?url=[] functionality</li>
+    <li><del>test index.php?url=[] functionality</del></li>
     <li>streamline map links</li>
     <li>create feedin and feedout, with feedin connecting to all the things: map links, map images, symbols, curves, pages</li>
     <li>bind The Book, add structural content to more of the books</li>

@@ -11,6 +11,12 @@
 
 <script>
 
+y1 = 0;
+y2 = 0;
+y3 = 0;
+y4 = 0;
+
+
 mc1 = new Hammer(document.getElementById("slider1"));
 mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc1.on("panleft panright panup pandown", function(ev) {
@@ -49,10 +55,10 @@ function redraw(){
     c = Math.cos(theta2)*Math.sin(theta1)*Math.sin(theta0);
     d = Math.sin(theta2)*Math.sin(theta1)*Math.sin(theta1);
 
-    document.getElementById("image1").style.opacity = (Math.abs(a)).toString();        
-    document.getElementById("image2").style.opacity = (Math.abs(b)).toString();
-    document.getElementById("image3").style.opacity = (Math.abs(c)).toString();        
-    document.getElementById("image4").style.opacity = (Math.abs(d)).toString();
+    document.getElementById("image1").style.opacity = (a*a).toString();        
+    document.getElementById("image2").style.opacity = (b*b).toString();
+    document.getElementById("image3").style.opacity = (c*c).toString();        
+    document.getElementById("image4").style.opacity = (d*d).toString();
     
 }
     
