@@ -36,6 +36,7 @@ EGO DEATH:
 <div id = "filescroll">
 
     <div class = "html file">html/wall.txt</div>
+    <div class = "html file">html/feed.txt</div>
 
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/post.txt</div>

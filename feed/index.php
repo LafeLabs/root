@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Wall</title>
+<title>Feed</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
@@ -37,86 +37,47 @@ EVERYTHING IS RECURSIVE
     }
 
 ?></div>
-<div id = "localdatadiv" style= "display:none"><?php
+<div id = "json"><?php
 
-    if(isset($_GET['path'])){
-        echo file_get_contents($_GET['path']."/html/wall.txt");
-    }
+$jsonurl = "../page/physics/art/qfade/json/";
+
+
+$jsonlist = explode(",",file_get_contents($jsonurl."list.txt"));
+$index = 0;
+
+echo "[";
+foreach($jsonlist as $value){
+  if(strlen($value) > 1 && $index < count($jsonlist) - 2){
+      echo file_get_contents($jsonurl.$value).",";
+  }  
+  else{
+      echo file_get_contents($jsonurl.$value);
+  }
+  $index += 1;
+}
+echo "]";
+
 ?></div>
-<div style = "display:none" id = "datadiv">
+
 <?php
-if(isset($_GET['url'])){
-    echo file_get_contents($_GET['url']);
-}
-else{
-    echo file_get_contents("html/wall.txt");
-}
+    if(isset($_GET['url']) && !isset($_GET['path'])){
+        echo file_get_contents($_GET['url']);
+    }
+    if(!isset($_GET['url']) && !isset($_GET['path'])){
+        echo file_get_contents("html/feed.txt");
+    }
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."/html/feed.txt");
+    }
 ?>
-</div>
-<a id = "postlink" href = "post.php">POST TO WALL</a>
-<h2 id = "titleh">Wall</h2>
-<a id = "editorlink" href = "walleditor.php">EDIT WALL</a>
-<div id = "feedscroll"></div>
+
+
 <style>
-    body{
+
+body{
     font-size:1.5em;
     font-family:helvetica;
 }
-#titleh{
-    position:absolute;
-    z-index:-1;
-    left:1em;
-    top:0.1em;
-    right:1em;
-    text-align:center;
-}
-#feedscroll{
-    position:absolute;
-    top:3em;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    overflow:scroll;
-    padding:1em 1em 1em 1em;
-}
-#feedscroll img{
-    display:block;
-    margin:auto;
-}
-#postlink{
-    position:absolute;
-    top:1em;
-    left:1em;
-}
-#editorlink{
-    position:absolute;
-    right:1em;
-    top:1em;
-}
-img{
-    width:50%;
-    display:block;
-    margin:auto;
-}
 </style>
-
-<script>
-
-pathset = false;
-
-if(document.getElementById("pathdiv").innerHTML.length > 1){
-    pathset = true;
-    localdata = document.getElementById("localdatadiv").innerHTML;
-    path = document.getElementById("pathdiv").innerHTML;
-    document.getElementById("feedscroll").innerHTML = localdata;
-    document.getElementById("editorlink").href = "walleditor.php?path=" + path;
-    document.getElementById("editorlink").innerHTML = "walleditor.php?path=" + path;
-    document.getElementById("postlink").href = "post.php?path=" + path;
-    document.getElementById("postlink").innerHTML = "post.php?path=" + path;
-}
-else{
-    document.getElementById("feedscroll").innerHTML = document.getElementById("datadiv").innerHTML;
-}
-</script>
 </body>
 </html>

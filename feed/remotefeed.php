@@ -9,11 +9,16 @@ EVERYTHING IS PHYSICAL
 EVERYTHING IS FRACTAL
 EVERYTHING IS RECURSIVE
 
+NO MONEY
+NO PROPERTY
+NO MINING
+
+
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
 <!-- links to MathJax JavaScript library, un-comment to use math-->
-
+<!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script>
 	MathJax.Hub.Config({
@@ -25,6 +30,7 @@ EVERYTHING IS RECURSIVE
 		}
 	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
 </script>
+-->
 </head>
 <body>
 <div id = "pathdiv" style= "display:none"><?php

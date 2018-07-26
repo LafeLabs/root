@@ -41,7 +41,9 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <body>
 <div id = "jsondiv" style = "display:none"><?php
 
-echo file_get_contents($_GET['json']);
+if(isset($_GET['json'])){
+    echo file_get_contents($_GET['json']);
+}
 
 ?></div>
 <div id = "pathdiv" style= "display:none"><?php
