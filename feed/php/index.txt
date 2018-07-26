@@ -37,7 +37,7 @@ EVERYTHING IS RECURSIVE
     }
 
 ?></div>
-<div id = "json"><?php
+<div id = "jsondata" style = "display:none;"><?php
 
 $jsonurl = "../page/physics/art/qfade/json/";
 

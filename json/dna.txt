@@ -41,6 +41,8 @@
 			"filesaver.txt",
 			"index.txt",
 			"loadpage.txt",
+			"makejsonindex.txt",
+			"makepagesindex.txt",
 			"newdir.txt",
 			"pageeditor.txt",
 			"text2php.txt",
@@ -74,6 +76,7 @@
 	{
 		"path":"feed/html",
 		"files":[
+			"feed.txt",
 			"wall.txt"
 		]
 	},

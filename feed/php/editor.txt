@@ -56,7 +56,7 @@ EGO DEATH:
 </div>
 
 <script>
-currentFile = "html/wall.txt";
+currentFile = "html/feed.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
