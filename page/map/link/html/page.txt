@@ -1,0 +1,32 @@
+<h2>Link Maker</h2>
+<table>
+    <tr>
+       <td></td> <td class = "button">publish</td>
+    </tr>
+    <tr>
+        <td>latlon: </td><td><input value = "38.889464, -77.035246"/></td>
+    </tr>
+    <tr>
+        <td>latlon0:</td><td><input value = "38.889464, -77.035246"/></td>
+    </tr>
+    <tr>
+        <td>@(x,y): </td><td><input style = "width:2em" value = "0,0"/> (units)</td>
+    </tr>
+    <tr>
+        <td>unit: </td><td><input style = "width:2em" value = "555"/> feet</td>
+    </tr>
+    <tr>
+        <td>Size:</td><td><input value = "50" style = "width:2em"/> feet</td>
+    </tr>
+    <tr>
+        <td>Angle:</td><td><input value = "0" style = "width:2em"/> deg</td>
+    </tr>
+    <tr>
+        <td>Text:</td><td> <input value = "../"/></td>
+    </tr>
+    <tr>
+        <td>Link:</td><td> <input value = "../"/></td>
+    </tr>
+</table>
+<img id = "backgroundimage"/>
+

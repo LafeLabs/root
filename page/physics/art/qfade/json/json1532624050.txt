@@ -1,5 +1,5 @@
 {
     "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
     "topimage": "https://i.imgur.com/uKrbCTU.jpg",
-    "phi": 0.2324778563656447
+    "phi": 0.7916813487046279
 }

@@ -41,6 +41,7 @@ EGO DEATH:
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/makepagesindex.txt</div>
+    <div class = "php file">php/makejsonindex.txt</div>
     <div class = "php file">php/newdir.txt</div>
 
 </div>

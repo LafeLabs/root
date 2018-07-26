@@ -39,6 +39,11 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 </head>
 <body>
+<div id = "jsondiv" style = "display:none"><?php
+
+echo file_get_contents($_GET['json']);
+
+?></div>
 <div id = "pathdiv" style= "display:none"><?php
 
     if(isset($_GET['path'])){
@@ -54,7 +59,7 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
     if(isset($_GET['url'])){
         echo file_get_contents($_GET['url']);
     }
-    if(isset($_GET['path']) && !$_GET['url']){
+    if(isset($_GET['path']) && !isset($_GET['url'])){
         echo file_get_contents($_GET['path']."html/page.txt");
     }
     if(!isset($_GET['url']) && !isset($_GET['path'])){

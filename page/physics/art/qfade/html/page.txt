@@ -4,23 +4,49 @@
         <td class = "button" id = "publishbutton">PUBLISH</td>
         <td>Bottom Image: <input id  = "bottominput"/></td>
         <td>Top Image: <input id = "topinput"/></td>
-    </tr>
+    </tr>   
 </table>
 
 <img class="imagestack" id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg"/>
 <img class="imagestack" id="topimage" src="https://i.imgur.com/uKrbCTU.jpg"/>
 
+<a id  = "jsonlink" href = "json/">json/</a>
 <script>
+
+jsonset = false;
+if(document.getElementById("jsondiv").innerHTML.length > 1){
+    currentjson = JSON.parse(document.getElementById("jsondiv").innerHTML);
+    jsonset = true;
+}
+
+
 path = document.getElementById("pathdiv").innerHTML;
+pathset = false;
+if(path.length > 1){
+    pathset = true;
+    document.getElementById("jsonlink").href = path + "json/";
+    document.getElementById("jsonlink").innerHTML = path + "json/";
+}
+
 myElement = document.getElementById("topimage");
 mc = new Hammer(myElement);
 deltax = 0;
+
 mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc.on("panleft panright panup pandown tap press", function(ev) {
     phi = Math.PI*(deltax + ev.deltaX)/500;
     redraw();
+    if(ev.isFinal){
+        console.log(ev.deltaX);
+    }    
+
 });
 phi = 0;//phase angle
+if(jsonset){
+    phi = currentjson.phi;
+    document.getElementById("bottomimage").src = currentjson.bottomimage;
+    document.getElementById("topimage").src = currentjson.topimage;
+}
 redraw();
 
 function redraw(){
@@ -45,12 +71,24 @@ document.getElementById("publishbutton").onclick = function(){
     currentJSON.topimage = document.getElementById("topimage").src;
     currentJSON.phi = phi;
     timestamp = Math.round((new Date().getTime())/1000);
+
     data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(pathset){
+        var url = "makejsonindex.php?path=" + path;        
+    }
+    else{
+        var url = "makejsonindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
     
 }
 
@@ -81,5 +119,10 @@ document.getElementById("publishbutton").onclick = function(){
 .button:active{
     background-color:yellow;
 }
-
+#jsonlink{
+    position:absolute;
+    right:20px;
+    top:20px;
+    z-index:3;
+}
 </style>
