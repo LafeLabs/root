@@ -7,13 +7,13 @@ if(strlen($path) == 0){
     mkdir($name);
     mkdir($name."/"."html");
     mkdir($name."/"."pages");
-
-    
+    mkdir($name."/"."json");
 }
 else{
     mkdir($path."/".$name);
     mkdir($path."/".$name."/"."html");
     mkdir($path."/".$name."/"."pages");
+    mkdir($path."/".$name."/"."json");
 }
     
 $file = fopen($path."/".$name."/"."html/page.txt","w");// create new file with this name

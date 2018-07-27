@@ -6,12 +6,12 @@ $name = $_POST['name'];
 if(strlen($path) == 0){
     mkdir($name);
     mkdir($name."/"."html");
-    mkdir($name."/"."feed");
+    mkdir($name."/"."feeds");
 }
 else{
     mkdir($path."/".$name);
     mkdir($path."/".$name."/"."html");
-    mkdir($path."/".$name."/"."feed");
+    mkdir($path."/".$name."/"."feeds");
 }
     
 $file = fopen($path."/".$name."/"."html/wall.txt","w");// create new file with this name

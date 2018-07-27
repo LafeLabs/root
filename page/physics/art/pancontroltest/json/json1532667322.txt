@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://upload.wikimedia.org/wikipedia/commons/5/52/Jesus-Christ-from-Hagia-Sophia.jpg",
+    "topimage": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Lemmy-03.jpg",
+    "phi": 0.7225663103256524,
+    "deltax": 55,
+    "deltay": 52,
+    "deltaw": -99,
+    "angle": 0
+}

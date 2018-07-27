@@ -1,3 +1,6 @@
+<!doctype html>
+<html>
+<body>
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 <table id = "controltable">
     <tr>
@@ -10,12 +13,20 @@
 <img class="imagestack" id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg"/>
 <img class="imagestack" id="topimage" src="https://i.imgur.com/uKrbCTU.jpg"/>
 <table id = "pantable">
-    <tr><td>pan</td></tr>
-    <tr><td></td></tr>
-    <tr><td></td></tr>
+    <tr><td>pan x</td></tr>
+    <tr><td>pan y</td></tr>
+    <tr><td>scale</td></tr>
+    <tr><td>fade</td></tr>
+    <tr><td>rotate</td></tr>
+
 </table>
 <a id  = "jsonlink" href = "json/">json/</a>
 <script>
+
+x=0;
+y=0;
+w=0;
+angle = 0;
 
 jsonset = false;
 if(document.getElementById("jsondiv").innerHTML.length > 1){
@@ -33,19 +44,51 @@ if(path.length > 1){
 }
 
 myElement = document.getElementById("topimage");
-mc = new Hammer(myElement);
-deltax = 0;
 
+mc = new Hammer(myElement);
 mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc.on("panleft panright panup pandown tap press", function(ev) {
-    phi = Math.PI*(deltax + ev.deltaX)/500;
+    phi = Math.PI*ev.deltaX/500;
     redraw();
-    if(ev.isFinal){
-        console.log(ev.deltaX);
-    }    
-
 });
-phi = 0;//phase angle
+
+pans = document.getElementById("pantable").getElementsByTagName("TD");
+mc1 = new Hammer(pans[0]);
+mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc1.on("panleft panright panup pandown tap press", function(ev) {
+    x = ev.deltaX;
+    redraw();
+});
+
+mc2 = new Hammer(pans[1]);
+mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc2.on("panleft panright panup pandown tap press", function(ev) {
+    y = ev.deltaX;
+    redraw();
+});
+
+mc3 = new Hammer(pans[2]);
+mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc3.on("panleft panright panup pandown tap press", function(ev) {
+    w = ev.deltaX;
+    redraw();
+});
+
+mc4 = new Hammer(pans[3]);
+mc4.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc4.on("panleft panright panup pandown tap press", function(ev) {
+    phi = Math.PI*ev.deltaX/300;
+    redraw();
+});
+
+mc5 = new Hammer(pans[4]);
+mc5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc5.on("panleft panright panup pandown tap press", function(ev) {
+    angle = Math.PI*ev.deltaX/10;
+    redraw();
+});
+
+phi = Math.PI/4;//phase angle
 if(jsonset){
     phi = currentjson.phi;
     document.getElementById("bottomimage").src = currentjson.bottomimage;
@@ -58,6 +101,11 @@ function redraw(){
     beta = Math.sin(phi)*Math.sin(phi);
     document.getElementById("topimage").style.opacity = alpha.toString();        
     document.getElementById("bottomimage").style.opacity = beta.toString();
+    document.getElementById("topimage").style.left = (300 + x).toString() + "px";
+    document.getElementById("topimage").style.top = (50 + y).toString() + "px";
+    document.getElementById("topimage").style.width = (500 + w).toString() + "px";
+    document.getElementById("topimage").style.transform = "rotate(" + angle.toString() + "deg)";
+    
 }
 
 document.getElementById("bottominput").onchange = function(){
@@ -74,6 +122,10 @@ document.getElementById("publishbutton").onclick = function(){
     currentJSON.bottomimage = document.getElementById("bottomimage").src;
     currentJSON.topimage = document.getElementById("topimage").src;
     currentJSON.phi = phi;
+    currentJSON.x = x;
+    currentJSON.y = y;
+    currentJSON.w = w;
+    currentJSON.angle = angle;
     timestamp = Math.round((new Date().getTime())/1000);
 
     data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
@@ -107,7 +159,7 @@ document.getElementById("publishbutton").onclick = function(){
 
 .imagestack{
     position:absolute;
-    top:3em;
+    top:50px;
     width:500px;
     left:300px;
     opacity:0.5;
@@ -143,3 +195,5 @@ document.getElementById("publishbutton").onclick = function(){
     text-align:center;
 }
 </style>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bundesarchiv_Bild_146-1968-101-20A%2C_Joseph_Goebbels.jpg",
+    "topimage": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Mark_Zuckerberg_F8_2018_Keynote_%28cropped%29.jpg",
+    "phi": -0.8272860654453122,
+    "deltax": -62,
+    "deltay": 64,
+    "deltaw": 140,
+    "angle": -178.75662198925923
+}

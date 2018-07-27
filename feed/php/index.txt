@@ -40,10 +40,12 @@ EVERYTHING IS RECURSIVE
 <div id = "jsondata" style = "display:none;"><?php
 
 if(isset($_GET['json'])){
-    $jsonurl = $_GET['json']);
+    $jsonurl = $_GET['json'];
 }
 else{
-   $jsonurl = "../page/physics/art/qfade/json/";
+//   $jsonurl = "../page/physics/art/qfade/json/";
+   
+   $jsonurl = "../page/physics/art/pancontroltest/json/";
 }
 
 $jsonlist = explode(",",file_get_contents($jsonurl."list.txt"));

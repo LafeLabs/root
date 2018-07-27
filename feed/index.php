@@ -39,8 +39,14 @@ EVERYTHING IS RECURSIVE
 ?></div>
 <div id = "jsondata" style = "display:none;"><?php
 
-$jsonurl = "../page/physics/art/qfade/json/";
-
+if(isset($_GET['json'])){
+    $jsonurl = $_GET['json'];
+}
+else{
+//   $jsonurl = "../page/physics/art/qfade/json/";
+   
+   $jsonurl = "../page/physics/art/pancontroltest/json/";
+}
 
 $jsonlist = explode(",",file_get_contents($jsonurl."list.txt"));
 $index = 0;
@@ -60,17 +66,20 @@ echo "]";
 ?></div>
 
 <?php
-    if(isset($_GET['url']) && !isset($_GET['path'])){
+    if(isset($_GET['url'])){
+        //url is set--remote page grabbed from somewhere on net
+        //if path and url are both set, default to url
         echo file_get_contents($_GET['url']);
     }
     if(!isset($_GET['url']) && !isset($_GET['path'])){
+        //neither url nor path is set, default to root feed
         echo file_get_contents("html/feed.txt");
     }
-    if(isset($_GET['path'])){
+    if(isset($_GET['path'])  && !isset($_GET['url'])){
+        //path is set, but NOT url, get path 
         echo file_get_contents($_GET['path']."/html/feed.txt");
     }
 ?>
-
 
 <style>
 

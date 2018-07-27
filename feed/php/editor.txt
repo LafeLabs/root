@@ -25,6 +25,7 @@ EGO DEATH:
     <a href = "post.php">post.php</a>
     <a href = "index.php">index.php</a>
     <a href = "wall.php">wall.php</a>
+    <a href = "feededitor.php">feededitor.php</a>
     <a href = "feed/">feed/</a>
     <a href = "text2php.php">text2php.php</a>
     <a href = "tree.php">tree.php</a>
@@ -44,6 +45,7 @@ EGO DEATH:
     <div class = "php file">php/post.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/walleditor.txt</div>
+    <div class = "php file">php/feededitor.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/savewall.txt</div>
