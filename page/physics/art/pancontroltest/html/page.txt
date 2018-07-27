@@ -15,7 +15,6 @@
     <tr><td>scale</td></tr>
     <tr><td>fade</td></tr>
     <tr><td>rotate</td></tr>
-
 </table>
 <a id  = "jsonlink" href = "json/">json/</a>
 <script>
