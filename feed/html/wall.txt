@@ -1,12 +1,2 @@
-
-
-<p>derp? foo. zeep.</p>
-<img src = "https://i.imgur.com/7EvYNbo.jpg"/>
-
-<p>derp</p>
-<a href = "../">../</a>
-
-<h2>Wall Replicator</h2>
-<p>
-foo
-</p>
+      This is the "wall"
+post, reply, whatever, this is all a work in progress, it's all disposable data...

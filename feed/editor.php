@@ -24,6 +24,7 @@ EGO DEATH:
 <div id = "linkscroll">
     <a href = "post.php">post.php</a>
     <a href = "index.php">index.php</a>
+    <a href = "wall.php">wall.php</a>
     <a href = "feed/">feed/</a>
     <a href = "text2php.php">text2php.php</a>
     <a href = "tree.php">tree.php</a>
@@ -38,6 +39,7 @@ EGO DEATH:
     <div class = "html file">html/wall.txt</div>
     <div class = "html file">html/feed.txt</div>
 
+    <div class = "php file">php/wall.txt</div>
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/post.txt</div>
     <div class = "php file">php/editor.txt</div>

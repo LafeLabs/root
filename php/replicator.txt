@@ -8,6 +8,7 @@
     //Seven Sources
     mkdir("page");
         mkdir("page/pages");
+        mkdir("page/json");
     mkdir("feed");
         mkdir("feed/feed");
     mkdir("scroll");    
