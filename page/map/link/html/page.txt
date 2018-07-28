@@ -11,6 +11,9 @@
     <tr>
         <td>Link:</td><td> <input value = "../"/></td>
     </tr>
+    <tr>
+        <td>map json:</td><td><input /></td>
+    </tr>
 </table>
 <table id = "pantable">
     <tr><td>pan x</td></tr>
@@ -184,6 +187,30 @@ inputs[1].onchange = function(){
     redraw();
 }
 
+inputs[2].onchange = function(){
+    deltax = 0;
+    deltay = 0;
+    deltaw = 0;
+    deltaangle = 0;
+    mapjsonurl = this.value;
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            filedata = this.responseText;
+            currentJSON = JSON.parse(filedata);
+            unit = currentJSON.unitpixels;
+            document.getElementById("backgroundimage").src = currentJSON.imgurl;
+            document.getElementById("backgroundimage").style.width = (currentJSON.unitpixels*currentJSON.imgw).toString() + "px";
+            document.getElementById("backgroundimage").style.left = (0.5*innerWidth + currentJSON.unitpixels*currentJSON.imgleft).toString() + "px";
+            document.getElementById("backgroundimage").style.top = (0.5*innerHeight + currentJSON.unitpixels*currentJSON.imgtop).toString() + "px";
+            newlinkjson.latlon = currentJSON.latlon0;
+            newlinkjson.fontfeet = 20*currentJSON.unitfeet/currentJSON.unitpixels;
+            redraw();
+        }
+    };
+    httpc.open("GET", "fileloader.php?filename=" + mapjsonurl, true);
+    httpc.send();
+}
 
 </script>
 <style>
@@ -204,6 +231,7 @@ inputs[1].onchange = function(){
 }
 #pantable{
     position:absolute;
+    z-index:2;
     top:5em;
     right:1em;
 }
@@ -216,5 +244,6 @@ inputs[1].onchange = function(){
 }
 #newlink{
     position:absolute;
+    z-index:1;
 }
 </style>

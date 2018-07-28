@@ -1,4 +1,4 @@
-<svg width="300" height="300" viewbox = "0 0 300 300"  xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
 
 <!--
 <json>
@@ -8,16 +8,24 @@
     "imgleft": -1,
     "imgtop": -1,
     "imgangle": 0,
-    "svgwidth": 300,
-    "svgheight": 300,
+    "svgwidth": 500,
+    "svgheight": 500,
     "unit": 90.90909090909092,
     "x0": 680.120275236712,
-    "y0": 461.15694594443886,
+    "y0": 511.15694594443886,
     "x0rel": -3.8797247632879817,
-    "y0rel": 62.15694594443886,
-    "glyph": "0334,0362,0360,0333,0333,0334,0361,0360,0335,0335,0335,0333,0333,0361,0363,",
+    "y0rel": 112.15694594443886,
+    "glyph": "0306,0322,0325,0341,0333,0341,0332,0320,0341,0330,0325,0341,0331,0332,0341,0331,0341,0333,0333,0341,0331,0332,0337,0320,0341,",
     "table": []
 }
 </json>
 -->
-	<path d = "M146 212  M146,212 C55,212 146,121 146,30  M146,30 C146,121 237,212 146,212 Z" stroke = "black" stroke-width = "8" fill = "black" /></svg>
+    <circle cx="246" cy = "362" r = "90.90909090909092" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="325" cy = "317" r = "90.90909090909092" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="246" cy = "271" r = "90.90909090909092" stroke = "black" stroke-width = "8" fill = "none" />
+    <circle cx="246" cy = "180" r = "90.90909090909092" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="167" cy = "226" r = "90.90909090909092" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="167" cy = "317" r = "90.90909090909092" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="325" cy = "226" r = "90.90909090909092" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="246" cy = "271" r = "181.81818181818184" stroke = "black" stroke-width = "8" fill = "none" />
+</svg>
