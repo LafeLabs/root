@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
+    "topimage": "http://geometron.000webhostapp.com/root/symbol/svg/svg1532221266.svg",
+    "deltax": 0,
+    "deltay": 0,
+    "deltaw": 0,
+    "angle": 0
+}
