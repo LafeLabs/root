@@ -84,6 +84,7 @@ if(jsonset){
 redraw();
 
 function redraw(){
+    
     document.getElementById("topimage").style.left = (300 + x - 0.5*w).toString() + "px";
     document.getElementById("topimage").style.top = (50 + y - 0.5*w).toString() + "px";
     document.getElementById("topimage").style.width = (500 + w).toString() + "px";

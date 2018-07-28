@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://media.nga.gov/public/objects/1/8/1/7/8/1/181781-primary-0-440x400.jpg",
+    "topimage": "http://geometron.000webhostapp.com/root/symbol/svg/svg1532221266.svg",
+    "deltax": 0,
+    "deltay": -192,
+    "deltaw": -394,
+    "angle": -60.31857894892403
+}
