@@ -44,7 +44,7 @@ if(isset($_GET['json'])){
 }
 else{
 //   $jsonurl = "../page/physics/art/qfade/json/";
-   
+
    $jsonurl = "../page/physics/art/pancontroltest/json/";
 }
 

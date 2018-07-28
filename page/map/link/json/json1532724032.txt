@@ -1,0 +1,7 @@
+{
+    "url": "http://www.lafelabs.org",
+    "text": "lafelabs",
+    "latlon": "38.97967064512341,-77.15309543205893",
+    "rotation": 34.2434,
+    "fontfeet": 2086.245
+}

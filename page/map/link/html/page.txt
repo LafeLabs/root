@@ -3,25 +3,7 @@
 <h2>Link Maker</h2>
 <table id = "inputtable">
     <tr>
-       <td></td> <td class = "button">publish</td>
-    </tr>
-    <tr>
-        <td>latlon: </td><td><input value = "38.889464, -77.035246"/></td>
-    </tr>
-    <tr>
-        <td>latlon0:</td><td><input value = "38.889464, -77.035246"/></td>
-    </tr>
-    <tr>
-        <td>@(x,y): </td><td><input style = "width:2em" value = "0,0"/> (units)</td>
-    </tr>
-    <tr>
-        <td>unit: </td><td><input style = "width:2em" value = "555"/> feet</td>
-    </tr>
-    <tr>
-        <td>Size:</td><td><input value = "50" style = "width:2em"/> feet</td>
-    </tr>
-    <tr>
-        <td>Angle:</td><td><input value = "0" style = "width:2em"/> deg</td>
+       <td></td><td id = "pbutton" class = "button">publish</td>
     </tr>
     <tr>
         <td>Text:</td><td> <input value = "link text"/></td>
@@ -42,11 +24,12 @@
 
     inputs = document.getElementById("inputtable").getElementsByTagName("input");
     newlinkjson = {};
-    newlinkjson.url = inputs[7].value;
-    newlinkjson.text = inputs[6].value;
+    newlinkjson.url = inputs[1].value;
+    newlinkjson.text = inputs[0].value;
     newlinkjson.latlon = "38.889464, -77.035246";
     newlinkjson.rotation = 0;
     newlinkjson.fontfeet = 5000;
+    jsonoutput = JSON.parse(JSON.stringify(newlinkjson));
     unit  = 50;
     x0 = 0.5*innerWidth;
     y0 = 0.5*innerHeight;
@@ -98,7 +81,7 @@
     var lon0 =  parseFloat(currentJSON.latlon0.split(",")[1]);//longitude to 10 meter precision
     var unitfeet = currentJSON.unitfeet;//unit length in feet
 
-    var digits = 1;//1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
+    var digits = 2;//1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
     var precision = Math.pow(10,digits);
 
     var lat1 = parseFloat(latlonin.split(",")[0]);
@@ -150,6 +133,57 @@ mc4.on("panleft panright panup pandown tap press", function(ev) {
     deltaangle = Math.PI*ev.deltaX/10;
     redraw();
 });
+
+document.getElementById("pbutton").onclick = function(){
+    jsonoutput.url = inputs[1].value;
+    jsonoutput.text = inputs[0].value;
+    jsonoutput.rotation = parseFloat(document.getElementById("newlink").style.transform.split("rotate(")[1].split("deg)")[0]);
+    
+    var fontpoint = parseFloat(document.getElementById("newlink").style.fontSize.split("px")[0]);
+    jsonoutput.fontfeet = fontpoint*currentJSON.unitfeet/unit;
+
+//    document.getElementById("newlink").style.left = (deltax + x0 + unit*xvar).toString() + "px";
+  //      var yvar = parseFloat(xy.split(",")[1]);
+    //    document.getElementById("newlink").style.top = (deltay + y0 - unit*yvar).toString() + "px";
+    var localxfeet = currentJSON.unitfeet*(parseFloat(document.getElementById("newlink").style.left.split("px")[0]) - x0)/unit;
+    var localyfeet = currentJSON.unitfeet*(parseFloat(document.getElementById("newlink").style.top.split("px")[0]) - y0)/unit;
+
+    var lat0 = parseFloat(currentJSON.latlon0.split(",")[0]);
+    var lon0 = parseFloat(currentJSON.latlon0.split(",")[1]);
+    var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cosine of lattitude
+    var lat1 = lat0 - localyfeet/364538;
+    var lon1 = lon0 + localxfeet/(364538*coslat);
+    jsonoutput.latlon = lat1.toString() + "," + lon1.toString();
+    
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(pathset){
+        var url = "makejsonindex.php?path=" + path;        
+    }
+    else{
+        var url = "makejsonindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+
+inputs[0].onchange = function(){
+    newlinkjson.text = this.value;
+    redraw();
+}
+inputs[1].onchange = function(){
+    newlinkjson.url = this.value;
+    redraw();
+}
+
 
 </script>
 <style>
