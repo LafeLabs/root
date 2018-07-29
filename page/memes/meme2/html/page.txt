@@ -125,6 +125,7 @@ document.getElementById("publishbutton").onclick = function(){
     currentJSON = {};
     currentJSON.bottomimage = document.getElementById("bottomimage").src;
     currentJSON.text = document.getElementById("topimage").innerHTML;
+    currentJSON.color = document.getElementById("topimage").style.color;
     currentJSON.deltax = x;
     currentJSON.deltay = y;
     currentJSON.deltaw = w;
