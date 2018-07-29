@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
+    "text": "☭",
+    "color": "red",
+    "deltax": 235,
+    "deltay": 173,
+    "deltaw": 133,
+    "angle": 16.336281798666924
+}

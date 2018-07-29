@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
+    "text": "MEME TEXT",
+    "color": "red",
+    "deltax": 125,
+    "deltay": 24,
+    "deltaw": 0,
+    "angle": 22.305307840487533
+}

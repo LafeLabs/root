@@ -28,6 +28,7 @@
     <tr><td></td></tr>
 </table>
 <a id  = "jsonlink" href = "json/">json/</a>
+<a id = "feedlink" href = "../feed/index.php?path=memes/meme2/&json=../page/memes/meme2/json/">LINK TO FEED</a>
 <script>
 color = "black";
 colorbuttons = document.getElementById("colortable").getElementsByTagName("TD");
@@ -189,6 +190,12 @@ document.getElementById("publishbutton").onclick = function(){
     position:absolute;
     right:20px;
     top:20px;
+    z-index:3;
+}
+#feedlink{
+    position:absolute;
+    right:20px;
+    top:50px;
     z-index:3;
 }
 #pantable{

@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
+    "text": "purple middle",
+    "color": "purple",
+    "deltax": 171,
+    "deltay": 217,
+    "deltaw": -53,
+    "angle": 33.30088212805181
+}

@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
+    "text": "HEXAGON",
+    "color": "blue",
+    "deltax": 80,
+    "deltay": 56,
+    "deltaw": 0,
+    "angle": 0
+}
