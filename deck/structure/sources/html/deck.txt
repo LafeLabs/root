@@ -1,0 +1,75 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0332,0332,0332,0332,0332,0337,0337,</div>
+        <div class="content"><h2>Map Sources</h2>
+<ul style="text-align:left">
+<li>links</li>
+<li>Images</li>
+<li>latlonpairs</li>
+<li>backgroundimages</li>
+<li>physical marker pages</li>
+<li>svg's</li>
+
+</ul></div>
+    </div>
+<div class="box"><div class="glyphdata">0332,0330,0330,0332,0337,0337,</div>
+    <div class="content"><h2>Basic Memes</h2>
+<ul style="text-align:left">
+<li>svg symbol or curve over bitmap</li>    
+<li>image with a div element placed over it</li>
+<li>image with a svg and a div element</li>
+<li>svg plot with a latex div over it</li>
+<li>svg of some symbol all in a single svg with an array of divs over it(from deck)</li>
+</ul></div>
+</div><div class="box"><div class="glyphdata">0333,0333,0337,0337,</div>
+    <div class="content"><h2>Quantum Memes</h2>
+<ul style="text-align:left">
+    <li>two image fade(one qubit)</li>
+    <li>four image fade(two qubits)</li>
+    <li>eight image fade(3 qubits)</li>
+    <li>fade with identical background but different objects, linked to a physical camera marker on map</li>
+    <li>experimental photo with schematic over it</li>
+    <li>specifically quantum street jesus with images of jesus quantum faded with images of street with watershed markers and trash icons</li>
+</ul></div>
+</div><div class="box"><div class="glyphdata">0331,0332,0332,0337,0337,</div>
+    <div class="content"><h2>Feedstock</h2>
+<ul style="text-align:left">
+<li>clound images</li>
+<li>symbols</li>
+<li>shape tables</li>
+<li>new plot functions</li>
+<li>latlons with description of the place being marked</li>
+<li></li>
+</ul></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h2>Feed/Source Specific Applications</h2>
+<ul style="text-align:left;font-size:12px">
+<li>Golden Ratio symbols over art at nga(golden rectangle, golden fractal, golden triangle, pentagram, accurate golden spiral, pentagon, golden gnomon)</li>
+<li>Sacred Geometry and Kaballah over everything, tree of life, circles on  a 60 degree grid, hebrew font, links between source and symbol generator</li>
+<li>Low temperature Experiment "meme" with circuit diagram over photo of the thing and a div with description</li>
+<li>feed of quantum gate symbols and latex divs</li>
+<li>feed of circuit symbols and latex divs</li>
+<li>feed of shot noise curves with matched plots</li>
+<li>feed of catenaries of hanging chains around the capitol mall</li>
+<li>feeds of links  with markers with dropped stones picked up by others and put into other links, etc., moved around, stones move from sign to sign(cardboard)</li>
+<li>feed of background maps, with links, latlons, user supplied</li>
+<li>curator nodes, with feeds and a standard system of curation, with infeed and outfeed</li>
+<li>rapid generation of a shopping center map with pages for each business</li>
+<li>custom business maps specific to one business</li>
+<li>trash feed robot factories, located in real space</li>
+<li>feed of located curves with location latlons, scale, physical marker, graph function in js and latex, map links(gamification of generic curve matching, token links for value transmission)</li>
+
+
+</ul></div>
+</div></div>

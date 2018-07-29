@@ -1,0 +1,90 @@
+<a href = "../">../</a>
+<div class = "bigbutton" id = "findbutton">USE GPS TO LOCATE ME</div>
+<table>
+    <tr>
+        <td>Latitude,longitude(decimal degrees):</td>
+        <td><input id = "latloninput"/></td>
+    </tr>
+    <tr>
+        <td>Description/Name:</td>
+        <td><input id = "nameinput" /></td>
+    </tr>
+</table>
+<div class = "bigbutton" id = "pbutton">PUBLISH</div>
+<script>
+
+document.getElementById("findbutton").onclick = function(){
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }else{
+        alert("Geolocation is not supported by this browser.");
+    }
+    function showPosition(position) {
+        lat = Math.round(100000*position.coords.latitude)/100000;
+        lon = Math.round(100000*position.coords.longitude)/100000;
+        document.getElementById("latloninput").value = lat.toString()  + "," + lon.toString();
+    }
+}
+
+document.getElementById("pbutton").onclick  = function(){
+    jsonoutput = {};
+    jsonoutput.laton = document.getElementById("latloninput").value;
+    jsonoutput.text = document.getElementById("nameinput").value;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(pathset){
+        var url = "makejsonindex.php?path=" + path;        
+    }
+    else{
+        var url = "makejsonindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+    
+    
+</script>
+<style>
+td{
+    font-size:22px;
+}
+input{
+    font-family:courier;
+    font-size:22px;
+}
+#nameinput{
+    width:40em;
+}
+#latloninput{
+    width:16em;
+}
+.bigbutton{
+    display:block;
+    margin:auto;
+    width:20em;
+    text-align:center;
+    border:solid;
+    border-radius:1em;
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size:36px;
+    margin-bottom:1em;
+    margin-top:1em;
+    cursor:pointer;
+}
+.bigbutton:hover{
+    background-color:green;
+}
+.bigbutton:active{
+    background-color:yellow;
+}
+</style>
