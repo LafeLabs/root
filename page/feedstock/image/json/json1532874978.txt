@@ -1,0 +1,4 @@
+{
+    "url": "https://i.imgur.com/viA6nnL.jpg",
+    "text": "Hand drawn diagram of the Five Elements"
+}

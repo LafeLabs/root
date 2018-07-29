@@ -1,4 +1,0 @@
-<h2>Foo</h2>
-<p>
-derp foo foo derp foo    
-</p>

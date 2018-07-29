@@ -5,20 +5,40 @@
     <tr>
         <td class = "button" id = "publishbutton">PUBLISH</td>
         <td>Bottom Image: <input id  = "bottominput"/></td>
-        <td>Top Image: <input id = "topinput"/></td>
+        <td>Text: <input id = "topinput"/></td>
     </tr>   
 </table>
 
-<img class="imagestack" id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg"/>
-<img class="imagestack" id="topimage" src="http://geometron.000webhostapp.com/root/symbol/svg/svg1532221266.svg"/>
+<img id="bottomimage" src="https://i.imgur.com/kGoAPS0.jpg"/>
+<div id="topimage">MEME TEXT</div>
 <table id = "pantable">
     <tr><td>pan x</td></tr>
     <tr><td>pan y</td></tr>
     <tr><td>scale</td></tr>
     <tr><td>rotate</td></tr>
 </table>
+<table id = "colortable">
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>
 <a id  = "jsonlink" href = "json/">json/</a>
 <script>
+color = "black";
+colorbuttons = document.getElementById("colortable").getElementsByTagName("TD");
+
+colors = ["black","white","red","orange","yellow","green","blue","purple"];
+for(var index  = 0;index < colors.length;index++){
+    colorbuttons[index].style.backgroundColor = colors[index];
+    colorbuttons[index].onclick = function(){
+        document.getElementById("topimage").style.color = this.style.backgroundColor;
+    }
+}
 
 x=0;
 y=0;
@@ -40,7 +60,7 @@ if(path.length > 1){
     document.getElementById("jsonlink").innerHTML = path + "json/";
 }
 
-myElement = document.getElementById("topimage");
+myElement = document.getElementById("bottomimage");
 
 mc = new Hammer(myElement);
 mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
@@ -89,7 +109,7 @@ function redraw(){
     
     document.getElementById("topimage").style.left = (300 + x - 0.5*w).toString() + "px";
     document.getElementById("topimage").style.top = (50 + y - 0.5*w).toString() + "px";
-    document.getElementById("topimage").style.width = (500 + w).toString() + "px";
+    document.getElementById("topimage").style.fontSize = (70 + w).toString() + "px";
     document.getElementById("topimage").style.transform = "rotate(" + angle.toString() + "deg)";
     
 }
@@ -98,13 +118,13 @@ document.getElementById("bottominput").onchange = function(){
     document.getElementById("bottomimage").src = this.value;
 }
 document.getElementById("topinput").onchange = function(){
-    document.getElementById("topimage").src = this.value;
+    document.getElementById("topimage").innerHTML = this.value;
 }
 
 document.getElementById("publishbutton").onclick = function(){
     currentJSON = {};
     currentJSON.bottomimage = document.getElementById("bottomimage").src;
-    currentJSON.topimage = document.getElementById("topimage").src;
+    currentJSON.text = document.getElementById("topimage").innerHTML;
     currentJSON.deltax = x;
     currentJSON.deltay = y;
     currentJSON.deltaw = w;
@@ -131,6 +151,7 @@ document.getElementById("publishbutton").onclick = function(){
     
 }
 
+
 </script>
 <style>
 #controltable{
@@ -140,13 +161,18 @@ document.getElementById("publishbutton").onclick = function(){
     z-index:3;
 }
 
-.imagestack{
+#bottomimage{
     position:absolute;
     top:50px;
     width:500px;
     left:300px;
 }
-
+#topimage{
+    position:absolute;
+    top:50px;
+    left:300px;
+    font-Size:70px;
+}
 .button{
     cursor:pointer;
     border:solid;
@@ -176,4 +202,18 @@ document.getElementById("publishbutton").onclick = function(){
     border:solid;
     text-align:center;
 }
+#colortable td{
+    width:50px;
+    height:50px;
+    border:solid;
+    border-radius:8px;
+    cursor:pointer;
+}
+#colortable td:hover{
+    border-color:green;
+}
+#colortable td:active{
+    border-color:yellow;
+}
+
 </style>

@@ -1,6 +1,6 @@
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
-
-<h2>Link Maker</h2>
+<a href = "../deck/index.php?path=structure/sources/">Card of Sources</a>
+<h2>Map Image Maker</h2>
 <table id = "inputtable">
     <tr>
        <td></td><td id = "pbutton" class = "button">publish</td>

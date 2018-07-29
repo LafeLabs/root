@@ -8,8 +8,8 @@
         <div class="glyphdata">0332,0332,0332,0332,0332,0337,0337,</div>
         <div class="content"><h2>Map Sources</h2>
 <ul style="text-align:left">
-<li>links</li>
-<li>Images</li>
+<li><a href="../page/index.php?path=map/link/">link</a></li>
+<li><a href="../page/index.php?path=map/image/">Image</a></li>
 <li>latlonpairs</li>
 <li>backgroundimages</li>
 <li>physical marker pages</li>
@@ -20,8 +20,8 @@
 <div class="box"><div class="glyphdata">0332,0330,0330,0332,0337,0337,</div>
     <div class="content"><h2>Basic Memes</h2>
 <ul style="text-align:left">
-<li>svg symbol or curve over bitmap</li>    
-<li>image with a div element placed over it</li>
+<li><a href="../page/index.php?path=memes/meme1/">svg symbol or curve over bitmap</a></li>    
+<li><a href="../page/index.php?path=memes/meme2/">image with a div element placed over it</a></li>
 <li>image with a svg and a div element</li>
 <li>svg plot with a latex div over it</li>
 <li>svg of some symbol all in a single svg with an array of divs over it(from deck)</li>
@@ -39,12 +39,11 @@
 </div><div class="box"><div class="glyphdata">0331,0332,0332,0337,0337,</div>
     <div class="content"><h2>Feedstock</h2>
 <ul style="text-align:left">
-<li>clound images</li>
+<li><a href="../page/index.php?path=feedstock/image/">clound images</a></li>
 <li>symbols</li>
 <li>shape tables</li>
 <li>new plot functions</li>
-<li>latlons with description of the place being marked</li>
-<li></li>
+<li><a href="../page/index.php?path=map/latlonsource/">latlons with description of the place being marked</a></li>
 </ul></div>
 </div></div><div class="page">
    <div class="pagejson">{
