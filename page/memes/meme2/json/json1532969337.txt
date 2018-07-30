@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/zV6m1tF.jpg",
+    "text": "I WANT TO BELIEVE",
+    "color": "purple",
+    "deltax": 226,
+    "deltay": 115,
+    "deltaw": -36,
+    "angle": -93.61946107697584
+}

@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/zV6m1tF.jpg",
+    "text": "THE TRUTH IS OUT THERE",
+    "color": "yellow",
+    "deltax": 0,
+    "deltay": 267,
+    "deltaw": -36,
+    "angle": 0
+}
