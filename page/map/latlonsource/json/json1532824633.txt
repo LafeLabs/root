@@ -1,4 +1,4 @@
 {
-    "laton": "39.04575,-76.64127",
+    "latlon": "39.04575,-76.64127",
     "text": "starbucks on fern and 12th pentagon city"
 }

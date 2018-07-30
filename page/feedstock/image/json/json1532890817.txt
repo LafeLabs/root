@@ -1,0 +1,4 @@
+{
+    "url": "../symbol/geometry/kochcurve/svg/svg1531695205.svg",
+    "text": "Koch curve hexagon"
+}

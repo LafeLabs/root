@@ -103,6 +103,16 @@
 }
 
 
+
+mc = new Hammer(document.getElementById("backgroundimage"));
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    deltax = ev.deltaX;
+    deltay = ev.deltaY;
+    redraw();
+});
+
+
 pans = document.getElementById("pantable").getElementsByTagName("TD");
 
 mc1 = new Hammer(pans[0]);

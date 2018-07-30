@@ -1,0 +1,4 @@
+{
+    "url": "../symbol/geometry/phi/svg/svg1532028787.svg",
+    "text": "Five fold symmetry basic shapes"
+}

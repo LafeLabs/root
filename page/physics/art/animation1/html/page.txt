@@ -1,10 +1,50 @@
+<p>
+<button onclick="myMove()">RUN</button>
+</p> 
+<div id ="container">
+<img id = "image1" src = "https://i.imgur.com/yQIuyO2.jpg"/>
+<img id = "image2" src = "https://i.imgur.com/iCpHMWG.jpg"/>
+</div>
 
+<script>
+
+function myMove(){
+  phi = 0;
+  var elem = document.getElementById("animate");   
+  var count = 0;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if(phi >= 2*Math.PI) {
+		phi = 0;
+        count++;
+	}else {
+      phi += 0.01*Math.PI;
+      alpha = Math.sin(phi)*Math.sin(phi);
+      beta = Math.cos(phi)*Math.cos(phi);
+      document.getElementById("image1").style.opacity = alpha.toString();
+      document.getElementById("image2").style.opacity = beta.toString();
+    }
+    if(count ==5){
+       clearInterval(id);
+    }
+  }
+}
+</script>
 <style>
 #container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: yellow;
+  width: 50%;
+  position: absolute;
+    left:22%;
+}
+#container img{
+    width:100%;
+    opacity:0.5;
+}
+#image1{
+    position:absolute;
+}
+#image2{
+    position:relative;
 }
 #animate {
   width: 50px;
@@ -13,38 +53,3 @@
   background-color: red;
 }
 </style>
-<body>
-
-<p>
-<button onclick="myMove()">Click Me</button>
-</p> 
-
-<div id ="container">
-<div id ="animate"></div>
-</div>
-
-<script>
-function myMove() {
-  var elem = document.getElementById("animate");   
-  var pos = 0;
-  var count = 0;
-  var id = setInterval(frame, 1);
-  function frame() {
-    if (pos == 350) {
-		pos = 0;
-        count++;
-	} else {
-      pos +=2; 
-      elem.style.top = pos + 'px'; 
-      elem.style.left = pos + 'px'; 
-    }
-    if(count ==5){
-		pos = 0;
-      elem.style.top = pos + 'px'; 
-      elem.style.left = pos + 'px';         
-       clearInterval(id);
-    }
-  }
-}
-</script>
-

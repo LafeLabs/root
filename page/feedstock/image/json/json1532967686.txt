@@ -1,0 +1,4 @@
+{
+    "url": "../symbol/svg/svg1532952558.svg",
+    "text": "purple five fold symmetry flower thing"
+}

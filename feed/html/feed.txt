@@ -1,10 +1,11 @@
 <p><a href = "editor.php">editor.php</a></p>
+
 <div id = "feed">
     
 </div>
 <script>
 
-    jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
     
     for(var index = 0;index < jsondata.length;index++){
         var newdiv = document.createElement("DIV");

@@ -1,0 +1,6 @@
+{
+    "url": "https://i.imgur.com/wEzuCDq.jpg",
+    "latlon": "38.952266094706175,-77.1335353603479",
+    "rotation": 39.2699,
+    "widthfeet": 10606.494
+}

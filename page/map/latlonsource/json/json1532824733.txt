@@ -1,4 +1,4 @@
 {
-    "laton": "38.857599, -77.059247",
+    "latlon": "38.857599, -77.059247",
     "text": "entrance to aurora hills library, arlington county"
 }

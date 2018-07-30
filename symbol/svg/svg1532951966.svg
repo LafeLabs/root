@@ -1,0 +1,24 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 90.90909090909092,
+    "x0": 680.120275236712,
+    "y0": 361.1569459444388,
+    "x0rel": -3.8797247632879817,
+    "y0rel": -37.8430540555612,
+    "glyph": "0327,0241,0341,0335,0211,0211,0211,0210,0210,0210,0241,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M193,139 C166,102 246,76 246,30" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M246,30 C246,76 326,102 300,139" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M300,139 C326,102 376,170 419,156" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M419,156 C376,170 376,254 333,240" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M333,240 C376,254 326,322 353,359" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M353,359 C326,322 246,349 246,303" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M246,303 C246,349 166,322 139,359" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M139,359 C166,322 116,254 160,240" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M160,240 C116,254 116,170 73,156" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M73,156 C116,170 166,102 193,139" fill = "none" stroke-width = "6" stroke = "purple" />    <circle cx="246" cy = "212" r = "90.90909090909092" stroke = "purple" stroke-width = "6" fill = "none" />
+<path    d = "M246,121 C246,76 326,102 353,65" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M353,65 C326,102 376,170 333,184" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M333,184 C376,170 376,254 419,268" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M419,268 C376,254 326,322 300,286" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M300,286 C326,322 246,349 246,394" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M246,394 C246,349 166,322 193,286" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M193,286 C166,322 116,254 73,268" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M73,268 C116,254 116,170 160,184" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M160,184 C116,170 166,102 139,65" fill = "none" stroke-width = "6" stroke = "purple" /><path    d = "M139,65 C166,102 246,76 246,121" fill = "none" stroke-width = "6" stroke = "purple" /></svg>

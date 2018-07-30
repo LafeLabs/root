@@ -1,0 +1,4 @@
+{
+    "latlon": "39.04575,-76.64127",
+    "text": "cosi on crystal drive, crystal city"
+}

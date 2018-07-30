@@ -1,0 +1,167 @@
+<p><a href = "feededitor.php?path=map/latlon2svg/">feededitor.php?path=map/latlon2svg/</a></p>
+<p><a href= "index.php?path=map/latlon2svg/&json=http://www.metamapdc.org/root/page/map/latlonsource/json/">this</a></p>
+<canvas id = "mainCanvas"></canvas>
+<script>
+mapjson = {
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531451013/bigdcsketch_ktsx8v.png",
+    "imgw": 123.91323276088887,
+    "imgleft": -74.00179562838251,
+    "imgtop": -77.24720546595957,
+    "unitpixels": 4,
+    "unitfeet": 555,
+    "imgangle": -1,
+    "latlon0": "38.889464, -77.035246",
+    "marker0": "Washington Monument"
+}
+lat0 = 38.889464;
+coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cosine of lattitude
+lon0 = -77.035246;
+unitfeet = 555;
+
+x0 = 0.5*innerWidth;
+y0 = 0.5*innerHeight;
+jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+x=0;
+y=0;
+
+
+xmin = parseFloat(latlon2xy(jsondata[0].latlon).split(",")[0]);
+xmax = parseFloat(latlon2xy(jsondata[0].latlon).split(",")[0]);
+ymin = parseFloat(latlon2xy(jsondata[0].latlon).split(",")[1]);
+ymax = parseFloat(latlon2xy(jsondata[0].latlon).split(",")[1]);
+
+
+for(var index = 0;index < jsondata.length;index++){
+    x = parseFloat(latlon2xy(jsondata[index].latlon).split(",")[0]);
+    y = parseFloat(latlon2xy(jsondata[index].latlon).split(",")[1]);
+    if(x > xmax){
+        xmax = x;
+    }    
+    if(x < xmin){
+        xmin = x;
+    }
+    if(y > ymax){
+        ymax = y;
+    }    
+    if(y < ymin){
+        ymin = y;
+    }
+}
+xavg = 0.5*(xmax + xmin);
+yavg = 0.5*(ymax + ymin);
+
+xspan = Math.abs(xmax - xmin);
+yspan = Math.abs(ymax - ymin);
+
+canvasWidth = 400;
+canvasMargin = 20;
+
+xarray = [];
+yarray = [];
+for(var index = 0;index < jsondata.length;index++){
+    x = parseFloat(latlon2xy(jsondata[index].latlon).split(",")[0]);
+    y = parseFloat(latlon2xy(jsondata[index].latlon).split(",")[1]);
+    xarray.push(x - xavg);
+    yarray.push(y - yavg);
+}
+
+
+ctx = document.getElementById("mainCanvas").getContext("2d");
+document.getElementById("mainCanvas").width = canvasWidth;
+document.getElementById("mainCanvas").height = canvasWidth*yspan/xspan;
+ctx.strokeStyle = "black";
+ctx.fillStyle = "black";
+ctx.lineWidth = 4;    	
+
+
+pixelsperunit = (canvasWidth - 2*canvasMargin)/xspan; 
+
+x0 = 0.5*canvasWidth;
+y0 = 0.5*canvasWidth*yspan/xspan;
+
+
+for(var index = 0;index < xarray.length;index++){
+    x = x0 + xarray[index]*pixelsperunit;
+    y = y0 - yarray[index]*pixelsperunit;
+    ctx.beginPath();
+    ctx.arc(x, y, ctx.lineWidth, 0, 2 * Math.PI);
+    ctx.fill();	
+    ctx.closePath();
+
+    ctx.font = "12px courier";
+    ctx.fillText(jsondata[index].text,x,y);
+
+}
+
+
+function latlon2xy(latlonin) {
+    
+    //input to this function is a string of the form "lattitude,longitude", where lat and lon are in decimal degrees
+
+    var digits = 2;//1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
+    var precision = Math.pow(10,digits);
+
+    var lat1 = parseFloat(latlonin.split(",")[0]);
+    var lon1 = parseFloat(latlonin.split(",")[1]);
+    //from the original definition of the meter:
+    //90 degrees lattitude = 10,000,000 meters = 32808399 feet
+    //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
+    //0.1 degree = 11 km
+    //0.01 degree = 1.1 km
+    //0.001 degree = 110 m
+    //0.0001 degree = 11 m
+    //1 meter = 3.28084 feet
+    //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
+    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
+    var deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);//convert longitude difference to feet
+    var deltayfeet = Math.round((lat1 - lat0)*364538);//convert lattitude difference to feet
+    var deltax = Math.round(precision*deltaxfeet/unitfeet)/precision;//convert from feet to "units" based on unitfeet
+    var deltay = Math.round(precision*deltayfeet/unitfeet)/precision;//convert from feet to "units" based on unitfeet
+    return deltax.toString() + "," + deltay.toString();
+}
+</script>
+<style>
+a{
+    z-index:3;
+}
+.unit{
+    position:relative;
+    width:80%;
+    margin:auto;
+}
+.bottomimage{
+   position:relative;
+    
+}
+.topimage{
+   position:absolute;
+}
+img{
+   top:0px;
+   width:500px;
+   left:0px;
+}
+#feed{
+    position:absolute;
+    left:0px;
+    top:2em;
+    bottom:0px;
+    right:0px;
+    overflow:scroll;
+}
+.linklist{
+    position:absolute;
+}
+#backgroundimage{
+    position:absolute;
+}
+#this{
+    position:absolute;
+    right:1em;
+    top:0px;
+    z-index:3;
+}
+#mainCanvas{
+    border:solid;
+}
+</style>

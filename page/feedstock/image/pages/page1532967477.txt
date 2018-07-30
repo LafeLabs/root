@@ -1,35 +1,25 @@
 <p><a href = "../deck/index.php?path=structure/sources/">Card of Sources</a></p>
-<div class = "bigbutton" id = "findbutton">USE GPS TO LOCATE ME</div>
+    
+<img id = "mainimage"/>
 <table>
     <tr>
-        <td>Latitude,longitude(decimal degrees):</td>
-        <td><input id = "latloninput"/></td>
+        <td>Image URL:</td>
+        <td><input id = "urlinput"/></td>
     </tr>
     <tr>
         <td>Description/Name:</td>
-        <td><input id = "nameinput" /></td>
+        <td><input id = "textinput" /></td>
     </tr>
 </table>
 <div class = "bigbutton" id = "pbutton">PUBLISH</div>
 <script>
-
-document.getElementById("findbutton").onclick = function(){
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    }else{
-        alert("Geolocation is not supported by this browser.");
-    }
-    function showPosition(position) {
-        lat = Math.round(100000*position.coords.latitude)/100000;
-        lon = Math.round(100000*position.coords.longitude)/100000;
-        document.getElementById("latloninput").value = lat.toString()  + "," + lon.toString();
-    }
+document.getElementById("urlinput").onchange = function(){
+     document.getElementById("mainimage").src = this.value;
 }
-
 document.getElementById("pbutton").onclick  = function(){
     jsonoutput = {};
-    jsonoutput.latlon = document.getElementById("latloninput").value;
-    jsonoutput.text = document.getElementById("nameinput").value;
+    jsonoutput.url = document.getElementById("urlinput").value;
+    jsonoutput.text = document.getElementById("textinput").value;
 
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
@@ -60,12 +50,10 @@ td{
 input{
     font-family:courier;
     font-size:22px;
-}
-#nameinput{
     width:40em;
 }
-#latloninput{
-    width:16em;
+#mainimage{
+    width:500px;
 }
 .bigbutton{
     display:block;

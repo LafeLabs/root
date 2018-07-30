@@ -1,0 +1,54 @@
+<p><a href = "feededitor.php?path=feedstock/image/">feededitor.php?path=feedstock/image/</a></p>
+<p><a id= "this" href = "http://localhost:8000/feed/index.php?path=feedstock/image/&json=../page/feedstock/image/json/">this</a></p>
+<div id = "feed">
+    
+
+</div>
+<script>
+
+jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+for(var index = 0;index < jsondata.length;index++){
+    var newimg = document.createElement("img");
+    newimg.src = jsondata[index].url;
+    document.getElementById("feed").appendChild(newimg);
+    var newp = document.createElement("p");
+    newp.innerHTML = jsondata[index].text;
+    newp.className = "caption";
+    document.getElementById("feed").appendChild(newp);
+}
+
+
+</script>
+<style>
+a{
+    z-index:3;
+}
+
+img{
+   width:500px;
+   display:block;
+   margin:auto;
+   margin-top:2em;
+}
+.caption{
+    text-align:center;
+    padding-left:2em;
+    padding-right:2em;
+    font-size:30px;
+}
+#feed{
+    position:absolute;
+    left:0px;
+    top:2em;
+    bottom:0px;
+    right:0px;
+    overflow:scroll;
+}
+#this{
+    position:absolute;
+    right:1em;
+    top:0px;
+    z-index:3;
+}
+</style>

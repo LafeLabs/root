@@ -1,0 +1,25 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 90.90909090909092,
+    "x0": 680.120275236712,
+    "y0": 411.1569459444388,
+    "x0rel": -3.8797247632879817,
+    "y0rel": 12.156945944438803,
+    "glyph": "0210,0341,0333,0331,0337,0200,0336,0332,0214,0214,0214,0214,0335,0337,0306,0362,0203,0334,0334,0203,0203,0334,0334,0203,0203,0334,0334,0203,0354,0334,0334,0350,0335,0312,0337,0314,0336,0330,0313,0337,0214,0341,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="246" cy = "262" r = "79.45745899069475" stroke = "black" stroke-width = "8" fill = "none" />
+	<path d = "M326 342 L326 183 L167 183 L167 342 L326 342 Z" stroke = "black" stroke-width = "8" fill = "none" />	<path d = "M246 342 L421 342 L333 190 L246 39 L159 190 L71 342 L246 342 Z" stroke = "black" stroke-width = "8" fill = "none" />    <circle cx="246" cy = "241" r = "206.6016661512218" stroke = "black" stroke-width = "8" fill = "none" />
+</svg>

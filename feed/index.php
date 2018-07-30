@@ -53,11 +53,13 @@ $index = 0;
 
 echo "[";
 foreach($jsonlist as $value){
-  if(strlen($value) > 1 && $index < count($jsonlist) - 2){
+  if($value != null && strlen($value) > 3 && $index < count($jsonlist) - 2){
       echo file_get_contents($jsonurl.$value).",";
   }  
   else{
-      echo file_get_contents($jsonurl.$value);
+      if($value != null && strlen($value) > 3){
+          echo file_get_contents($jsonurl.$value);
+      }
   }
   $index += 1;
 }
