@@ -229,7 +229,7 @@ controls[1].onkeydown = function(e) {
     }
 controls[1].onkeypress = function(a){//action
     charCode = a.keyCode || a.which;
-    console.log(a.which.toString(8));
+    //console.log(a.which.toString(8));
     if(charCode != 010 && charCode != 047 && charCode != 050 && !arrowkey){
             
         if(parseInt(currentTable[charCode],8) >= 0200){
@@ -430,6 +430,15 @@ imgbuttons[7].onclick = function(){
     currentJSON.imgleft += 1/currentJSON.unit;
     imagedata[2].value = currentJSON.imgtop;
     imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[8].onclick  = function(){
+    currentJSON.x0rel = 0;
+    currentJSON.y0rel = 0;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+    unit = 100;
+    currentJSON.unit = 100;    
     redraw();
 }
 

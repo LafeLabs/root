@@ -73,7 +73,9 @@
     <tr>
         <td class = "button">left</td><td class = "button">right</td>
     </tr>
-    
+    <tr>
+        <td class = "button">reset xy</td>
+    </tr>
 </table>
 
 <table id = "buttonTable">
