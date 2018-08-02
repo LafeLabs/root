@@ -5,7 +5,7 @@
     "imgtop": -77.24720546595957,
     "unitpixels": 4,
     "unitfeet": 555,
-    "imgangle": -1,
+    "imgangle": 0,
     "latlon0": "38.889464, -77.035246",
     "marker0": "Washington Monument",
     "glyph0": "0341,0340,",
@@ -16,13 +16,6 @@
     "currentGlyph": "0300,",
     "shapes": [],
     "links": [
-        {
-            "url": "index.php?path=dc/central/",
-            "text": "dc/central/",
-            "fontfeet": 1000,
-            "latlon": "38.89200,-77.04900",
-            "rotation": 0
-        },
         {
             "url": "../",
             "text": "link to ../",
@@ -35,6 +28,13 @@
             "text": "chesapeake/",
             "fontfeet": 2000,
             "latlon": "38.8,-77.05",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "dc/central/",
+            "fontfeet": 1000,
+            "latlon": "38.89200,-77.04900",
             "rotation": 0
         }
     ],

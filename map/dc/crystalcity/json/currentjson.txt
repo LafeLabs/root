@@ -1,0 +1,51 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1531451013/bigdcsketch_ktsx8v.png",
+    "imgw": 123.91323276088887,
+    "imgleft": -74.00179562838251,
+    "imgtop": -77.24720546595957,
+    "unitpixels": 4,
+    "unitfeet": 555,
+    "imgangle": -1,
+    "latlon0": "38.889464, -77.035246",
+    "marker0": "Washington Monument",
+    "glyph0": "0341,0340,",
+    "latlon1": " 38.995717, -77.041005 ",
+    "marker1": "North Boundary Stone",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0300,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "../",
+            "text": "link to ../",
+            "fontfeet": 2000,
+            "latlon": "38.91000,-77.04120",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=water/chesapeake/",
+            "text": "chesapeake/",
+            "fontfeet": 2000,
+            "latlon": "38.8,-77.05",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "dc/central/",
+            "fontfeet": 1000,
+            "latlon": "38.89200,-77.04900",
+            "rotation": 0
+        }
+    ],
+    "images": [],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": ""
+}

@@ -17,10 +17,10 @@
     "shapes": [],
     "links": [
         {
-            "url": "index.php?path=dc/central/",
-            "text": "dc/central/",
+            "url": "index.php?path=dc/kingstreet/",
+            "text": "dc/kingstreet/",
             "fontfeet": 1000,
-            "latlon": "38.89200,-77.04900",
+            "latlon": "38.81700,-77.06900",
             "rotation": 0
         },
         {
@@ -35,6 +35,13 @@
             "text": "chesapeake/",
             "fontfeet": 2000,
             "latlon": "38.8,-77.05",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "dc/central/",
+            "fontfeet": 1000,
+            "latlon": "38.89200,-77.04900",
             "rotation": 0
         }
     ],

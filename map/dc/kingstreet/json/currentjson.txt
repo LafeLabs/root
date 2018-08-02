@@ -1,0 +1,37 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1533152855/kingstreetsketch_hmqnxv.png",
+    "imgw": 16.028624573479895,
+    "imgleft": -9.38190900754097,
+    "imgtop": -6.296298359095925,
+    "unitpixels": 80,
+    "unitfeet": 555,
+    "imgangle": 0,
+    "latlon0": "38.805483, -77.050295",
+    "marker0": "King and Patrick",
+    "glyph0": "0341,0340,",
+    "latlon1": "38.807758, -77.049793",
+    "marker1": "Queen and Patrick",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0300,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "index.php?path=water/potomac/",
+            "text": "water/potomac/",
+            "fontfeet": 500,
+            "latlon": "38.81100,-77.03900",
+            "rotation": 0
+        }
+    ],
+    "images": [],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": ""
+}

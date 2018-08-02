@@ -2,8 +2,8 @@
     "constants": {},
     "imgurl": "",
     "plotparams": {
-        "G": 35.32795166918562,
-        "g": 1,
+        "G": 83.30146206611592,
+        "g": 1.1,
         "duration": 545.4545454545454,
         "plotwidth": 400,
         "plotheight": 400,

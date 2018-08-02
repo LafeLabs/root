@@ -1,0 +1,51 @@
+{
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1533072388/pentagoncityscanclip_xnzdad.png",
+    "imgw": 7.8994530219068,
+    "imgleft": -4.05660430194005,
+    "imgtop": -2.538081670576653,
+    "unitpixels": 100,
+    "unitfeet": 555,
+    "imgangle": 0,
+    "latlon0": "38.862732, -77.056766",
+    "marker0": "12th and fern",
+    "glyph0": "0341,0340,",
+    "latlon1": "38.865174, -77.056658",
+    "marker1": "army navy and fern",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0300,",
+    "shapes": [],
+    "links": [
+        {
+            "url": "../",
+            "text": "link to ../",
+            "fontfeet": 2000,
+            "latlon": "38.91000,-77.04120",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=water/chesapeake/",
+            "text": "chesapeake/",
+            "fontfeet": 2000,
+            "latlon": "38.8,-77.05",
+            "rotation": 0
+        },
+        {
+            "url": "index.php?path=dc/central/",
+            "text": "dc/central/",
+            "fontfeet": 1000,
+            "latlon": "38.89200,-77.04900",
+            "rotation": 0
+        }
+    ],
+    "images": [],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    },
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": ""
+}

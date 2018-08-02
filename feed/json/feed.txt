@@ -1,9 +1,0 @@
-[
-    {
-        "url":"http://geometron.000webhostapp.com/root/",
-        "type":"symbol",
-        "path":"foo/",
-        "duration":"10",
-        "timeunit":"days"
-    }
-]

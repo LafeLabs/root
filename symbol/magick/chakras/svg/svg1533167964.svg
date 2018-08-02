@@ -1,0 +1,24 @@
+<svg width="450" height="350" viewbox = "0 0 450 350"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 450,
+    "svgheight": 350,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0326,0232,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="225" cy = "175" r = "100" stroke = "#4b0082" stroke-width = "4" fill = "none" />
+<path    d = "M296,104 C346,104 325,175 425,175" fill = "none" stroke-width = "4" stroke = "#4b0082" /><path    d = "M425,175 C325,175 346,246 296,246" fill = "none" stroke-width = "4" stroke = "#4b0082" /><path    d = "M154,246 C104,246 125,175 25,175" fill = "none" stroke-width = "4" stroke = "#4b0082" /><path    d = "M25,175 C125,175 104,104 154,104" fill = "none" stroke-width = "4" stroke = "#4b0082" />	<path d = "M312 125 L138 125 L225 275 L312 125 Z" stroke = "#4b0082" stroke-width = "4" fill = "none" /></svg>

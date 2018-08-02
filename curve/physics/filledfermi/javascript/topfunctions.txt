@@ -11,7 +11,7 @@ function YofX(){
 function plotfunction(){
 
 /*plot one function:*/
-    currentStroke = "red";
+    currentStroke = "blue";
     currentLineWidth = 1;
     ctx.strokeStyle = currentStroke;
     ctx.lineWidth = currentLineWidth;
@@ -33,12 +33,12 @@ function plotfunction(){
     currentSVG += "L" + "0" + " " + "400" + " ";
     ctx.lineTo(0,plotparams.y0);
     currentSVG += "L" + "0" + " " + plotparams.y0.toString() + " ";
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "blue";
     ctx.fill();		
     ctx.closePath();
     ctx.stroke();		
 
-    currentSVG += "Z\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "red" + "\" "+"/>";
+    currentSVG += "Z\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "blue" + "\" "+"/>";
     /*finish plot one function*/
 
 

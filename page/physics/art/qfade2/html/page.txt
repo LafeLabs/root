@@ -1,9 +1,9 @@
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 
-<img class="imagestack" id="image1" src="https://i.imgur.com/kGoAPS0.jpg"/>
-<img class="imagestack" id="image2" src="https://i.imgur.com/uKrbCTU.jpg"/>
-<img class="imagestack" id="image3" src="https://i.imgur.com/iCpHMWG.jpg"/>
-<img class="imagestack" id="image4" src="https://i.imgur.com/viA6nnL.jpg"/>
+<img class="imagestack" id="image1" src="https://i.imgur.com/yNrkws9.jpg"/>
+<img class="imagestack" id="image2" src="https://i.imgur.com/83ZTSYr.jpg"/>
+<img class="imagestack" id="image3" src="https://i.imgur.com/k3dSaBF.jpg"/>
+<img class="imagestack" id="image4" src="https://i.imgur.com/seQpbHU.jpg"/>
 
 <div id = "slider1"></div>
 <div id = "slider2"></div>

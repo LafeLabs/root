@@ -1,0 +1,25 @@
+<svg width="350" height="350" viewbox = "0 0 350 350"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 350,
+    "svgheight": 350,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0325,0231,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M155,77 C155,64 175,75 175,50" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M175,50 C175,75 195,64 195,77" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M195,77 C199,65 213,83 223,60" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M223,60 C213,83 235,80 231,92" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M231,92 C239,83 246,104 263,87" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M263,87 C246,104 267,111 258,119" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M258,119 C270,115 267,137 290,127" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M290,127 C267,137 285,151 273,155" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M273,155 C286,155 275,175 300,175" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M300,175 C275,175 286,195 273,195" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M273,195 C285,199 267,213 290,223" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M290,223 C267,213 270,235 258,231" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M258,231 C267,239 246,246 263,263" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M263,263 C246,246 239,267 231,258" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M231,258 C235,270 213,267 223,290" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M223,290 C213,267 199,285 195,273" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M195,273 C195,286 175,275 175,300" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M175,300 C175,275 155,286 155,273" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M155,273 C151,285 137,267 127,290" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M127,290 C137,267 115,270 119,258" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M119,258 C111,267 104,246 87,263" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M87,263 C104,246 83,239 92,231" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M92,231 C80,235 83,213 60,223" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M60,223 C83,213 65,199 77,195" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M77,195 C64,195 75,175 50,175" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M50,175 C75,175 64,155 77,155" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M77,155 C65,151 83,137 60,127" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M60,127 C83,137 80,115 92,119" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M92,119 C83,111 104,104 87,87" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M87,87 C104,104 111,83 119,92" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M119,92 C115,80 137,83 127,60" fill = "none" stroke-width = "4" stroke = "#87cefa" /><path    d = "M127,60 C137,83 151,65 155,77" fill = "none" stroke-width = "4" stroke = "#87cefa" />    <circle cx="175" cy = "175" r = "100" stroke = "#87cefa" stroke-width = "4" fill = "none" />
+	<path d = "M262 125 L88 125 L175 275 L262 125 Z" stroke = "#87cefa" stroke-width = "4" fill = "none" />    <circle cx="175" cy = "175" r = "50" stroke = "#87cefa" stroke-width = "4" fill = "none" />
+</svg>

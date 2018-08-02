@@ -4,24 +4,15 @@
 
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = X/Math.tanh(X);
+    if(X == 0){
+        Y = 1;
+    }   
+    else{
+        Y = X/Math.tanh(X);
+    }
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
-
-function YofX2(){
-    X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.b*X*X + funcparams.c*X + funcparams.d;
-    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
- }
-
-function XYofT(){
-    T = plotparams.g*t;
-    X = Math.exp(-T/funcparams.tau)*Math.cos(2*Math.PI*T/funcparams.T);
-    Y = Math.exp(-T/funcparams.tau)*Math.sin(2*Math.PI*T/funcparams.T);
-    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
-    x = plotparams.x0 - plotparams.G*(X - funcparams.X0);    
-}
 
 
 function plotfunction(){

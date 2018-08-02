@@ -1,15 +1,15 @@
 <p><a href = "../">../</a></p>
 <h4>to do</h4>
 <ul>
-    <li><del>make it so page saves an index.html with dates and links so that you can click to go back in time, link to this index.html somewhere</del></li>
-    <li><del>test index.php?url=[] functionality</del></li>
-    <li>streamline map links</li>
-    <li>create feedin and feedout, with feedin connecting to all the things: map links, map images, symbols, curves, pages</li>
-    <li>bind The Book, add structural content to more of the books</li>
-    <li>assemble a complete tool set into ArtBox</li>
+    <li>assemble and pack around a full Art kit</li>
+    <li>Fix map json import/export workflow in tree</li>
+    <li>fix font inport/export workflow in tree</li>
+    <li>finish basic Book instance</li>
+    <li>Get rpi mobile server set up, tested, documented, with replicator</li>
+    <li>quantum art website designed, built</li>
+    <li>Quantum noise website designed, built</li>
+    <li>write class description for rhizome instance</li>
+    <li>Write "product" description for coffee shop</li>
     <li>quantum art manifesto</li>
     <li>quantum noise metrology</li>
-    <li>clean quantum fade apps for different numbers of qubits, add phase</li>
-    <li>figure out multitouch in hammer.js <a href = "https://codepen.io/tran2/pen/vELEvR">https://codepen.io/tran2/pen/vELEvR</a></li>
-    <li>build the trees! core trees from roots for my Magnum Opus document: quantum, noise, AG, trash robot, free oscillator, sacred geometry, nautical, metro, my maps, geometron hypercube, watershed network, trash magick, all the basic curves...need a tree copying workflow, protection from Evil workflow</li>
 </ul>

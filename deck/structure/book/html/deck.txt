@@ -126,4 +126,24 @@
 <li>Curve</li>
 <li>map</li>
 </ol></div>
+</div></div><div class="page">
+   <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+<div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+    <div class="content"><h1>Book of Meaning(AEther)</h1>
+
+<ol style="text-align:left;font-size:36px;">
+<li>Nine Laws</li>
+<li>On Machine Replication</li>
+<li>Disposable Servers</li>    
+<li>Numbers Vs. Topology and Geometry</li>
+<li>Quantum Art</li>
+<li>Rules/principles/Code</li>
+<li>Technological Complete Sets</li>
+<li>Modern Alchemy and the death of Science</li>
+<li>Goals: The Great Work</li>
+</ol></div>
 </div></div>
