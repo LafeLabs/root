@@ -1,0 +1,108 @@
+<p>
+    <a href="../deck/index.php?path=map/flowchart/">Link Back to Flow Deck</a>
+</p>
+
+<p><a href = "feededitor.php?path=map/latlons/">feededitor.php?path=map/latlons/</a></p>
+<p><a href = "https://ngmdb.usgs.gov/topoview/viewer/#4/39.98/-100.06">https://ngmdb.usgs.gov/topoview/viewer/#4/39.98/-100.06</a></p>
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+
+<table id = "inputtable">
+    <tr>
+        <td id = "marker0"></td>
+        <td><input/></td>
+    </tr>
+    <tr>
+        <td id = "marker1"></td>
+        <td><input/></td>
+    </tr>
+</table>
+<script>
+inputs = document.getElementById("inputtable").getElementsByTagName("input");
+path = document.getElementById("pathdiv").innerHTML;
+jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+mapIndex = 0;
+document.getElementById("marker0").innerHTML = jsondata[mapIndex].marker0;
+document.getElementById("marker1").innerHTML = jsondata[mapIndex].marker1;
+
+
+
+document.getElementById("publishbutton").onclick = function(){
+
+
+    jsonoutput = {};
+    jsonoutput.imgurl = jsondata[mapIndex].imgurl;
+    jsonoutput.marker0 = jsondata[mapIndex].marker0;
+    jsonoutput.marker1 = jsondata[mapIndex].marker1;
+    jsonoutput.latlon0 = inputs[0].value;
+    jsonoutput.latlon1 = inputs[1].value;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= jsondata.length){
+        mapIndex = 0;
+    }
+    document.getElementById("marker0").innerHTML = jsondata[mapIndex].marker0;
+    document.getElementById("marker1").innerHTML = jsondata[mapIndex].marker1;
+}
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = jsondata.length - 1;
+    }
+    document.getElementById("marker0").innerHTML = jsondata[mapIndex].marker0;
+    document.getElementById("marker1").innerHTML = jsondata[mapIndex].marker1;
+}
+
+</script>
+<style>
+p{
+    text-align:right;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+img{
+   width:50%;
+   display:block;
+   margin:auto;
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+</style>

@@ -1,0 +1,78 @@
+<h2>Raw Map Images, screen shots, scans, photos:</h2>
+
+<img id = "mainimage"/>
+<table>
+    <tr>
+        <td>Image URL:</td>
+        <td><input id = "urlinput"/></td>
+    </tr>
+    <tr>
+        <td>Description/Name:</td>
+        <td><input id = "textinput" /></td>
+    </tr>
+</table>
+<div class = "bigbutton" id = "pbutton">PUBLISH</div>
+<script>
+document.getElementById("urlinput").onchange = function(){
+     document.getElementById("mainimage").src = this.value;
+}
+document.getElementById("pbutton").onclick  = function(){
+    jsonoutput = {};
+    jsonoutput.url = document.getElementById("urlinput").value;
+    jsonoutput.text = document.getElementById("textinput").value;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(pathset){
+        var url = "makejsonindex.php?path=" + path;        
+    }
+    else{
+        var url = "makejsonindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+    
+    
+</script>
+<style>
+td{
+    font-size:22px;
+}
+input{
+    font-family:courier;
+    font-size:22px;
+    width:40em;
+}
+#mainimage{
+    width:500px;
+}
+.bigbutton{
+    display:block;
+    margin:auto;
+    width:20em;
+    text-align:center;
+    border:solid;
+    border-radius:1em;
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size:36px;
+    margin-bottom:1em;
+    margin-top:1em;
+    cursor:pointer;
+}
+.bigbutton:hover{
+    background-color:green;
+}
+.bigbutton:active{
+    background-color:yellow;
+}
+</style>

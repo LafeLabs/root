@@ -1,0 +1,13 @@
+{
+    "imgurl": "https://i.imgur.com/u4RZD2c.jpg",
+    "marker0": "crystal drive and 23rd",
+    "marker1": "crystal drive and 18th",
+    "latlon0": "38.853315, -77.049527",
+    "latlon1": "38.857569, -77.049250",
+    "imgw": 30,
+    "imgleft": -6,
+    "imgtop": -18,
+    "unitpixels": 19.7,
+    "unitfeet": 555,
+    "imgangle": 0
+}

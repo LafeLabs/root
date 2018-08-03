@@ -1,0 +1,44 @@
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box">
+        <div class="glyphdata">0330,0330,0332,0332,0332,0332,0332,0336,0332,0337,0337,</div>
+        <div class="content"><h5>rawmapimage</h5>
+<p>
+    <a href="../page/index.php?path=map/rawmapimage/">../page/index.php?path=map/rawmapimage/</a>
+</p>
+
+
+
+</div>
+    </div>
+<div class="box"><div class="glyphdata">0330,0330,0332,0332,0332,0332,0336,0331,0332,0330,0336,0333,0337,0336,0224,</div>
+    <div class="content">
+    </div>
+</div><div class="box"><div class="glyphdata">0330,0330,0332,0332,0332,0336,0333,0337,0337,</div>
+    <div class="content"><h5>markers</h5>
+
+<p>
+<a href="../feed/index.php?path=map/markers/&amp;json=../page/map/rawmapimage/json/">../feed/index.php?path=map/markers/&amp;json=../page/map/rawmapimage/json/</a>
+</p></div>
+</div><div class="box"><div class="glyphdata">0336,0336,0330,0330,0330,0330,0330,0330,0332,0332,0332,0332,0332,0330,0224,0330,0330,0330,0332,0337,0333,0333,0331,0337,0333,0337,</div>
+    <div class="content"><h4>latlons</h4></div>
+</div><div class="box"><div class="glyphdata">0330,0330,0333,0336,0333,0336,0333,0331,0337,0336,0226,0224,0330,0333,0333,0333,0333,0333,0333,0333,0337,0337,0337,</div>
+    <div class="content"><h4>mapxy</h4></div>
+</div><div class="box"><div class="glyphdata">0333,0333,0333,0335,0335,0331,0333,0336,0332,0336,0330,0333,0333,0331,0332,0331,0337,0337,0350,0350,0350,0335,0335,0335,0335,0335,0304,0337,0337,0221,0336,0336,0336,0336,0332,0332,0337,0337,0337,0350,0350,0350,0334,0304,0211,0211,0221,0210,0210,0336,0336,0332,0336,0331,0331,0350,0334,0304,0337,0337,0337,0221,</div>
+    <div class="content"></div>
+</div><div class="box"><div class="glyphdata">0333,0333,0333,0333,0331,0331,0336,0336,0331,0332,0332,0332,0337,0337,0337,</div>
+    <div class="content"><h4>links</h4></div>
+</div><div class="box"><div class="glyphdata">0331,0331,0333,0336,0336,0331,0332,0337,0337,0337,</div>
+    <div class="content"><h4>photos</h4></div>
+</div><div class="box"><div class="glyphdata">0332,0332,0331,0331,0336,0336,0331,0337,0337,0337,</div>
+    <div class="content"><h4>svgdots</h4></div>
+</div><div class="box"><div class="glyphdata">0332,0332,0331,0332,0331,0334,0334,0336,0336,0333,0224,0335,0335,0332,0332,0332,0332,0332,0332,0331,0332,0337,0337,0337,</div>
+    <div class="content"><h4>printout</h4>
+<p>Colored in , connect the dots, decorate, photograph...</p></div>
+</div><div class="box"><div class="glyphdata">0332,0332,0332,0332,0332,0331,0337,0221,0334,0336,0336,0336,0336,0330,0333,0337,0337,0333,</div>
+    <div class="content">photograph</div>
+</div></div>

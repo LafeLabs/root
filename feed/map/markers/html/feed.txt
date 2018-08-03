@@ -1,0 +1,104 @@
+<p>
+    <a href="../deck/index.php?path=map/flowchart/">Link Back to Flow Deck</a>
+</p>
+<p><a href = "feededitor.php?path=map/markers/">feededitor.php?path=map/markers/</a></p>
+<p>
+    <a href="../page/index.php?path=map/rawmapimage/">../page/index.php?path=map/rawmapimage/</a>
+</p>
+<img id = "backgroundimage"/>
+
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+
+<table id = "inputtable">
+    <tr>
+        <td>MARKER 0(CENTER):</td>
+        <td><input/></td>
+    </tr>
+    <tr>
+        <td>MARKER 1:</td>
+        <td><input/></td>
+    </tr>
+</table>
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+mapIndex = 0;
+inputs = document.getElementById("inputtable").getElementsByTagName("input");
+document.getElementById("backgroundimage").src = jsondata[mapIndex].url;
+
+document.getElementById("publishbutton").onclick = function(){
+
+    jsonoutput = {};
+    jsonoutput.imgurl = jsondata[mapIndex].url;
+    jsonoutput.marker0 = inputs[0].value;
+    jsonoutput.marker1 = inputs[1].value;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= jsondata.length){
+        mapIndex = 0;
+    }
+    document.getElementById("backgroundimage").src = jsondata[mapIndex].url;
+}
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = jsondata.length - 1;
+    }
+    document.getElementById("backgroundimage").src = jsondata[mapIndex].url;
+}
+
+</script>
+<style>
+p{
+    text-align:right;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+img{
+   width:50%;
+   display:block;
+   margin:auto;
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+</style>
