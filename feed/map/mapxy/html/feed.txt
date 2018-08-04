@@ -18,7 +18,6 @@
 <table id = "pantable">
     <tr><td>PAN X</td></tr>
     <tr><td>PAN Y</td></tr>
-    <tr><td>IMG ZOOM</td></tr>
     <tr><td>PX ZOOM</td></tr>
     <tr><td>ROTATE</td></tr>
 </table>
@@ -32,8 +31,9 @@ path = document.getElementById("pathdiv").innerHTML;
 jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
 mapIndex = 0;
 document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
-markers[0].innerHTML = jsondata[mapIndex].marker0;
-markers[1].innerHTML = jsondata[mapIndex].marker1;
+
+markers[0].innerHTML = "marker 0: " + jsondata[mapIndex].marker0;
+markers[1].innerHTML = "marker 1: " + jsondata[mapIndex].marker1;
 unitfeet = 555;
 unitpixels = 20;
 imgw = 20;
@@ -52,6 +52,10 @@ ctx.fillStyle = "black";
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 
+fixedImageWidth = 800;
+document.getElementById("mainImage").width = fixedImageWidth;
+imageScaleFactor = fixedImageWidth/(unitpixels*imgw);
+
 redraw();
 function redraw(){
     x = x0;
@@ -64,55 +68,55 @@ function redraw(){
     ctx.fill();	
     ctx.closePath();
     x = x0 + unitpixels*parseFloat(latlon2xy(jsondata[mapIndex].latlon1).split(",")[0]);
-    y = y0 + unitpixels*parseFloat(latlon2xy(jsondata[mapIndex].latlon1).split(",")[1]);
+    y = y0 - unitpixels*parseFloat(latlon2xy(jsondata[mapIndex].latlon1).split(",")[1]);
     ctx.beginPath();
     ctx.arc(x, y, ctx.lineWidth, 0, 2 * Math.PI);
     ctx.fill();	
     ctx.closePath();
 
-    document.getElementById("mainImage").style.width = (imgw*unitpixels).toString()  + "px";
-    document.getElementById("mainImage").style.left = (x0 + imgleft*unitpixels).toString()  + "px";
-    document.getElementById("mainImage").style.top = (y0 + imgtop*unitpixels).toString()  + "px";
+   // document.getElementById("mainImage").style.width = (imgw*unitpixels).toString()  + "px";
+    document.getElementById("mainImage").style.left = (x0 + imageScaleFactor*imgleft*unitpixels).toString()  + "px";
+    document.getElementById("mainImage").style.top = (y0 + imageScaleFactor*imgtop*unitpixels).toString()  + "px";
     document.getElementById("mainImage").style.transform = "rotate(" + imgangle.toString() +"deg)";
 
 }
 
 pans = document.getElementById("pantable").getElementsByTagName("TD");
 
+
+mc = new Hammer(document.getElementById("mainCanvas"));
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    imgleft = -0.5*imgw + ev.deltaX/20;
+    imgtop = -0.5*imgw + ev.deltaY/20;
+    redraw();
+});
+
 mc1 = new Hammer(pans[0]);
 mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc1.on("panleft panright panup pandown tap press", function(ev) {
-    imgleft = -0.5*imgw + ev.deltaX;
+    imgleft = -0.5*imgw + ev.deltaX/20;
     redraw();
 });
 
 mc2 = new Hammer(pans[1]);
 mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc2.on("panleft panright panup pandown tap press", function(ev) {
-    imgtop = -0.5*imgw + ev.deltaX;
+    imgtop = -0.5*imgw + ev.deltaX/20;
     redraw();
 });
 
-mc3 = new Hammer(pans[2]);
-mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-mc3.on("panleft panright panup pandown tap press", function(ev) {
-    var tempimgw = imgw;
-    imgw = 150 + ev.deltaX;
-    deltaimgw = imgw - tempimgw;
-    imgleft -= 0.5*deltaimgw;
-    imgtop -= 0.5*deltaimgw;
-    redraw();
-});
 
-mc4 = new Hammer(pans[3]);
+mc4 = new Hammer(pans[2]);
 mc4.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc4.on("panleft panright panup pandown tap press", function(ev) {
-    unitpixels = 5 +  ev.deltaX/10;
+    unitpixels = 50 +  ev.deltaX;
+    imageScaleFactor = fixedImageWidth/(unitpixels*imgw);
     redraw();
 });
 
 
-mc5 = new Hammer(pans[4]);
+mc5 = new Hammer(pans[3]);
 mc5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc5.on("panleft panright panup pandown tap press", function(ev) {
     imgangle = ev.deltaX;
@@ -129,6 +133,7 @@ document.getElementById("publishbutton").onclick = function(){
     jsonoutput.latlon0 = jsondata[mapIndex].latlon0;
     jsonoutput.latlon1 = jsondata[mapIndex].latlon1;
 
+    imgw = fixedImageWidth/(unitpixels*imageScaleFactor);
     jsonoutput.imgw = imgw;
     jsonoutput.imgleft = imgleft;
     jsonoutput.imgtop = imgtop;
@@ -159,7 +164,8 @@ document.getElementById("fwdbutton").onclick = function(){
         mapIndex = 0;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
-
+    markers[0].innerHTML = "marker 0: " + jsondata[mapIndex].marker0;
+    markers[1].innerHTML = "marker 1: " + jsondata[mapIndex].marker1;
 }
 document.getElementById("backbutton").onclick = function(){
     mapIndex--;
@@ -167,7 +173,8 @@ document.getElementById("backbutton").onclick = function(){
         mapIndex = jsondata.length - 1;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
-
+    markers[0].innerHTML = "marker 0: " + jsondata[mapIndex].marker0;
+    markers[1].innerHTML = "marker 1: " + jsondata[mapIndex].marker1;
 }
 function latlon2xy(latlonin) {
     
