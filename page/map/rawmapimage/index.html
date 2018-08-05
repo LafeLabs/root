@@ -4,6 +4,9 @@
 <p>
     <a href = "../deck/index.php?path=map/flowchart/">Link Back to Flow Deck</a>
 </p>
+<p>
+<a href="../feed/index.php?path=map/markers/&amp;json=../page/map/rawmapimage/json/">../feed/index.php?path=map/markers/&amp;json=../page/map/rawmapimage/json/</a>
+</p>
 <h2>Raw Map Images, screen shots, scans, photos:</h2>
 
 <img id = "mainimage"/>
@@ -15,13 +18,19 @@
 </table>
 <div class = "bigbutton" id = "pbutton">PUBLISH</div>
 <script>
+
+imageWidth = 100;
+document.getElementById("mainimage").onload = function(){
+    imageWidth = this.width;
+    
+}
 document.getElementById("urlinput").onchange = function(){
      document.getElementById("mainimage").src = this.value;
 }
 document.getElementById("pbutton").onclick  = function(){
     jsonoutput = {};
     jsonoutput.url = document.getElementById("urlinput").value;
-
+    jsonoutput.widthpx = imageWidth; 
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
     var httpc = new XMLHttpRequest();
@@ -53,9 +62,7 @@ input{
     font-size:22px;
     width:40em;
 }
-#mainimage{
-    width:500px;
-}
+
 .bigbutton{
     display:block;
     margin:auto;

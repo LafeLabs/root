@@ -42,10 +42,11 @@ EVERYTHING IS RECURSIVE
 if(isset($_GET['json'])){
     $jsonurl = $_GET['json'];
 }
-else{
-//   $jsonurl = "../page/physics/art/qfade/json/";
-
-   $jsonurl = "../page/physics/art/pancontroltest/json/";
+if(!isset($_GET['json']) && isset($_GET['path'])){
+    $jsonurl = $_GET['path']."json/";
+}
+if(!isset($_GET['json']) && !isset($_GET['path'])){
+    $jsonurl = "json/";
 }
 
 $jsonlist = explode(",",file_get_contents($jsonurl."list.txt"));

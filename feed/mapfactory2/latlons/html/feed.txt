@@ -1,0 +1,233 @@
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "https://www.openstreetmap.org/#map=12/38.8896/-77.0506">OPENSTREETMAP</a>   <a href = "maps.google.com">GOOGLEMAPS</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=mapfactory2/markers/">PREVIOUS FEED(mapfactory2/markers/)</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=mapfactory2/mapx0y0/">NEXT FEED(mapfactory2/mapx0y0/)</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=mapfactory2/latlons/">EDIT THIS FEED</a>
+        </td>
+    </tr>
+    <tr>
+        <td>MARKER 0(CENTER):<span id = "marker0"></span>:</td>
+        <td>latlon0:<input/></td>
+    </tr>
+    <tr>
+        <td>MARKER 1:<span id = "marker1"></span>:</td>
+        <td>latlon1:<input/></td>
+    </tr>
+
+</table>
+
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+
+<div id = "feedbox">
+
+
+</div>
+<table id = "inputtable">
+</table>
+
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+
+for(var index = 0;index < localjsondata.length;index++){
+    var newtable = document.createElement("table");
+    document.getElementById("feedbox").appendChild(newtable);
+    var newtr = document.createElement("TR");
+    newtable.appendChild(newtr);
+    var newtd = document.createElement("TD");
+    newtr.appendChild(newtd);
+    newtd.innerHTML = "marker0:" + localjsondata[index].marker0;
+    var newtr2 = document.createElement("TR");
+    newtable.appendChild(newtr2);
+    var newtd2 = document.createElement("TD");
+    newtr2.appendChild(newtd2);
+    newtd2.innerHTML = "latlon0:" + localjsondata[index].latlon0;
+
+    var newtr3 = document.createElement("TR");
+    newtable.appendChild(newtr3);
+    var newtd3 = document.createElement("TD");
+    newtr3.appendChild(newtd3);
+    newtd3.innerHTML = "marker1:" + localjsondata[index].marker1;
+    var newtr4 = document.createElement("TR");
+    newtable.appendChild(newtr4);
+    var newtd4 = document.createElement("TD");
+    newtr4.appendChild(newtd4);
+    newtd4.innerHTML = "latlon1:" + localjsondata[index].latlon1;
+    
+}
+
+inputs = document.getElementById("linktable").getElementsByTagName("input");
+
+jsondir = "mapfactory2/markers/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+function init(){
+    mapIndex = 0;
+    redraw();
+}
+function redraw(){
+    document.getElementById("marker0").innerHTML = jsondata[mapIndex].marker0;
+    document.getElementById("marker1").innerHTML = jsondata[mapIndex].marker1;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+
+    jsonoutput = {};
+    jsonoutput.imgurl = jsondata[mapIndex].url;
+    jsonoutput.latlon0 = inputs[0].value;
+    jsonoutput.latlon1 = inputs[1].value;
+    jsonoutput.marker0 = jsondata[mapIndex].marker0;
+    jsonoutput.marker1 = jsondata[mapIndex].marker1;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= jsondata.length){
+        mapIndex = 0;
+    }
+    redraw();
+}
+
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = jsondata.length - 1;
+    }
+    redraw();
+}
+
+
+
+</script>
+<style>
+#feedbox{
+    position:absolute;
+    left:10%;
+    right:10%;
+    bottom:6em;
+    top:11em;
+    overflow:scroll;
+    border:solid;
+    font-size:22px;
+    border-radius:1em;
+}
+#feedbox table{
+    border:solid;
+    display:block;
+    margin:auto;
+    text-align:center;
+    padding:10px 10px 10px 10px;
+    margin:10px 10px 10px 10px;
+}
+p{
+    text-align:right;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+img{
+   width:50%;
+   display:block;
+   margin:auto;
+}
+#backbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    left:0px;
+    width:10%;
+    height:2em; 
+    padding-bottom:1em;
+    padding-top:1em;
+
+}
+#fwdbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    right:0px;
+    width:10%;
+    height:2em;
+    padding-bottom:1em;
+    padding-top:1em;
+}
+#publishbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    right:35%;
+    width:30%;
+    padding-bottom:1em;
+    padding-top:1em;
+    
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+    border:solid;
+    border-radius:10px;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+</style>

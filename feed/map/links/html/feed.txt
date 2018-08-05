@@ -3,7 +3,8 @@
 <a href = "../deck/index.php?path=map/flowchart/&page=0">Back to Map Flowchart</a>
 </p>
 <p>
-    <a href = "tree.php">tree.php</a>
+    <a href = "tree.php">tree.php</a><br/>
+    <a href = "feededitor.php?path=map/links/">feededitor.php?path=map/links/</a>
 </p>
 <h2>Link Maker</h2>
 <table id = "inputtable">
@@ -31,52 +32,72 @@
 <script>
 
 path = document.getElementById("pathdiv").innerHTML;
-jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+//jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
 mapIndex = 0;
+inputs = document.getElementById("inputtable").getElementsByTagName("input");
+newlinkjson = {};
+newlinkjson.url = inputs[1].value;
+newlinkjson.text = inputs[0].value;
+newlinkjson.latlon = "38.889464, -77.035246";
+newlinkjson.rotation = 0;
+newlinkjson.fontfeet = 5000;
+jsonoutput = JSON.parse(JSON.stringify(newlinkjson));
 
+unit  = 50;
+x0 = 0.5*innerWidth;
+y0 = 0.5*innerHeight;
+deltax = 0;
+deltay = 0;
+deltaw = 0;
+deltaangle = 0;
 
-    inputs = document.getElementById("inputtable").getElementsByTagName("input");
-    newlinkjson = {};
-    newlinkjson.url = inputs[1].value;
-    newlinkjson.text = inputs[0].value;
-    newlinkjson.latlon = "38.889464, -77.035246";
-    newlinkjson.rotation = 0;
-    newlinkjson.fontfeet = 5000;
-    jsonoutput = JSON.parse(JSON.stringify(newlinkjson));
-    unit  = 50;
-    x0 = 0.5*innerWidth;
-    y0 = 0.5*innerHeight;
-    deltax = 0;
-    deltay = 0;
-    deltaw = 0;
-    deltaangle = 0;
+foo = {
+    "widthfeet": 3774.4424387501767,
+    "x0overwidth": 0.20334261838440112,
+    "x1overwidth": 0.21770527547596308,
+    "y0overwidth": 0.6942896935933147,
+    "y1overwidth": 0.2831586343473542
+}
+
+jsondir = "map/mapx1y1/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
     
-    unit=jsondata[mapIndex].unitpixels;
+function init(){
+    imageWidth = innerWidth*0.5;
+    unit = imageWidth*(555/jsondata[mapIndex].widthfeet);
+    document.getElementById("backgroundimage").style.width = (imageWidth).toString() + "px";
     document.getElementById("backgroundimage").src = jsondata[mapIndex].imgurl;
-    document.getElementById("backgroundimage").style.width = (jsondata[mapIndex].unitpixels*jsondata[mapIndex].imagew).toString() + "px";
-    document.getElementById("backgroundimage").style.left = (0.5*innerWidth + jsondata[mapIndex].unitpixels*jsondata[mapIndex].imgleft).toString() + "px";
-    document.getElementById("backgroundimage").style.top = (0.5*innerHeight + jsondata[mapIndex].unitpixels*jsondata[mapIndex].imgtop).toString() + "px";
     newlinkjson.latlon = jsondata[mapIndex].latlon0;
-    redraw();
+    redraw();    
+}
+
 
     //load a map, set background image...
     
-    function redraw(){
-        document.getElementById("newlink").href = newlinkjson.url;
-        document.getElementById("newlink").innerHTML = newlinkjson.text;
+function redraw(){
+    document.getElementById("newlink").href = newlinkjson.url;
+    document.getElementById("newlink").innerHTML = newlinkjson.text;
         
-        var xy = latlon2xy(newlinkjson.latlon);
-        var xvar = parseFloat(xy.split(",")[0]);
-        document.getElementById("newlink").style.left = (deltax + x0 + unit*xvar).toString() + "px";
-        var yvar = parseFloat(xy.split(",")[1]);
-        document.getElementById("newlink").style.top = (deltay + y0 - unit*yvar).toString() + "px";
-        document.getElementById("newlink").style.fontSize = (deltaw + newlinkjson.fontfeet*unit/jsondata[mapIndex].unitfeet).toString() + "px";
-        document.getElementById("newlink").style.transform = "rotate(" + (deltaangle + newlinkjson.rotation).toString() + "deg)";
+    var xy = latlon2xy(newlinkjson.latlon);
+    var xvar = parseFloat(xy.split(",")[0]);
+    document.getElementById("newlink").style.left = (deltax + x0 + unit*xvar).toString() + "px";
+    var yvar = parseFloat(xy.split(",")[1]);
+    document.getElementById("newlink").style.top = (deltay + y0 - unit*yvar).toString() + "px";
+    document.getElementById("newlink").style.fontSize = (deltaw + newlinkjson.fontfeet*unit/jsondata[mapIndex].unitfeet).toString() + "px";
+    document.getElementById("newlink").style.transform = "rotate(" + (deltaangle + newlinkjson.rotation).toString() + "deg)";
     
-    }    
+}    
     
     
-    function latlon2xy(latlonin) {
+function latlon2xy(latlonin) {
     
     //input to this function is a string of the form "lattitude,longitude", where lat and lon are in decimal degrees
     var lat0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[0]);   //lattitude to 10 meter precision
@@ -217,8 +238,8 @@ inputs[1].onchange = function(){
 <style>
 #backgroundimage{
     position:absolute;
-    width:500px;
     top:100px;
+    left:25%;
     z-index:-1;
 }
 .button{

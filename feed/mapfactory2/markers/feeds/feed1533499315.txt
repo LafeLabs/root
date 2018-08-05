@@ -1,0 +1,162 @@
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "index.php?path=mapfactory2/mapimage/">PREVIOUS FEED(mapfactory2/mapimage/)</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=mapfactory2/latlons/">NEXT FEED(mapfactory2/latlons/)</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=mapfactory2/markers/">EDIT THIS FEED</a>
+        </td>
+    </tr>
+
+</table>
+<img id = "backgroundimage"/>
+
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+
+<table id = "inputtable">
+    <tr>
+        <td>MARKER 0(CENTER):</td>
+        <td><input/></td>
+    </tr>
+    <tr>
+        <td>MARKER 1:</td>
+        <td><input/></td>
+    </tr>
+</table>
+
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+inputs = document.getElementById("inputtable").getElementsByTagName("input");
+
+jsondir = "mapfactory2/mapimage/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+function init(){
+    mapIndex = 0;
+    document.getElementById("backgroundimage").src = jsondata[mapIndex].url;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+
+    jsonoutput = {};
+    jsonoutput.imgurl = jsondata[mapIndex].url;
+    jsonoutput.marker0 = inputs[0].value;
+    jsonoutput.marker1 = inputs[1].value;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= jsondata.length){
+        mapIndex = 0;
+    }
+    document.getElementById("backgroundimage").src = jsondata[mapIndex].url;
+}
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = jsondata.length - 1;
+    }
+    document.getElementById("backgroundimage").src = jsondata[mapIndex].url;
+}
+
+</script>
+<style>
+p{
+    text-align:right;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+img{
+   width:50%;
+   display:block;
+   margin:auto;
+}
+#backbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    left:0px;
+    width:10%;
+    height:10%; 
+    padding-bottom:1em;
+}
+#fwdbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    right:0px;
+    width:10%;
+    height:10%;
+    padding-bottom:1em;
+}
+#publishbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    right:35%;
+    width:30%;
+    height:10%;
+    padding-bottom:1em;
+    
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+</style>

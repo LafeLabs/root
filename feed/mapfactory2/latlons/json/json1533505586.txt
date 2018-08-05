@@ -1,0 +1,6 @@
+{
+    "latlon0": "38.891991, -77.005882",
+    "latlon1": "38.896418, -77.006626",
+    "marker0": "constitution and 1st st",
+    "marker1": "columbus statue in circle"
+}

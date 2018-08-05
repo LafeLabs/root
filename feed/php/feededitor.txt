@@ -93,7 +93,7 @@ if(document.getElementById("pathdiv").innerHTML.length > 1){
     pathset = true;
     path = document.getElementById("pathdiv").innerHTML;
     currentFile = path + "/html/feed.txt";
-    document.getElementById("indexlink").href = "index.php?path=" + path + "&json=" + "../page/" + path + "json/";
+    document.getElementById("indexlink").href = "index.php?path=" + path;
     document.getElementById("indexlink").innerHTML = "index.php?path=" + path;
     
     document.getElementById("pageslink").href = path + "feeds";

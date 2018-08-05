@@ -1,0 +1,107 @@
+<h2>mapfactory2/mapimage/</h2>
+
+<table>
+    <tr>    
+        <td>
+            <a href = "index.php?path=mapfactory2/markers/">Markers Feed [next]</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=mapfactory2/mapimage/">Edit This File</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Image URL:</td>
+        <td><input id = "urlinput"/></td>
+    </tr>
+</table>
+
+<div class = "bigbutton" id = "pbutton">PUBLISH</div>
+<div id = "mainfeed">
+    
+</div>
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+
+
+document.getElementById("urlinput").onchange = function(){
+    var newimg = document.createElement("IMG");
+    newimg.src = this.value;
+    document.getElementById("mainfeed").appendChild(newimg); 
+}
+
+document.getElementById("pbutton").onclick  = function(){
+
+    jsonoutput = {};
+    jsonoutput.url = document.getElementById("urlinput").value;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+    
+    
+</script>
+<style>
+#mainfeed{
+    position:absolute;
+    top:50%;
+    bottom:10px;
+    left:10px;
+    right:10px;
+    text-align:center;
+    border:solid;
+    border-radius:10px;
+    z-index:-1;
+    overflow:scroll;
+}
+#mainfeed img{
+    width:50%;
+    display:block;
+    margin:auto;
+    margin-top:3em;
+    margin-bottom:3em;
+}
+
+td{
+    font-size:22px;
+}
+input{
+    font-family:courier;
+    font-size:22px;
+    width:40em;
+}
+
+.bigbutton{
+    display:block;
+    margin:auto;
+    width:20em;
+    text-align:center;
+    border:solid;
+    border-radius:1em;
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size:22px;
+    margin-bottom:1em;
+    margin-top:1em;
+    cursor:pointer;
+}
+.bigbutton:hover{
+    background-color:green;
+}
+.bigbutton:active{
+    background-color:yellow;
+}
+</style>

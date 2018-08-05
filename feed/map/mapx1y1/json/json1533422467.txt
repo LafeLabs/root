@@ -1,0 +1,12 @@
+{
+    "imgurl": "https://i.imgur.com/g0nVLdt.jpg",
+    "marker0": "constitution and first st",
+    "marker1": "columbus circle monument",
+    "latlon0": "38.892008, -77.005907",
+    "latlon1": "38.896416, -77.006595",
+    "x0overwidth": 0.6643454038997214,
+    "y0overwidth": 0.7325905292479109,
+    "x1overwidth": 0.6176667683521452,
+    "y1overwidth": 0.3178688057290599,
+    "widthfeet": 3878.6016230821615
+}

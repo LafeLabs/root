@@ -1,0 +1,6 @@
+{
+    "latlon0": "38.869127, -77.053810",
+    "latlon1": "38.880451, -77.057136",
+    "marker0": "pentagon metro station",
+    "marker1": "bridge to columbia island"
+}

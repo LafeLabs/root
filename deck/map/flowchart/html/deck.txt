@@ -33,7 +33,11 @@
     <div class="content"><h4>mapxy</h4>
 
 <p>
-    <a href="../feed/index.php?path=map/mapxy/&amp;json=map/latlons/json/">../feed/index.php?path=map/mapxy/&amp;json=map/latlons/json/</a>
+    <a href="../feed/index.php?path=map/mapx0y0/&amp;json=map/latlons/json/">../feed/index.php?path=map/mapx0y0/&amp;json=map/latlons/json/</a>
+</p>
+
+<p>
+    <a href="../feed/index.php?path=map/mapx1y1/&amp;json=map/mapx0y0/json/">../feed/index.php?path=map/mapx1y1/&amp;json=map/mapx0y0/json/</a>
 </p></div>
 </div><div class="box"><div class="glyphdata">0333,0333,0333,0335,0335,0331,0333,0336,0332,0336,0330,0333,0333,0331,0332,0331,0337,0337,0350,0350,0350,0335,0335,0335,0335,0335,0304,0337,0337,0221,0336,0336,0336,0336,0332,0332,0337,0337,0337,0350,0350,0350,0334,0304,0211,0211,0221,0210,0210,0336,0336,0332,0336,0331,0331,0350,0334,0304,0337,0337,0337,0221,0336,0336,0336,</div>
     <div class="content"></div>
@@ -56,4 +60,7 @@
     <div class="content">photograph</div>
 </div><div class="box"><div class="glyphdata">0333,0333,0333,0331,0336,0332,0337,0366,0330,0332,0332,0332,0332,0335,0367,0336,0336,0306,0350,0334,0306,0362,0203,0335,0335,0203,0335,0335,0203,0363,0335,0304,0335,0334,0337,0333,0331,0333,0333,0331,0366,0330,0332,0332,0332,0335,0367,0306,0350,0334,0336,0362,0203,0335,0335,0335,0335,0203,0335,0335,0335,0335,0203,0363,0334,0304,0335,0335,0337,0334,0331,0331,0332,0336,0330,0336,0330,0337,0337,0342,0330,0335,0335,0306,0350,0335,0336,0306,0362,0203,0334,0334,0203,0334,0334,0203,0363,0334,0304,0334,0335,0335,0337,0332,0337,0337,</div>
     <div class="content"><h4>"Product" Map</h4></div>
+</div><div class="box"><div class="glyphdata">0331,0333,0333,0331,0331,0333,0333,0333,0331,0333,0333,0337,</div>
+    <div class="content">
+    </div>
 </div></div>

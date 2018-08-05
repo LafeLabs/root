@@ -1,0 +1,9 @@
+{
+    "imgurl": "https://i.imgur.com/LZj5gnI.jpg",
+    "marker0": "22ND AND I STREET",
+    "marker1": "22ND AND M STREET",
+    "latlon0": "38.900698, -77.048813",
+    "latlon1": "38.905282, -77.048815",
+    "x0overwidth": 0.5348189415041783,
+    "y0overwidth": 0.6803621169916435
+}
