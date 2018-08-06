@@ -1,4 +1,5 @@
 {
+    "imgurl": "https://i.imgur.com/4vdXYlk.jpg",
     "latlon0": "38.899825, -77.027046",
     "latlon1": "38.902565, -77.027027",
     "marker0": "h and 11th",

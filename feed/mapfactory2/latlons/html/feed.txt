@@ -99,7 +99,7 @@ function redraw(){
 document.getElementById("publishbutton").onclick = function(){
 
     jsonoutput = {};
-    jsonoutput.imgurl = jsondata[mapIndex].url;
+    jsonoutput.imgurl = jsondata[mapIndex].imgurl;
     jsonoutput.latlon0 = inputs[0].value;
     jsonoutput.latlon1 = inputs[1].value;
     jsonoutput.marker0 = jsondata[mapIndex].marker0;

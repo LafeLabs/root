@@ -1,4 +1,5 @@
 {
+    "imgurl": "https://i.imgur.com/Aabwa5e.jpg",
     "latlon0": "38.869127, -77.053810",
     "latlon1": "38.880451, -77.057136",
     "marker0": "pentagon metro station",

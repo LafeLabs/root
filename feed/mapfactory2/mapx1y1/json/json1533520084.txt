@@ -1,0 +1,12 @@
+{
+    "imgurl": "https://i.imgur.com/HATgyaz.jpg",
+    "marker0": "crystal drive and 18th",
+    "marker1": "crystal drive and 12th",
+    "latlon0": "38.857574, -77.049233",
+    "latlon1": "38.862345, -77.048716",
+    "x0overwidth": 0.5934426229508196,
+    "y0overwidth": 0.7385245901639345,
+    "x1overwidth": 0.6491803278688525,
+    "y1overwidth": 0.04016393442622951,
+    "widthfeet": 2491.3476930214974
+}

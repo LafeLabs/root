@@ -1,0 +1,281 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<table id = "linktable">
+<tr>
+    <td>
+        <a href = "feededitor.php?path=mapfactory2/mapx1y1/">EDIT</a>    
+    </td>
+</tr>    
+<tr>
+    <td>
+        <a href = "index.php?path=mapfactory2/mapx0y0/">PREV FEED(mapfactory2/mapx0y0/)</a>
+    </td>
+</tr>    
+<tr>
+    <td>
+        <a href = "index.php?path=mapfactory2/linkmaker/">LINKS</a>  
+        <a href = "index.php?path=mapfactory2/photomaker/">PHOTOS</a>  
+        <a href = "index.php?path=mapfactory2/glyphmaker/">GLYPHS</a>  
+    </td>
+</tr>    
+</table>
+<p>
+
+</p>
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<table id = "markertable">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<img id = "mainImage"/>
+<canvas id = "mainCanvas"></canvas>
+
+<script>
+
+markers = document.getElementById("markertable").getElementsByTagName("TD");
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+mapIndex = 0;
+
+jsondir = "mapfactory2/mapx0y0/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+function init(){
+    document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    markers[0].innerHTML = "marker 1: " + jsondata[mapIndex].marker1;
+}
+
+    
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.strokeStyle= "black";
+ctx.lineWidth = 4;    	
+ctx.fillStyle = "black";
+
+if(innerWidth < innerHeight){
+    smallerWidth = innerWidth;
+}
+else{
+    smallerWidth = innerHeight;
+}
+
+imageWidth = 0.85*smallerWidth;
+document.getElementById("mainImage").width = imageWidth;
+
+document.getElementById("mainImage").onload = function(){
+    document.getElementById("mainCanvas").width = document.getElementById("mainImage").width;
+    document.getElementById("mainCanvas").height = document.getElementById("mainImage").height;
+    x0 = 0.5*document.getElementById("mainImage").width;
+    y0 = 0.5*document.getElementById("mainImage").height;
+    x = x0;
+    y = y0;
+    document.getElementById("mainCanvas").style.left = (x0).toString() + "px";
+    document.getElementById("mainImage").style.left = (x0).toString() + "px";
+    redraw();
+}
+
+function redraw(){
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    ctx.lineWidth = 2;    	
+
+    ctx.beginPath();
+    ctx.arc(x0, y0, 10, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x0,y0 - 100);
+    ctx.lineTo(x0,y0 + 100);
+    ctx.stroke();		
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.moveTo(x0 - 100,y0);
+    ctx.lineTo(x0 + 100,y0);
+    ctx.stroke();		
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(x, y, 10, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x,y - 100);
+    ctx.lineTo(x,y + 100);
+    ctx.stroke();		
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.moveTo(x - 100,y);
+    ctx.lineTo(x + 100,y);
+    ctx.stroke();		
+    ctx.closePath();
+
+}
+
+
+mc = new Hammer(document.getElementById("mainCanvas"));
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    x = x0 + ev.deltaX;
+    y = y0 + ev.deltaY;
+    redraw();
+});
+
+
+
+document.getElementById("publishbutton").onclick = function(){
+
+    jsonoutput = {};
+    jsonoutput.imgurl = jsondata[mapIndex].imgurl;
+    jsonoutput.marker0 = jsondata[mapIndex].marker0;
+    jsonoutput.marker1 = jsondata[mapIndex].marker1;
+    jsonoutput.latlon0 = jsondata[mapIndex].latlon0;
+    jsonoutput.latlon1 = jsondata[mapIndex].latlon1;
+    jsonoutput.x0overwidth = jsondata[mapIndex].x0overwidth;
+    jsonoutput.y0overwidth = jsondata[mapIndex].y0overwidth;
+
+    jsonoutput.x1overwidth = x/document.getElementById("mainImage").width;
+    jsonoutput.y1overwidth = y/document.getElementById("mainImage").width;
+
+    deltaxoverwidth = jsonoutput.x1overwidth - jsonoutput.x0overwidth;
+    deltayoverwidth = jsonoutput.y1overwidth - jsonoutput.y0overwidth;
+    
+    lat0 = parseFloat(jsonoutput.latlon0.split(",")[0]);
+    lon0 = parseFloat(jsonoutput.latlon0.split(",")[1]);
+    lat1 = parseFloat(jsonoutput.latlon1.split(",")[0]);
+    lon1 = parseFloat(jsonoutput.latlon1.split(",")[1]);
+
+    feetperdegree = 364538;
+    deltayfeet = (lat1 - lat0)*feetperdegree;
+    deltaxfeet = (lon1 - lon0)*feetperdegree*Math.cos(lat0*Math.PI/180);
+    
+    deltaroverwidth = Math.sqrt(deltaxoverwidth*deltaxoverwidth + deltayoverwidth*deltayoverwidth);
+    deltarfeet = Math.sqrt(deltayfeet*deltayfeet + deltaxfeet*deltaxfeet);
+    widthfeet = deltarfeet/deltaroverwidth;
+    
+    jsonoutput.widthfeet = widthfeet;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= jsondata.length){
+        mapIndex = 0;
+    }
+    document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    markers[0].innerHTML = "marker 1: " + jsondata[mapIndex].marker1;
+}
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = jsondata.length - 1;
+    }
+    document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    markers[0].innerHTML = "marker 1: " + jsondata[mapIndex].marker1;
+    
+}
+
+
+</script>
+<style>
+
+p{
+    text-align:right;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+#mainCanvas{
+    position:absolute;
+    z-index:0;
+    left:0px;
+    top:0px;
+}
+#mainImage{
+   position:absolute;
+   z-index:-1;
+   left:0px;
+   top:0px;
+}
+#backbutton{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    z-index:3;
+}
+#fwdbutton{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index:3;
+}
+#publishbutton{
+    position:absolute;
+    z-index:3;
+    bottom:0px;
+    left:35%;
+    width:30%;
+}
+#flowdecklink{
+    position:relative;
+    z-index:3;
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+    height:4em;
+    padding-top:2em;
+    padding-left:2em;
+    padding-right:2em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#markertable{
+    position:absolute;
+    left:0px;
+    top:50%;
+}
+#linktable{
+    position:absolute;
+    z-index:2;
+    right:0px;
+    top:0px;
+}
+</style>

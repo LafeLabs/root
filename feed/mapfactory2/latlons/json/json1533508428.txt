@@ -1,4 +1,5 @@
 {
+    "imgurl": "https://i.imgur.com/HATgyaz.jpg",
     "latlon0": "38.857574, -77.049233",
     "latlon1": "38.862345, -77.048716",
     "marker0": "crystal drive and 18th",
