@@ -15,9 +15,12 @@
     "y0": 359,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "",
+    "glyph": "0340,0342,0335,0335,0342,0335,0335,",
     "table": []
 }
 </json>
 -->
+<circle cx="250" cy = "250" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+    <line x1="250" y1="250" x2="250" y2="150" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="250" y2="350" style="stroke:black;stroke-width:4" />
 </svg>
