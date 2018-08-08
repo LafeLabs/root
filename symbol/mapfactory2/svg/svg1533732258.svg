@@ -1,0 +1,25 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 90.9090909090909,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0342,0336,0336,0336,0336,0347,0337,0337,0337,0337,",
+    "table": []
+}
+</json>
+-->
+    <line x1="250" y1="250" x2="250" y2="159" style="stroke:black;stroke-width:2" />
+    <circle cx="250" cy = "250" r = "5.681818181818182" stroke = "black" stroke-width = "2" fill = "black" />
+</svg>

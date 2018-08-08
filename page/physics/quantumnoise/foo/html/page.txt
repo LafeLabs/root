@@ -1,1 +1,1 @@
-new page
+<a href  = "../">../</a>

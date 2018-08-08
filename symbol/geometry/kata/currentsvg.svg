@@ -11,63 +11,31 @@
     "svgwidth": 500,
     "svgheight": 500,
     "unit": 100,
-    "x0": 684,
-    "y0": 399,
+    "x0": 615.5,
+    "y0": 359,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0330,0332,0332,0336,01101,01146,01146,01101,01146,01146,01101,01146,01146,01101,",
+    "glyph": "0337,0341,0304,0336,0350,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0330,0341,0331,0335,0310,0337,0341,0336,0336,0337,0337,0337,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,",
     "table": []
 }
 </json>
 -->
-    <line x1="50" y1="150" x2="65" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="81" y1="150" x2="65" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="75" y1="132" x2="56" y2="132" style="stroke:black;stroke-width:4" />
-    <circle cx="81" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
-    <circle cx="50" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
-    <line x1="93" y1="150" x2="93" y2="125" style="stroke:black;stroke-width:4" />
-    <line x1="93" y1="125" x2="93" y2="119" style="stroke:black;stroke-width:4" />
-  <path d="M93.40169943749473 118.75           A6.249999999999999 6.249999999999999 0 0 1 105.90169943749473 118.75" fill = "none" stroke = "black" stroke-width = "4" />
-    <line x1="93" y1="131" x2="100" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="93" y1="131" x2="87" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="125" y1="150" x2="125" y2="125" style="stroke:black;stroke-width:4" />
-    <line x1="125" y1="125" x2="125" y2="119" style="stroke:black;stroke-width:4" />
-  <path d="M124.65169943749473 118.75           A6.249999999999999 6.249999999999999 0 0 1 137.15169943749473 118.75" fill = "none" stroke = "black" stroke-width = "4" />
-    <line x1="125" y1="131" x2="131" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="125" y1="131" x2="118" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="143" y1="150" x2="159" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="174" y1="150" x2="159" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="168" y1="132" x2="149" y2="132" style="stroke:black;stroke-width:4" />
-    <circle cx="174" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
-    <circle cx="143" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
-    <line x1="187" y1="150" x2="187" y2="125" style="stroke:black;stroke-width:4" />
-    <line x1="187" y1="125" x2="187" y2="119" style="stroke:black;stroke-width:4" />
-  <path d="M186.80339887498945 118.75           A6.249999999999999 6.249999999999999 0 0 1 199.30339887498945 118.75" fill = "none" stroke = "black" stroke-width = "4" />
-    <line x1="187" y1="131" x2="193" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="187" y1="131" x2="181" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="218" y1="150" x2="218" y2="125" style="stroke:black;stroke-width:4" />
-    <line x1="218" y1="125" x2="218" y2="119" style="stroke:black;stroke-width:4" />
-  <path d="M218.05339887498945 118.75           A6.249999999999999 6.249999999999999 0 0 1 230.55339887498945 118.75" fill = "none" stroke = "black" stroke-width = "4" />
-    <line x1="218" y1="131" x2="224" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="218" y1="131" x2="212" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="237" y1="150" x2="252" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="268" y1="150" x2="252" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="262" y1="132" x2="243" y2="132" style="stroke:black;stroke-width:4" />
-    <circle cx="268" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
-    <circle cx="236" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
-    <line x1="280" y1="150" x2="280" y2="125" style="stroke:black;stroke-width:4" />
-    <line x1="280" y1="125" x2="280" y2="119" style="stroke:black;stroke-width:4" />
-  <path d="M280.2050983124842 118.75           A6.249999999999999 6.249999999999999 0 0 1 292.7050983124842 118.75" fill = "none" stroke = "black" stroke-width = "4" />
-    <line x1="280" y1="131" x2="286" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="280" y1="131" x2="274" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="311" y1="150" x2="311" y2="125" style="stroke:black;stroke-width:4" />
-    <line x1="311" y1="125" x2="311" y2="119" style="stroke:black;stroke-width:4" />
-  <path d="M311.4550983124842 118.75           A6.249999999999999 6.249999999999999 0 0 1 323.9550983124842 118.75" fill = "none" stroke = "black" stroke-width = "4" />
-    <line x1="311" y1="131" x2="318" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="311" y1="131" x2="305" y2="131" style="stroke:black;stroke-width:4" />
-    <line x1="330" y1="150" x2="346" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="361" y1="150" x2="346" y2="102" style="stroke:black;stroke-width:4" />
-    <line x1="355" y1="132" x2="336" y2="132" style="stroke:black;stroke-width:4" />
-    <circle cx="361" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
-    <circle cx="330" cy = "100" r = "6.249999999999999" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="250" cy = "250" r = "200" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="250" cy = "150" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="321" cy = "179" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="350" cy = "250" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="321" cy = "321" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="250" cy = "350" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="179" cy = "321" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="150" cy = "250" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="179" cy = "179" r = "100" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="250" cy = "250" r = "141.4213562373095" stroke = "black" stroke-width = "4" fill = "none" />
+    <line x1="250" y1="250" x2="250" y2="50" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="391" y2="109" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="450" y2="250" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="391" y2="391" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="250" y2="450" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="109" y2="391" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="50" y2="250" style="stroke:black;stroke-width:4" />
+    <line x1="250" y1="250" x2="109" y2="109" style="stroke:black;stroke-width:4" />
 </svg>

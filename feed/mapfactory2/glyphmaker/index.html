@@ -1070,17 +1070,22 @@ function doTheThing(localCommand){
     <td>
         <a href = "feededitor.php?path=mapfactory2/glyphmaker/">EDIT</a>    
     </td>
-</tr>    
+</tr>
 <tr>
     <td>
         <a href = "index.php?path=mapfactory2/mapx1y1/">PREV FEED(mapfactory2/mapx1y1/)</a>
     </td>
-</tr>    
+</tr>
 <tr>
     <td>
         <a href = "index.php?path=mapfactory2/glyphmap/">GLYPHMAP</a>  
     </td>
-</tr>    
+</tr>
+<tr>
+    <td>
+        <a href = "../symbol/index.php?path=mapfactory2/&backlink=../feed/index.php?path=mapfactory2/glyphmaker/">SYMBOL EDITOR</a>
+    </td>
+</tr>
 </table>
 
 <table id = "pantable">
@@ -1093,11 +1098,13 @@ function doTheThing(localCommand){
 <div class = "button" id = "backbutton">BACK</div>
 <div class = "button" id = "fwdbutton">FWD</div>
 <div class = "button" id = "publishbutton">PUBLISH</div>
+
 <table id = "inputtable">
     <tr>
-        <td>url:</td><td><input/></td>
+        <td>unit in feet:</td><td><input value = "555"/></td>
     </tr>
 </table>
+
 <img id = "mainImage"/>
 <canvas id = "mainCanvas"></canvas>
 
@@ -1132,14 +1139,25 @@ httpc.onreadystatechange = function() {
         currentGlyph = jsonglyphdata.glyph;
     }
 };
-
 httpc.open("GET", "fileloader.php?filename=" + jsonfilename, true);
 httpc.send();
 
 
+jsonfilename = "../symbol/mapfactory2/json/stylejson.txt";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        styleJSON = JSON.parse(this.responseText);
+    }
+};
+httpc.open("GET", "fileloader.php?filename=" + jsonfilename, true);
+httpc.send();
 
 
 function init(){
+    
+
+    scalePower = 1;
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
     ctx = document.getElementById("mainCanvas").getContext("2d");
     ctx.strokeStyle= "red";
@@ -1158,23 +1176,28 @@ function init(){
     document.getElementById("mainImage").width = imageWidth;
     document.getElementById("mainCanvas").width = document.getElementById("mainImage").width;
     document.getElementById("mainCanvas").height = document.getElementById("mainImage").height;
-    x0 = 0.5*document.getElementById("mainImage").width;
-    y0 = 0.5*document.getElementById("mainImage").height;
+    x0 = document.getElementById("mainImage").width*jsondata[mapIndex].x0overwidth;
+    y0 = document.getElementById("mainImage").width*jsondata[mapIndex].y0overwidth;
     x = x0;
     y = y0;
 
+    lat0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[0]);
+    lon0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[1]);
+    feetperdegree = 364538;
+    unitfeet = parseFloat(Math.round(inputs[0].value));
+    feetperpixel = jsondata[mapIndex].widthfeet/imageWidth;
+    unitpixelsinherited = unitfeet/feetperpixel;
+    unit = unitpixelsinherited;
+    redraw();
 
 }
 
 
 
 document.getElementById("mainImage").onload = function(){
-    x0 = 0.5*document.getElementById("mainImage").width;
-    y0 = 0.5*document.getElementById("mainImage").height;
-    x = x0;
-    y = y0;
     document.getElementById("mainCanvas").height = document.getElementById("mainImage").height;
     redraw();
+
 }
 
 
@@ -1185,18 +1208,24 @@ document.getElementById("mainImage").onload = function(){
 //root symbology for "map".  to keep it simple, this is only 8 symbols(023x), made up from 
 //various "helper" symbols(022x), and there is a default table that can get used in most cases, with basic map legend graphical elements, e.g. Metro "M", bathroom sign. 
 //This also means a shape table editor must be linked to this feed node.
-
+//just get data from a speicific symbol direcotry, which is linked to a shape table editor, 
+//link to the generator using the link maker
 
 function redraw(){
-    ctx.clearRect(0,0,2*x0,2*y0);
-    ctx.lineWidth = 2;    	
-    ctx.beginPath();
-    ctx.arc(x, y, 4, 0, 2 * Math.PI);
-    ctx.closePath();
-    ctx.stroke();
+    
+    ctx.clearRect(0,0,document.getElementById("mainImage").width,document.getElementById("mainImage").height);
+
+//    ctx.lineWidth = 2;    	
+  //  ctx.beginPath();
+    //ctx.arc(x, y, 4, 0, 2 * Math.PI);
+    //ctx.closePath();
+//    ctx.stroke();
+
+    side = scalePower*unit;
+    theta = theta0 + deltaangle;
+
     drawGlyph(currentGlyph);
 }
-
 
 mc = new Hammer(document.getElementById("mainCanvas"));
 mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
@@ -1226,13 +1255,14 @@ mc3 = new Hammer(pans[2]);
 mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc3.on("panleft panright panup pandown tap press", function(ev) {
     deltafontsize = ev.deltaX/5;
+    scalePower = Math.pow(1.1,Math.round(ev.deltaX/5));
     redraw();
 });
 
 mc4 = new Hammer(pans[3]);
 mc4.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc4.on("panleft panright panup pandown tap press", function(ev) {
-    deltaangle = Math.PI*ev.deltaX/10;
+    deltaangle = Math.PI*ev.deltaX/200;
     redraw();
 });
 
@@ -1241,7 +1271,7 @@ document.getElementById("publishbutton").onclick = function(){
 
     jsonoutput = {};
 
-/*    jsonoutput.imgurl = jsondata[mapIndex].imgurl;
+    jsonoutput.imgurl = jsondata[mapIndex].imgurl;
     jsonoutput.marker0 = jsondata[mapIndex].marker0;
     jsonoutput.marker1 = jsondata[mapIndex].marker1;
     jsonoutput.latlon0 = jsondata[mapIndex].latlon0;
@@ -1250,19 +1280,29 @@ document.getElementById("publishbutton").onclick = function(){
     jsonoutput.y0overwidth = jsondata[mapIndex].y0overwidth;
     jsonoutput.x1overwidth = jsondata[mapIndex].x1overwidth;
     jsonoutput.y1overwidth = jsondata[mapIndex].y1overwidth;
-    jsonoutput.widthfeet = jsondata[mapIndex].widthfeet;*/
+    jsonoutput.widthfeet = jsondata[mapIndex].widthfeet;
 
     lat0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[0]);
     lon0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[1]);
     feetperdegree = 364538;
+    unitfeet = parseFloat(Math.round(inputs[0].value));
     feetperpixel = jsondata[mapIndex].widthfeet/imageWidth;
-    lon = lon0 + (x - jsondata[mapIndex].x0overwidth*imageWidth)*feetperpixel/(Math.cos(Math.PI*lat0/180)*feetperdegree);
-    lat = lat0 - (y - jsondata[mapIndex].y0overwidth*imageWidth)*feetperpixel/feetperdegree;
     
-    jsonoutput.latlon = lat.toString() + "," + lon.toString();
-    jsonoutput.url = inputs[0].value;
-    jsonoutput.angle = deltaangle;
-    jsonoutput.widthfeet = (50 + deltafontsize)*feetperpixel;
+    unitpixelsinherited = unitfeet/feetperpixel;
+    sideoverunit = side/unitpixelsinherited;
+    
+    jsonoutput.latlon0 = jsondata[mapIndex].latlon0;
+    jsonoutput.unitfeet = unitfeet;
+
+    angleGlyph = angle2glyph(deltaangle);
+    
+    positionGlyph = "";
+    positionGlyph = xy2glyph();
+    
+    jsonoutput.angleGlyph = angleGlyph;
+    jsonoutput.positionGlyph = positionGlyph;
+    jsonoutput.rawGlyph = currentGlyph;
+    jsonoutput.glyph = "0300," + positionGlyph + angleGlyph + currentGlyph;
 
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
@@ -1286,6 +1326,15 @@ document.getElementById("fwdbutton").onclick = function(){
         mapIndex = 0;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    x0 = document.getElementById("mainImage").width*jsondata[mapIndex].x0overwidth;
+    y0 = document.getElementById("mainImage").width*jsondata[mapIndex].y0overwidth;
+    x = x0;
+    y = y0;
+    
+    unitfeet = parseFloat(Math.round(inputs[0].value));
+    feetperpixel = jsondata[mapIndex].widthfeet/imageWidth;
+    unitpixelsinherited = unitfeet/feetperpixel;
+    unit = unitpixelsinherited;
 }
 
 document.getElementById("backbutton").onclick = function(){
@@ -1294,10 +1343,96 @@ document.getElementById("backbutton").onclick = function(){
         mapIndex = jsondata.length - 1;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    x0 = document.getElementById("mainImage").width*jsondata[mapIndex].x0overwidth;
+    y0 = document.getElementById("mainImage").width*jsondata[mapIndex].y0overwidth;
+    x = x0;
+    y = y0;
+    
+    unitfeet = parseFloat(Math.round(inputs[0].value));
+    feetperpixel = jsondata[mapIndex].widthfeet/imageWidth;
+    unitpixelsinherited = unitfeet/feetperpixel;
+    unit = unitpixelsinherited;
+
 }
 
 inputs[0].onchange = function(){
-    document.getElementById("newImage").src = this.value;
+    unitfeet  = this.value;
+}
+
+function angle2glyph(anglein){
+    var angledegrees = Math.round(180*anglein/Math.PI);//convert to degrees, integer
+    var glyphout = "0305,0350,0350,0350,0352,0352,";// 72 degres/(2*2*2*3*3) = 1 degree
+    for(var index = 0;index < angledegrees;index++){
+        if(angledegrees > 0){
+            glyphout += "0335,"; //rotate one degree CW
+        }
+        else{
+            glyphout += "0334,";//rotate one degree CCW
+        }
+    }
+    glyphout += "0304,";//reset to quad symmetry
+    return glyphout;
+}
+function xy2glyph(){
+    var glyphout = "0313,";
+    
+    var xrel = (x - x0)/unitpixelsinherited;
+    var yrel = (y - y0)/unitpixelsinherited;
+    var xrelint = Math.round(xrel);
+    for(var index = 0;index < Math.abs(xrelint);index++){
+        if(xrelint > 0){
+            glyphout += "0333,";
+        }
+        else{
+            glyphout += "0332,";
+        }
+    }
+    var yrelint = Math.round(yrel);
+    for(var index = 0;index < Math.abs(yrelint);index++){
+        if(yrelint > 0){
+            glyphout += "0331,";
+        }
+        else{
+            glyphout += "0330,";
+        }
+    }
+    
+    var x32 = Math.round(32*(xrel - xrelint));
+    var y32 = Math.round(32*(yrel - yrelint));
+    glyphout += "0336,0336,0336,0336,0336,"; // 1/32nd
+    
+    for(var index = 0;index < Math.abs(x32);index++){
+        if(x32 > 0){
+            glyphout += "0333,";
+        }
+        else{
+            glyphout += "0332,";
+        }
+    }
+    for(var index = 0;index < Math.abs(y32);index++){
+        if(y32 > 0){
+            glyphout += "0331,";
+        }
+        else{
+            glyphout += "0330,";
+        }
+    }
+    glyphout += "0337,0337,0337,0337,0337,"; // 32x
+    
+    var localscale = side/unitpixelsinherited;
+    
+    scaleexponent = Math.abs(Math.round(Math.log(localscale)/Math.log(1.1)));
+    console.log(scaleexponent);
+    for(var index = 0;index < scaleexponent;index++){
+        if(localscale > 1){
+            glyphout += "0211,";
+        }
+        else{
+            glyphout += "0210,";
+        }
+    }
+    
+    return glyphout;
 }
 
 </script>
@@ -1310,7 +1445,7 @@ p{
     text-align:right;
 }
 input{
-    width:20em;
+    width:6em;
     font-size:22px;
 }
 a{

@@ -1065,32 +1065,16 @@ function doTheThing(localCommand){
 <table id = "linktable">
 <tr>
     <td>
-        <a href = "feededitor.php?path=mapfactory2/glyphmaker/">EDIT</a>    
+        <a href = "feededitor.php?path=mapfactory2/glyphmap/">EDIT</a>    
     </td>
 </tr>
 <tr>
     <td>
-        <a href = "index.php?path=mapfactory2/mapx1y1/">PREV FEED(mapfactory2/mapx1y1/)</a>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href = "index.php?path=mapfactory2/glyphmap/">GLYPHMAP</a>  
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href = "../symbol/index.php?path=mapfactory2/&backlink=../feed/index.php?path=mapfactory2/glyphmaker/">SYMBOL EDITOR</a>
+        <a href = "index.php?path=mapfactory2/glyphmap/">PREV FEED</a>
     </td>
 </tr>
 </table>
 
-<table id = "pantable">
-    <tr><td>pan x</td></tr>
-    <tr><td>pan y</td></tr>
-    <tr><td>scale</td></tr>
-    <tr><td>rotate</td></tr>
-</table>
 
 <div class = "button" id = "backbutton">BACK</div>
 <div class = "button" id = "fwdbutton">FWD</div>
@@ -1114,34 +1098,7 @@ mapIndex = 0;
 doTheThing(06);
 doTheThing(07);
 
-styleJSON = {
-    "color0":"black",
-    "fill0":"black",
-    "line0":4,
-    "color1":"black",
-    "fill1":"black",
-    "line1":10,
-    "color2":"red",
-    "fill2":"red",
-    "line2":6,
-    "color3":"white",
-    "fill3":"white",
-    "line3":4,
-    "color4":"yellow",
-    "fill4":"yellow",
-    "line4":2,
-    "color5":"green",
-    "fill5":"green",
-    "line5":2,
-    "color6":"blue",
-    "fill6":"blue",
-    "line6":2,
-    "color7":"purple",
-    "fill7":"purple",
-    "line7":6
-}
-
-jsondir = "mapfactory2/mapx1y1/json/";
+jsondir = "mapfactory2/glyphmaker/json/";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -1180,8 +1137,6 @@ httpc.send();
 
 function init(){
     
-    angleGlyph = "";
-    positionGlyph = "";
     scalePower = 1;
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
     ctx = document.getElementById("mainCanvas").getContext("2d");
@@ -1201,21 +1156,10 @@ function init(){
     document.getElementById("mainImage").width = imageWidth;
     document.getElementById("mainCanvas").width = document.getElementById("mainImage").width;
     document.getElementById("mainCanvas").height = document.getElementById("mainImage").height;
-    x0 = imageWidth*jsondata[mapIndex].x0overwidth;
-    y0 = imageWidth*jsondata[mapIndex].y0overwidth;
+    x0 = document.getElementById("mainImage").width*jsondata[mapIndex].x0overwidth;
+    y0 = document.getElementById("mainImage").width*jsondata[mapIndex].y0overwidth;
     x = x0;
     y = y0;
-    xcontrol = x0;
-    ycontrol = y0;
-
-    lat0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[0]);
-    lon0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[1]);
-    feetperdegree = 364538;
-    unitfeet = parseFloat(Math.round(inputs[0].value));
-    feetperpixel = jsondata[mapIndex].widthfeet/imageWidth;
-    unitpixelsinherited = unitfeet/feetperpixel;
-    unit = unitpixelsinherited;
-    redraw();
 
 }
 
@@ -1248,73 +1192,16 @@ function redraw(){
     //ctx.closePath();
 //    ctx.stroke();
 
-    doTheThing(0300);
-    drawGlyph(xy2glyph(xcontrol,ycontrol) + angle2glyph(deltaangle) + currentGlyph);
+    side = scalePower*unit;
+    theta = theta0 + deltaangle;
+
+    drawGlyph(currentGlyph);
 }
-
-xcontrol = x0;
-ycontrol = y0;
-
-mc = new Hammer(document.getElementById("mainCanvas"));
-mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-mc.on("panleft panright panup pandown tap press", function(ev) {
-    xcontrol = x0 + ev.deltaX;
-    ycontrol = y0 + ev.deltaY;
-    redraw();
-});
-
-pans = document.getElementById("pantable").getElementsByTagName("TD");
-
-mc1 = new Hammer(pans[0]);
-mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-mc1.on("panleft panright panup pandown tap press", function(ev) {
-    xcontrol = x0 + ev.deltaX;
-    redraw();
-});
-
-mc2 = new Hammer(pans[1]);
-mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-mc2.on("panleft panright panup pandown tap press", function(ev) {
-    ycontrol = y0 + ev.deltaX;
-    redraw();
-});
-
-mc3 = new Hammer(pans[2]);
-mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-mc3.on("panleft panright panup pandown tap press", function(ev) {
-
-    if(ev.deltaX >= 0){
-        scalePower = Math.round(Math.pow(1.1,Math.round(ev.deltaX/5)));
-    }
-    else{
-        scalePower = -Math.round(1/Math.pow(1.1,Math.round(ev.deltaX/5)));
-    }
-    redraw();
-
-});
-
-mc4 = new Hammer(pans[3]);
-mc4.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-mc4.on("panleft panright panup pandown tap press", function(ev) {
-    deltaangle = Math.PI*ev.deltaX/200;
-    redraw();
-});
 
 
 document.getElementById("publishbutton").onclick = function(){
 
     jsonoutput = {};
-
-    jsonoutput.imgurl = jsondata[mapIndex].imgurl;
-    jsonoutput.marker0 = jsondata[mapIndex].marker0;
-    jsonoutput.marker1 = jsondata[mapIndex].marker1;
-    jsonoutput.latlon0 = jsondata[mapIndex].latlon0;
-    jsonoutput.latlon1 = jsondata[mapIndex].latlon1;
-    jsonoutput.x0overwidth = jsondata[mapIndex].x0overwidth;
-    jsonoutput.y0overwidth = jsondata[mapIndex].y0overwidth;
-    jsonoutput.x1overwidth = jsondata[mapIndex].x1overwidth;
-    jsonoutput.y1overwidth = jsondata[mapIndex].y1overwidth;
-    jsonoutput.widthfeet = jsondata[mapIndex].widthfeet;
 
     lat0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[0]);
     lon0 = parseFloat(jsondata[mapIndex].latlon0.split(",")[1]);
@@ -1364,15 +1251,6 @@ document.getElementById("fwdbutton").onclick = function(){
     y0 = document.getElementById("mainImage").width*jsondata[mapIndex].y0overwidth;
     x = x0;
     y = y0;
-    xcontrol = x0;
-    ycontrol = y0;
-    deltaangle = 0;
-    scalePower =0;
-
-    unitfeet = parseFloat(Math.round(inputs[0].value));
-    feetperpixel = jsondata[mapIndex].widthfeet/imageWidth;
-    unitpixelsinherited = unitfeet/feetperpixel;
-    unit = unitpixelsinherited;
 }
 
 document.getElementById("backbutton").onclick = function(){
@@ -1385,25 +1263,14 @@ document.getElementById("backbutton").onclick = function(){
     y0 = document.getElementById("mainImage").width*jsondata[mapIndex].y0overwidth;
     x = x0;
     y = y0;
-    xcontrol = x0;
-    ycontrol = y0;
-    deltaangle = 0;
-    scalePower =0;
-    unitfeet = parseFloat(Math.round(inputs[0].value));
-    feetperpixel = jsondata[mapIndex].widthfeet/imageWidth;
-    unitpixelsinherited = unitfeet/feetperpixel;
-    unit = unitpixelsinherited;
 
 }
 
-inputs[0].onchange = function(){
-    unitfeet  = this.value;
-}
 
 function angle2glyph(anglein){
     var angledegrees = Math.round(180*anglein/Math.PI);//convert to degrees, integer
     var glyphout = "0305,0350,0350,0350,0352,0352,";// 72 degres/(2*2*2*3*3) = 1 degree
-    for(var index = 0;index < Math.abs(angledegrees);index++){
+    for(var index = 0;index < angledegrees;index++){
         if(angledegrees > 0){
             glyphout += "0335,"; //rotate one degree CW
         }
@@ -1414,11 +1281,11 @@ function angle2glyph(anglein){
     glyphout += "0304,";//reset to quad symmetry
     return glyphout;
 }
-function xy2glyph(localx, localy){
+function xy2glyph(){
     var glyphout = "0313,";
     
-    var xrel = (localx - x0)/unitpixelsinherited;
-    var yrel = (localy - y0)/unitpixelsinherited;
+    var xrel = (x - x0)/unitpixelsinherited;
+    var yrel = (y - y0)/unitpixelsinherited;
     var xrelint = Math.round(xrel);
     for(var index = 0;index < Math.abs(xrelint);index++){
         if(xrelint > 0){
@@ -1460,9 +1327,12 @@ function xy2glyph(localx, localy){
     }
     glyphout += "0337,0337,0337,0337,0337,"; // 32x
     
+    var localscale = side/unitpixelsinherited;
     
-    for(var index = 0;index < Math.abs(scalePower);index++){
-        if(scalePower > 1){
+    scaleexponent = Math.abs(Math.round(Math.log(localscale)/Math.log(1.1)));
+    console.log(scaleexponent);
+    for(var index = 0;index < scaleexponent;index++){
+        if(localscale > 1){
             glyphout += "0211,";
         }
         else{

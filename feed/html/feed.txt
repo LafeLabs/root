@@ -1,63 +1,8 @@
-<p><a href = "editor.php">editor.php</a></p>
-
-<div id = "feed">
-    
-</div>
-<script>
-
-jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
-    
-    for(var index = 0;index < jsondata.length;index++){
-        var newdiv = document.createElement("DIV");
-        newdiv.className = "unit";
-        document.getElementById("feed").appendChild(newdiv);
-        var newimg1 = document.createElement("IMG");
-        newimg1.src = jsondata[index].bottomimage;
-        newimg1.className = "bottomimage";
-        var newimg2 = document.createElement("IMG");
-        newimg2.src = jsondata[index].topimage;
-        newimg2.className = "topimage";
-        newdiv.appendChild(newimg1);
-        newdiv.appendChild(newimg2);
-        phi = jsondata[index].phi;
-        alpha = Math.cos(phi)*Math.cos(phi);
-        beta = Math.sin(phi)*Math.sin(phi);
-        newimg2.style.opacity = alpha.toString();        
-        newimg1.style.opacity = beta.toString();        
-
-    }
-    
-
-</script>
-<style>
-a{
-    position:absolute;
-    top:0px;
-    z-index:3;
-}
-.unit{
-    position:relative;
-    width:80%;
-    margin:auto;
-}
-.bottomimage{
-   position:relative;
-    
-}
-.topimage{
-   position:absolute;
-}
-img{
-   top:0px;
-   width:100%;
-   left:0px;
-}
-#feed{
-    position:absolute;
-    left:0px;
-    top:2em;
-    bottom:0px;
-    right:0px;
-    overflow:scroll;
-}
-</style>
+<p>
+    <a href = "editor.php">editor.php</a></p>
+<p>
+    <a href = "feededitor.php">feededitor.php</a>
+</p>
+<p>
+    <a href = "tree.php">tree.php</a>
+</p>
