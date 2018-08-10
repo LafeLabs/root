@@ -1067,15 +1067,18 @@ function doTheThing(localCommand){
     <td>
         <a href = "feededitor.php?path=mapfactory2/glyphmaker/">EDIT</a>    
     </td>
-</tr>
-<tr>
     <td>
-        <a href = "index.php?path=mapfactory2/mapx1y1/">PREV FEED(mapfactory2/mapx1y1/)</a>
+        <a href = "mapfactory2/glyphmaker/svg/index.html">SVGFEED</a>
     </td>
 </tr>
 <tr>
     <td>
-        <a href = "index.php?path=mapfactory2/glyphmap/">GLYPHMAP</a>  
+        <a href = "index.php?path=mapfactory2/mapx1y1/">PREV FEED</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href = "index.php?path=mapfactory2/glyphmap/">NEXT FEED</a>  
     </td>
 </tr>
 <tr>
@@ -1094,7 +1097,9 @@ function doTheThing(localCommand){
 
 <div class = "button" id = "backbutton">BACK</div>
 <div class = "button" id = "fwdbutton">FWD</div>
-<div class = "button" id = "publishbutton">PUBLISH</div>
+<div class = "button" id = "publishbutton">PUBLISH JSON</div>
+<div class = "button" id = "publishsvgbutton">PUBLISH SVG</div>
+
 
 <table id = "inputtable">
     <tr>
@@ -1241,16 +1246,19 @@ document.getElementById("mainImage").onload = function(){
 function redraw(){
     
     ctx.clearRect(0,0,document.getElementById("mainImage").width,document.getElementById("mainImage").height);
-
-//    ctx.lineWidth = 2;    	
-  //  ctx.beginPath();
-    //ctx.arc(x, y, 4, 0, 2 * Math.PI);
-    //ctx.closePath();
-//    ctx.stroke();
+    
+    if(localjsondata.length != "undefined"){
+        for(var index = 0;index < localjsondata.length;index++){
+            if( localjsondata[index].imgurl == jsondata[mapIndex].imgurl){
+                drawGlyph(localjsondata[index].glyph);
+            }
+        }
+    }
 
     doTheThing(0300);
     drawGlyph(xy2glyph(xcontrol,ycontrol) + angle2glyph(deltaangle) + currentGlyph);
 }
+
 
 xcontrol = x0;
 ycontrol = y0;
@@ -1331,7 +1339,7 @@ document.getElementById("publishbutton").onclick = function(){
     angleGlyph = angle2glyph(deltaangle);
     
     positionGlyph = "";
-    positionGlyph = xy2glyph();
+    positionGlyph = xy2glyph(x,y);
     
     jsonoutput.angleGlyph = angleGlyph;
     jsonoutput.positionGlyph = positionGlyph;
@@ -1352,6 +1360,45 @@ document.getElementById("publishbutton").onclick = function(){
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send();//send text to filesaver.php
     
+}
+
+document.getElementById("publishsvgbutton").onclick = function(){
+    
+    svgwidth = document.getElementById("mainImage").width;
+    svgheight = document.getElementById("mainImage").height;
+
+    currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+    currentSVG += "\n<!--\n<json>\n" + JSON.stringify(jsondata[mapIndex],null,"    ") + "\n</json>\n-->\n";
+
+    if(localjsondata.length != "undefined"){
+        for(var index = 0;index < localjsondata.length;index++){
+            if( localjsondata[index].imgurl == jsondata[mapIndex].imgurl){
+                drawGlyph(localjsondata[index].glyph);
+            }
+        }
+    }
+    currentSVG += "</svg>";
+    timestamp = Math.round((new Date().getTime())/1000);
+    
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    if(path.length > 1){
+        httpc.send("data="+currentSVG+"&filename=" + path + "svg/svg" + timestamp + ".svg");//send text to filesaver.php
+    }
+    else{
+        httpc.send("data="+currentSVG+"&filename=" + "currentsvg.svg");//send text to filesaver.php
+    }
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makesvgindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+
+    
+    redraw();   
 }
 
 document.getElementById("fwdbutton").onclick = function(){
@@ -1517,8 +1564,16 @@ a{
     position:absolute;
     z-index:3;
     bottom:0px;
-    left:35%;
-    width:30%;
+    left:25%;
+    width:10%;
+}
+#publishsvgbutton{
+    position:absolute;
+    z-index:3;
+    bottom:0px;
+    left:45%;
+    width:10%;
+    
 }
 #flowdecklink{
     position:relative;

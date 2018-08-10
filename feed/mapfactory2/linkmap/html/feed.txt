@@ -1,0 +1,231 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+
+<table id = "linktable">
+<tr>
+    <td>
+        <a style = "position:static" href = "feededitor.php?path=mapfactory2/linkmap/">EDIT CODE</a>    
+    </td>
+</tr>    
+<tr>
+    <td>
+        <a style = "position:static" href = "index.php?path=mapfactory2/linkmaker/">PREV</a>
+    </td>
+</tr>    
+</table>
+
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<div id = "linkcontainer">
+<img id = "mainImage"/>
+</div>
+
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+mapIndex = 0;
+if(innerWidth < innerHeight){
+    smallerWidth = innerWidth;    
+}
+else{
+    smallerWidth = innerHeight;
+}
+imageWidth = 0.7*smallerWidth;
+document.getElementById("mainImage").style.width = imageWidth.toString() + "px";
+
+jsondir = "mapfactory2/linkmaker/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+
+function init(){
+    document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    linkmap = {};
+    linkmap.imgurl = jsondata[mapIndex].imgurl;
+    linkmap.latlon0 = jsondata[mapIndex].latlon0;
+    linkmap.latlon1 = jsondata[mapIndex].latlon1;
+    linkmap.marker0 = jsondata[mapIndex].marker0;
+    linkmap.marker1 = jsondata[mapIndex].marker1;
+    linkmap.widthfeet = jsondata[mapIndex].widthfeet;
+    linkmap.x0overwidth = jsondata[mapIndex].x0overwidth;
+    linkmap.x1overwidth = jsondata[mapIndex].x1overwidth;
+    linkmap.y0overwidth = jsondata[mapIndex].y0overwidth;
+    linkmap.y1overwidth = jsondata[mapIndex].y1overwidth;
+    linkmap.links = [];
+    for(var index = 0;index < jsondata.length;index++){
+        if(jsondata[index].imgurl == jsondata[mapIndex].imgurl){
+            var foo = {};
+            foo.latlon = jsondata[index].latlon;
+            foo.url = jsondata[index].url;
+            foo.text = jsondata[index].text;
+            foo.fontfeet = jsondata[index].fontfeet;
+            foo.angle = jsondata[index].angle;
+            foo.imgurl = jsondata[index].imgurl;
+            linkmap.links.push(foo);
+        }
+    }
+    
+}
+
+
+document.getElementById("publishbutton").onclick = function(){
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(linkmap,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= jsondata.length){
+        mapIndex = 0;
+    }
+    document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    
+    for(var index = 0;index < linkarray.length;index++){
+        if(linkarray[index].className == jsondata[mapIndex].imgurl){
+            linkarray[index].style.display = "block";
+        }   
+        else{
+            linkarray[index].style.display = "none";
+        }
+    }
+}
+
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = jsondata.length - 1;
+    }
+    document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+        for(var index = 0;index < linkarray.length;index++){
+        if(linkarray[index].className == jsondata[mapIndex].imgurl){
+            linkarray[index].style.display = "block";
+        }   
+        else{
+            linkarray[index].style.display = "none";
+        }
+    }
+
+}
+
+
+</script>
+<style>
+#mainLink{
+    position:absolute;
+    top:0px;
+}
+
+p{
+    text-align:right;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+a{
+    z-index:3;
+    position:absolute;
+}
+#mainCanvas{
+    position:absolute;
+    z-index:0;
+    left:0px;
+    top:0px;
+}
+#mainImage{
+   position:absolute;
+   z-index:-1;
+   left:0px;
+   top:0px;
+}
+#backbutton{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    z-index:3;
+}
+#fwdbutton{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index:3;
+}
+#publishbutton{
+    position:absolute;
+    z-index:3;
+    bottom:0px;
+    left:35%;
+    width:30%;
+}
+#flowdecklink{
+    position:relative;
+    z-index:3;
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+    height:2em;
+    padding-left:2em;
+    padding-right:2em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#inputtable{
+    position:absolute;
+    right:0px;
+    bottom:3em;
+}
+#linktable{
+    position:absolute;
+    z-index:2;
+    right:0px;
+    top:0px;
+}
+#pantable{
+    position:absolute;
+    z-index:2;
+    top:5em;
+    right:1em;
+}
+#pantable td{
+    height:100px;
+    width:300px;
+    font-size:50px;
+    border:solid;
+    text-align:center;
+}
+#linkcontainer{
+    position:absolute;
+    z-index:-3;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    top:0px;
+}
+
+</style>

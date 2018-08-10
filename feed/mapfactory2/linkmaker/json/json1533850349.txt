@@ -1,0 +1,20 @@
+{
+    "imgurl": "https://i.imgur.com/4vdXYlk.jpg",
+    "marker0": "h and 11th",
+    "marker1": "k and 11th",
+    "latlon0": "38.899825, -77.027046",
+    "latlon1": "38.902565, -77.027027",
+    "x0overwidth": 0.5688524590163935,
+    "y0overwidth": 0.47950819672131145,
+    "x1overwidth": 0.559016393442623,
+    "y1overwidth": 0.0680327868852459,
+    "widthfeet": 2426.787560282397,
+    "latlon": "38.89568785168903,-77.0250362843581",
+    "text": "FBI",
+    "url": "www.fbi.gov",
+    "angle": 0,
+    "fontfeet": 95.5770252886014,
+    "xoverwidth": 0.8037952022914431,
+    "yoverwidth": 1.1009667024704621,
+    "fontoverwidth": 0.03938417472252059
+}

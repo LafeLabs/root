@@ -4,17 +4,17 @@
 <table id = "linktable">
 <tr>
     <td>
-        <a href = "feededitor.php?path=mapfactory2/linkmaker/">EDIT</a>    
+        <a style = "position:static" href = "feededitor.php?path=mapfactory2/linkmaker/">EDIT CODE</a>    
     </td>
 </tr>    
 <tr>
     <td>
-        <a href = "index.php?path=mapfactory2/mapx1y1/">PREV FEED(mapfactory2/mapx0y0/)</a>
+        <a style = "position:static" href = "index.php?path=mapfactory2/mapx1y1/">PREV</a>
     </td>
 </tr>    
 <tr>
     <td>
-        <a href = "index.php?path=mapfactory2/linkmap/">LINKS</a>  
+        <a style = "position:static" href = "index.php?path=mapfactory2/linkmap/">NEXT</a>  
     </td>
 </tr>    
 </table>
@@ -37,7 +37,9 @@
         <td>url:</td><td><input/></td>
     </tr>
 </table>
+<div id = "linkcontainer">
 <img id = "mainImage"/>
+</div>
 
 <a id = "mainLink" href= "index.php?path=mapfactory2/linkmaker/">link</a>
 
@@ -62,6 +64,35 @@ httpc.send();
 
 function init(){
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    
+    if(innerWidth < innerHeight){
+        smallerWidth = innerWidth;
+    }
+    else{
+        smallerWidth = innerHeight;
+    }
+    imageWidth = 0.7*smallerWidth;
+
+    document.getElementById("mainImage").style.width = imageWidth.toString() + "px";
+    linkarray = [];
+    for(var index = 0;index < localjsondata.length;index++){
+        var newa = document.createElement("A");
+        newa.innerHTML = localjsondata[index].text;
+        newa.href = localjsondata[index].url;
+        newa.style.left = (localjsondata[index].xoverwidth*imageWidth).toString() + "px";
+        newa.style.top = (localjsondata[index].yoverwidth*imageWidth).toString() + "px";
+        newa.style.fontSize = (localjsondata[index].fontoverwidth*imageWidth).toString() + "px";    
+        newa.style.transform = "rotate(" + (localjsondata[index].angle).toString() + "deg)";
+        newa.className = localjsondata[index].imgurl;
+        document.body.appendChild(newa);
+        if(localjsondata[index].imgurl == jsondata[mapIndex].imgurl){
+            newa.style.display = "block";
+        }
+        else{
+            newa.style.display = "none";
+        }
+        linkarray.push(newa);
+    }
 }
 
 if(innerWidth < innerHeight){
@@ -87,10 +118,13 @@ document.getElementById("mainImage").onload = function(){
 }
 
 function redraw(){
+    
     document.getElementById("mainLink").style.left = (x).toString() + "px";
     document.getElementById("mainLink").style.top = (y).toString() + "px";
     document.getElementById("mainLink").style.transform = "rotate(" + (deltaangle).toString() + "deg)";
     document.getElementById("mainLink").style.fontSize = (22 + deltafontsize).toString() + "px";
+
+    
 }
 
 
@@ -159,7 +193,10 @@ document.getElementById("publishbutton").onclick = function(){
     jsonoutput.url = inputs[1].value;
     jsonoutput.angle = deltaangle;
     jsonoutput.fontfeet = (22 + deltafontsize)*feetperpixel;
-
+    jsonoutput.xoverwidth = x/imageWidth;
+    jsonoutput.yoverwidth = y/imageWidth;
+    jsonoutput.fontoverwidth = (22 + deltafontsize)/imageWidth;
+    
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
     var httpc = new XMLHttpRequest();
@@ -182,6 +219,15 @@ document.getElementById("fwdbutton").onclick = function(){
         mapIndex = 0;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+    
+    for(var index = 0;index < linkarray.length;index++){
+        if(linkarray[index].className == jsondata[mapIndex].imgurl){
+            linkarray[index].style.display = "block";
+        }   
+        else{
+            linkarray[index].style.display = "none";
+        }
+    }
 }
 
 document.getElementById("backbutton").onclick = function(){
@@ -190,6 +236,15 @@ document.getElementById("backbutton").onclick = function(){
         mapIndex = jsondata.length - 1;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
+        for(var index = 0;index < linkarray.length;index++){
+        if(linkarray[index].className == jsondata[mapIndex].imgurl){
+            linkarray[index].style.display = "block";
+        }   
+        else{
+            linkarray[index].style.display = "none";
+        }
+    }
+
 }
 
 inputs[0].onchange = function(){
@@ -205,6 +260,7 @@ inputs[1].onchange = function(){
     position:absolute;
     top:0px;
 }
+
 p{
     text-align:right;
 }
@@ -214,6 +270,7 @@ input{
 }
 a{
     z-index:3;
+    position:absolute;
 }
 #mainCanvas{
     position:absolute;
@@ -286,6 +343,14 @@ a{
     font-size:50px;
     border:solid;
     text-align:center;
+}
+#linkcontainer{
+    position:absolute;
+    z-index:-3;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    top:0px;
 }
 
 </style>

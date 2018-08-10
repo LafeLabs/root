@@ -57,7 +57,9 @@ EGO DEATH:
     <div class = "php file">php/wallhistory.txt</div>
     <div class = "php file">php/remotefeed.php</div>
     <div class = "php file">php/makejsonindex.php</div>
+    <div class = "php file">php/makesvgindex.php</div>
     <div class = "php file">php/loadjsonfeed.php</div>
+    <div class = "php file">php/loadsvgfeed.php</div>
 </div>
 
 <script>
