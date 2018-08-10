@@ -1,0 +1,35 @@
+{
+    "imgurl": "https://i.imgur.com/4vdXYlk.jpg",
+    "latlon0": "38.899825, -77.027046",
+    "latlon1": "38.902565, -77.027027",
+    "marker0": "h and 11th",
+    "marker1": "k and 11th",
+    "widthfeet": 262.40237851961473,
+    "x0overwidth": 0.5688524590163935,
+    "x1overwidth": 0.559016393442623,
+    "y0overwidth": 0.47950819672131145,
+    "y1overwidth": 0.0680327868852459,
+    "images": [
+        {
+            "latlon": "38.89558059348231,-77.0254803729776",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/David_Duchovny_2011_Shankbone.JPG",
+            "widthfeet": 262.40237851961473,
+            "angle": 0,
+            "imgurl": "https://i.imgur.com/4vdXYlk.jpg"
+        },
+        {
+            "latlon": "38.90224251987785,-77.03134540543518",
+            "url": "https://i.imgur.com/k3dSaBF.jpg",
+            "widthfeet": 217.22051201954864,
+            "angle": -180.95573684677208,
+            "imgurl": "https://i.imgur.com/4vdXYlk.jpg"
+        },
+        {
+            "latlon": "38.901908827679144,-77.02577132759038",
+            "url": "https://i.imgur.com/yNrkws9.jpg",
+            "widthfeet": 331.0440603177921,
+            "angle": 62.51769380643689,
+            "imgurl": "https://i.imgur.com/4vdXYlk.jpg"
+        }
+    ]
+}

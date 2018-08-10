@@ -1,0 +1,30 @@
+{
+    "imgurl": "https://i.imgur.com/Aabwa5e.jpg",
+    "latlon0": "38.869127, -77.053810",
+    "latlon1": "38.880451, -77.057136",
+    "marker0": "pentagon metro station",
+    "marker1": "bridge to columbia island",
+    "widthfeet": 7342.706796229608,
+    "x0overwidth": 0.46557377049180326,
+    "x1overwidth": 0.3114754098360656,
+    "y0overwidth": 0.6532786885245901,
+    "y1overwidth": 0.09754098360655737,
+    "links": [
+        {
+            "latlon": "38.87108937842469,-77.05851404829122",
+            "url": "https://www.defense.gov/",
+            "text": "TEH PENTAGON",
+            "fontfeet": 152.48012681035348,
+            "angle": 0,
+            "imgurl": "https://i.imgur.com/Aabwa5e.jpg"
+        },
+        {
+            "latlon": "38.87175646803561,-77.05821300997336",
+            "url": "https://www.defense.gov/",
+            "text": "DOD",
+            "fontfeet": 481.10108976370157,
+            "angle": 0,
+            "imgurl": "https://i.imgur.com/Aabwa5e.jpg"
+        }
+    ]
+}

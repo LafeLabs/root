@@ -236,7 +236,7 @@ document.getElementById("backbutton").onclick = function(){
         mapIndex = jsondata.length - 1;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
-        for(var index = 0;index < linkarray.length;index++){
+    for(var index = 0;index < linkarray.length;index++){
         if(linkarray[index].className == jsondata[mapIndex].imgurl){
             linkarray[index].style.display = "block";
         }   

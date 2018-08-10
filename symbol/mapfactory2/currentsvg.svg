@@ -15,9 +15,10 @@
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0325,0362,0203,0334,0203,0334,0203,0334,0203,0363,0334,",
+    "glyph": "0320,0342,",
     "table": []
 }
 </json>
 -->
-	<path d = "M250 250 L250 36 L36 36 L36 250 L250 250 Z" stroke = "green" stroke-width = "2" fill = "black" /></svg>
+    <line x1="250" y1="250" x2="250" y2="36" style="stroke:black;stroke-width:4" />
+</svg>

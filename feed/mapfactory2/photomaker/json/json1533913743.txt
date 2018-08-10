@@ -1,0 +1,18 @@
+{
+    "xoverwidth": 0.7715717866093807,
+    "yoverwidth": 0.3114930182599356,
+    "latlon": "38.87601141798634,-77.045893595735",
+    "url": "https://i.imgur.com/wEzuCDq.jpg",
+    "angle": 36.128315516282626,
+    "widthfeet": 657.2419259066961,
+    "widthoverwidth": 0.08950948800572862,
+    "imgurl": "https://i.imgur.com/Aabwa5e.jpg",
+    "marker0": "pentagon metro station",
+    "marker1": "bridge to columbia island",
+    "latlon0": "38.869127, -77.053810",
+    "latlon1": "38.880451, -77.057136",
+    "x0overwidth": 0.46557377049180326,
+    "y0overwidth": 0.6532786885245901,
+    "x1overwidth": 0.3114754098360656,
+    "y1overwidth": 0.09754098360655737
+}

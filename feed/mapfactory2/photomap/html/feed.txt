@@ -4,12 +4,12 @@
 <table id = "linktable">
 <tr>
     <td>
-        <a style = "position:static" href = "feededitor.php?path=mapfactory2/linkmap/">EDIT CODE</a>    
+        <a style = "position:static" href = "feededitor.php?path=mapfactory2/photomap/">EDIT CODE</a>    
     </td>
 </tr>    
 <tr>
     <td>
-        <a style = "position:static" href = "index.php?path=mapfactory2/linkmaker/">PREV</a>
+        <a style = "position:static" href = "index.php?path=mapfactory2/photomaker/">PREV</a>
     </td>
 </tr>    
 </table>
@@ -17,7 +17,7 @@
 <div class = "button" id = "backbutton">BACK</div>
 <div class = "button" id = "fwdbutton">FWD</div>
 <div class = "button" id = "publishbutton">PUBLISH</div>
-<div id = "linkcontainer">
+<div id = "imgcontainer">
 <img id = "mainImage"/>
 </div>
 
@@ -35,7 +35,7 @@ else{
 imageWidth = 0.7*smallerWidth;
 document.getElementById("mainImage").style.width = imageWidth.toString() + "px";
 
-jsondir = "mapfactory2/linkmaker/json/";
+jsondir = "mapfactory2/photomaker/json/";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -49,49 +49,48 @@ httpc.send();
 
 function init(){
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
-    linkmap = {};
-    linkmap.imgurl = jsondata[mapIndex].imgurl;
-    linkmap.latlon0 = jsondata[mapIndex].latlon0;
-    linkmap.latlon1 = jsondata[mapIndex].latlon1;
-    linkmap.marker0 = jsondata[mapIndex].marker0;
-    linkmap.marker1 = jsondata[mapIndex].marker1;
-    linkmap.widthfeet = jsondata[mapIndex].widthfeet;
-    linkmap.x0overwidth = jsondata[mapIndex].x0overwidth;
-    linkmap.x1overwidth = jsondata[mapIndex].x1overwidth;
-    linkmap.y0overwidth = jsondata[mapIndex].y0overwidth;
-    linkmap.y1overwidth = jsondata[mapIndex].y1overwidth;
-    linkmap.links = [];
+    imagemap = {};
+    imagemap.imgurl = jsondata[mapIndex].imgurl;
+    imagemap.latlon0 = jsondata[mapIndex].latlon0;
+    imagemap.latlon1 = jsondata[mapIndex].latlon1;
+    imagemap.marker0 = jsondata[mapIndex].marker0;
+    imagemap.marker1 = jsondata[mapIndex].marker1;
+    imagemap.widthfeet = jsondata[mapIndex].widthfeet;
+    imagemap.x0overwidth = jsondata[mapIndex].x0overwidth;
+    imagemap.x1overwidth = jsondata[mapIndex].x1overwidth;
+    imagemap.y0overwidth = jsondata[mapIndex].y0overwidth;
+    imagemap.y1overwidth = jsondata[mapIndex].y1overwidth;
+    imagemap.images = [];
     for(var index = 0;index < jsondata.length;index++){
         if(jsondata[index].imgurl == jsondata[mapIndex].imgurl){
             var foo = {};
             foo.latlon = jsondata[index].latlon;
             foo.url = jsondata[index].url;
             foo.text = jsondata[index].text;
-            foo.fontfeet = jsondata[index].fontfeet;
+            foo.widthfeet = jsondata[index].widthfeet;
             foo.angle = jsondata[index].angle;
             foo.imgurl = jsondata[index].imgurl;
-            linkmap.links.push(foo);
+            imagemap.images.push(foo);
         }
     }
     
-    linkarray = [];
+    imgarray = [];
     for(var index = 0;index < jsondata.length;index++){
-        var newa = document.createElement("A");
-        newa.innerHTML = jsondata[index].text;
-        newa.href = jsondata[index].url;
-        newa.style.left = (jsondata[index].xoverwidth*imageWidth).toString() + "px";
-        newa.style.top = (jsondata[index].yoverwidth*imageWidth).toString() + "px";
-        newa.style.fontSize = (jsondata[index].fontoverwidth*imageWidth).toString() + "px";    
-        newa.style.transform = "rotate(" + (jsondata[index].angle).toString() + "deg)";
-        newa.className = jsondata[index].imgurl;
-        document.body.appendChild(newa);
+        var newimg = document.createElement("IMG");
+        newimg.src = jsondata[index].url;
+        newimg.style.left = (jsondata[index].xoverwidth*imageWidth).toString() + "px";
+        newimg.style.top = (jsondata[index].yoverwidth*imageWidth).toString() + "px";
+        newimg.style.width = (jsondata[index].widthoverwidth*imageWidth).toString() + "px";    
+        newimg.style.transform = "rotate(" + (jsondata[index].angle).toString() + "deg)";
+        newimg.className = jsondata[index].imgurl;
+        document.body.appendChild(newimg);
         if(jsondata[index].imgurl == jsondata[mapIndex].imgurl){
-            newa.style.display = "block";
+            newimg.style.display = "block";
         }
         else{
-            newa.style.display = "none";
+            newimg.style.display = "none";
         }
-        linkarray.push(newa);
+        imgarray.push(newimg);
     }
     
 }
@@ -99,7 +98,7 @@ function init(){
 
 document.getElementById("publishbutton").onclick = function(){
     timestamp = Math.round((new Date().getTime())/1000);
-    data = encodeURIComponent(JSON.stringify(linkmap,null,"    "));
+    data = encodeURIComponent(JSON.stringify(imagemap,null,"    "));
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
@@ -121,12 +120,12 @@ document.getElementById("fwdbutton").onclick = function(){
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
 
-    for(var index = 0;index < linkarray.length;index++){
-        if(linkarray[index].className == jsondata[mapIndex].imgurl){
-            linkarray[index].style.display = "block";
+    for(var index = 0;index < imgarray.length;index++){
+        if(imgarray[index].className == jsondata[mapIndex].imgurl){
+            imgarray[index].style.display = "block";
         }   
         else{
-            linkarray[index].style.display = "none";
+            imgarray[index].style.display = "none";
         }
     }
 }
@@ -137,12 +136,12 @@ document.getElementById("backbutton").onclick = function(){
         mapIndex = jsondata.length - 1;
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
-        for(var index = 0;index < linkarray.length;index++){
-        if(linkarray[index].className == jsondata[mapIndex].imgurl){
-            linkarray[index].style.display = "block";
+        for(var index = 0;index < imgarray.length;index++){
+        if(imgarray[index].className == jsondata[mapIndex].imgurl){
+            imgarray[index].style.display = "block";
         }   
         else{
-            linkarray[index].style.display = "none";
+            imgarray[index].style.display = "none";
         }
     }
 
@@ -239,7 +238,7 @@ a{
     border:solid;
     text-align:center;
 }
-#linkcontainer{
+#imgcontainer{
     position:absolute;
     z-index:-3;
     left:0px;
@@ -247,5 +246,7 @@ a{
     bottom:0px;
     top:0px;
 }
-
+img{
+    position:absolute;
+}
 </style>

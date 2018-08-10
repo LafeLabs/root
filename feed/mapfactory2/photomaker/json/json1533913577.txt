@@ -1,0 +1,18 @@
+{
+    "xoverwidth": 0.06623702112423918,
+    "yoverwidth": 0.11636233440744721,
+    "latlon": "38.90224251987785,-77.03134540543518",
+    "url": "https://i.imgur.com/k3dSaBF.jpg",
+    "angle": -180.95573684677208,
+    "widthfeet": 217.22051201954864,
+    "widthoverwidth": 0.08950948800572862,
+    "imgurl": "https://i.imgur.com/4vdXYlk.jpg",
+    "marker0": "h and 11th",
+    "marker1": "k and 11th",
+    "latlon0": "38.899825, -77.027046",
+    "latlon1": "38.902565, -77.027027",
+    "x0overwidth": 0.5688524590163935,
+    "y0overwidth": 0.47950819672131145,
+    "x1overwidth": 0.559016393442623,
+    "y1overwidth": 0.0680327868852459
+}
