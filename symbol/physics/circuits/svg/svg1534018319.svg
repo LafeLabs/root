@@ -1,0 +1,31 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -3,
+    "imgtop": -2,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 100,
+    "x0": 615.5,
+    "y0": 359,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0331,0220,0221,0222,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M300 400 L300 397 L300 391 L289 384 L300 378 L311 372 L300 366 L289 359 L300 353 L311 347 L300 341 L289 334 L300 328 L311 322 L300 316 L300 303 L300 300 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M300 300  M300,300 C300,283 333,275 333,292  M333,292 C333,308 300,292 300,275  M300,275 C300,258 333,250 333,267  M333,267 C333,283 300,267 300,250  M300,250 C300,233 333,225 333,242  M333,242 C333,258 300,242 300,225  M300,225 C300,208 333,200 333,217  M333,217 C333,233 300,217 300,200 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="300" y1="200" x2="300" y2="175" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="175" x2="300" y2="162" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="162" x2="275" y2="162" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="162" x2="325" y2="163" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="137" x2="325" y2="138" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="137" x2="275" y2="137" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="137" x2="300" y2="125" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="125" x2="300" y2="100" style="stroke:black;stroke-width:4" />
+</svg>

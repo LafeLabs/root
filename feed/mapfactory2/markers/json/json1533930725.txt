@@ -1,0 +1,5 @@
+{
+    "imgurl": "https://i.imgur.com/XyQNQie.png",
+    "marker0": "wellsfargo SE corner",
+    "marker1": "wellsfargo NE corner"
+}

@@ -70,7 +70,6 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/newdir.txt</div>
     <div class = "php file">php/meme.txt</div>
 
-
     <div class = "json file">json/currentjson.txt</div>
     <div class = "json file">json/stylejson.txt</div>
 

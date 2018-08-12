@@ -1,0 +1,7 @@
+{
+    "imgurl": "https://i.imgur.com/HAELuX2.png",
+    "latlon0": "38.858075, -77.050791",
+    "latlon1": " 38.858532, -77.050762 ",
+    "marker0": "SE corner of Wells fargo building",
+    "marker1": "NE corner of wells fargo building"
+}

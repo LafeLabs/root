@@ -1,0 +1,107 @@
+<table id = "linktable">
+    <tr>
+        <td><a href = "feededitor.php?path=memefactory2/imagefeed/">EDIT CODE</a></td>
+    </tr>
+    <tr>
+        <td><a href = "index.php?path=memefactory2/svgfeed/">SVG FEED</a></td>
+    </tr>
+    <tr>
+        <td><a href = "index.php?path=memefactory2/combiner/">NEXT FEED</a></td>
+    </tr>
+</table>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<input id = "urlinput"/>
+
+<div id = "scrolldiv">
+    <img id = "mainImage"/>
+</div>
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+    
+for(var index = 0;index < localjsondata.length;index++){
+    var newimg = document.createElement("IMG");
+    newimg.src = localjsondata[index].url;
+    document.getElementById("scrolldiv").appendChild(newimg);
+    var newinput = document.createElement("input");
+    newinput.value = localjsondata[index].url;
+    document.getElementById("scrolldiv").appendChild(newinput);
+}
+    
+document.getElementById("urlinput").onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+    jsonoutput = {};
+    jsonoutput.url = document.getElementById("urlinput").value;
+    
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+
+</script>
+<style>
+    img{
+        display:block;
+        width:80%;
+        margin:auto;
+        margin-top:1em;
+        margin-bottom:1em;
+    }
+    #publishbutton{
+        position:absolute;
+        left:0px;
+        top:0px;
+        text-align:center;
+    }
+    .button{
+        cursor:pointer;
+        font-size:30px;
+        padding-left:1em;
+        padding-right:1em;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .button:hover{
+        background-color:green;
+    }
+    .button:active{
+        background-color:yellow;
+    }
+    #urlinput{
+        position:absolute;
+        top:3em;
+        left:1em;
+        width:25em;
+        font-size:30px;
+    }
+    #linktable{
+        position:absolute;
+        right:10px;
+        top:10px;
+    }
+    #scrolldiv{
+        position:absolute;
+        top:6em;
+        bottom:0px;
+        right:0px;
+        left:0px;
+        overflow:scroll;
+        padding:1em 1em 1em 1em;
+        border-top:solid;
+    }
+</style>

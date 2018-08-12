@@ -1,0 +1,9 @@
+{
+    "imgurl": "https://i.imgur.com/XyQNQie.png",
+    "marker0": "wellsfargo building SE corner",
+    "marker1": "wellsfargo building NE corner",
+    "latlon0": "38.858059, -77.050775",
+    "latlon1": " 38.858536, -77.050749 ",
+    "x0overwidth": 0.4778761061946903,
+    "y0overwidth": 0.7315634218289085
+}

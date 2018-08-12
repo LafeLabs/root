@@ -188,6 +188,8 @@ function redraw(){
     document.getElementById("backimg").style.top = (0.5*innerHeight + currentJSON.unit*currentJSON.imgtop).toString() + "px";   
     document.getElementById("backimg").style.width = (currentJSON.unit*currentJSON.imgw).toString() + "px";
     document.getElementById("backimg").style.transform =  "rotate(" + (currentJSON.imgangle).toString() + "deg)";
+    
+    
 }
 
 </script>

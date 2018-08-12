@@ -1,0 +1,29 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 146.41000000000008,
+    "x0": 684,
+    "y0": 351.4475154247304,
+    "x0rel": 0,
+    "y0rel": -47.5524845752696,
+    "glyph": "0336,0336,0336,0336,0333,0333,0333,0333,0331,0333,0331,0337,0337,0337,0337,0321,0331,0337,0220,0220,0220,0220,0220,0220,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M346 417 L346 124 L53 124 L53 417 L346 417 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M52.933124999999734 417.15876542473035           A292.82000000000016 292.82000000000016 0 0 1 345.75312500000024 124.3387654247303" fill = "none" stroke = "black" stroke-width = "5" />
+	<path d = "M346 305 L527 305 L527 124 L346 124 L346 305 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M345.75312499999995 124.33876542473047           A180.97271258574432 180.97271258574432 0 0 1 526.7258375857446 305.3114780104749" fill = "none" stroke = "black" stroke-width = "5" />
+	<path d = "M415 305 L415 417 L527 417 L527 305 L415 305 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M526.7258375857447 305.3114780104749           A111.84728741425586 111.84728741425586 0 0 1 414.87855017148854 417.1587654247307" fill = "none" stroke = "black" stroke-width = "5" />
+	<path d = "M415 348 L346 348 L346 417 L415 417 L415 348 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M414.87855017148877 417.1587654247306           A69.12542517148846 69.12542517148846 0 0 1 345.753125 348.0333402532423" fill = "none" stroke = "black" stroke-width = "5" />
+	<path d = "M388 348 L388 305 L346 305 L346 348 L388 348 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M345.7531250000001 348.0333402532424           A42.72186224276739 42.72186224276739 0 0 1 388.47498724276716 305.3114780104746" fill = "none" stroke = "black" stroke-width = "5" />
+	<path d = "M388 332 L415 332 L415 305 L388 305 L388 332 Z" stroke = "black" stroke-width = "5" fill = "none" />  <path d="M388.4749872427672 305.3114780104747           A26.40356292872106 26.40356292872106 0 0 1 414.8785501714885 331.7150409391955" fill = "none" stroke = "black" stroke-width = "5" />
+</svg>

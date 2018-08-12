@@ -1,0 +1,5 @@
+{
+    "imgurl": "https://i.imgur.com/UV6tmWR.png",
+    "marker0": "haines point",
+    "marker1": "jefferson memorial"
+}

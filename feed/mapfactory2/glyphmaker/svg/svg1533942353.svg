@@ -1,0 +1,46 @@
+<svg width="558" height="383" viewbox = "0 0 558 383"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://i.imgur.com/UV6tmWR.png",
+    "marker0": "haines point",
+    "marker1": "jefferson memorial",
+    "latlon0": "38.856805, -77.022099",
+    "latlon1": "38.881237, -77.036549",
+    "x0overwidth": 0.5634218289085545,
+    "y0overwidth": 0.44837758112094395,
+    "x1overwidth": 0.45132743362831856,
+    "y1overwidth": 0.1902654867256637,
+    "widthfeet": 34845.54010286594
+}
+</json>
+-->
+    <line x1="277" y1="177" x2="256" y2="143" style="stroke:black;stroke-width:4" />
+    <line x1="468" y1="170" x2="506" y2="147" style="stroke:black;stroke-width:4" />
+    <line x1="462" y1="158" x2="500" y2="135" style="stroke:black;stroke-width:4" />
+<circle cx="238" cy = "78" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="412" cy = "183" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="418" cy = "162" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="317" cy = "138" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="301" cy = "150" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="142" cy = "14" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="151" cy = "63" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+    <line x1="245" y1="358" x2="201" y2="347" style="stroke:black;stroke-width:4" />
+    <line x1="266" y1="262" x2="259" y2="246" style="stroke:black;stroke-width:4" />
+    <line x1="271" y1="304" x2="271" y2="287" style="stroke:black;stroke-width:4" />
+    <line x1="203" y1="140" x2="167" y2="104" style="stroke:black;stroke-width:4" />
+    <line x1="368" y1="202" x2="380" y2="182" style="stroke:black;stroke-width:4" />
+    <line x1="381" y1="223" x2="393" y2="204" style="stroke:black;stroke-width:4" />
+    <line x1="320" y1="316" x2="308" y2="365" style="stroke:black;stroke-width:4" />
+    <line x1="320" y1="316" x2="340" y2="268" style="stroke:black;stroke-width:4" />
+    <line x1="312" y1="250" x2="289" y2="204" style="stroke:black;stroke-width:4" />
+    <line x1="315" y1="250" x2="315" y2="199" style="stroke:black;stroke-width:4" />
+<circle cx="244" cy = "225" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="258" cy = "353" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="274" cy = "120" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="287" cy = "113" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="332" cy = "227" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="233" cy = "125" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+<circle cx="315" cy = "250" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+</svg>

@@ -1,0 +1,127 @@
+<div class = "imagefeed" id = "topimagefeed"></div>
+<img class = "staticimage" id = "bottomimage"/>
+<img class = "staticimage" id = "topimage"/>
+<div  class = "imagefeed" id = "bottomimagefeed"></div>
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=memefactory2/combiner/">EDIT CODE</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=memefactory2/imagefeed/">PHOTOS</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "../symbol/">SVGS</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "../symbol/">MEME ALIGNER</a>
+        </td>
+    </tr>
+</table>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+jsondir = "memefactory2/imagefeed/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        imagefeedinit();
+    }
+};
+
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+function imagefeedinit(){
+    for(var index = 0;index < jsondata.length;index++){
+        var newimg = document.createElement("IMG");
+        newimg.src = jsondata[index].url;
+        document.getElementById("bottomimagefeed").appendChild(newimg);
+        newimg.onclick = function(){
+            document.getElementById("bottomimage").src = this.src;
+        }
+    }
+}
+
+</script>
+<style>
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+#topimagefeed{
+    right:10px;
+}
+#bottomimagefeed{
+    left:10px;
+}
+.imagefeed{
+    position:absolute;
+    top:15%;
+    width:25%;
+    bottom:10px;
+    border:solid;
+    overflow:scroll;
+}
+.imagefeed img{
+    display:block;
+    margin:auto;
+    width:80%;
+    cursor:pointer;
+    margin-top:2em;
+    margin-bottom:2em;
+}
+.imagefeed img:hover{
+    border:solid;
+    border-width:8px;
+    border-color:green;
+}
+.imagefeed img:active{
+    border:solid;
+    border-width:16px;
+    border-color:yellow;
+}
+
+.staticimage{
+    position:absolute;
+    left:30%;
+    width:25%;
+    top:1em;
+    z-index:-2;
+}
+#topimage{
+    z-index:0;
+}
+#bottomimage{
+    z-index:1;
+}
+.button{
+    cursor:pointer;
+    font-size:30px;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:8em;
+    border-radius:10px;
+    text-align:center;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+
+</style>

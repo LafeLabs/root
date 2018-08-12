@@ -1,0 +1,5 @@
+{
+    "imgurl": "https://i.imgur.com/HAELuX2.png",
+    "marker0": "SE corner of Wells fargo building",
+    "marker1": "NE corner of wells fargo building"
+}

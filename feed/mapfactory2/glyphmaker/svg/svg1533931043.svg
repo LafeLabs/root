@@ -1,0 +1,23 @@
+<svg width="558" height="530" viewbox = "0 0 558 530"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://i.imgur.com/XyQNQie.png",
+    "marker0": "wellsfargo building SE corner",
+    "marker1": "wellsfargo building NE corner",
+    "latlon0": "38.858059, -77.050775",
+    "latlon1": " 38.858536, -77.050749 ",
+    "x0overwidth": 0.4778761061946903,
+    "y0overwidth": 0.7315634218289085,
+    "x1overwidth": 0.5,
+    "y1overwidth": 0.5501474926253688,
+    "widthfeet": 952.293822645003
+}
+</json>
+-->
+<circle cx="206" cy = "409" r = "10" stroke = "black" stroke-width = "10" fill = "black" />
+<circle cx="277" cy = "307" r = "10" stroke = "black" stroke-width = "10" fill = "black" />
+<circle cx="216" cy = "307" r = "10" stroke = "black" stroke-width = "10" fill = "black" />
+<circle cx="267" cy = "409" r = "10" stroke = "black" stroke-width = "10" fill = "black" />
+</svg>
