@@ -55,11 +55,13 @@ EGO DEATH:
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/wallhistory.txt</div>
-    <div class = "php file">php/remotefeed.php</div>
-    <div class = "php file">php/makejsonindex.php</div>
-    <div class = "php file">php/makesvgindex.php</div>
-    <div class = "php file">php/loadjsonfeed.php</div>
-    <div class = "php file">php/loadsvgfeed.php</div>
+
+    <div class = "php file">php/remotefeed.txt</div>
+    <div class = "php file">php/makejsonindex.txt</div>
+    <div class = "php file">php/makesvgindex.txt</div>
+    <div class = "php file">php/loadjsonfeed.txt</div>
+    <div class = "php file">php/loadsvgfeed.txt</div>
+    
 </div>
 
 <script>

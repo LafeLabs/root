@@ -1,17 +1,17 @@
 <table id = "linktable">
     <tr>
         <td>
-            <a href = "index.php?path=mapfactory2/mapimage/">PREVIOUS FEED(mapfactory2/mapimage/)</a>
+            <a href = "index.php?path=mapfactory2/mapimage/">PREVIOUS</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href = "index.php?path=mapfactory2/latlons/">NEXT FEED(mapfactory2/latlons/)</a>
+            <a href = "index.php?path=mapfactory2/latlons/">NEXT</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href = "feededitor.php?path=mapfactory2/markers/">EDIT THIS FEED</a>
+            <a href = "feededitor.php?path=mapfactory2/markers/">EDIT CODE</a>
         </td>
     </tr>
 

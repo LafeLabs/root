@@ -1,14 +1,12 @@
-<h2>mapfactory2/mapimage/</h2>
-
 <table>
     <tr>    
         <td>
-            <a href = "index.php?path=mapfactory2/markers/">Markers Feed [next]</a>
+            <a href = "index.php?path=mapfactory2/markers/">NEXT</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href = "feededitor.php?path=mapfactory2/mapimage/">Edit This File</a>
+            <a href = "feededitor.php?path=mapfactory2/mapimage/">EDIT CODE</a>
         </td>
     </tr>
     <tr>
@@ -24,6 +22,10 @@
 <script>
 
 path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+for(var index = 0;index < localjsondata.length;index++){
+    
+}
 
 
 document.getElementById("urlinput").onchange = function(){
