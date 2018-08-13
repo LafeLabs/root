@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://i.imgur.com/yQIuyO2.jpg",
+    "topimage": "http://localhost:8000/symbol/memefactory2/svg/svg1534163066.svg",
+    "xoverw": 0.3831006086645185,
+    "yoverw": 0.8378088077336199,
+    "woverw": 0.4880057286072323,
+    "angle": 0
+}

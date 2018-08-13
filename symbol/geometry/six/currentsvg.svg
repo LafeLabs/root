@@ -3,7 +3,7 @@
 <!--
 <json>
 {
-    "imgurl": "https://www.publicdomainpictures.net/pictures/170000/velka/one-dollar-bill-146231276286X.jpg",
+    "imgurl": "",
     "imgw": 20,
     "imgleft": -4.5929999999999955,
     "imgtop": -4.6809999999999965,
@@ -11,13 +11,13 @@
     "svgwidth": 500,
     "svgheight": 500,
     "unit": 90.90909090909092,
-    "x0": 684,
-    "y0": 400.5197145157313,
+    "x0": 615.5,
+    "y0": 360.5197145157313,
     "x0rel": 0,
     "y0rel": 1.519714515731323,
-    "glyph": "0330,0336,0330,0336,0332,0336,0331,0333,0336,0333,0332,0337,0333,0337,0337,0337,0306,0352,0334,0336,0330,0335,0335,0335,0335,0335,0335,0335,0335,0335,0336,0304,0336,0333,0330,0331,0331,0337,0337,0337,0337,0337,0306,0352,0335,0335,0336,0334,0335,0334,",
+    "glyph": "0220,0220,0220,0220,0220,0220,0220,",
     "table": []
 }
 </json>
 -->
-</svg>
+	<path d = "M295 225 L341 304 L250 304 L159 304 L205 225 L250 147 L295 225 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M302 221 L355 312 L250 312 L145 312 L198 221 L250 130 L302 221 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M311 217 L371 322 L250 322 L129 322 L189 217 L250 112 L311 217 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M320 211 L390 332 L250 332 L110 332 L180 211 L250 90 L320 211 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M331 205 L412 345 L250 345 L88 345 L169 205 L250 65 L331 205 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M343 198 L437 359 L250 359 L63 359 L157 198 L250 36 L343 198 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M358 189 L465 376 L250 376 L35 376 L142 189 L250 3 L358 189 Z" stroke = "black" stroke-width = "4" fill = "none" /></svg>

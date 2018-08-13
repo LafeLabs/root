@@ -11,19 +11,27 @@
     "svgwidth": 400,
     "svgheight": 400,
     "unit": 100.00000000000001,
-    "x0": 684,
-    "y0": 397.5670793520086,
+    "x0": 615.5,
+    "y0": 357.5670793520086,
     "x0rel": 0,
     "y0rel": -1.4329206479914092,
-    "glyph": "01101,01101,",
+    "glyph": "0331,0221,",
     "table": []
 }
 </json>
 -->
-    <line x1="200" y1="199" x2="231" y2="103" style="stroke:black;stroke-width:2" />
-    <line x1="262" y1="199" x2="231" y2="103" style="stroke:black;stroke-width:2" />
-    <line x1="250" y1="162" x2="212" y2="162" style="stroke:black;stroke-width:2" />
-    <line x1="274" y1="199" x2="305" y2="103" style="stroke:black;stroke-width:2" />
-    <line x1="336" y1="199" x2="305" y2="103" style="stroke:black;stroke-width:2" />
-    <line x1="324" y1="162" x2="286" y2="162" style="stroke:black;stroke-width:2" />
+    <line x1="250" y1="299" x2="150" y2="299" style="stroke:black;stroke-width:2" />
+    <line x1="150" y1="299" x2="88" y2="220" style="stroke:black;stroke-width:2" />
+    <line x1="88" y1="220" x2="110" y2="123" style="stroke:black;stroke-width:2" />
+    <line x1="110" y1="123" x2="200" y2="80" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="80" x2="290" y2="123" style="stroke:black;stroke-width:2" />
+    <line x1="290" y1="123" x2="312" y2="220" style="stroke:black;stroke-width:2" />
+    <line x1="312" y1="220" x2="250" y2="299" style="stroke:black;stroke-width:2" />
+    <line x1="150" y1="300" x2="293" y2="121" style="stroke:black;stroke-width:2" />
+    <line x1="293" y1="121" x2="87" y2="221" style="stroke:black;stroke-width:2" />
+    <line x1="87" y1="221" x2="315" y2="221" style="stroke:black;stroke-width:2" />
+    <line x1="315" y1="221" x2="109" y2="121" style="stroke:black;stroke-width:2" />
+    <line x1="109" y1="121" x2="252" y2="300" style="stroke:black;stroke-width:2" />
+    <line x1="252" y1="300" x2="201" y2="77" style="stroke:black;stroke-width:2" />
+    <line x1="201" y1="77" x2="150" y2="300" style="stroke:black;stroke-width:2" />
 </svg>

@@ -1,9 +1,0 @@
-<p>
-    <a href = "index.php?path=foo/bar/">Up a Level</a>
-</p>
-<h2>My Math Paper</h2>
-<p>
-    $$E = h\nu$$
-    $$E = \hbar\omega$$
-    $$E = mc^2$$
-</p>

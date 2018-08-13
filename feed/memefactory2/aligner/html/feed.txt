@@ -1,0 +1,245 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<div class  = "button" id = "publishbutton">PUBLISH</div>
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=memefactory2/aligner/">EDIT CODE</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=memefactory2/combiner/">MEME COMBINER</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=memefactory2/memefeed/">MEME FEED</a>
+        </td>
+    </tr>
+</table>
+
+<img class="imagestack" id="bottomimage"/>
+<img class="imagestack" id="topimage"/>
+
+<table id = "pantable">
+    <tr><td>pan x</td></tr>
+    <tr><td>pan y</td></tr>
+    <tr><td>scale</td></tr>
+    <tr><td>rotate</td></tr>
+</table>
+
+
+<div id = "prevbutton" class =  "button">PREV MEME</div>
+<div id = "nextbutton" class = "button">NEXT MEME</div>
+
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+if(path.length > 1){
+    pathset = true;
+}
+else{
+    pathset = false;
+}
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+memeIndex = 0;
+
+if(innerWidth < innerHeight){
+    smallerWidth = innerWidth;
+}
+else{
+    smallerWidth = innerHeight;
+}
+
+imageWidth = 0.7*smallerWidth;
+document.getElementById("topimage").style.width = imageWidth + "px";
+document.getElementById("bottomimage").style.width = imageWidth + "px";
+
+jsondir = "memefactory2/combiner/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+function init(){
+    x = 0;
+    y = 0;
+    w = imageWidth;
+    angle = 0;
+    document.getElementById("topimage").src = jsondata[memeIndex].topimage; 
+    document.getElementById("bottomimage").src = jsondata[memeIndex].bottomimage; 
+    redraw();
+}
+
+
+
+myElement = document.getElementById("topimage");
+
+mc = new Hammer(myElement);
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    x = ev.deltaX - (0.5*(w - imageWidth));
+    y = ev.deltaY - 0.5*(w - imageWidth);
+    redraw();
+});
+
+pans = document.getElementById("pantable").getElementsByTagName("TD");
+mc1 = new Hammer(pans[0]);
+mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc1.on("panleft panright panup pandown tap press", function(ev) {
+    x = ev.deltaX;
+    redraw();
+});
+
+mc2 = new Hammer(pans[1]);
+mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc2.on("panleft panright panup pandown tap press", function(ev) {
+    y = ev.deltaY;
+    redraw();
+});
+
+mc3 = new Hammer(pans[2]);
+mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc3.on("panleft panright panup pandown tap press", function(ev) {
+    w = imageWidth + ev.deltaX;
+    redraw();
+});
+
+mc4 = new Hammer(pans[3]);
+mc4.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc4.on("panleft panright panup pandown tap press", function(ev) {
+    angle = Math.PI*ev.deltaX/10;
+    redraw();
+});
+
+
+
+
+function redraw(){
+    
+    document.getElementById("topimage").style.left = (x - (0.5*(w - imageWidth))).toString() + "px";
+    document.getElementById("topimage").style.top = (y - 0.5*(w - imageWidth)).toString() + "px";
+    document.getElementById("topimage").style.width = (w).toString() + "px";
+    document.getElementById("topimage").style.transform = "rotate(" + angle.toString() + "deg)";
+    
+}
+
+document.getElementById("prevbutton").onclick = function(){
+    memeIndex--;
+    if(memeIndex < 0){
+        memeIndex = jsondata.length - 1;
+    }
+    init();
+}
+document.getElementById("nextbutton").onclick = function(){
+    memeIndex++;
+    if(memeIndex > jsondata.length - 1){
+        memeIndex = 0;
+    }
+    init();
+}
+
+document.getElementById("publishbutton").onclick = function(){
+    currentJSON = {};
+    currentJSON.bottomimage = document.getElementById("bottomimage").src;
+    currentJSON.topimage = document.getElementById("topimage").src;
+    currentJSON.xoverw = (x - (0.5*(w - imageWidth)))/imageWidth;
+    currentJSON.yoverw = (y - (0.5*(w - imageWidth)))/imageWidth;
+    currentJSON.woverw = w/imageWidth;
+    currentJSON.angle = angle;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(pathset){
+        var url = "makejsonindex.php?path=" + path;        
+    }
+    else{
+        var url = "makejsonindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+</script>
+<style>
+
+#topimage{
+    z-index:0;
+}
+#bottomimage{
+    z-index:-1;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+
+.imagestack{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+#pantable{
+    position:absolute;
+    top:5em;
+    right:1em;
+    z-index:1;
+}
+#pantable td{
+    height:100px;
+    width:300px;
+    font-size:50px;
+    border:solid;
+    text-align:center;
+}
+#publishbutton{
+    position:absolute;
+    left:1em;
+    top:1em;
+}
+.button{
+    cursor:pointer;
+    font-size:30px;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:8em;
+    border-radius:10px;
+    text-align:center;
+    z-index:2;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#prevbutton{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+}
+#nextbutton{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+
+</style>

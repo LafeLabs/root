@@ -15,12 +15,12 @@
     </tr>
     <tr>
         <td>
-            <a href = "../symbol/">SVGS</a>
+            <a href = "../symbol/index.php?path=memefactory2/&backlink=../feed/index.php?path=memefactory2/combiner/">SVGS</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href = "../symbol/">MEME ALIGNER</a>
+            <a href = "index.php?path=memefactory2/aligner/">MEME ALIGNER</a>
         </td>
     </tr>
 </table>
@@ -28,6 +28,7 @@
 <script>
 path = document.getElementById("pathdiv").innerHTML;
 localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+svgpath="memefactory2/";
 
 jsondir = "memefactory2/imagefeed/json/";
 var httpc = new XMLHttpRequest();
@@ -37,9 +38,33 @@ httpc.onreadystatechange = function() {
         imagefeedinit();
     }
 };
-
 httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
 httpc.send();
+
+svgdir = "../symbol/" + svgpath + "svg/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        svgfilelist = this.responseText;
+        svginit();
+    }
+};
+httpc.open("GET", "loadsvgfeed.php?svgdir=" + svgdir, true);
+httpc.send();
+
+function svginit(){
+    svgfiles = svgfilelist.split(",");
+    for(var index = 0;index < svgfiles.length;index++){
+        if(svgfiles[index].length > 4){
+            var newimg = document.createElement("img");
+            newimg.src = "../symbol/" + svgpath + "svg/" + svgfiles[index];
+            document.getElementById("topimagefeed").appendChild(newimg);
+            newimg.onclick = function(){
+                document.getElementById("topimage").src = this.src;
+            }
+        }
+    }
+}
 
 function imagefeedinit(){
     for(var index = 0;index < jsondata.length;index++){
@@ -50,6 +75,27 @@ function imagefeedinit(){
             document.getElementById("bottomimage").src = this.src;
         }
     }
+}
+
+document.getElementById("publishbutton").onclick = function(){
+    jsonoutput = {};
+    jsonoutput.bottomimage = document.getElementById("bottomimage").src;
+    jsonoutput.topimage = document.getElementById("topimage").src;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+
 }
 
 </script>
@@ -104,7 +150,7 @@ function imagefeedinit(){
     z-index:0;
 }
 #bottomimage{
-    z-index:1;
+    z-index:-1;
 }
 .button{
     cursor:pointer;

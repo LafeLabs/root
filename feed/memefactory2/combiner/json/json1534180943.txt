@@ -1,0 +1,4 @@
+{
+    "bottomimage": "https://i.imgur.com/iCpHMWG.jpg",
+    "topimage": "http://localhost:8000/symbol/memefactory2/svg/svg1534180922.svg"
+}
