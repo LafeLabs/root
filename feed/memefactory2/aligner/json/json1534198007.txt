@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Parker_Solar_Probe.jpg",
+    "topimage": "http://localhost:8000/symbol/memefactory2/svg/svg1534197967.svg",
+    "xoverw": 0.21303258145363413,
+    "yoverw": -0.13068385248836378,
+    "woverw": 0.7923379878267096,
+    "angle": 0
+}

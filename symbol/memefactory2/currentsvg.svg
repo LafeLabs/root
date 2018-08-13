@@ -10,14 +10,22 @@
     "imgangle": 0,
     "svgwidth": 500,
     "svgheight": 500,
-    "unit": 161.0510000000001,
+    "unit": 100,
     "x0": 684,
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0330,0335,0336,0331,0337,",
+    "glyph": "0330,0335,0336,0331,0337,0350,0362,0203,0335,0203,0335,0203,0335,0203,0335,0203,0335,0203,0335,0203,0335,0203,0354,0341,0335,0330,0341,0335,0330,0341,0335,0330,0341,0335,0330,0341,0335,0330,0341,0335,0330,0341,0335,0330,0341,",
     "table": []
 }
 </json>
 -->
+	<path d = "M200 150 L300 150 L371 221 L371 321 L300 391 L200 391 L129 321 L129 221 L200 150 Z" stroke = "black" stroke-width = "10" fill = "none" />    <circle cx="200" cy = "150" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
+    <circle cx="300" cy = "150" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
+    <circle cx="371" cy = "221" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
+    <circle cx="371" cy = "321" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
+    <circle cx="300" cy = "391" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
+    <circle cx="200" cy = "391" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
+    <circle cx="129" cy = "321" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
+    <circle cx="129" cy = "221" r = "100" stroke = "black" stroke-width = "10" fill = "none" />
 </svg>

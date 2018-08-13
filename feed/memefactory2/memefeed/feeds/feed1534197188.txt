@@ -1,5 +1,5 @@
 <p>
-    <a href = "feededitor.php?path=memefactory2/memefeed/">EDIT</a>  <a href = "index.php?path=memefactory2/imagefeed/">IMAGES</a>
+    <a href = "feededitor.php?path=memefactory2/memefeed/">EDIT</a>
 </p>
 <div id = "memefeed">
     
@@ -30,47 +30,11 @@ function init(){
         topimage.src = jsondata[index].topimage;
         bottomimage.src = jsondata[index].bottomimage;
         document.getElementById("memefeed").appendChild(newdiv);
-        newdiv.style.width = (0.8*innerWidth).toString() + "px";
-        topimage.style.width = (0.8*innerWidth*jsondata[index].woverw).toString() + "px";
-        topimage.style.left = (0.8*innerWidth*jsondata[index].xoverw).toString() + "px";
-        topimage.style.top = (0.8*innerWidth*jsondata[index].yoverw).toString() + "px";
-        topimage.style.transform = "rotate(" + (jsondata[index].angle).toString() + "deg)";
         
     }
 }
 
 </script>
 <style>
-#memefeed{
-    position:absolute;
-    top:3em;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    overflow:scroll;
-}
-.imgbox{
-    position:relative;
-    width:80%;
-    height:220%;
-    display:block;
-    margin:auto;
-    margin-top:1em;
-    margin-bottom:1em;
-}
-.bottom{
-    width:100%;
-    position:absolute;
-    left:0px;
-    top:0px;
-    z-index:-1;
-}
-.top{
-    position:absolute;
-    width:100%;
-    left:0px;
-    top:0px;
-    z-index:0;
-}
 
 </style>

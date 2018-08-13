@@ -1,5 +1,5 @@
 <p>
-    <a href = "feededitor.php?path=memefactory2/memefeed/">EDIT</a>  <a href = "index.php?path=memefactory2/imagefeed/">IMAGES</a>
+    <a href = "feededitor.php?path=memefactory2/memefeed/">EDIT</a>
 </p>
 <div id = "memefeed">
     
@@ -31,11 +31,7 @@ function init(){
         bottomimage.src = jsondata[index].bottomimage;
         document.getElementById("memefeed").appendChild(newdiv);
         newdiv.style.width = (0.8*innerWidth).toString() + "px";
-        topimage.style.width = (0.8*innerWidth*jsondata[index].woverw).toString() + "px";
-        topimage.style.left = (0.8*innerWidth*jsondata[index].xoverw).toString() + "px";
-        topimage.style.top = (0.8*innerWidth*jsondata[index].yoverw).toString() + "px";
-        topimage.style.transform = "rotate(" + (jsondata[index].angle).toString() + "deg)";
-        
+        topimage.style.width = (0.8*innerWidth*jsondata[index].woverw).toString() + "px"
     }
 }
 
