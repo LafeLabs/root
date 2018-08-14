@@ -1,0 +1,156 @@
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=mapfactory2/combiner/">EDIT CODE</a>
+        </td>
+    </tr>
+</table>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+
+<div id = "mapbox">
+    <img id = "mapimage"/>
+    <img id = "mapsvg"/>
+</div>
+
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+mapIndex = 0;
+linkmapIndex = 0;
+photomapIndex = 0;
+
+
+mapjsondir = "mapfactory2/mapx1y1/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        mapjsondata = JSON.parse(this.responseText);
+        mapinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + mapjsondir, true);
+httpc.send();
+
+linkjsondir = "mapfactory2/linkmap/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        linkjsondata = JSON.parse(this.responseText);
+        linkinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + linkjsondir, true);
+httpc.send();
+
+photojsondir = "mapfactory2/photomap/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        photojsondata = JSON.parse(this.responseText);
+        photoinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + photojsondir, true);
+httpc.send();
+
+
+svgdir = "mapfactory2/glyphmaker/svg/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        svgfilelist = this.responseText;
+        svginit();
+    }
+};
+httpc.open("GET", "loadsvgfeed.php?svgdir=" + svgdir, true);
+httpc.send();
+
+function linkinit(){
+
+    
+}
+function photoinit(){
+    
+}
+function svginit(){
+    svgfiles = svgfilelist.split(",");
+    document.getElementById("mapsvg").src = svgdir + svgfiles[0];
+}
+function mapinit(){
+    document.getElementById("mapimage").src = mapjsondata[mapIndex].imgurl;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+    jsonoutput = {};
+    jsonoutput.bottomimage = document.getElementById("bottomimage").src;
+    jsonoutput.topimage = document.getElementById("topimage").src;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+
+}
+
+</script>
+<style>
+#mapimage{
+    z-index:-1;
+}
+#mapsvg{
+    z-index:0;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+#mapbox{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50%;
+    height:100%;
+}
+#mapbox img{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+}
+.button{
+    cursor:pointer;
+    font-size:30px;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:8em;
+    border-radius:10px;
+    text-align:center;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+
+#publishbutton{
+    position:absolute;
+    right:1em;
+    bottom:1em;
+}
+</style>
