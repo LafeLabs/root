@@ -1,0 +1,4 @@
+{
+    "bottomimage": "https://upload.wikimedia.org/wikipedia/commons/b/be/Lincoln_Memorial_at_Sunrise.jpg",
+    "topimage": "http://localhost:8000/symbol/physics/gates/svg/svg1532115297.svg"
+}

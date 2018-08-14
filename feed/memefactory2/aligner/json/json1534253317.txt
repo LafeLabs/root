@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Parker_Solar_Probe.jpg",
+    "topimage": "http://localhost:8000/symbol/magick/chakras/svg/svg1533149978.svg",
+    "xoverw": 0.09488005728607234,
+    "yoverw": 0.15216612960973866,
+    "woverw": 0.3734335839598997,
+    "angle": 49.32300466135975
+}

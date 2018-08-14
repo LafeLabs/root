@@ -3,11 +3,12 @@
         <td><a href = "feededitor.php?path=memefactory2/imagefeed/">EDIT CODE</a></td>
     </tr>
     <tr>
-        <td><a href = "index.php?path=memefactory2/combiner/">NEXT FEED</a></td>
+        <td><a href = "index.php?path=memefactory2/combiner/">COMBINER</a></td>
     </tr>
 </table>
 <div class = "button" id = "publishbutton">PUBLISH</div>
-<input id = "urlinput"/>
+
+<div id = "urlinputbox">IMAGE URL:<input id = "urlinput"/></div>
 
 <div id = "scrolldiv">
     <img id = "mainImage"/>
@@ -80,11 +81,13 @@ document.getElementById("publishbutton").onclick = function(){
         background-color:yellow;
     }
     #urlinput{
+        width:25em;
+        font-size:30px;
+    }
+    #urlinputbox{
         position:absolute;
         top:3em;
         left:1em;
-        width:25em;
-        font-size:30px;
     }
     #linktable{
         position:absolute;

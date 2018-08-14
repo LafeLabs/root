@@ -1,0 +1,8 @@
+<h2>Map Factory</h2>
+
+<ul>
+    <li><a href = "index.php?path=memefactory2/imagefeed/">Image Feed</a></li>
+    <li><a href = "index.php?path=memefactory2/combiner/">Combiner</a></li>
+    <li><a href = "index.php?path=memefactory2/aligner/">Aligner</a></li>
+    <li><a href = "index.php?path=memefactory2/memefeed/">Meme Feed</a></li>
+</ul>

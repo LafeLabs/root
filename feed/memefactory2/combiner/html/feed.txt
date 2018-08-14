@@ -20,7 +20,7 @@
     </tr>
     <tr>
         <td>
-            <a href = "index.php?path=memefactory2/aligner/">MEME ALIGNER</a>
+            <a href = "index.php?path=memefactory2/aligner/">ALIGNER</a>
         </td>
     </tr>
 </table>
