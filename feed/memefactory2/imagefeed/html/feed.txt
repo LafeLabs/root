@@ -3,9 +3,6 @@
         <td><a href = "feededitor.php?path=memefactory2/imagefeed/">EDIT CODE</a></td>
     </tr>
     <tr>
-        <td><a href = "index.php?path=memefactory2/svgfeed/">SVG FEED</a></td>
-    </tr>
-    <tr>
         <td><a href = "index.php?path=memefactory2/combiner/">NEXT FEED</a></td>
     </tr>
 </table>

@@ -25,7 +25,17 @@
     </tr>
 </table>
 <div class = "button" id = "publishbutton">PUBLISH</div>
+
+<select id = "svgselector">
+    <option value = "physics/circuits/">circuits</option>
+    <option value = "memefactory2/">memefactory2</option>
+    <option value = "physics/gates/">quantum gates</option>
+    <option value = "magick/chakras/">chakras</option>
+    <option value = "geometry/goldenspiral/">golden spiral</option>
+</select>
+
 <script>
+
 path = document.getElementById("pathdiv").innerHTML;
 localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
 svgpath="memefactory2/";
@@ -51,6 +61,21 @@ httpc.onreadystatechange = function() {
 };
 httpc.open("GET", "loadsvgfeed.php?svgdir=" + svgdir, true);
 httpc.send();
+
+document.getElementById("svgselector").onchange = function(){
+    document.getElementById("topimagefeed").innerHTML = "";
+    svgpath = this.value;
+    svgdir = "../symbol/" + svgpath + "svg/";
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            svgfilelist = this.responseText;
+            svginit();
+        }
+    };
+    httpc.open("GET", "loadsvgfeed.php?svgdir=" + svgdir, true);
+    httpc.send();
+}
 
 function svginit(){
     svgfiles = svgfilelist.split(",");

@@ -1,0 +1,4 @@
+{
+    "bottomimage": "https://i.imgur.com/yQIuyO2.jpg",
+    "topimage": "http://localhost:8000/symbol/physics/circuits/svg/svg1530917144.svg"
+}

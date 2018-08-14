@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewbox = "0 0 600 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 400,
+    "unit": 110.00000000000003,
+    "x0": 610.7950000000001,
+    "y0": 438.4045946091137,
+    "x0rel": -73.20499999999993,
+    "y0rel": 39.4045946091137,
+    "glyph": "0336,0330,0332,0332,0332,0337,0210,0210,0220,0221,0222,0223,0224,0225,",
+    "table": []
+}
+</json>
+-->
+    <line x1="62" y1="184" x2="83" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M125 205 L125 163 L83 163 L83 205 L125 205 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="93" y = "195" fill = "black" font-size = "21.008130618755793px" font-family = "arial">X</text>
+    <line x1="125" y1="184" x2="146" y2="184" style="stroke:black;stroke-width:2" />
+    <line x1="146" y1="184" x2="167" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M209 205 L209 163 L167 163 L167 205 L209 205 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="177" y = "195" fill = "black" font-size = "21.008130618755793px" font-family = "arial">Y</text>
+    <line x1="209" y1="184" x2="230" y2="184" style="stroke:black;stroke-width:2" />
+    <line x1="230" y1="184" x2="251" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M293 205 L293 163 L251 163 L251 205 L293 205 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="261" y = "195" fill = "black" font-size = "21.008130618755793px" font-family = "arial">Z</text>
+    <line x1="293" y1="184" x2="314" y2="184" style="stroke:black;stroke-width:2" />
+    <line x1="314" y1="184" x2="335" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M377 205 L377 163 L335 163 L335 205 L377 205 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="345" y = "195" fill = "black" font-size = "21.008130618755793px" font-family = "arial">H</text>
+    <line x1="377" y1="184" x2="398" y2="184" style="stroke:black;stroke-width:2" />
+    <line x1="398" y1="184" x2="419" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M461 205 L461 163 L419 163 L419 205 L461 205 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="429" y = "195" fill = "black" font-size = "21.008130618755793px" font-family = "arial">S</text>
+    <line x1="461" y1="184" x2="482" y2="184" style="stroke:black;stroke-width:2" />
+    <line x1="482" y1="184" x2="503" y2="184" style="stroke:black;stroke-width:2" />
+	<path d = "M545 205 L545 163 L503 163 L503 205 L545 205 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="513" y = "195" fill = "black" font-size = "21.008130618755793px" font-family = "arial">T</text>
+    <line x1="545" y1="184" x2="566" y2="184" style="stroke:black;stroke-width:2" />
+</svg>

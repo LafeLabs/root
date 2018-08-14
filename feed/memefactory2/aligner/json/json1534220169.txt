@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://i.imgur.com/yNrkws9.jpg",
+    "topimage": "http://localhost:8000/symbol/physics/gates/svg/svg1532114216.svg",
+    "xoverw": 0.05460078768349446,
+    "yoverw": 0.8780880773361978,
+    "woverw": 0.9015395631936985,
+    "angle": 0
+}

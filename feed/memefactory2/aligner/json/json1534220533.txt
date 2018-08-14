@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://i.imgur.com/yQIuyO2.jpg",
+    "topimage": "http://localhost:8000/symbol/physics/circuits/svg/svg1530917144.svg",
+    "xoverw": 0.28822055137844615,
+    "yoverw": 0.11815252416756178,
+    "woverw": 0.4754744002864303,
+    "angle": 0
+}

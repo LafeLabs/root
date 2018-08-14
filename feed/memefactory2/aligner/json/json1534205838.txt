@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://upload.wikimedia.org/wikipedia/commons/b/be/Lincoln_Memorial_at_Sunrise.jpg",
+    "topimage": "http://localhost:8000/symbol/memefactory2/svg/svg1534205722.svg",
+    "xoverw": 0.297171500179019,
+    "yoverw": 0.32581453634085217,
+    "woverw": 0.41281775868242027,
+    "angle": 0
+}
