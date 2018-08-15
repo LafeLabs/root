@@ -1,6 +1,26 @@
-<h2>Book Of Structure</h2>
+<h1>Book Of Structure</h1>
 
-<h3>Seven Roots:</h3>
+<h2>Watershed</h2>
+<p>
+    We are all in a place, in a watershed.  Water flows from the sky to the sea, then rises back to the sky, completing the cycle.  Three sides of the triangle of Watershed symbolize the Terminal, the Server, and the Feed.
+</p>
+
+<h2>Nine Laws of Geometron</h2>
+
+<ul>
+    <li>No money</li>
+    <li>No mining</li>
+    <li>No property</li>
+    <li>Everything is fractal</li>
+    <li>Everything is physical</li>
+    <li>Everything is recursive</li>
+    <li>Look to the insects</li>
+    <li>Look to the fungi</li>
+    <li>Language is how the mind parses reality</li>
+</ul>
+
+
+<h2>Seven Roots:</h2>
 <ol>
     <li>page</li>
     <li>feed</li>
@@ -11,7 +31,7 @@
     <li>map</li>
 </ol>
 
-<h3>Page</h3>
+<h2>Page</h2>
 
 <p>
 The software component of this root is self contained bits of html code, which can include css and javascript.  Stored files are html, but not full html files.  This is the raw material for text memes and for deck slides(which are just a specific type of text meme).     
@@ -22,7 +42,7 @@ The software component of this root is self contained bits of html code, which c
     Hardware component: markers, which are painted with Geometron/Watershed colors. These can be sticks or rocks.  Sticks are generally pounded into the ground as stakes(as opposed to Skeletron which is used in "curve" root.  Sticks have @(x,y) coordinates and possibly hashtag for local metamap.  Rocks are markers used to hold space in any other system: pavement, dirt, water, cardboard, card decks, books, etc.
 </p>
 
-<h3>Feed</h3>
+<h2>Feed</h2>
 
 <p>
     Software is the main flow of the whole system, along which information is passed in a complex network which connects all things.  This includes various digital factories, such as meme factories, map factories, div factories, photo factories.  
@@ -38,14 +58,54 @@ The software component of this root is self contained bits of html code, which c
     Hardware is a deck of cards with physical characteristics typical of a tarot deck.  Each card is 3.5 X 5 inches in size, with corners cut on the radius of a US dime.  Deck is placed in a  deck holder made from cardboard and duct tape, which has holes for string to hang it conveniently from main Skeletron or over shoulder of user.  Cards generally represent actions, although most actions are simply to build a picture in your mind.  
 </p>
 
-<h3>Symbol</h3>
+<h2>Symbol</h2>
 <p>
     This is the Geometron symbol maker, where one can create new Geometron hypercube instances, make new glyphs, new fonts, build symbols, shapes, etc. Output is SVG files which link to other parts of the System.
 </p>
 <p>
     Hardware component consists of hard plastic cut shapes, in standard Geometron shapes as described in the Book of Shapes.  Typical feedstock consists of plastic shells from large broken electronics, such as printers.  Shapes are constructed in paper from printed SVG files, then cut, laminated, and traced onto plastic, then with the help of a steel ruler, cut out using utility knife.  Future improvement with Trash Robot will consist of a heated tool being moved back and forth by a trash robot arm to automatically make straight cuts.  
 </p>
-<h3>Scroll</h3>
+<h2>Scroll</h2>
 <p>
-    
+    Software component of scroll consists of a word processor designed to go directly to HTML, but with a automatic system to go to LaTeX, so that one may publish to pdf in that way, or incorporate in larger latex files, such as books and papers.
 </p>
+<p>
+    Hardware component consists of hand-bound physical books.  Books are made up of sub-books, or sections, with each section consisting of a stack of 8.5 by 11 inch printer paper, sewn, after punching holes spaced by about half an inch, along spine 5.5X11.5 is page size with a thumb tack.  Duct tape and cardboard are used to complete the hard bound book. 
+</p>
+
+<h2>Curve</h2>
+<p>
+    This software component is a mobile-friendly web based function graphing and documentation system.  Each published element is a SVG file which is a plot that contains the fit parameter data in JSON format, the JavaScript code to create the plot and the LaTeX typeset documentation of the function in human readable form.
+</p>
+<p>
+    Hardware for this component is a variety of physical manifestations of mathematical forms, which include the Skeletron stick system which can be used to draw curves on cement using a compass made from chalk and string which are also part of this component.  The main frame which the whole System is carried on is a octahedron/tetrahedron combination, or maybe two octahedra and a tetrahedron, made from 1 cubit Skeletron sticks.  A tower like this is less than 3 cubits high but more than 2 cubits high, I think? Bottom should have two big wheels and a small wheel, so that it can be pulled like a rolling suitcase as well as driven around as an R2 unit type robot.  Top of bottom octahedron can be a book shelf.  This is a seed for the feed of other elements of Trash Magick.
+</p>
+<h2>Map</h2>
+<p>
+    Software consists of map reader and various map editors. Maps are in JSON format.  Metamap is all about overall descriptions of how to move information between layout on the screen of a browser and geospatial information on the surface of the Earth.
+</p>
+<p>
+    Hardware component for maps is a stack of laminated traced paper maps, zooming down to "here" from whole world to ocean, to seaboard to major watershed, then down to most minor watershed, city or urban area, neighborhood/station/district/area then street then block/plaza/place, then link and markers to "here", with stones crossing from maps to real space.
+</p>
+
+<h2>Seven Totems, condensed</h2>
+<ol>
+   <li>Painted stones</li>
+   <li>Cardboard signs</li>
+   <li>Card deck</li>
+   <li>Book of Geometron</li>
+   <li>Shape Set</li>
+   <li>Laminated Map Stack</li>
+   <li>Chalk and string</li>
+</ol>
+
+
+<h2>Five Elements</h2>
+
+<ul>
+    <li>Water--HTML</li>
+    <li>Earth--Geometron</li>
+    <li>Air--CSS</li>
+    <li>Fire--JavaScript</li>
+    <li>Aether--PHP</li>
+</ul>

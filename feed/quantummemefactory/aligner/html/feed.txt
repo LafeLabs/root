@@ -1,22 +1,19 @@
-<!doctype html>
-<html>
-<body>
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 <div class  = "button" id = "publishbutton">PUBLISH</div>
 <table id = "linktable">
     <tr>
         <td>
-            <a href = "feededitor.php?path=memefactory2/aligner/">EDIT CODE</a>
+            <a href = "feededitor.php?path=quantummemefactory/aligner/">EDIT CODE</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href = "index.php?path=memefactory2/combiner/">MEME COMBINER</a>
+            <a href = "index.php?path=quantummemefactory/combiner/">MEME COMBINER</a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href = "index.php?path=memefactory2/memefeed/">MEME FEED</a>
+            <a href = "index.php?path=quantummemefactory/memefeed/">MEME FEED</a>
         </td>
     </tr>
 </table>
@@ -57,7 +54,7 @@ imageWidth = 0.7*smallerWidth;
 document.getElementById("topimage").style.width = imageWidth + "px";
 document.getElementById("bottomimage").style.width = imageWidth + "px";
 
-jsondir = "memefactory2/combiner/json/";
+jsondir = "quantummemefactory/combiner/json/";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -196,6 +193,7 @@ document.getElementById("publishbutton").onclick = function(){
     position:absolute;
     top:0px;
     left:0px;
+    opacity:0.5;
 }
 
 #pantable{
@@ -246,5 +244,3 @@ document.getElementById("publishbutton").onclick = function(){
 }
 
 </style>
-</body>
-</html>

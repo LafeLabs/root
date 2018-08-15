@@ -1,0 +1,108 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<p>
+    <a href = "feededitor.php?path=quantummemefactory/memefeed/">EDIT</a>  <a href = "index.php?path=quantummemefactory/imagefeed/">IMAGES</a>
+</p>
+<div id = "memefeed">
+    
+</div>
+<script>
+
+jsondir = "quantummemefactory/aligner/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+function init(){
+    for(var index = 0;index < jsondata.length;index++){
+        var newdiv = document.createElement("DIV");
+        newdiv.className = "imgbox";
+        var bottomimage = document.createElement("IMG");
+        bottomimage.className = "bottom";
+        var topimage = document.createElement("IMG");
+        topimage.className = "top";
+        newdiv.appendChild(bottomimage);
+        newdiv.appendChild(topimage);
+        topimage.src = jsondata[index].topimage;
+        bottomimage.src = jsondata[index].bottomimage;
+        document.getElementById("memefeed").appendChild(newdiv);
+        newdiv.style.width = (0.8*innerWidth).toString() + "px";
+        topimage.style.width = (0.8*innerWidth*jsondata[index].woverw).toString() + "px";
+        topimage.style.left = (0.8*innerWidth*jsondata[index].xoverw).toString() + "px";
+        topimage.style.top = (0.8*innerWidth*jsondata[index].yoverw).toString() + "px";
+        topimage.style.transform = "rotate(" + (jsondata[index].angle).toString() + "deg)";
+        topimage.id = "topimage" + index.toString();
+        bottomimage.id = "bottomimage" + index.toString();
+        topimage.onclick = function(){
+            imageIndex = parseInt(this.id.substr(8,this.id.length));
+        }
+    }
+
+}
+
+
+var mc = new Hammer(document.getElementById("memefeed"));
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright tap press", 
+function(ev) {
+    phi = ev.deltaX*Math.PI/500;
+    redraw();
+});
+
+imageIndex = 0;
+function redraw(){
+    alpha = Math.cos(phi)*Math.cos(phi);
+    beta = Math.sin(phi)*Math.sin(phi);
+    document.getElementById("topimage" + imageIndex.toString()).style.opacity = alpha.toString();       
+    document.getElementById("bottomimage" + imageIndex.toString()).style.opacity = beta.toString();
+}
+
+
+</script>
+<style>
+a{
+    position:relative;
+    z-index:2;
+}
+#memefeed{
+    position:absolute;
+    top:3em;
+    bottom:0px;
+    left:2em;
+    right:2em;
+    overflow:scroll;
+    z-index:1;
+}
+.imgbox{
+    position:relative;
+    width:80%;
+    height:220%;
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    z-index:-1;
+}
+.bottom{
+    width:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+    opacity:0.5;
+}
+.top{
+    position:absolute;
+    width:100%;
+    left:0px;
+    top:0px;
+    z-index:0;
+    opacity:0.5;
+}
+
+</style>

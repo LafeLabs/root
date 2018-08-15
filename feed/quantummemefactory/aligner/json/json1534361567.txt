@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://upload.wikimedia.org/wikipedia/en/b/bc/Star_Wars_canon_galaxy_map.png",
+    "topimage": "https://upload.wikimedia.org/wikipedia/commons/6/62/Cthulhu_and_R%27lyeh.jpg",
+    "xoverw": 0.3580379520229145,
+    "yoverw": -0.010741138560687435,
+    "woverw": 0.3626924453992122,
+    "angle": 0
+}

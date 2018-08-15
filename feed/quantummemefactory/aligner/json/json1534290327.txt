@@ -1,0 +1,8 @@
+{
+    "bottomimage": "https://i.imgur.com/oP38Woa.jpg",
+    "topimage": "https://i.imgur.com/vrzxr15.jpg",
+    "xoverw": 0.16111707841031153,
+    "yoverw": 0.4976727533118511,
+    "woverw": 0.7296813462226995,
+    "angle": 0
+}

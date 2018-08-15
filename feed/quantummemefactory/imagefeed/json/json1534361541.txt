@@ -1,0 +1,3 @@
+{
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/bc/Star_Wars_canon_galaxy_map.png"
+}

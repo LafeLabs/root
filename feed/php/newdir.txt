@@ -9,6 +9,7 @@ if(strlen($path) == 0){
     mkdir($name."/"."feeds");
     mkdir($name."/"."json");
     mkdir($name."/"."svg");
+    
 }
 else{
     mkdir($path."/".$name);
