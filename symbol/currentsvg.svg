@@ -10,18 +10,14 @@
     "imgangle": 0,
     "svgwidth": 500,
     "svgheight": 500,
-    "unit": 161.0510000000001,
+    "unit": 100,
     "x0": 684,
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0326,0347,0320,0331,0336,0330,0337,0336,0330,0341,0336,0336,0336,0347,0337,0337,0337,0330,0336,0336,0336,0336,0347,0337,0337,0337,0337,0331,0333,0333,0333,",
+    "glyph": "",
     "table": []
 }
 </json>
 -->
-    <circle cx="250" cy = "250" r = "161.0510000000001" stroke = "blue" stroke-width = "2" fill = "blue" />
-    <circle cx="250" cy = "250" r = "80.52550000000005" stroke = "black" stroke-width = "4" fill = "none" />
-    <circle cx="250" cy = "250" r = "10.065687500000006" stroke = "black" stroke-width = "4" fill = "black" />
-    <circle cx="250" cy = "169" r = "5.032843750000003" stroke = "black" stroke-width = "4" fill = "black" />
 </svg>

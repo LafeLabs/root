@@ -1,0 +1,3 @@
+<h2>Introduction</h2>
+
+<p>Why quantum art? What are we doing here?  What's going on?</p>

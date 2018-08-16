@@ -1,0 +1,30 @@
+<h2>On the Nature of Machine Replication</h2>
+
+<p>
+    Where do machines come from?  How do they replicate?  These are questions which are not considered a fundamental part of computer science.  Theoretical computer science generally treats computers as processors of numbers which have existed forever, will exist forever and exists for the sole purpose of processing numbers.  As in most theoretical frameworks, the models are separated from the human elements.  Business, finance, sales, marketing, branding, schmoozing and conferences, and other social activities are not considered "fundamental".  
+</p>
+<p>
+    I challenge this!  Every machine, from the early Enigmas to the latest smartphone has one thing in common: someone had to decide to put resources into building that machine instead of some other competing machine.  The human who made this choice about resource allocation might have been a government program manager, a venture capital investor, or a lab manager in a large company. In all cases someone other than the champion of the technology had to consider the stories being told by various champions and choose one over another one.
+</p>
+<p>
+    Life scientists know they cannot understand a life form without understanding replication, it makes no sense to simply view a bacterium as a machine that consumes energy but ...
+</p>
+<p>
+    Art replicators
+</p>
+<p>
+    Replication path via startup companies
+</p>
+<p>
+    replication path via large companies
+</p>
+<p>
+    Replication path via government agencies
+</p>
+<p>
+    Social media and replication 
+    
+    The true power of social media is just starting to show.  It is the most powerful technology in history, more powerful than anything else, changes everything about human condition, but especially knowledge driven fields.  The future will move not just at the speed of twitter but at the speed of fully networked twitter networks. The future!
+    
+</p>
+

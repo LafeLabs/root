@@ -1,0 +1,31 @@
+<svg width="800" height="500" viewbox = "0 0 800 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Feynmann_Diagram_Gluon_Radiation.svg",
+    "imgw": 4.809480018231663,
+    "imgleft": 2,
+    "imgtop": -3,
+    "imgangle": 0,
+    "svgwidth": 800,
+    "svgheight": 500,
+    "unit": 100,
+    "x0": 784,
+    "y0": 399,
+    "x0rel": 100,
+    "y0rel": 0,
+    "glyph": "0336,0350,0335,0304,0227,0331,0331,0331,0331,0335,0230,0331,0331,0331,0331,0335,0350,0335,0304,0326,0224,0320,0350,0335,0304,0227,0331,0331,0331,0331,0334,0230,0331,0331,0331,0331,0333,0333,0336,0332,0332,0337,0336,0336,0325,0226,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M571 179 L595 175 L582 168 L575 155 L571 179 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="571" y1="179" x2="641" y2="109" style="stroke:black;stroke-width:4" />
+    <line x1="571" y1="179" x2="500" y2="250" style="stroke:black;stroke-width:4" />
+	<path d = "M571 321 L567 296 L560 310 L546 317 L571 321 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="571" y1="321" x2="500" y2="250" style="stroke:black;stroke-width:4" />
+    <line x1="571" y1="321" x2="641" y2="391" style="stroke:black;stroke-width:4" />
+<path    d = "M500,250 C498,256 497,259 494,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M494,259 C488,259 488,241 481,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M481,241 C475,241 475,259 469,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M469,259 C463,259 463,241 456,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M456,241 C450,241 450,259 444,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M444,259 C437,259 438,241 431,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M431,241 C425,241 425,259 419,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M419,259 C412,259 413,241 406,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M406,241 C400,241 400,259 394,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M394,259 C388,259 388,241 381,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M381,241 C375,241 375,259 369,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M369,259 C363,259 363,241 356,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M356,241 C350,241 350,259 344,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M344,259 C338,259 337,241 331,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M331,241 C325,241 325,259 319,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M319,259 C313,259 312,241 306,241" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M306,241 C300,241 300,259 294,259" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M294,259 C291,259 290,256 288,250" fill = "none" stroke-width = "2" stroke = "blue" />	<path d = "M217 179 L213 155 L206 168 L192 175 L217 179 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="217" y1="179" x2="146" y2="109" style="stroke:black;stroke-width:4" />
+    <line x1="217" y1="179" x2="288" y2="250" style="stroke:black;stroke-width:4" />
+	<path d = "M217 321 L241 317 L228 310 L221 296 L217 321 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="217" y1="321" x2="288" y2="250" style="stroke:black;stroke-width:4" />
+    <line x1="217" y1="321" x2="146" y2="391" style="stroke:black;stroke-width:4" />
+<path    d = "M252,215 C243,223 230,210 234,206" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M234,206 C239,201 252,215 243,223" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M243,223 C234,232 221,219 226,215" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M226,215 C230,210 243,223 234,232" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M234,232 C226,241 212,228 217,223" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M217,223 C221,219 234,232 226,241" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M226,241 C217,250 204,237 208,232" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M208,232 C212,228 226,241 217,250" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M217,250 C208,259 195,246 199,241" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M199,241 C204,237 217,250 208,259" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M208,259 C199,268 186,254 190,250" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M190,250 C195,246 208,259 199,268" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M199,268 C190,277 177,263 181,259" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M181,259 C186,254 199,268 190,277" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M190,277 C181,285 168,272 173,268" fill = "none" stroke-width = "2" stroke = "green" /><path    d = "M173,268 C177,263 190,277 181,285" fill = "none" stroke-width = "2" stroke = "green" /></svg>

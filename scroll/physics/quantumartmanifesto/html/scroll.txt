@@ -1,13 +1,14 @@
-<h1>Quantum Art</h1>
+<h1>Quantum Art Manifesto</h1>
+
 <h2>Graphical Languages</h2>
 <ul>
     <li>Quantum Logic Gates</li>
-    <li>Classical Logic Gates</li>
     <li>Quantum Circuits</li>
-    <li>Quantum Measurement Chain</li>
+    <li>Topology/knots</li>
+    <li>Graph Theory</li>
     <li>Chemical structure</li>
     <li>Protein folding structure</li>
-    <li>Topology/knots</li>
+    <li>feynman Diagrams</li>
 </ul>
 <h2>Curve Factories</h2>
 <ul>
@@ -27,6 +28,28 @@
 <ul>
     <li>One qubit, two arbitrary VRML objects, fade and rotate and grow and shrink</li>
     <li>Two Qubits, four arbitrary VRML objects fade, rotate grow and shrink</li>
-    <li>Two Qubits, one arbitrary VRML object rotate fade, grow and shrink(map to S^3)</li>
-    <li>Arbitrary numbers of qubits from 2 to a few dozen, as a chain of objects which rotate along theta and phi angles, hence mapping to various theta's of S^N and phase angles phi.  Each link is some arbitrary VRML object, whole thing is manipulated with gestures, which controls qubit states.  Hence this is a full hand-gesture VRML interface which can link to multi qubit system in real time at video rate in a web browser</li>
+    <li>Two Qubits, one arbitrary VRML object rotate fade, grow and shrink(map to $S^3$)</li>
+    <li>Arbitrary numbers of qubits from 2 to a few dozen, as a chain of objects which rotate along theta and phi angles, hence mapping to various theta's of $S^N$ and phase angles phi.  Each link is some arbitrary VRML object, whole thing is manipulated with gestures, which controls qubit states.  Hence this is a full hand-gesture VRML interface which can link to multi qubit system in real time at video rate in a web browser</li>
+</ul>
+
+<h2>Feeds</h2>
+<ul>
+    <li>All the SVG feeds: symbol and curve</li>
+    <li>meme feeds: symbol on photo, div on photo or symbol, just a math div, curve and photo, feeds for topics, archives and date ranges, quantum meme feeds</li>
+    <li>New curves</li>
+    <li>New Shape Tables</li>
+    <li>Published papers, quantum Latex micro-blogging</li>
+</ul>
+
+<h2>Essays, Sections of "Book"</h2>
+
+<ul>
+    <li>Introduction:why? what? who? how?</li>
+    <li>On the origins of machines and the importance of graphical communication for new technologies.  Memes, PowerPoint, the chan boards, stories told to get money, capitalism and post capitalism, the topological economy. Quantum Alice and Bob. The true power of social media is just starting to show.  It is the most powerful technology in history, more powerful than anything else, changes everything about human condition, but especially knowledge driven fields.  The future will move not just at the speed of twitter but at the speed of fully networked twitter networks.</li>
+    <li>"Geometry and Quantum Information".Quantum information is geometric.  The problems it attacks are geometric and topological.  This requires a total shift from the numbers based paradigm of so-called "computers".  Survey of problems, demonstration of geometric nature, how they map to other geometries, skip the numbers! Why capitalist ideology is what is holding back applied math and quantum information science. Examples of real problems: protein folding, drug design, materials design using lattice geometron, number factorization(map Galois groups to geometron)</li>
+    <li>Geometron Virtual Machine.  Basic applications to graphical communication.  Modifications for nanofabrication, pulse sequence design, quantum state expression, lattice structures. All the examples, links to the SVG feeds, details of how that works.  </li>
+    <li>Quantum Computing in the Web Browser: CSS, VRML, real time Hilbert Space Navigators</li>
+    <li>On quantum information outside the of science and technology.  Twitter as quantum information system, misuse and possible non-misuse of quantum ideas in religion and occult.  Quantum information as a tool for the fine arts.  Using a quantum based UI to manipulate graphical languages for logo and brand design.  Quantum finance, quantum social media, quantum graphic design, quantum theology, quantum philosophy</li>
+    <li>Workflows in the Quantum Art Network: discussion of papers, connection to Jupyter, how to build useful microblogging, how to use SVG's in PowerPoint and illustrator, how to complete integration into published work, while also publishing directly, integration into phd dissertations.  Rapid qubit curve publication math-based social media.  Replacing PowerPoint with Geometron Slide Decks. Building new nodes on the Network. </li>
+    
 </ul>

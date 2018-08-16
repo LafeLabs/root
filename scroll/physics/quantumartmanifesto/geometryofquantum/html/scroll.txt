@@ -1,0 +1,8 @@
+<h2>Geometry and Quantum Information</h2>
+
+<p>
+Quantum information is geometric by its very nature.  The quantum revolution in information science is but one strand in a thick rope that is the current trajectory of human thought. For the last several hundred years with the rise of industrial capitalism all our actions have been dominated by a numbers-based ideology. 
+</p>
+<p>
+The problems it attacks are geometric and topological.  This requires a total shift from the numbers based paradigm of so-called "computers".  Survey of problems, demonstration of geometric nature, how they map to other geometries, skip the numbers! Why capitalist ideology is what is holding back applied math and quantum information science. Examples of real problems: protein folding, drug design, materials design using lattice geometron, number factorization(map Galois groups to geometron)    
+</p>
