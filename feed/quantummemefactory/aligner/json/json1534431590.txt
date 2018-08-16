@@ -1,0 +1,8 @@
+{
+    "bottomimage": "http://localhost:8000/symbol/physics/knots/svg/svg1534431499.svg",
+    "topimage": "http://localhost:8000/symbol/physics/knots/svg/svg1534431487.svg",
+    "xoverw": 0,
+    "yoverw": 0,
+    "woverw": 1,
+    "angle": 0
+}

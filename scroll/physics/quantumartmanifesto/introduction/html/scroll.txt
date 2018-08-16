@@ -1,3 +1,14 @@
 <h2>Introduction</h2>
 
-<p>Why quantum art? What are we doing here?  What's going on?</p>
+<p>
+    This paper is about two ideas: First, that art is fundamental to quantum information science and second that quantum information science can be of surprising use in the arts(for a broad enough definition of "arts").
+</p>
+<p>
+    In the next section I support the first of these ideas by showing that graphical communication between humans is a fundamental element of all technology(including of course quantum computers), and that if we want to understand how technology works, our models must take this into consideration.  I survey the ways people model computers today, both classical and quantum, and show that because humans and our motives are omited from these models, they are not just narrow, but fatally so, and that this has held back our understanding of machines in important ways.  I further make the claim that for quantum information science this problem is especially acute.  
+</p>
+<p>
+    Having hopefully convinced the reader that graphical communication is fundamental to technology development, I introduce the Geometron language, which is a software package I have created designed for rapid, specialized graphical communication based in a web browser.  I lead you through some basic examples so that you can create your own specialized graphics about quantum information science in your browser and immediately share them with your colleagues.  
+</p>
+<p>
+    
+</p>

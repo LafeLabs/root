@@ -1,0 +1,4 @@
+{
+    "bottomimage": "http://localhost:8000/symbol/physics/knots/svg/svg1534431499.svg",
+    "topimage": "http://localhost:8000/symbol/physics/knots/svg/svg1534431487.svg"
+}

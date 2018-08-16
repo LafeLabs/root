@@ -1,4 +1,4 @@
-<h1>Quantum Art Manifesto</h1>
+<h1>Quantum Art</h1>
 
 <h2>Graphical Languages</h2>
 <ul>
