@@ -1,7 +1,0 @@
-{
-    "url": "http://flyreagan.com/dca/reagan-national-airport",
-    "text": "Reagan Airport",
-    "latlon": "38.8427337985889,-77.05197076582772",
-    "rotation": 73.8274,
-    "fontfeet": 1231.5505500000002
-}

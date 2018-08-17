@@ -1,0 +1,156 @@
+<img class = "staticimage" id = "bottomimage"/>
+<div id = "newbox"></div>
+<div  class = "imagefeed" id = "bottomimagefeed"></div>
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=memefactory4/addbox/">EDIT CODE</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=memefactory4/aligner/">ALIGNER</a>
+        </td>
+    </tr>
+</table>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<textarea id = "textinput"></textarea>
+
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+jsondir = "memefactory4/aligner/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        imagefeedinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+document.getElementById("textinput").onkeyup = function(){
+    document.getElementById("newbox").innerHTML = this.value;
+}
+
+function imagefeedinit(){
+    for(var index = 0;index < jsondata.length;index++){
+        var newimg = document.createElement("IMG");
+        newimg.src = jsondata[index].url;
+        document.getElementById("bottomimagefeed").appendChild(newimg);
+        newimg.onclick = function(){
+            document.getElementById("bottomimage").src = this.src;
+        }
+    }
+}
+
+document.getElementById("publishbutton").onclick = function(){
+    jsonoutput = {};
+    jsonoutput.bottomimage = document.getElementById("bottomimage").src;
+    jsonoutput.text = document.getElementById("textinput").value;
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+
+}
+
+</script>
+<style>
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+#topimagefeed{
+    right:10px;
+}
+#bottomimagefeed{
+    left:10px;
+}
+.imagefeed{
+    position:absolute;
+    top:15%;
+    width:25%;
+    bottom:10px;
+    border:solid;
+    overflow:scroll;
+}
+.imagefeed img{
+    display:block;
+    margin:auto;
+    width:80%;
+    cursor:pointer;
+    margin-top:2em;
+    margin-bottom:2em;
+}
+.imagefeed img:hover{
+    border:solid;
+    border-width:8px;
+    border-color:green;
+}
+.imagefeed img:active{
+    border:solid;
+    border-width:16px;
+    border-color:yellow;
+}
+
+.staticimage{
+    position:absolute;
+    left:30%;
+    width:25%;
+    top:1em;
+    z-index:-2;
+}
+#newbox{
+    position:absolute;
+    left:30%;
+    top:1em;
+    z-index:1;
+}
+#topimage{
+    z-index:0;
+}
+#bottomimage{
+    z-index:-1;
+}
+.button{
+    cursor:pointer;
+    font-size:30px;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:8em;
+    border-radius:10px;
+    text-align:center;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#textinput{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    height:200px;
+    width:200px;
+    font-family:courier;
+    font-size:22px;
+}
+</style>

@@ -1,0 +1,4 @@
+{
+    "bottomimage": "https://i.imgur.com/C2OFLHE.jpg",
+    "text": "CARDBOARD!"
+}

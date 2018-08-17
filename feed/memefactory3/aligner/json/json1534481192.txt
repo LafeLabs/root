@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
+    "xoverw": 0.5341685649202733,
+    "yoverw": 0.18272046859746172,
+    "woverw": 0.5184672958021478,
+    "text": "Some sort of hexagon thing",
+    "fontoverw": 0.05184672958021478,
+    "angle": 23.561944901923447
+}

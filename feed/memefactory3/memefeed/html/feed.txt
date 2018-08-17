@@ -1,0 +1,78 @@
+<p>
+    <a href = "feededitor.php?path=memefactory3/memefeed/">EDIT</a>  <a href = "index.php?path=memefactory3/imagefeed/">IMAGES</a>
+</p>
+<div id = "memefeed">
+    
+</div>
+<script>
+
+jsondir = "memefactory3/aligner/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+
+function init(){
+    for(var index = 0;index < jsondata.length;index++){
+        var newdiv = document.createElement("DIV");
+        newdiv.className = "imgbox";
+        var bottomimage = document.createElement("IMG");
+        bottomimage.className = "bottom";
+        var newbox = document.createElement("DIV");
+        newbox.className = "top";
+        newdiv.appendChild(bottomimage);
+        newdiv.appendChild(newbox);
+        newbox.innerHTML = jsondata[index].text;
+        bottomimage.src = jsondata[index].bottomimage;
+        document.getElementById("memefeed").appendChild(newdiv);
+        newdiv.style.width = (0.8*innerWidth).toString() + "px";
+
+        newbox.style.width = (0.8*innerWidth*jsondata[index].woverw).toString() + "px";
+        newbox.style.left = (0.8*innerWidth*jsondata[index].xoverw).toString() + "px";
+        newbox.style.top = (0.8*innerWidth*jsondata[index].yoverw).toString() + "px";
+        newbox.style.transform = "rotate(" + (jsondata[index].angle).toString() + "deg)";
+        newbox.style.fontSize = (0.8*innerWidth*jsondata[index].fontoverw).toString() + "px";
+
+    }
+}
+
+</script>
+<style>
+#memefeed{
+    position:absolute;
+    top:3em;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow:scroll;
+}
+.imgbox{
+    position:relative;
+    width:80%;
+    display:block;
+    margin:auto;
+    height:220%;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+.bottom{
+    width:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+.top{
+    position:absolute;
+    width:100%;
+    left:0px;
+    top:0px;
+    z-index:0;
+}
+
+</style>

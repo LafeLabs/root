@@ -1,5 +1,0 @@
-{
-    "imgurl": "https://i.imgur.com/LZj5gnI.jpg",
-    "marker0": "22ND AND I STREET",
-    "marker1": "22ND AND M STREET"
-}

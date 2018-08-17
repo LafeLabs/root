@@ -1,6 +1,0 @@
-{
-    "url": "../symbol/svg/svg1533085861.svg",
-    "latlon": "38.90479679019471,-77.02331608732473",
-    "rotation": -92.677,
-    "fontfeet": null
-}

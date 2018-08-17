@@ -1,0 +1,13 @@
+{
+    "bottomimage": "https://i.imgur.com/seQpbHU.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.5813537260006508,
+            "yoverw": 0.9490725675235926,
+            "woverw": 0.4322323462414579,
+            "text": "Where is the Big Orange?",
+            "fontoverw": 0.04322323462414579,
+            "angle": 0
+        }
+    ]
+}

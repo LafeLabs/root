@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/wEzuCDq.jpg",
+    "xoverw": 0.2689554181581516,
+    "yoverw": 0.6008786202408071,
+    "woverw": 0.7251057598438009,
+    "text": "ROCKS",
+    "fontoverw": 0.07251057598438009,
+    "angle": 24.818581963359367
+}

@@ -1,0 +1,9 @@
+{
+    "bottomimage": "https://i.imgur.com/C2OFLHE.jpg",
+    "xoverw": 0.24454930035795636,
+    "yoverw": 0.5048812235600391,
+    "woverw": 0.5558900097624472,
+    "text": "CARDBOARD!",
+    "fontoverw": 0.05558900097624472,
+    "angle": 0
+}

@@ -1,0 +1,4 @@
+{
+    "bottomimage": "https://i.imgur.com/wEzuCDq.jpg",
+    "text": "ROCKS"
+}

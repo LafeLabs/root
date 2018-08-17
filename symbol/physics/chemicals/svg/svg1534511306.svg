@@ -1,0 +1,31 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 100,
+    "x0": 752.5,
+    "y0": 439,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0331,0232,0330,0330,0231,0304,0221,0306,0331,0331,0333,0335,0231,0334,0304,0222,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M250 350 L163 300 L163 200 L250 150 L337 200 L337 300 L250 350 Z" stroke = "black" stroke-width = "4" fill = "none" />    <line x1="250" y1="325" x2="207" y2="300" style="stroke:black;stroke-width:4" />
+    <line x1="207" y1="300" x2="185" y2="288" style="stroke:black;stroke-width:4" />
+    <line x1="185" y1="213" x2="228" y2="188" style="stroke:black;stroke-width:4" />
+    <line x1="228" y1="188" x2="250" y2="175" style="stroke:black;stroke-width:4" />
+    <line x1="315" y1="212" x2="315" y2="262" style="stroke:black;stroke-width:4" />
+    <line x1="315" y1="262" x2="315" y2="287" style="stroke:black;stroke-width:4" />
+	<path d = "M250 150 L250 100 L250 75 L250 63 " stroke = "black" stroke-width = "4" fill = "none" />    <text x="238" y = "63" fill = "black" font-size = "25px" font-family = "arial">N</text>
+	<path d = "M337 200 L380 175 L402 163 L412 156 " stroke = "black" stroke-width = "4" fill = "none" />    <text x="411" y = "163" fill = "black" font-size = "25px" font-family = "arial">H</text>
+</svg>

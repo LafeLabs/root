@@ -1,0 +1,4 @@
+{
+    "bottomimage": "https://i.imgur.com/kGoAPS0.jpg",
+    "text": "Some sort of hexagon thing"
+}
