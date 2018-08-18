@@ -98,7 +98,7 @@ initmeme();
 
 document.getElementById("nextmeme").onclick = function(){
     memeIndex++;
-    if(memeIndex > memes.length){
+    if(memeIndex > memes.length - 1){
         memeIndex = 0;
     }
     initmeme();
@@ -133,6 +133,37 @@ document.getElementById("newbox").onclick = function(){
     initmeme();
 }
 
+document.getElementById("nextbox").onclick = function(){
+    boxIndex++;
+    if(boxIndex > boxes.length - 1){
+        boxIndex = 0;
+    }
+    document.getElementById("boxinput").value = boxes[boxIndex].innerHTML;
+    for(var index = 0;index < memejson.boxes.length;index++){
+        if(index == boxIndex){
+            staticboxes[index].style.border = "solid";
+        }
+        else{
+            staticboxes[index].style.border = "none";
+        }
+    }    
+}
+document.getElementById("prevbox").onclick = function(){
+    boxIndex--;
+    if(boxIndex < 0){
+        boxIndex = boxes.length - 1;
+    }
+    document.getElementById("boxinput").value = boxes[boxIndex].innerHTML;
+    for(var index = 0;index < memejson.boxes.length;index++){
+        if(index == boxIndex){
+            staticboxes[index].style.border = "solid";
+        }
+        else{
+            staticboxes[index].style.border = "none";
+        }
+    }    
+}
+
 function initmeme(){
     boxes = memes[memeIndex].getElementsByClassName("box");
     boxIndex = boxes.length - 1;
@@ -140,12 +171,24 @@ function initmeme(){
     document.getElementById("mainImage").src = memejson.url;
     document.getElementById("boxinput").value = boxes[boxIndex].innerHTML;
     for(var index = 0;index < memejson.boxes.length;index++){
+        staticboxes[index].style.display = "block";
         staticboxes[index].innerHTML = boxes[index].innerHTML;
         staticboxes[index].style.left = (memejson.boxes[index].xoverw*imageWidth).toString() + "px";
         staticboxes[index].style.top = (memejson.boxes[index].yoverw*imageWidth).toString() + "px";
         staticboxes[index].style.width = (memejson.boxes[index].woverw*imageWidth).toString() + "px";
         staticboxes[index].style.fontSize = (memejson.boxes[index].fontoverw*memejson.boxes[index].woverw*imageWidth).toString() + "px";    
         staticboxes[index].style.transform = "rotate(" + (memejson.boxes[index].angle).toString() + "deg)";
+        
+        if(index == boxIndex){
+            staticboxes[index].style.border = "solid";
+        }
+        else{
+            staticboxes[index].style.border = "none";
+        }
+        
+    }
+    for(var index = memejson.boxes.length;index < staticboxes.length;index++){
+        staticboxes[index].style.display = "none";
     }
     
 }
