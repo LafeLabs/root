@@ -1,0 +1,13 @@
+{
+    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.19410999023755282,
+            "yoverw": 0.5520663846404166,
+            "woverw": 0.5298568174422389,
+            "text": "SQUARE",
+            "fontoverw": 0.05298568174422389,
+            "angle": -31.101767270538954
+        }
+    ]
+}

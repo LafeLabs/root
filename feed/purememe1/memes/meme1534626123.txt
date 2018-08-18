@@ -1,0 +1,17 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "https://i.imgur.com/zV6m1tF.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.4563401670463174,
+            "yoverw": 0.46583143507972663,
+            "woverw": 0.38921791951404705,
+            "fontoverw": 0.15,
+            "angle": -91.42034621946297
+        }
+    ]
+}
+    </div>
+    <div class = "box">HOOVER WAS A NAZI       </div></div>

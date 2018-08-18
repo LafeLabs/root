@@ -1,0 +1,13 @@
+{
+    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.2770907907582167,
+            "yoverw": 0.6187764399609502,
+            "woverw": 0.6486332574031891,
+            "text": "<div style = \"width:100%;height:100%;border:solid;\">foo asdf asddf asdf asdf asdf asdf asdf </div>",
+            "fontoverw": 0.12972665148063783,
+            "angle": -27.01769682087222
+        }
+    ]
+}

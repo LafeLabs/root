@@ -1,0 +1,29 @@
+{
+    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.20224536283761793,
+            "yoverw": 0.5585746827204686,
+            "woverw": 0.25,
+            "text": "square",
+            "fontoverw": 0.025,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.6301659616010413,
+            "yoverw": 0.15994142531727948,
+            "woverw": 0.25,
+            "text": "triangle",
+            "fontoverw": 0.025,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.6464367068011715,
+            "yoverw": 0.1404165310771233,
+            "woverw": 0.25,
+            "text": "triangle",
+            "fontoverw": 0.025,
+            "angle": 16.650441064025905
+        }
+    ]
+}

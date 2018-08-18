@@ -9,7 +9,7 @@ if(strlen($path) == 0){
     mkdir($name."/"."feeds");
     mkdir($name."/"."json");
     mkdir($name."/"."svg");
-    
+    mkdir($name."/"."memes");
 }
 else{
     mkdir($path."/".$name);
@@ -17,6 +17,7 @@ else{
     mkdir($path."/".$name."/"."feeds");
     mkdir($path."/".$name."/"."json");
     mkdir($path."/".$name."/"."svg");
+    mkdir($path."/".$name."/"."memes");
 }
     
 $file = fopen($path."/".$name."/"."html/wall.txt","w");// create new file with this name

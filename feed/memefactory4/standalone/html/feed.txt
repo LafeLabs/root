@@ -1,0 +1,272 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=memefactory4/standalone/">EDIT CODE</a>
+        </td>
+    </tr>
+</table>
+
+<table id = "pantable">
+    <tr><td>pan x</td></tr>
+    <tr><td>pan y</td></tr>
+    <tr><td>scale</td></tr>
+    <tr><td>rotate</td></tr>
+</table>
+
+<div id = "mainmeme">
+    <div id = "maindatabox" class=  "data"></div>
+    <img id = "mainImage"/>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+    <div class = "boxstack"></div>
+</div>
+
+<table id = "buttontable">
+    <tr>
+        <td class = "button">PREV MEME</td>
+        <td class = "button">NEXT MEME</td>
+        <td class = "button">PREV BOX</td>
+        <td class = "button">NEXT BOX</td>
+        <td class = "button">NEW BOX</td>
+        <td id = "publishbutton" class = "button">PUBLISH</td>
+    </tr>
+</table>
+
+<textarea id = "boxinput"></textarea>
+<input id  = "urlinput"/>
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+
+if(document.getElementById("jsondata").innerHTML.length < 8){
+    jsondata = [];
+    var tempmeme = {};
+    tempmeme.url = "";
+    tempmeme.boxes = [];
+    var tempbox = {};
+    tempbox.xoverw = 0.5;
+    tempbox.yoverw = 0.5;
+    tempbox.woverw = 0.2;
+    tempbox.text = "";
+    tempbox.fontoverw = 0.04;
+    tempbox.angle = 0;
+    tempmeme.boxes.push(tempbox);
+    jsondata.push(tempmeme);
+}
+else{
+    jsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+}
+
+memeIndex = 0;
+boxIndex = 0;
+boxes = document.getElementsByClassName("boxstack");
+
+if(innerWidth < innerHeight){
+    smallerWidth = innerWidth;
+}
+else{
+    smallerWidth = innerHeight;
+}
+imageWidth = 0.7*smallerWidth;
+document.getElementById("mainmeme").style.width = imageWidth.toString() + "px";
+document.getElementById("mainImage").src = jsondata[memeIndex].url;
+
+w = jsondata[memeIndex].boxes[boxIndex].woverw*imageWidth;
+x = jsondata[memeIndex].boxes[boxIndex].xoverw*imageWidth;
+y = jsondata[memeIndex].boxes[boxIndex].yoverw*imageWidth;
+angle = jsondata[memeIndex].boxes[boxIndex].angle;
+fontScale = 0.2;
+
+for(var index = 0;index < jsondata[memeIndex].boxes.length;index++){
+    
+    boxes[index].style.left = (jsondata[memeIndex].boxes[index].xoverw*imageWidth).toString() + "px";
+    boxes[index].style.top = (jsondata[memeIndex].boxes[index].yoverw*imageWidth).toString() + "px";
+    boxes[index].style.width = (jsondata[memeIndex].boxes[index].woverw*imageWidth).toString() + "px";
+    boxes[index].style.fontSize = (fontScale*jsondata[memeIndex].boxes[index].xoverw*imageWidth).toString() + "px";
+    boxes[index].style.transform = "rotate(" + (jsondata[memeIndex].boxes[index].angle).toString() + "deg)";
+    boxes[index].innerHTML = jsondata[memeIndex].boxes[index].text;
+}
+
+
+function redraw(){
+    boxes[boxIndex].style.left = (x).toString() + "px";
+    boxes[boxIndex].style.top = (y).toString() + "px";
+    boxes[boxIndex].style.width = (w).toString() + "px";
+    boxes[boxIndex].style.fontSize = (w*fontScale).toString() + "px";
+    boxes[boxIndex].style.transform = "rotate(" + angle.toString() + "deg)";
+    
+    jsondata[memeIndex].boxes[boxIndex].xoverw = x/imageWidth;
+    jsondata[memeIndex].boxes[boxIndex].yoverw = y/imageWidth;
+    jsondata[memeIndex].boxes[boxIndex].woverw = w/imageWidth;
+    jsondata[memeIndex].boxes[boxIndex].fontoverw = fontScale*w/imageWidth;
+    jsondata[memeIndex].boxes[boxIndex].angle = angle;
+
+}
+
+
+myElement = document.getElementById("mainImage");
+
+mc = new Hammer(myElement);
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    x = 0.5*imageWidth + ev.deltaX;
+    y = 0.5*imageWidth + ev.deltaY;
+    redraw();
+});
+
+pans = document.getElementById("pantable").getElementsByTagName("TD");
+mc1 = new Hammer(pans[0]);
+mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc1.on("panleft panright panup pandown tap press", function(ev) {
+    x = 0.5*imageWidth + ev.deltaX;
+    redraw();
+});
+
+mc2 = new Hammer(pans[1]);
+mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc2.on("panleft panright panup pandown tap press", function(ev) {
+    y = 0.5*imageWidth + ev.deltaX;
+    redraw();
+});
+
+mc3 = new Hammer(pans[2]);
+mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc3.on("panleft panright panup pandown tap press", function(ev) {
+    w = 0.25*imageWidth + ev.deltaX;
+    redraw();
+});
+
+mc4 = new Hammer(pans[3]);
+mc4.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc4.on("panleft panright panup pandown tap press", function(ev) {
+    angle = Math.PI*ev.deltaX/10;
+    redraw();
+});
+
+document.getElementById("urlinput").onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+    jsondata[memeIndex].url = this.value;
+}
+
+document.getElementById("boxinput").onkeyup = function(){
+    boxes[boxIndex].innerHTML = this.value;
+    jsondata[memeIndex].boxes[boxIndex].text = this.value;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsondata[memeIndex],null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(path.length > 1){
+        var url = "makejsonindex.php?path=" + path;        
+    }
+    else{
+        var url = "makejsonindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+</script>
+<style>
+#bottomimage{
+    z-index:-1;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+
+.imagestack{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#pantable{
+    position:absolute;
+    top:5em;
+    right:0px;
+    z-index:1;
+}
+#pantable td{
+    height:100px;
+    width:25%;
+    font-size:50px;
+    border:solid;
+    text-align:center;
+}
+.button{
+    cursor:pointer;
+    font-size:22px;
+    text-align:center;
+    z-index:2;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+.data{
+    display:none;
+}
+#buttontable{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+#buttontable td{
+    border:solid;
+}
+#mainImage{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    z-index:-1;
+}
+#mainmeme{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+#boxinput{
+    position:absolute;
+    bottom:3em;
+    right:0px;
+    width:20em;
+    height:10em;
+}
+#newbox{
+    position:absolute;
+    z-index:1;
+}
+#urlinput{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+}
+.boxstack{
+    position:absolute;
+    z-index:1;
+}
+</style>

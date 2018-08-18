@@ -1,0 +1,264 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=memefactory4/memeengine/">EDIT CODE</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=memefactory4/imagefeed/">IMAGE FEED</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=memefactory4/memefeed/">MEME FEED</a>
+        </td>
+    </tr>
+</table>
+
+<table id = "pantable">
+    <tr><td>pan x</td></tr>
+    <tr><td>pan y</td></tr>
+    <tr><td>scale</td></tr>
+    <tr><td>rotate</td></tr>
+</table>
+
+<div id = "mainmeme">
+    <div id = "maindatabox" class=  "data"></div>
+    <img id = "mainImage"/>
+    <div id = "newbox"></div>
+</div>
+
+<table id = "buttontable">
+    <tr>
+        <td class = "button">PREV MEME</td>
+        <td class = "button">NEXT MEME</td>
+        <td class = "button">PREV BOX</td>
+        <td class = "button">NEXT BOX</td>
+        <td class = "button">NEW BOX</td>
+        <td id = "publishbutton" class = "button">PUBLISH</td>
+    </tr>
+</table>
+
+<textarea id = "boxinput"></textarea>
+<input id  = "urlinput"/>
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+if(path.length > 1){
+    pathset = true;
+}
+else{
+    pathset = false;
+}
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+memeIndex = 0;
+
+if(innerWidth < innerHeight){
+    smallerWidth = innerWidth;
+}
+else{
+    smallerWidth = innerHeight;
+}
+
+imageWidth = 0.7*smallerWidth;
+
+document.getElementById("mainmeme").style.width = imageWidth.toString() + "px";
+
+jsondir = "memefactory4/imagefeed/json/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        init();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=" + jsondir, true);
+httpc.send();
+    
+memeIndex = 0;
+
+function init(){
+    
+
+    for(var index = 0;index < jsondata.length;index++){
+        jsondata[index].boxes = [];
+    }
+    document.getElementById("mainImage").src = jsondata[memeIndex].url;
+    w = 0.25*imageWidth;
+    x = 0.5*imageWidth;
+    y = 0.5*imageWidth;
+    angle = 0;
+//    document.getElementById("newbox").innerHTML = jsondata[memeIndex].text;
+ //   document.getElementById("bottomimage").src = jsondata[memeIndex].bottomimage; 
+    redraw();
+}
+
+
+myElement = document.getElementById("mainImage");
+
+mc = new Hammer(myElement);
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    x = 0.5*imageWidth + ev.deltaX;
+    y = 0.5*imageWidth + ev.deltaY;
+    redraw();
+});
+
+pans = document.getElementById("pantable").getElementsByTagName("TD");
+mc1 = new Hammer(pans[0]);
+mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc1.on("panleft panright panup pandown tap press", function(ev) {
+    x = 0.5*imageWidth + ev.deltaX;
+    redraw();
+});
+
+mc2 = new Hammer(pans[1]);
+mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc2.on("panleft panright panup pandown tap press", function(ev) {
+    y = 0.5*imageWidth + ev.deltaX;
+    redraw();
+});
+
+mc3 = new Hammer(pans[2]);
+mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc3.on("panleft panright panup pandown tap press", function(ev) {
+    w = 0.25*imageWidth + ev.deltaX;
+    redraw();
+});
+
+mc4 = new Hammer(pans[3]);
+mc4.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc4.on("panleft panright panup pandown tap press", function(ev) {
+    angle = Math.PI*ev.deltaX/10;
+    redraw();
+});
+
+
+function redraw(){
+    document.getElementById("newbox").style.left = (x).toString() + "px";
+    document.getElementById("newbox").style.top = (y).toString() + "px";
+    document.getElementById("newbox").style.width = (w).toString() + "px";
+    document.getElementById("newbox").style.fontSize = (w*0.2).toString() + "px";
+    document.getElementById("newbox").style.transform = "rotate(" + angle.toString() + "deg)";
+}
+
+
+document.getElementById("boxinput").onkeyup = function(){
+    document.getElementById("newbox").innerHTML = this.value;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+
+    var boxjson = {};
+    boxjson.xoverw = x/imageWidth;
+    boxjson.yoverw = y/imageWidth;
+    boxjson.woverw = w/imageWidth;
+    boxjson.text = document.getElementById("boxinput").value;
+    boxjson.fontoverw = 0.1*w/imageWidth;
+    boxjson.angle = angle;
+    jsondata[memeIndex].boxes.push(boxjson);
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsondata[memeIndex],null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(pathset){
+        var url = "makejsonindex.php?path=" + path;        
+    }
+    else{
+        var url = "makejsonindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+</script>
+<style>
+#bottomimage{
+    z-index:-1;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+
+.imagestack{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#pantable{
+    position:absolute;
+    top:5em;
+    right:0px;
+    z-index:1;
+}
+#pantable td{
+    height:100px;
+    width:25%;
+    font-size:50px;
+    border:solid;
+    text-align:center;
+}
+.button{
+    cursor:pointer;
+    font-size:22px;
+    text-align:center;
+    z-index:2;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+.data{
+    display:none;
+}
+#buttontable{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+#buttontable td{
+    border:solid;
+}
+#mainImage{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    z-index:-1;
+}
+#mainmeme{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+#boxinput{
+    position:absolute;
+    bottom:3em;
+    right:0px;
+    width:20em;
+    height:10em;
+}
+#newbox{
+    position:absolute;
+    z-index:1;
+}
+#urlinput{
+    position:left:0px;
+    bottom:0px;
+}
+</style>

@@ -67,7 +67,31 @@ foreach($jsonlist as $value){
 echo "]";
 
 ?></div>
+<div id = "memedata" style = "display:none;" class = "no-mathjax"><?php
 
+if(isset($_GET['path'])){
+    $memeurl = $_GET['path']."memes/";
+}
+else{
+    $memeurl = "memes/";
+}
+
+$memelist = explode(",",file_get_contents($memeurl."list.txt"));
+$index = 0;
+
+foreach($memelist as $value){
+  if($value != null && strlen($value) > 3 && $index < count($memelist) - 2){
+      echo file_get_contents($memeurl.$value).",";
+  }  
+  else{
+      if($value != null && strlen($value) > 3){
+          echo file_get_contents($memeurl.$value);
+      }
+  }
+  $index += 1;
+}
+
+?></div>
 <?php
     if(isset($_GET['url'])){
         //url is set--remote page grabbed from somewhere on net

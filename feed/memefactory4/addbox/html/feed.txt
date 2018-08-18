@@ -1,4 +1,8 @@
-<img class = "staticimage" id = "bottomimage"/>
+<div id = "mainbox">
+    <div class = "data" id = "maindatabox"></div>
+    <img class = "staticimage" id = "bottomimage"/>
+</div>
+
 <div id = "newbox"></div>
 <div  class = "imagefeed" id = "bottomimagefeed"></div>
 <table id = "linktable">
@@ -38,19 +42,41 @@ document.getElementById("textinput").onkeyup = function(){
 
 function imagefeedinit(){
     for(var index = 0;index < jsondata.length;index++){
+        var newdiv = document.createElement("DIV");
+        var newdatadiv = document.createElement("DIV");
+        newdatadiv.className = "data";
+        newdatadiv.innerHTML = JSON.stringify(jsondata[index],null,"    ");
+        newdiv.appendChild(newdatadiv);
         var newimg = document.createElement("IMG");
-        newimg.src = jsondata[index].url;
-        document.getElementById("bottomimagefeed").appendChild(newimg);
+        newimg.src = jsondata[index].bottomimage;
+        newdiv.appendChild(newimg);
+        document.getElementById("bottomimagefeed").appendChild(newdiv);
         newimg.onclick = function(){
             document.getElementById("bottomimage").src = this.src;
+            document.getElementById("maindatabox").innerHTML = this.parentNode.getElementsByClassName("data")[0].innerHTML;
         }
     }
 }
 
 document.getElementById("publishbutton").onclick = function(){
     jsonoutput = {};
-    jsonoutput.bottomimage = document.getElementById("bottomimage").src;
-    jsonoutput.text = document.getElementById("textinput").value;
+    jsonoutput.url = document.getElementById("bottomimage").src;
+    var newjson = {};
+    newjson.text = document.getElementById("textinput").value;
+    newjson.xoverw = 0.5;
+    newjson.yoverw = 0.5;
+    newjson.woverw = 0.4;
+    newjson.fontoverw = 0.04;
+    newjson.angle = 0;
+    jsonoutput.boxes = [];
+    boxjsondata = JSON.parse(document.getElementById("maindatabox").innerHTML);
+
+    for(var index = 0;index < boxjsondata.boxes[0].length;index++){
+        jsonoutput.boxes.push(boxjsondata.boxes[index]);
+    }
+
+    jsonoutput.boxes.push(newjson);
+
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
     var httpc = new XMLHttpRequest();
@@ -152,5 +178,8 @@ document.getElementById("publishbutton").onclick = function(){
     width:200px;
     font-family:courier;
     font-size:22px;
+}
+.data{
+    display:none;
 }
 </style>
