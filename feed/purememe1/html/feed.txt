@@ -214,14 +214,14 @@ pans = document.getElementById("pantable").getElementsByTagName("TD");
 mc1 = new Hammer(pans[0]);
 mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc1.on("panleft panright panup pandown tap press", function(ev) {
-    memejson.boxes[boxIndex].fontoverw = 0.15 + ev.deltaX/(imageWidth*memejson.boxes[boxIndex].woverw);    
+    memejson.boxes[boxIndex].woverw = 0.3 + ev.deltaX/imageWidth;
     redraw();
 });
 
 mc2 = new Hammer(pans[1]);
 mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 mc2.on("panleft panright panup pandown tap press", function(ev) {
-    memejson.boxes[boxIndex].woverw = 0.3 + ev.deltaX/imageWidth;
+    memejson.boxes[boxIndex].fontoverw = 0.15 + ev.deltaX/(imageWidth*memejson.boxes[boxIndex].woverw);    
     redraw();
 });
 

@@ -1,0 +1,31 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Bret_08-22-1999_1431Z.png",
+    "boxes": [
+        {
+            "xoverw": 0.37661351556567957,
+            "yoverw": 0.524677296886864,
+            "woverw": 0.3,
+            "fontoverw": 0.15,
+            "angle": 43.982297150257104
+        },
+        {
+            "xoverw": 0.524677296886864,
+            "yoverw": 0.8796507213363706,
+            "woverw": 0.3,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.2703113135914958,
+            "yoverw": 0.3101746393318147,
+            "woverw": 0.44996203492786635,
+            "fontoverw": 0.15,
+            "angle": -263.26546437082465
+        }
+    ]
+}
+    </div>
+    <div class = "box">eye of the stormzzz              </div>    <div class = "box">blue ocean            </div>    <div class = "box"><img src="http://localhost:8000/symbol/magick/chakras/svg/svg1534220008.svg" style="width:100%">    </div></div>
