@@ -1,0 +1,14 @@
+{
+    "imgurl": "https://i.imgur.com/UV6tmWR.png",
+    "marker0": "haines point",
+    "marker1": "jefferson memorial",
+    "latlon0": "38.856805, -77.022099",
+    "latlon1": "38.881237, -77.036549",
+    "x0overwidth": 0.5634218289085545,
+    "y0overwidth": 0.44837758112094395,
+    "x1overwidth": 0.4501018090688385,
+    "y1overwidth": 0.1889889576317644,
+    "widthfeet": 34641.21888693074,
+    "angle": 0.019718020462074937,
+    "latloncorner": "38.89941330402209,-77.09085407124746"
+}

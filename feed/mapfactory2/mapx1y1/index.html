@@ -1,3 +1,6 @@
+<!doctype html>
+<html>
+<body>
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 <table id = "linktable">
 <tr>
@@ -151,6 +154,8 @@ document.getElementById("publishbutton").onclick = function(){
     deltaxoverwidth = jsonoutput.x1overwidth - jsonoutput.x0overwidth;
     deltayoverwidth = jsonoutput.y1overwidth - jsonoutput.y0overwidth;
     
+    
+    
     lat0 = parseFloat(jsonoutput.latlon0.split(",")[0]);
     lon0 = parseFloat(jsonoutput.latlon0.split(",")[1]);
     lat1 = parseFloat(jsonoutput.latlon1.split(",")[0]);
@@ -167,22 +172,11 @@ document.getElementById("publishbutton").onclick = function(){
     jsonoutput.widthfeet = widthfeet;
 
     thetaearth = Math.atan2(deltaxfeet,deltayfeet);
-    thetamap = Math.atan2(deltaxoverwidth,-deltayoverwidth);
+    thetamap = Math.atan2(deltaxoverwidth,deltayoverwidth);
     jsonoutput.angle = thetamap - thetaearth;
     
-    anglex0y0 = Math.atan2(-jsonoutput.x0overwidth,jsonoutput.y0overwidth) - jsonoutput.angle;
-    rx0y0feet = widthfeet*Math.sqrt(jsonoutput.x0overwidth*jsonoutput.x0overwidth + jsonoutput.y0overwidth*jsonoutput.y0overwidth);
-
-    deltax0feet = rx0y0feet*Math.sin(anglex0y0);
-    deltay0feet = rx0y0feet*Math.cos(anglex0y0);
-    
-    deltaloncorner = jsonoutput.x0overwidth*widthfeet/(feetperdegree*Math.cos(lat0*Math.PI/180));
-    deltalatcorner = jsonoutput.y0overwidth*widthfeet/feetperdegree;
-    
-    latcorner = lat0 + deltalatcorner*Math.cos(jsonoutput.angle) - deltaloncorner*Math.sin(jsonoutput.angle);
-    loncorner = lon0 - deltaloncorner*Math.cos(jsonoutput.angle) - deltalatcorner*Math.sin(jsonoutput.angle);//apply rotation by angle around x0y0 to account for deviation of "up" from True North
-    
-    jsonoutput.latloncorner = latcorner.toString() + "," + loncorner.toString();
+    anglex0y0 = Math.atan2(-jsonoutput.x0overwidth,jsonoutput.y0overwidth);
+    rx0y0 = 0;
     
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
@@ -220,7 +214,7 @@ document.getElementById("backbutton").onclick = function(){
     }
     document.getElementById("mainImage").src = jsondata[mapIndex].imgurl;
     markers[0].innerHTML = "marker 1: " + jsondata[mapIndex].marker1;
-    x0 = jsondata[mapIndex].x0overwidth*imageWidth;
+        x0 = jsondata[mapIndex].x0overwidth*imageWidth;
     y0 = jsondata[mapIndex].y0overwidth*imageWidth;
     x = x0;
     y = y0;
@@ -309,3 +303,6 @@ a{
     top:0px;
 }
 </style>
+
+</body>
+</html>

@@ -27,18 +27,21 @@ for(var index = 0;index < localjsondata.length;index++){
     
 }
 
-
+aspectratio = 1;
 document.getElementById("urlinput").onchange = function(){
     var newimg = document.createElement("IMG");
     newimg.src = this.value;
     document.getElementById("mainfeed").appendChild(newimg); 
+    newimg.onload = function(){
+        aspectratio = newimg.width/newimg.height;
+    }
 }
 
 document.getElementById("pbutton").onclick  = function(){
 
     jsonoutput = {};
     jsonoutput.url = document.getElementById("urlinput").value;
-
+    jsonoutput.aspectratio = aspectratio;
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
     var httpc = new XMLHttpRequest();

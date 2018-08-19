@@ -1,0 +1,31 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "https://i.imgur.com/gR0paGq.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.6169590643274854,
+            "yoverw": 0.631578947368421,
+            "woverw": 0.22272347535505427,
+            "fontoverw": 0.15,
+            "angle": 51.83627878423158
+        },
+        {
+            "xoverw": 0.8091060985797829,
+            "yoverw": 0.7172096908939014,
+            "woverw": 0.3,
+            "fontoverw": 0.15,
+            "angle": -89.53539062730911
+        },
+        {
+            "xoverw": 0.44569757727652465,
+            "yoverw": 0.4039264828738513,
+            "woverw": 0.3,
+            "fontoverw": 0.10822890559732665,
+            "angle": 53.72123437638546
+        }
+    ]
+}
+    </div>
+    <div class = "box"><img src="http://localhost:8000/symbol/magick/chakras/svg/svg1534220008.svg" style="width:100%">            </div>    <div class = "box">Potomac River    </div>    <div class = "box">rrruunnnnwaaayyyy    </div></div>

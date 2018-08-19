@@ -1,0 +1,14 @@
+{
+    "imgurl": "https://i.imgur.com/g0nVLdt.jpg",
+    "marker0": "constitution and 1st st",
+    "marker1": "columbus statue in circle",
+    "latlon0": "38.891991, -77.005882",
+    "latlon1": "38.896418, -77.006626",
+    "x0overwidth": 0.659016393442623,
+    "y0overwidth": 0.730327868852459,
+    "x1overwidth": 0.6165351322597804,
+    "y1overwidth": 0.31177196672953233,
+    "widthfeet": 3868.63209876097,
+    "angle": 0.0289190720055819,
+    "latloncorner": "38.89974154956153,-77.01486758918382"
+}
