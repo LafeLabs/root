@@ -53,3 +53,30 @@
     <li>Workflows in the Quantum Art Network: discussion of papers, connection to Jupyter, how to build useful microblogging, how to use SVG's in PowerPoint and illustrator, how to complete integration into published work, while also publishing directly, integration into phd dissertations.  Rapid qubit curve publication math-based social media.  Replacing PowerPoint with Geometron Slide Decks. Building new nodes on the Network. </li>
     
 </ul>
+
+
+<h2>Figures for First Paper(Geometron for Quantum Information)</h2>
+<ul>
+    
+    <li>sequence of figures to build inductor</li>
+    <li>sequence of figures to build a gate</li>
+    <li>sequence of actions to build basic polygons:triangle, square, golden triangle</li>
+    <li>screenshot of touch key pad on smartphone</li>
+    <li>photograph of custom painted keyboard</li>
+    <li>example of LRC circuit with SQUID, with glyph spelling</li>
+    <li>full workflow diagram of System</li>
+    <li>Feynman diagram with spelling</li>
+    <li>graph theory example with spelling</li>
+    <li>chemical formula example with spelling</li>
+    <li>knot theory construction, left/right trefoils</li>
+    <li>screenshot of a feed</li>
+    <li>shape tables: all of them</li>
+    <li>Action table</li>
+    
+</ul>
+
+<h2>Papers to write on this:</h2>
+<ul>
+    <li>Geometron: a geometric metalanguage for graphical communication about quantum information</li>
+    <li>Quantum Art</li>
+</ul>

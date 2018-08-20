@@ -24,6 +24,11 @@
         </td>
     </tr>
     <tr>
+        <td>
+            <a href = "index.php?path=purememefeed/">MEME FEED</a>
+        </td>
+    </tr>
+    <tr>
         <td class= "button" id  = "publishbutton">PUBLISH</td>
     </tr>
     <tr>
@@ -95,6 +100,11 @@ memeIndex = 0;
 staticboxes = document.getElementById("memecontainer").getElementsByClassName("box");
 
 initmeme();
+
+
+document.getElementById("mainImage").onload = function(){
+    document.getElementById("memecontainer").style.height = this.height.toString() + "px"; 
+}
 
 document.getElementById("nextmeme").onclick = function(){
     memeIndex++;

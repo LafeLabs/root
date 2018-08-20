@@ -1,15 +1,14 @@
 <p>
-    <a href = "feededitor.php?path=purememefeed/">EDIT</a>  
+    <a href = "feededitor.php?path=purememefeed/">EDIT</a>     <a href = "index.php?path=purememe1/">purememe1</a>
 </p>
 <div id = "localmemedata" style = "display:none;"></div>
 <div id = "memefeed"></div>
 
 <script>
+
 path = document.getElementById("pathdiv").innerHTML;
 memes = document.getElementById("localmemedata").getElementsByClassName("meme");
 imageWidth = 0.8*innerWidth;
-
-
 
 memedir = "purememe1/memes/";
 var httpc = new XMLHttpRequest();
@@ -31,6 +30,7 @@ function init(){
     document.getElementById("memefeed").appendChild(newdiv);
     var newimg = document.createElement("IMG");
     newimg.id = "img" + memeIndex.toString();
+    newimg.className = "mainimg";
     newimg.src = memejson.url;
     newimg.onload = function(){
         document.getElementById("div" + this.id.substr(3)).style.height = this.height + "px";
@@ -71,12 +71,14 @@ function init(){
     height:220%;
     margin-top:1em;
     margin-bottom:1em;
+    z-index:0;
 }
-.imgbox img{
+.mainimg{
     width:100%;
     position:absolute;
     left:0px;
     top:0px;
+    z-index:0;
 }
 .bottom{
     width:100%;
@@ -94,7 +96,7 @@ function init(){
 }
 .box{
     position:absolute;
-    z-index:2;
+    z-index:1;
 }
 
 </style>

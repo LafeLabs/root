@@ -15,17 +15,19 @@
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0331,0220,0221,0222,",
+    "glyph": "0220,0221,0222,0331,0331,0340,0335,0334,0334,0201,0221,",
     "table": []
 }
 </json>
 -->
-	<path d = "M300 400 L300 397 L300 391 L289 384 L300 378 L311 372 L300 366 L289 359 L300 353 L311 347 L300 341 L289 334 L300 328 L311 322 L300 316 L300 303 L300 300 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M300 300  M300,300 C300,283 333,275 333,292  M333,292 C333,308 300,292 300,275  M300,275 C300,258 333,250 333,267  M333,267 C333,283 300,267 300,250  M300,250 C300,233 333,225 333,242  M333,242 C333,258 300,242 300,225  M300,225 C300,208 333,200 333,217  M333,217 C333,233 300,217 300,200 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="300" y1="200" x2="300" y2="175" style="stroke:black;stroke-width:4" />
-    <line x1="300" y1="175" x2="300" y2="162" style="stroke:black;stroke-width:4" />
-    <line x1="300" y1="162" x2="275" y2="162" style="stroke:black;stroke-width:4" />
-    <line x1="300" y1="162" x2="325" y2="163" style="stroke:black;stroke-width:4" />
-    <line x1="300" y1="137" x2="325" y2="138" style="stroke:black;stroke-width:4" />
-    <line x1="300" y1="137" x2="275" y2="137" style="stroke:black;stroke-width:4" />
-    <line x1="300" y1="137" x2="300" y2="125" style="stroke:black;stroke-width:4" />
-    <line x1="300" y1="125" x2="300" y2="100" style="stroke:black;stroke-width:4" />
-</svg>
+	<path d = "M300 300 L300 297 L300 291 L289 284 L300 278 L311 272 L300 266 L289 259 L300 253 L311 247 L300 241 L289 234 L300 228 L311 222 L300 216 L300 203 L300 200 " stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M300 200  M300,200 C300,183 333,175 333,192  M333,192 C333,208 300,192 300,175  M300,175 C300,158 333,150 333,167  M333,167 C333,183 300,167 300,150  M300,150 C300,133 333,125 333,142  M333,142 C333,158 300,142 300,125  M300,125 C300,108 333,100 333,117  M333,117 C333,133 300,117 300,100 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="300" y1="100" x2="300" y2="75" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="75" x2="300" y2="62" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="62" x2="275" y2="62" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="62" x2="325" y2="63" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="37" x2="325" y2="38" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="37" x2="275" y2="37" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="37" x2="300" y2="25" style="stroke:black;stroke-width:4" />
+    <line x1="300" y1="25" x2="300" y2="0" style="stroke:black;stroke-width:4" />
+<circle cx="300" cy = "200" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+    <line x1="300" y1="200" x2="200" y2="200" style="stroke:black;stroke-width:4" />
+	<path d = "M200 200  M200,200 C183,200 175,167 192,167  M192,167 C208,167 192,200 175,200  M175,200 C158,200 150,167 167,167  M167,167 C183,167 167,200 150,200  M150,200 C133,200 125,167 142,167  M142,167 C158,167 142,200 125,200  M125,200 C108,200 100,167 117,167  M117,167 C133,167 117,200 100,200 " stroke = "black" stroke-width = "4" fill = "none" /></svg>

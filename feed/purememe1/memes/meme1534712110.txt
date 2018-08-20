@@ -1,0 +1,31 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "https://i.imgur.com/iCpHMWG.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.02589807852965742,
+            "yoverw": 0.030075187969924755,
+            "woverw": 0.3981620718462824,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.1950710108604845,
+            "yoverw": 0.3287385129490392,
+            "woverw": 0.14126984126984124,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.26608187134502925,
+            "yoverw": 0.424812030075188,
+            "woverw": 0.05146198830409354,
+            "fontoverw": 0.15,
+            "angle": -0.6283185307179586
+        }
+    ]
+}
+    </div>
+    <div class = "box"><img style="width:100%" src="https://i.imgur.com/k3dSaBF.jpg">                        </div>    <div class = "box"><img style="width:100%" src="https://i.imgur.com/k3dSaBF.jpg">                        </div>    <div class = "box"><img style="width:100%" src="https://i.imgur.com/k3dSaBF.jpg">                        </div></div>
