@@ -49,22 +49,28 @@ if(!isset($_GET['json']) && !isset($_GET['path'])){
     $jsonurl = "json/";
 }
 
-$jsonlist = explode(",",file_get_contents($jsonurl."list.txt"));
-$index = 0;
+if(file_exists($jsonurl."list.txt")){
+    $jsonlist = explode(",",file_get_contents($jsonurl."list.txt"));
+    $index = 0;
 
-echo "[";
-foreach($jsonlist as $value){
-  if($value != null && strlen($value) > 3 && $index < count($jsonlist) - 2){
-      echo file_get_contents($jsonurl.$value).",";
-  }  
-  else{
-      if($value != null && strlen($value) > 3){
-          echo file_get_contents($jsonurl.$value);
-      }
-  }
-  $index += 1;
+    echo "[";
+    foreach($jsonlist as $value){
+        if($value != null && strlen($value) > 3 && $index < count($jsonlist) - 2){
+          echo file_get_contents($jsonurl.$value).",";
+        }  
+        else{
+            if($value != null && strlen($value) > 3){
+              echo file_get_contents($jsonurl.$value);
+            }
+        }
+        $index += 1;
+    }
+    echo "]";
 }
-echo "]";
+else{
+    echo "[]";
+}
+
 
 ?></div>
 <div id = "memedata" style = "display:none;" class = "no-mathjax"><?php
@@ -76,20 +82,22 @@ else{
     $memeurl = "memes/";
 }
 
-$memelist = explode(",",file_get_contents($memeurl."list.txt"));
-$index = 0;
-
-foreach($memelist as $value){
-  if($value != null && strlen($value) > 3 && $index < count($memelist) - 2){
-      echo file_get_contents($memeurl.$value).",";
-  }  
-  else{
-      if($value != null && strlen($value) > 3){
-          echo file_get_contents($memeurl.$value);
-      }
-  }
-  $index += 1;
+if(file_exists($memeurl."list.txt")){
+    $memelist = explode(",",file_get_contents($memeurl."list.txt"));
+    $index = 0;
+    foreach($memelist as $value){
+      if($value != null && strlen($value) > 3 && $index < count($memelist) - 2){
+          echo file_get_contents($memeurl.$value).",";
+      }  
+    else{
+          if($value != null && strlen($value) > 3){
+              echo file_get_contents($memeurl.$value);
+          }
+    }
+    $index += 1;
+    }    
 }
+
 
 ?></div>
 <?php

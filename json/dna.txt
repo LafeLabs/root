@@ -58,6 +58,7 @@
 	{
 		"path":"feed/php",
 		"files":[
+			"curvetree.txt",
 			"editor.txt",
 			"feededitor.txt",
 			"fileloader.txt",
@@ -77,6 +78,7 @@
 			"posttowall.txt",
 			"remotefeed.txt",
 			"savewall.txt",
+			"symboltree.txt",
 			"text2php.txt",
 			"tree.txt",
 			"wall.txt",

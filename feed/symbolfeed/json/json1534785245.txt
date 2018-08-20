@@ -1,0 +1,10 @@
+{
+    "symbols": [
+        "http://localhost:8000/symbol/physics/feynman/svg/svg1534368056.svg",
+        "http://localhost:8000/symbol/magick/chakras/svg/svg1533167896.svg",
+        "http://localhost:8000/symbol/magick/chakras/svg/svg1533167936.svg",
+        "http://localhost:8000/symbol/geometry/goldenspiral/svg/svg1534017208.svg",
+        "http://localhost:8000/symbol/physics/circuits/svg/svg1532087565.svg",
+        "http://localhost:8000/symbol/physics/circuits/svg/svg1530917144.svg"
+    ]
+}

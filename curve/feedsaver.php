@@ -33,4 +33,28 @@
     $file = fopen($indexpath,"w");// create new file with this name
     fwrite($file,"<p><a href = \"".$filename."\"><img src = \"".$filename."\"></a></p>\n".$oldfeed); //write data to file
     fclose($file);  //close file
+    
+    
+    if(isset($_POST['path'])){
+        $files = scandir(getcwd()."/".$path."svg");
+    }
+    else{
+        $files = scandir(getcwd()."/svg");
+    }
+
+    $outtext  = "";
+    $listtext = "";
+
+    foreach(array_reverse($files) as $value){
+        if($value != "." && $value != ".." && substr($value,0,3) == "svg"){
+            $listtext .= $value.",";
+            $outtext .= "\n<p><img src = \"".$value."\"/></p>\n";
+        }
+    }
+
+    $file = fopen($path."svg/list.txt","w");// create new file with this name
+    fwrite($file,$listtext); //write data to file
+    fclose($file);  //close file
+
+    
 ?>

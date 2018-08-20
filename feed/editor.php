@@ -67,7 +67,10 @@ EGO DEATH:
     <div class = "php file">php/loadhtmlfeed.txt</div>
     <div class = "php file">php/makememeindex.txt</div>
     <div class = "php file">php/loadmemefeed.txt</div>
-    
+
+    <div class = "php file">php/symboltree.txt</div>
+    <div class = "php file">php/curvetree.txt</div>
+
 </div>
 
 <script>
