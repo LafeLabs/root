@@ -1,0 +1,6 @@
+{
+    "curves": [
+        "http://localhost:8000/curve/physics/filledfermi/svg/svg1533094199.svg",
+        "http://localhost:8000/curve/physics/filledfermi/svg/svg1532280394.svg"
+    ]
+}

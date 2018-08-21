@@ -1,0 +1,8 @@
+{
+    "curves": [
+        "http://localhost:8000/curve/conic/ellipse/svg/svg1531792421.svg",
+        "http://localhost:8000/curve/conic/parabola/svg/svg1534811021.svg",
+        "http://localhost:8000/curve/peaks/gaussian/svg/svg1534811151.svg",
+        "http://localhost:8000/curve/peaks/lorentzian/svg/svg1534812528.svg"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "curves": [
+        "http://localhost:8000/curve/physics/quantumnoise/svg/svg1533098038.svg",
+        "http://localhost:8000/curve/physics/quantumnoise/svg/svg1533098083.svg",
+        "http://localhost:8000/curve/physics/quantumnoise/svg/svg1534812879.svg"
+    ]
+}
