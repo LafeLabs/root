@@ -4,6 +4,11 @@
         <a href = "feededitor.php?path=curvefeed/">EDIT</a>    
     </td>
 </tr>
+<tr>
+    <td>
+        <a href = "index.php?path=basefeed/">BASEFEED</a>    
+    </td>
+</tr>
 </table>
 symbol path:<input id = "pathinput"/>
 <div id = "mainfeed"></div>

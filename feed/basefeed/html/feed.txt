@@ -5,7 +5,15 @@
         <td  id =  "nextcurve" class = "button">NEXT CURVE SET</td>
         <td id = "prevcurve" class = "button">PREV CURVE SET</td>
         <td class = "button" id = "publishbutton">PUBLISH</td>
-        <td><a href = "feededitor.php?path=combiner/">EDIT CODE</a></td>
+        <td><a href = "feededitor.php?path=basefeed/">EDIT CODE</a></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href = "index.php?path=curvefeed/">CURVEFEED</a></td>
+        <td><a href = "index.php?path=symbolfeed/">SYMBOLFEED</a></td>
     </tr>
 </table>
 
@@ -128,9 +136,7 @@ function imagefeedinit(){
 
 document.getElementById("publishbutton").onclick = function(){
     jsonoutput = {};
-    jsonoutput.bottomimage = document.getElementById("bottomimage").src;
-    jsonoutput.topimage = document.getElementById("topimage").src;
-
+    jsonoutput.url = document.getElementById("baseImage").src;
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
     var httpc = new XMLHttpRequest();

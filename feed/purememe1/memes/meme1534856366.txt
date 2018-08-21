@@ -1,0 +1,17 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.506265664160401,
+            "yoverw": 0.06975772765246446,
+            "woverw": 0.3584795321637427,
+            "fontoverw": 0.15,
+            "angle": 90.16370915802706
+        }
+    ]
+}
+    </div>
+    <div class = "box"><a href="../symbol/index.php?path=geometry/goldenspiral/"><img src="../symbol/geometry/goldenspiral/currentsvg.svg" style="width:100%"></a>    </div></div>

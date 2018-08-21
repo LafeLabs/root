@@ -5,19 +5,51 @@
         <td  id =  "nextcurve" class = "button">NEXT CURVE SET</td>
         <td id = "prevcurve" class = "button">PREV CURVE SET</td>
         <td class = "button" id = "publishbutton">PUBLISH</td>
-        <td><a href = "feededitor.php?path=combiner/">EDIT CODE</a></td>
+        <td><a href = "feededitor.php?path=boxfeed/">EDIT CODE</a></td>
+    </tr>
+    <tr>
+        <td class = "button"></td>
+        <td class = "button">TEXT</td>
+        <td class = "button">MATH</td>
+        <td class = "button">LINKS</td>
+        <td><a href = "index.php?path=curvefeed/">CURVEFEED</a></td>
+        <td><a href = "index.php?path=symbolfeed/">SYMBOLFEED</a></td>
     </tr>
 </table>
 
 <div id = "symbolfeed"></div>
 <div id = "curvefeed"></div>
 <div id = "imagefeed"></div>
+<div id = "textfeed"><h2>TEXT:</h2></div>
+<div id = "boxfeed"><h2>BOXFEED:</h2></div>
 
-<img id = "baseImage"/>
+<div id = "htmldatadiv" style = "display:none"></div>
 <script>
 
 path = document.getElementById("pathdiv").innerHTML;
 localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+htmldir = "textfeed/html/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        htmldata = this.responseText;
+        textinit();
+    }
+};
+httpc.open("GET", "loadhtmlfeed.php?htmldir=" + htmldir, true);
+httpc.send();
+
+function textinit(){
+    document.getElementById("htmldatadiv").innerHTML = htmldata;
+    htmldatadivs = document.getElementById("htmldatadiv").getElementsByTagName("feedbox");
+    for(var index = 0;index < htmldatadivs.length;index++){
+        var newp = document.createElement("p");
+        newp.innerHTML = htmldatadivs[index].innerHTML;
+        document.getElementById("textfeed").appendChild(newp);
+    }
+
+}
 
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
@@ -38,7 +70,13 @@ function symbolfeedinit(){
             newimg.src = symboljsondata[symbolIndex].symbols[index];
             document.getElementById("symbolfeed").appendChild(newimg);
             newimg.onclick = function(){
-                document.getElementById("baseImage").src = this.src;
+                var newbox = document.createElement("DIV");
+                newbox.className = "box";
+                var boximg = document.createElement("IMG");
+                boximg.src = this.src;
+                boximg.style.width = "100%";
+                newbox.appendChild(boximg);
+                document.getElementById("boxfeed").appendChild(newbox);
             }
         }
     }
@@ -128,9 +166,7 @@ function imagefeedinit(){
 
 document.getElementById("publishbutton").onclick = function(){
     jsonoutput = {};
-    jsonoutput.bottomimage = document.getElementById("bottomimage").src;
-    jsonoutput.topimage = document.getElementById("topimage").src;
-
+    jsonoutput.url = document.getElementById("baseImage").src;
     timestamp = Math.round((new Date().getTime())/1000);
     data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
     var httpc = new XMLHttpRequest();
@@ -149,6 +185,22 @@ document.getElementById("publishbutton").onclick = function(){
 
 </script>
 <style>
+#boxfeed{
+    position:absolute;
+    right:0px;
+    width:15%;
+    top:4em;
+    bottom:0px;
+    overflow:scroll;
+}
+#textfeed{
+    position:absolute;
+    left:50%;
+    width:15%;
+    overflow:scroll;
+    top:4em;
+    bottom:0px;
+}
 #symbolfeed{
     position:absolute;
     left:5px;
